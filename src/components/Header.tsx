@@ -8,7 +8,7 @@ const josefinSans = Josefin_Sans({ subsets: ['latin'] })
 function Header() {
   return (
     <section className="flex flex-row justify-between md:pt-[8px] md:px-[100px] md:pb-[4px] bg-main-gray">
-      <Image src="./Logo.svg" width={100} height={100} alt="logo" />
+      <Image src="./logo.svg" width={100} height={100} alt="logo" />
 
       <ul
         className={`flex flex-row gap-2.5 font-bold ${josefinSans.className} align-middle md:py-[12px]`}
