@@ -8,6 +8,7 @@ const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
 function HomeHeader() {
   return (
     <section className="min-w-screen max-w-screen">
+      {/* Text Container */}
       <section className="flex flex-row justify-center">
         {/* Title Text */}
         <section className="flex-col font-bold tracking-wider text-2xl md:text-5xl mt-8 md:mt-28">
@@ -17,6 +18,8 @@ function HomeHeader() {
           </h2>
         </section>
       </section>
+
+      {/* Subtitle Container */}
       <section className="flex flex-row flex-1 justify-center min-w-screen my-auto">
         <section
           className={`flex flex-col ${playfairDisplay.className} text-sm my-auto ml-5 mt-10 md:text-xl md:tracking-wider md:min-w-screens md:ml-0 min-w-screen`}
@@ -30,6 +33,7 @@ function HomeHeader() {
             Together, we can create a movement to change the energy landscape.
           </h3>
 
+          {/* Scroll Button */}
           <section className="flex flex-row flex-1 justify-center mt-5">
             <button>
               <Image
