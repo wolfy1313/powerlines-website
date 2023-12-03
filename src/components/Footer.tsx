@@ -21,7 +21,7 @@ function Footer() {
           {/* Title text */}
           <section className="font-bold mb-3 text-2xl">
             <h2 className="flex flex-row ">
-              Bringing <h2 className="text-main-yellow pl-1 ">Power</h2>
+              Bringing <span className="text-main-yellow pl-1 ">Power</span>
             </h2>
             <h2 className="">to the Public</h2>
           </section>
