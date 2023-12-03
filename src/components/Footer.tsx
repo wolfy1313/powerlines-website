@@ -8,16 +8,16 @@ const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
 
 function Footer() {
   return (
-    <section className="flex flex-row justify-center h-72 min-w-screen max-w-screen bg-main-gray py-10">
+    <section className="flex flex-col justify-center h-auto min-w-screen max-w-screen bg-main-gray py-10 lg:h-72 lg:flex-row">
       {/* Left hand side of Footer */}
       <section
         className={`flex flex-row flex-1 w-full justify-center ${josefinSans.className}`}
       >
-        <section className="relative h-full flex flex-col justify-center md:h-[230px] md:w-[240px]">
+        <section className="relative flex flex-col justify-center h-[200px] w-[200px] mr-6 md:h-[230px] md:w-[240px]">
           <Image src="./logo.svg" fill alt="logo" className="md: mt-3" />
         </section>
         {/* Text Container */}
-        <section className="flex flex-col justify-center ml-32">
+        <section className="flex flex-col justify-center md:ml-32">
           {/* Title text */}
           <section className="font-bold mb-3 text-2xl">
             <h2 className="flex flex-row ">
@@ -33,12 +33,12 @@ function Footer() {
         </section>
       </section>
 
-      {/* Right hand side of Footer */}
+      {/* Right hand/Bottom side of Footer */}
       <section
-        className={`flex flex-1 flex-row border-l justify-center border-l-black my-auto text-2xl ${josefinSans.className}`}
+        className={`flex flex-1 flex-row  justify-center  my-auto text-2xl ${josefinSans.className} border-t pt-4 border-t-black lg:border-t-0 lg:border-l lg:border-l-black lg:pt-0`}
       >
         {/* Nav List */}
-        <ul className="flex flex-col space-y-3 pl-32">
+        <ul className="flex flex-col space-y-3 pt-2 pl-2 md:pr-16 lg:pr-0 lg:pt-0 lg:pl-32">
           <li>
             <Link href="/our-work">
               <p>Our Work</p>
@@ -62,7 +62,7 @@ function Footer() {
         </ul>
 
         {/* Social Media */}
-        <section className="flex flex-col justify-center pl-32">
+        <section className="flex flex-col justify-center md:pl-32 lg:pl-32">
           <h3>Stay Connected</h3>
           <section className="flex flex-row space-x-10 pt-3">
             <Link href="google.com">
