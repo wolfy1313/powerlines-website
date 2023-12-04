@@ -64,6 +64,8 @@ function Footer() {
         {/* Social Media */}
         <section className="flex flex-col justify-center md:pl-32 lg:pl-32">
           <h3>Stay Connected</h3>
+
+          {/* Link Container */}
           <section className="flex flex-row space-x-10 pt-3">
             <Link href="google.com">
               <Image
