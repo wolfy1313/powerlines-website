@@ -9,20 +9,24 @@ function WhoWeAre() {
   return (
     <section className="min-w-screen max-w-screen">
       <section className="flex flex-row justify-center">
-        <section className='flex flex-row font-bold text-2xl md:text-3xl mt-8 md:mt-16'>
-          <h2 className={`flex flex-row ${josefinSans.className}`}>WHO WE ARE</h2>
+        <section className='font-bold text-2xl md:text-3xl mt-8 md:mt-16'>
+          <h2 className={`${josefinSans.className}`}>WHO WE ARE</h2>
         </section>
       </section>
 
       <section className='flex flex-row justify-center'>
-        <h1 className={`font-bold text-5xl ml-auto mr-auto md:text-6xl mt-8 md:mt-16  ${josefinSans.className}`}>
+        <h1 className={`text-center font-bold text-5xl ml-auto mr-auto md:text-6xl mt-8 md:mt-16  ${josefinSans.className}`}>
           OUR FOCUS IS BRINGING <br />
           <span className='text-main-yellow'>POWER </span>TO THE PUBLIC
         </h1>
       </section>
 
-      <section className='flex flex-row justify-center'>
-        <p className={`text-black-400`}>PowerLines is a non-governmental organization that is passionate about restructuring the energy system. We seek to create a world in which clean, affordable, and reliable energy systems contribute to safe, healthy, and vibrant communities.</p>
+      <section className='flex flex-row flex-1  my-auto justify-center'>
+        <section className={`${playfairDisplay.className} text-sm my-auto ml-5 mt-10 md:text-xl md:tracking-wider md:min-w-fit md:ml-0 min-w-screen`}>
+          <h3 className={`max-w-screen md:min-w-screen text-center`}>PowerLines is a non-governmental organization that is passionate about restructuring the <br />
+            energy system. We seek to create a world in which clean, affordable, and reliable energy <br />
+            systems contribute to safe, healthy, and vibrant communities.</h3>
+        </section>
       </section>
 
 
