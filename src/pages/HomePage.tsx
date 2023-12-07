@@ -1,4 +1,5 @@
 import HomeHeader from '@/components/HomeHeader'
+import WhoWeAre from '@/components/WhoWeAre'
 import React from 'react'
 
 function HomePage() {
