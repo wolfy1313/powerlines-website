@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Josefin_Sans, Playfair_Display } from 'next/font/google'
 
 const josefinSans = Josefin_Sans({ subsets: ['latin'] })
@@ -27,6 +28,10 @@ function WhoWeAre() {
             energy system. We seek to create a world in which clean, affordable, and reliable energy <br />
             systems contribute to safe, healthy, and vibrant communities.</h3>
         </section>
+
+      </section>
+      <section className={`text-center ${josefinSans.className} mt-10  `}>
+        <button className='bg-main-yellow rounded-full my-auto mx-auto px-14 py-2'> ABOUT US </button>
       </section>
 
 
