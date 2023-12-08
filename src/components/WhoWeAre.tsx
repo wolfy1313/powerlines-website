@@ -31,7 +31,9 @@ function WhoWeAre() {
 
       </section>
       <section className={`text-center ${josefinSans.className} mt-10 mb-20 `}>
-        <button className='bg-main-yellow rounded-full my-auto mx-auto px-14 py-2'> <Link href="/about-us">ABOUT US</Link> </button>
+        <button className='bg-main-yellow rounded-full my-auto mx-auto px-14 py-2'>
+          <Link href="/About">ABOUT US</Link>
+        </button>
       </section>
 
 

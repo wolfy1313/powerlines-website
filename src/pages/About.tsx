@@ -1,7 +1,7 @@
 import React from 'react'
 import OurWork from '@/components/OurWork'
 
-function AboutPage() {
+function About() {
   return (
     <section className='flex flex-col min-w-max max-w-screen-lg'>
       <OurWork />
@@ -10,4 +10,4 @@ function AboutPage() {
   )
 }
 
-export default AboutPage
+export default About

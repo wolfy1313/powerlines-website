@@ -8,7 +8,7 @@ function OurWork() {
   return (
     <section className='min-w-screen max-w-screen'>
       <section className='flex flex-row justify-center'>
-        <h1 className={`${josefinSans.className}`}>OUR WORK</h1>
+        <h1 className={`justify-center text-center ${josefinSans.className}`}>OUR WORK</h1>
 
       </section>
 
