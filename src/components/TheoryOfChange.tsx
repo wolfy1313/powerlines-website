@@ -23,9 +23,43 @@ function TheoryOfChange() {
         </h2>
 
         {/* Cards */}
-        <section className="max-w-sm rounded overflow-hidden shadow-lg">
- 
+        <section className="flex flex-wrap justify-center">
+  <section className="max-w-sm rounded overflow-hidden shadow-lg mx-2 mt-5 mb-5">
+    <Image src="/politicalStrategyIcon (2).svg" alt="political strategy icon" width={100} height={100} className="color-yellow md:mt-3 mx-auto" />
+    <section className="px-6 py-4">
+      <section className="font-bold text-xl mb-2">Political Strategy</section>
+      <ul className="list-inside text-gray-700 text-base">
+        <li>&#10003; Appoints Champions</li>
+        <li>&#10003; Elects Champions</li>
+      </ul>
+    </section>
+  </section>
+
+  <section className="max-w-sm rounded overflow-hidden shadow-lg mx-2 mt-5 mb-5">
+    <Image src="/modelLegislationIcon.svg" alt="Model Legislation Icon" width={100} height={100} className="color-yellow md:mt-3 mx-auto" />
+    <section className="px-6 py-4">
+      <section className="font-bold text-xl mb-2">Model Legislation</section>
+      <ul className="list-inside text-gray-700 text-base">
+        <li>&#10003; Passes Legislation</li>
+        <li>&#10003; Lorem Ipsum</li>
+      </ul>
+    </section>
+
+  </section>
+
+  <section className="max-w-sm rounded overflow-hidden shadow-lg mx-2 mt-5 mb-5">
+    <Image src="/modelLegislationIcon.svg" alt="political strategy icon" width={100} height={100} className="color-yellow md:mt-3 mx-auto" />
+    <section className="px-6 py-4">
+      <section className="font-bold text-xl mb-2">Stakeholder Engagement</section>
+      <ul className="list-inside text-gray-700 text-base">
+        <li>&#10003; Youth Groups</li>
+        <li>&#10003; The Public</li>
+        <li>&#10003; Environmental Justice</li>
+      </ul>
+    </section>
+  </section>
 </section>
+
       </section>
     </section>
   </section>
