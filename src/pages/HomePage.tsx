@@ -1,5 +1,6 @@
 import HomeHeader from '@/components/HomeHeader'
 import WhoWeAre from '@/components/WhoWeAre'
+import TheoryOfChange from '@/components/TheoryOfChange'
 import React from 'react'
 
 function HomePage() {
@@ -8,9 +9,9 @@ function HomePage() {
       {/* Header */}
       <HomeHeader />
       {/* Who We Are */}
-
+<WhoWeAre/>
       {/* Theory of Change */}
-
+<TheoryOfChange/>
       {/* Did you know */}
 
       {/* Latest on Powerlines */}

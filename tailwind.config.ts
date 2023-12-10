@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         'main-yellow': '#FFC700',
+        'section-yellow':'#FFF7E0',
         'main-gray': '#F7F7F7'
       }
     }
