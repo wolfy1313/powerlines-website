@@ -1,7 +1,7 @@
 import React from 'react'
 import OurWorkPage from '@/pages/OurWorkPage'
 
-const page = () => {
+const ourWorkPage = () => {
   return (
     <main className="flex min-h-screen flex-col">
       <OurWorkPage />
@@ -9,4 +9,4 @@ const page = () => {
   )
 }
 
-export default page
+export default ourWorkPage
