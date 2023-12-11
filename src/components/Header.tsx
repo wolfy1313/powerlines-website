@@ -17,7 +17,7 @@ function Header() {
             <Link href="/our-work">Our Work</Link>
           </li>
           <li className="pt-1">
-            <Link href="/about-us">About Us</Link>
+            <Link href="/About">About Us</Link>
           </li>
           <li className="flex flex-col justify-center my-auto   bg-main-yellow rounded-full py-1 px-1 md:px-[32px]">
             <Link href="/contact-us">Contact Us</Link>
