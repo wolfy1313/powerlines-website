@@ -8,7 +8,7 @@ function HomePage() {
       {/* Header */}
       <HomeHeader />
       {/* Who We Are */}
-
+      <WhoWeAre />
       {/* Theory of Change */}
 
       {/* Did you know */}
