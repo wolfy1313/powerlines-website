@@ -14,7 +14,7 @@ function Header() {
           className={`flex flex-row gap-2.5 font-bold text-sm ${josefinSans.className} my-auto md:py-[12px]`}
         >
           <li className="pt-1">
-            <Link href="/OurWork">Our Work</Link>
+            <Link href="/OurWorkPage">Our Work</Link>
           </li>
           <li className="pt-1">
             <Link href="/About">About Us</Link>
