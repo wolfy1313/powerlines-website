@@ -3,9 +3,9 @@ import OurWorkPage from '@/pages/OurWorkPage'
 
 const page = () => {
   return (
-    <div>
+    <main className="flex min-h-screen flex-col">
       <OurWorkPage />
-    </div>
+    </main>
   )
 }
 
