@@ -1,5 +1,5 @@
 import React from 'react'
-import OurWorkPage from '@/pages/OurWork'
+import OurWorkPage from '@/pages/OurWorkPage'
 
 const page = () => {
   return (
