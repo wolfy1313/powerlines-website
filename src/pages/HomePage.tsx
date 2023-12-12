@@ -1,3 +1,4 @@
+import DidYouKnow from '@/components/DidYouKnow'
 import HomeHeader from '@/components/HomeHeader'
 import WhoWeAre from '@/components/WhoWeAre'
 import React from 'react'
@@ -12,7 +13,7 @@ function HomePage() {
       {/* Theory of Change */}
 
       {/* Did you know */}
-
+      <DidYouKnow />
       {/* Latest on Powerlines */}
     </section>
   )
