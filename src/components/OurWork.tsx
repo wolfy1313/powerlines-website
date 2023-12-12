@@ -8,7 +8,7 @@ const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
 function OurWork() {
   return (
     <section className=''>
-      <section className=''>
+      <section className="bg-[url('/PageHeroBG.svg')] h-319">
         <h1 className={`font-bold text-2xl md:text-3xl mt-8 md:mt-16 justify-center items-center text-center ${josefinSans.className}`}>OUR WORK</h1>
       </section>
       <section className='flex'>
