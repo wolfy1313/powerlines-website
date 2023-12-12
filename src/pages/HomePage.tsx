@@ -13,6 +13,7 @@ function HomePage() {
       {/* Theory of Change */}
 <TheoryOfChange/>
       {/* Did you know */}
+    
 
       {/* Latest on Powerlines */}
     </section>

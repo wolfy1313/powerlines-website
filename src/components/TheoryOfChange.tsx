@@ -9,7 +9,7 @@ const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
 function TheoryOfChange() {
 
   return (
-    <section className="min-w-screen max-w- bg-section-yellow ">
+    <section className="min-w-screen max-w-screen bg-section-yellow ">
     <section className="flex flex-row justify-center">
       <section className="flex flex-col items-center justify-center">
         <h2 className={`font-bold tracking-wider text-2xl  text-center md:text-3xl mt-8 md:mt-28 ${josefinSans.className}`}>
@@ -22,7 +22,7 @@ function TheoryOfChange() {
         className={`flex flex-col ${playfairDisplay.className} flex flex-col items-center  max-w-screen md:min-w-screen md:tracking-wider md:text-xl mt-10`}
       >
         <h2 className=" max-w-screen text-center md:min-w-screen mb-10 mx-10">
-        We aim to reshape the energy system by accelerating clean energy and equity through <br/> utility regulation by targeting state public utilities commissions. To tackle this challenge, PowerLines pursues a three-part theory of change.
+        We aim to reshape the energy system by accelerating clean energy and equity through <br/> utility regulation by targeting state public utilities commissions. <br/> To tackle this challenge, PowerLines pursues a three-part theory of change.
         </h2>
 
         {/* Cards */}
