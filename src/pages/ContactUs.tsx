@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import { ContactUsData } from '@/types/global'
 import { Josefin_Sans, Playfair_Display, Raleway } from 'next/font/google'
+import Link from 'next/link'
 
 const josefinSans = Josefin_Sans({ subsets: ['latin'] })
 const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
@@ -61,7 +62,7 @@ function ContactUs() {
 
       {/* Form Container */}
       <section
-        className="w-full max-w-2xl mx-auto p-8 -mt-24 bg-white shadow-lg rounded-md md:min-w-[760px]"
+        className="w-full max-w-2xl mx-auto p-8 -mt-24 bg-white shadow-lg rounded-md md:min-w-[760px] md:min-h-[760px]"
         style={{
           backgroundImage: "url('/contactusbg.svg')",
           backgroundSize: 'cover',
@@ -69,25 +70,29 @@ function ContactUs() {
         }}
       >
         {/* Form Header */}
-        <section className={`text-center mb-10 ${playfairDisplay.className} `}>
-          <h1
-            className={`text-2xl font-bold mb-4 text-main-yellow ${josefinSans.className}`}
+        {!submitted && (
+          <section
+            className={`text-center mb-10 ${playfairDisplay.className} `}
           >
-            We&apos;d love to hear from you.
-          </h1>
-          <p className="text-md mb-2">
-            If you&apos;re interested in joining our efforts, please get in
-            touch!
-          </p>
-          <p className="text-md">
-            Send us a message and someone from our team will connect with you
-            soon.
-          </p>
-        </section>
+            <h1
+              className={`text-2xl font-bold mb-4 text-main-yellow ${josefinSans.className}`}
+            >
+              We&apos;d love to hear from you.
+            </h1>
+            <p className="text-md mb-2">
+              If you&apos;re interested in joining our efforts, please get in
+              touch!
+            </p>
+            <p className="text-md">
+              Send us a message and someone from our team will connect with you
+              soon.
+            </p>
+          </section>
+        )}
 
         {!submitted ? (
           // Ternary to conditionally render form if submitted is false
-          <form onSubmit={handleSubmit} className="space-y-6 md:px-24">
+          <form onSubmit={handleSubmit} className="space-y-6 md:px-24 ">
             <div>
               <label
                 htmlFor="name"
@@ -153,12 +158,15 @@ function ContactUs() {
           </form>
         ) : (
           // If submitted is true, render confirmation
-          <section className="text-center">
-            <h1 className="text-2xl font-bold">Thank you!</h1>
-            <p className="text-md">
+          <section className="text-center md:min-h-[620px]">
+            <h1 className="text-2xl font-bold text-main-yellow">Thank you!</h1>
+            <p className="text-md mb-10 text-center flex flex-row justify-center">
               Your message has been sent. Someone from our team will connect
               with you soon.
             </p>
+            <Link href={'/'} className="bg-main-yellow rounded-full py-1 px-6 ">
+              RETURN TO HOMEPAGE
+            </Link>
           </section>
         )}
       </section>
