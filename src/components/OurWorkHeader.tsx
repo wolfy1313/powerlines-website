@@ -5,7 +5,7 @@ import { Josefin_Sans, Playfair_Display } from 'next/font/google'
 const josefinSans = Josefin_Sans({ subsets: ['latin'] })
 const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
 
-function OurWork() {
+function OurWorkHeader() {
   return (
     <section className='w-screen'>
       <section className="bg-[url('/PageHeroBG.svg')]">
@@ -15,4 +15,4 @@ function OurWork() {
   )
 }
 
-export default OurWork
+export default OurWorkHeader
