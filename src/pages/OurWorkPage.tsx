@@ -5,15 +5,15 @@ import OurWorkImage from '@/components/OurWorkImage'
 
 function OurWorkPage() {
   return (
-    <section className='min-w-max w-screen'>
+    <section className='flex flex-col m-10'>
       <section>
         <OurWorkHeader />
       </section>
-      <section className='flex w-screen'>
-        <section>
+      <section className='flex max-w-screen pt-7'>
+        <section className='pr-4'>
           <OurWorkProblem />
         </section>
-        <section>
+        <section className='pl-4'>
           <OurWorkImage />
         </section>
       </section>

@@ -3,11 +3,9 @@ import Image from 'next/image'
 
 function OurWorkImage() {
   return (
-    <div>
-      <section>
-        <Image src="./ProblemImage.svg" width={604} height={472} alt="image of wind turbines and solar panels" />
-      </section>
-    </div>
+    <section className=''>
+      <Image src="./ProblemImage.svg" width={2100} height={472} alt="image of wind turbines and solar panels" />
+    </section>
   )
 }
 
