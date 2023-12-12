@@ -1,10 +1,10 @@
 import React from 'react'
-import OurWork from '@/components/OurWork'
+import OurWorkHeader from '@/components/OurWorkHeader'
 
 function OurWorkPage() {
   return (
     <section className='min-w-max max-w-screen-lg'>
-      <OurWork />
+      <OurWorkHeader />
     </section>
 
   )
