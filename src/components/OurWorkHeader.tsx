@@ -7,9 +7,9 @@ const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
 
 function OurWorkHeader() {
   return (
-    <section className='w-screen'>
-      <section className="bg-[url('/PageHeroBG.svg')]">
-        <h1 className={`font-bold text-2xl md:text-3xl mt-8 md:mt-16 ${josefinSans.className}`}>OUR WORK</h1>
+    <section className='flex flex-col min-w-screen max-w-screen'>
+      <section className="bg-contain bg-no-repeat bg-[url('/PageHeroBG.svg')] md:bg-cover">
+        <h1 className={`font-bold text-center p-16 text-3xl md:text-5xl ${josefinSans.className}`}>OUR WORK</h1>
       </section>
     </section>
   )
