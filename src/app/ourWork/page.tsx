@@ -3,7 +3,7 @@ import OurWorkPage from '@/pages/OurWorkPage'
 
 export default function page() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex flex-col min-w-full min-h-screen">
       <OurWorkPage />
     </main>
   )

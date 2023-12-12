@@ -3,7 +3,7 @@ import OurWork from '@/components/OurWork'
 
 function OurWorkPage() {
   return (
-    <section className='flex flex-col min-w-max max-w-screen-lg'>
+    <section className='min-w-max max-w-screen-lg'>
       <OurWork />
     </section>
 
