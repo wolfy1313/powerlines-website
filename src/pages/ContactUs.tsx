@@ -36,7 +36,15 @@ function ContactUs() {
 
     if (isFormValid) {
       setSubmitted(true)
-      //TODO Here you can also handle the form submission, like sending data to an API
+      // Create a mailto link with the form data and recipient email
+      const recipientEmail = 'test@powerlines.org'
+      const mailtoLink = `mailto:${recipientEmail}?subject=Contact Form Submission&body=Name: ${encodeURIComponent(
+        contactFormState.name
+      )}%0AEmail: ${encodeURIComponent(
+        contactFormState.email
+      )}%0AMessage: ${encodeURIComponent(contactFormState.message)}`
+      // Open the default mail client
+      window.location.href = mailtoLink
     } else {
       //TODO Handle the error case, you can set error messages or highlight the fields
     }
