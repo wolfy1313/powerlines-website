@@ -15,33 +15,33 @@ function OurWorkLatestWork() {
       </section>
       <section className={`${josefinSans.className} grid grid-cols-2 place-content-between  mx-10 border-t-2 border-b-2 font-semibold`}>
         <div className=' py-5'>Lorem Ipsum dolor sit amet, consectetur adipiscing elit</div>
-        <button className='grid place-content-end pr-8'>
+        <button className='grid place-content-end pr-8 pb-5'>
           <Image
             height={35}
             width={30}
-            src="/public/arrowdown.svg"
+            src="./downArrowButton.svg"
             alt='down arrow'
           />
         </button>
       </section>
       <section className={`${josefinSans.className} grid grid-cols-2 place-content-between  mx-10 border-t-2 border-b-2 font-semibold`}>
         <div className=' py-5'>Lorem Ipsum dolor sit amet, consectetur adipiscing elit</div>
-        <button className='grid place-content-end pr-8'>
+        <button className='grid place-content-end pr-8 pb-5'>
           <Image
             height={35}
             width={30}
-            src="/public/arrowdown.svg"
+            src="./downArrowButton.svg"
             alt='down arrow'
           />
         </button>
       </section>
       <section className={`${josefinSans.className} grid grid-cols-2 place-content-between  mx-10 border-t-2 border-b-2 font-semibold`}>
         <div className=' py-5'>Lorem Ipsum dolor sit amet, consectetur adipiscing elit</div>
-        <button className='grid place-content-end pr-8'>
+        <button className='grid place-content-end pr-8 pb-5'>
           <Image
             height={35}
             width={30}
-            src="/public/arrowdown.svg"
+            src="./downArrowButton.svg"
             alt='down arrow'
           />
         </button>
