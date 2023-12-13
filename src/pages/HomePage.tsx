@@ -1,6 +1,7 @@
 import HomeHeader from '@/components/HomeHeader'
 import WhoWeAre from '@/components/WhoWeAre'
 import TheoryOfChange from '@/components/TheoryOfChange'
+import AboutUs from './AboutUs'
 import React from 'react'
 
 function HomePage() {
@@ -11,9 +12,8 @@ function HomePage() {
       {/* Who We Are */}
 <WhoWeAre/>
       {/* Theory of Change */}
-<TheoryOfChange/>
       {/* Did you know */}
-    
+   
 
       {/* Latest on Powerlines */}
     </section>
