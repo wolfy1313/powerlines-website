@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="icon" href="/logo.svg" sizes="any" />
-      <body className={inter.className}>
+      <body className="flex flex-col">
         <Header />
         {children}
         <Footer />

@@ -16,8 +16,9 @@ const config: Config = {
       },
       colors: {
         'main-yellow': '#FFC700',
-        'section-yellow':'#FFF7E0',
-        'main-gray': '#F7F7F7'
+        'main-gray': '#F7F7F7',
+        'darker-yellow': '#E2B100',
+        'light-yellow': '#FFF7E0'
       }
     }
   },

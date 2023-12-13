@@ -14,7 +14,7 @@ function Footer() {
         className={`flex flex-row flex-1 w-full justify-center ${josefinSans.className}`}
       >
         <section className="relative flex flex-col justify-center h-[200px] w-[200px] mr-6 md:h-[230px] md:w-[240px]">
-          <Image src="./logo.svg" fill alt="logo" className="md: mt-3" />
+          <Image src="/logo.svg" fill alt="logo" className="md: mt-3" />
         </section>
         {/* Text Container */}
         <section className="flex flex-col justify-center md:ml-32">

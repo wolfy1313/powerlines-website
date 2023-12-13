@@ -1,3 +1,4 @@
+import DidYouKnow from '@/components/DidYouKnow'
 import HomeHeader from '@/components/HomeHeader'
 import WhoWeAre from '@/components/WhoWeAre'
 import TheoryOfChange from '@/components/TheoryOfChange'
@@ -10,11 +11,10 @@ function HomePage() {
       {/* Header */}
       <HomeHeader />
       {/* Who We Are */}
-<WhoWeAre/>
+      <WhoWeAre />
       {/* Theory of Change */}
       {/* Did you know */}
-   
-
+      <DidYouKnow />
       {/* Latest on Powerlines */}
     </section>
   )
