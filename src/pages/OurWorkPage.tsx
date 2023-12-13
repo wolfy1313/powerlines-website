@@ -4,10 +4,13 @@ import OurWorkProblem from '@/components/OurWorkProblem'
 import OurWorkImage from '@/components/OurWorkImage'
 import OurWorkSolution from '@/components/OurWorkSolution'
 import OurWorkSolutionImage from '@/components/OurWorkSolutionImage'
+import OurWorkLatestWork from '@/components/OurWorkLatestWork'
 
 function OurWorkPage() {
   return (
     <section className='flex flex-col '>
+
+      {/* {Our Problem Section} */}
       <section className='m-0'>
         <OurWorkHeader />
       </section>
@@ -19,6 +22,8 @@ function OurWorkPage() {
           <OurWorkImage />
         </section>
       </section>
+
+      {/* {Our Solution Section} */}
       <section className='flex max-w-screen pt-7 mx-10 py-6 bg-light-yellow'>
         <section className='pr-4'>
           <OurWorkSolutionImage />
@@ -27,6 +32,13 @@ function OurWorkPage() {
           <OurWorkSolution />
         </section>
       </section>
+
+      {/* {Latest Work Section} */}
+      <section>
+        <OurWorkLatestWork />
+      </section>
+
+
     </section>
 
   )
