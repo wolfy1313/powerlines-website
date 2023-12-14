@@ -5,6 +5,7 @@ import OurWorkImage from '@/components/OurWorkImage'
 import OurWorkSolution from '@/components/OurWorkSolution'
 import OurWorkSolutionImage from '@/components/OurWorkSolutionImage'
 import OurWorkLatestWork from '@/components/OurWorkLatestWork'
+import TheoryOfChange from '@/components/TheoryOfChange'
 
 function OurWorkPage() {
   return (
@@ -31,6 +32,11 @@ function OurWorkPage() {
         <section className='pl-4 mx-10'>
           <OurWorkSolution />
         </section>
+      </section>
+
+      {/* {Theory of Change Section} */}
+      <section>
+        <TheoryOfChange />
       </section>
 
       {/* {Latest Work Section} */}
