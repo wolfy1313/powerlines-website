@@ -17,6 +17,15 @@ Text Column  */}
    <section className="w-full pt-12 pl-0 md:w-1/3 pl-4">
     <Image width={425} height={424}layout="responsive" src="/plantPowerlineTower.png" alt="plant powerline tower" />
   </section>
+  <p className={`text-3xl font-semibold leading-9 my-24 ml-16 ${josefinSans.className}`}> Were an Organization that champions people and<br/> communities to address climate & environmental issues.</p>
+  <section className="w-full 3/3">
+  <p className={`text-3xl font-semibold leading-9 my-2 ml-16 text-main-yellow mb-10 ${josefinSans.className}`}>Our Principles</p>
+  </section>
+ </section>
+ <section>
+ <section>
+
+ </section>
  </section>
     </section>
   )
