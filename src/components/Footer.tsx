@@ -14,7 +14,12 @@ function Footer() {
         className={`flex flex-col flex-1 items-center min-w-screen justify-center pb-3 align-middle md:flex-row md:pb-0 ${josefinSans.className}`}
       >
         <section className="relative flex flex-col justify-center h-[100px] w-[100px] mr-6 md:h-[230px] md:w-[240px]">
-          <Image src="/logo.svg" fill alt="logo" className="md: mt-3" />
+          <Image
+            src="/powerlineslogo.svg"
+            fill
+            alt="logo"
+            className="md: mt-3"
+          />
         </section>
         {/* Text Container */}
         <section className="flex flex-col justify-center md:ml-32">
@@ -69,7 +74,7 @@ function Footer() {
           <section className="flex flex-row space-x-10 pt-3">
             <Link href="google.com">
               <Image
-                src="./linkedinlogo.svg"
+                src="/linkedinlogo.svg"
                 height={30}
                 width={30}
                 alt="linkedin"
@@ -77,7 +82,7 @@ function Footer() {
             </Link>
             <Link href="google.com">
               <Image
-                src="./twitterlogo.svg"
+                src="/twitterlogo.svg"
                 height={30}
                 width={30}
                 alt="linkedin"
@@ -85,7 +90,7 @@ function Footer() {
             </Link>
             <Link href="google.com">
               <Image
-                src="./facebooklogo.svg"
+                src="/facebooklogo.svg"
                 height={30}
                 width={30}
                 alt="linkedin"

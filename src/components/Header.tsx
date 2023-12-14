@@ -16,7 +16,7 @@ function Header() {
   return (
     <section className="z-10 flex flex-row justify-around max-w-screen bg-main-gray md:pt-[8px] md:px-[100px] md:pb-[4px] md:justify-between">
       <Link href="/">
-        <Image src="/logo.svg" width={100} height={100} alt="logo" />
+        <Image src="/powerlineslogo.svg" width={100} height={100} alt="logo" />
       </Link>
       <section className="flex flex-col justify-center ">
         <ul
