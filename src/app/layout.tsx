@@ -18,8 +18,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <link rel="icon" href="/logo.svg" sizes="any" />
-      <body className={inter.className}>
+      <link rel="icon" href="/powerlineslogo.svg" sizes="any" />
+      <body className="flex flex-col">
         <Header />
         {children}
         <Footer />

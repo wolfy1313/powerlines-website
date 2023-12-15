@@ -1,7 +1,23 @@
+import DidYouKnow from '@/components/DidYouKnow'
+import HomeHeader from '@/components/HomeHeader'
+import WhoWeAre from '@/components/WhoWeAre'
+import TheoryOfChange from '@/components/TheoryOfChange'
+import AboutUs from './AboutUs'
 import React from 'react'
 
 function HomePage() {
-  return <div>Home</div>
+  return (
+    <section className="flex flex-col my-0 min-w-screen max-w-screen">
+      {/* Header */}
+      <HomeHeader />
+      {/* Who We Are */}
+      <WhoWeAre />
+      {/* Theory of Change */}
+      {/* Did you know */}
+      <DidYouKnow />
+      {/* Latest on Powerlines */}
+    </section>
+  )
 }
 
 export default HomePage
