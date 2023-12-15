@@ -13,6 +13,16 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
           'local-image': 'url("/EllipseIconBG.svg")',
+          'ellipse-yellow': 'url("/EllipseYellow.svg")',
+      },
+      width:{
+        '90px':'90px',
+        '563px':'563px',
+
+      },
+      height:{
+        '90px':'90px',
+        '125px':'125px',
       },
       colors: {
         'main-yellow': '#FFC700',
