@@ -4,6 +4,7 @@ import Image from 'next/image'
 import OurPrinciples from '@/components/OurPrinciples'
 const josefinSans = Josefin_Sans({ subsets: ['latin'] })
 const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
+import OurTeam from '@/components/OurTeam'
 
 function AboutUs() {
   return (
@@ -30,10 +31,11 @@ Text Column  */}
     </section>
   </section>
  </section>
- <section>
+ 
     <OurPrinciples/>
- </section>
-  
+ 
+    <OurTeam/>
+
 
   
   
