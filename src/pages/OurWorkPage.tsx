@@ -16,17 +16,17 @@ function OurWorkPage() {
       </section>
 
       {/* {Our Problem Section} */}
-      <section className='flex max-w-screen px-10 py-10'>
-        <section className='px-7 flex items-center' >
+      <section className=' flex flex-col-reverse md:flex md:flex-row max-w-screen px-10 py-10'>
+        <section className='flex  px-7 items-center ' >
           <OurWorkProblem />
         </section>
-        <section className='px-8 mx-10'>
+        <section className='px-8 mx-10 '>
           <OurWorkImage />
         </section>
       </section>
 
       {/* {Our Solution Section} */}
-      <section className='flex max-w-screen py-10 px-10 bg-light-yellow'>
+      <section className='md:flex max-w-screen py-10 px-10 bg-light-yellow'>
         <section className='px-8 mx-10 '>
           <OurWorkSolutionImage />
         </section>
