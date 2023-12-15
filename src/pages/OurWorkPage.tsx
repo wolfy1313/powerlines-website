@@ -11,7 +11,7 @@ function OurWorkPage() {
   return (
     <section className='flex flex-col '>
 
-      <section className='m-0'>
+      <section className='m-0 '>
         <OurWorkHeader />
       </section>
 
