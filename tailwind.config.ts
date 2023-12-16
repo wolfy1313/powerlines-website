@@ -14,6 +14,7 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
           'local-image': 'url("/EllipseIconBG.svg")',
           'ellipse-yellow': 'url("/EllipseYellow.svg")',
+          'custom-black-opacity': 'rgba(0,0,0,0.40)',
       },
       width:{
         '90px':'90px',
