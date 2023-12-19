@@ -29,8 +29,9 @@ const config: Config = {
         'main-yellow': '#FFC700',
         'main-gray': '#F7F7F7',
         'darker-yellow': '#E2B100',
-        'light-yellow': '#FFF7E0'
-      }
+        'light-yellow': '#FFF7E0',
+        'overlay':'rgba(254, 242, 194, 0.50)',
+      },
     }
   },
   plugins: []

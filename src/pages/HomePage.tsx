@@ -13,6 +13,7 @@ function HomePage() {
       {/* Who We Are */}
       <WhoWeAre />
       {/* Theory of Change */}
+      <TheoryOfChange/>
       {/* Did you know */}
       <DidYouKnow />
       {/* Latest on Powerlines */}

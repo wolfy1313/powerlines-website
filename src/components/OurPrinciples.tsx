@@ -7,7 +7,7 @@ const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
 function OurPrinciples() {
   return (
     <section className="min-w-screen max-w-screen">
-          <section className="flex flex-wrap bg-light-yellow"> 
+          <section className="flex flex-wrap"> 
           <section className="flex flex-wrap justify-center md:justify-start gap-4 mt-[-50px] md:mt-[-70px]">
   {/* Container for both images */}
   <section className="flex w-full md:w-auto">
@@ -23,7 +23,7 @@ function OurPrinciples() {
   </section>
 </section>
 
-  <p className={` text-2xl md:text-3xl font-semibold leading-9 my-9 md:my-24 ml-4 md:ml-16 ${josefinSans.className}`}> We&apos;re an Organization that champions people and communities to address climate & environmental issues.</p>
+  <p className={` text-2xl md:text-3xl font-semibold leading-9 my-9 md:my-24 ml-4 md:ml-16 ${josefinSans.className}`}> Were an Organization that champions people and<br/> communities to address climate & environmental issues.</p>
   </section>
   <section className="w-full 3/3 mt-10">
   <p className={`text-3xl font-semibold leading-9 my-2 ml-4 md:ml-16 text-main-yellow mb-10 ${josefinSans.className}`}>Our Principles</p>
