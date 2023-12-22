@@ -38,14 +38,14 @@ const Section: React.FC<SectionProps> = ({ title, content, download, link }) => 
   };
 
   return (
-    <section className={`${josefinSans.className} grid grid-cols-2 place-content-between  mx-10 border-t-2 border-b-2 font-semibold`}>
-      <div className=' py-5 text-3xl'>{title}</div>
+    <section className={`${josefinSans.className} grid grid-cols-2 md:place-content-between  mx-10 border-t-2 border-b-2 font-semibold`}>
+      <div className=' py-5 text-lg sm:text-xl md:text-3xl '>{title}</div>
       <button className='grid place-content-end pr-8 pb-5' onClick={toggleDropdown}>
         {isDropdownVisible ? <UpArrow /> : <DownArrow />}
       </button>
       {isDropdownVisible && (
-        <div>
-          <div className={`${playfairDisplay.className} text-md md:text-xl col-span-full pr-20 pl-20 pb-10`}>{content}</div>
+        <div className=''>
+          <div className={`${playfairDisplay.className} text-sm md:text-lg col-span-full pr-2 pl-2 md:pr-20 md:pl-20 pb-10`}>{content}</div>
           <div className={`${josefinSans.className} font-bold pl-20`}>{download}</div>
           <div className={`${josefinSans.className} flex underline font-semibold pl-20 text-main-yellow`}>{link}</div>
         </div>
@@ -56,9 +56,9 @@ const Section: React.FC<SectionProps> = ({ title, content, download, link }) => 
 
 function OurWorkLatestWork() {
   return (
-    <div className='flex flex-col'>
-      <div className='pt-16 pb-10'>
-        <h1 className={`${josefinSans.className} text-darker-yellow text-center text-3xl md:text-5xl font-bold`}>
+    <div className='flex flex-col '>
+      <div className='pt-16 pb-10 border-b-2 mx-10'>
+        <h1 className={`${josefinSans.className} text-darker-yellow text-center text-3xl md:text-5xl font-bold`} >
           OUR LATEST WORK
         </h1>
       </div>
@@ -92,6 +92,7 @@ function OurWorkLatestWork() {
           Full White Paper
         </Link>}
       />
+
     </div>
   );
 }
