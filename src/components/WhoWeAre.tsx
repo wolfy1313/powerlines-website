@@ -8,7 +8,7 @@ const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
 
 function WhoWeAre() {
   return (
-    <section className="min-w-screen max-w-screen">
+    <section className="min-w-screen max-w-screen bg-no-repeat bg-[url('/WhoWeAreBG.svg')] bg-cover">
       <section className="flex flex-row justify-center">
         <section className="font-bold text-2xl md:text-3xl mt-8 md:mt-16">
           <h2 className={`${josefinSans.className}`}>WHO WE ARE</h2>
