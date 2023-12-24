@@ -4,6 +4,7 @@ import WhoWeAre from '@/components/WhoWeAre'
 import TheoryOfChange from '@/components/TheoryOfChange'
 import AboutUs from './AboutUs'
 import React from 'react'
+import Latest from '@/components/Latest'
 
 function HomePage() {
   return (
@@ -20,6 +21,7 @@ function HomePage() {
       {/* Did you know */}
       <DidYouKnow />
       {/* Latest on Powerlines */}
+      <Latest />
     </section>
   )
 }
