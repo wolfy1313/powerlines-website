@@ -7,7 +7,7 @@ const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
 
 function HomeHeader() {
   return (
-    <section className="min-w-screen max-w-screen">
+    <section className="min-w-screen max-w-screen bg-[url('/landing-hero.svg')] bg-cover bg-no-repeat bg-bottom md:h-[750px]">
       {/* Text Container */}
       <section className="flex flex-row justify-center">
         {/* Title Text */}

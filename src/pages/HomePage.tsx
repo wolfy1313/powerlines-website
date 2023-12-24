@@ -4,6 +4,7 @@ import WhoWeAre from '@/components/WhoWeAre'
 import TheoryOfChange from '@/components/TheoryOfChange'
 import AboutUs from './AboutUs'
 import React from 'react'
+import Latest from '@/components/Latest'
 
 function HomePage() {
   return (
@@ -14,12 +15,13 @@ function HomePage() {
       <WhoWeAre />
       {/* Theory of Change */}
       {/* Workaround div inserted to add background without potentially having merge conflict for adding to TheoryOfChange.tsx -JH*/}
-      <div className="bg-no-repeat bg-[url('/ToCBG.svg')] bg-cover">
+      <div className="bg-no-repeat bg-light-yellow bg-cover">
         <TheoryOfChange />
       </div>
       {/* Did you know */}
       <DidYouKnow />
       {/* Latest on Powerlines */}
+      <Latest />
     </section>
   )
 }
