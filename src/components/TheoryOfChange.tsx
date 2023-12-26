@@ -35,7 +35,7 @@ function TheoryOfChange() {
           <section
             className={`flex flex-col justify-center ${playfairDisplay.className} md:flex-row`}
           >
-            <section className="max-w-sm rounded overflow-hidden shadow-lg mx-2 mt-5 mb-5 bg-white flex flex-col h-428 w-400 text-center">
+            <section className="max-w-sm rounded overflow-hidden shadow-2xl mx-2 mt-5 mb-5 bg-white flex flex-col h-428 w-400 text-center">
               <section className="mt-5 h-113 w-140">
                 <Image
                   src="/political-strategy.svg"
@@ -66,7 +66,7 @@ function TheoryOfChange() {
               <section className="text-center mb-5">
                 <Link
                   href="#"
-                  className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-main-yellow bg-main-white border-2 border-main-yellow rounded-2xl"
+                  className={`inline-flex items-center px-3 py-2 text-sm font-medium text-center text-main-yellow bg-main-white border-2 border-main-yellow rounded-2xl ${josefinSans.className}`}
                 >
                   Learn More
                   <svg
@@ -88,7 +88,7 @@ function TheoryOfChange() {
               </section>
             </section>
 
-            <section className="max-w-sm rounded overflow-hidden shadow-lg mx-2 mt-5 mb-5 bg-white flex flex-col h-428 w-400">
+            <section className="max-w-sm rounded overflow-hidden shadow-2xl mx-2 mt-5 mb-5 bg-white flex flex-col h-428 w-400">
               <section className="mt-5 h-113 w-140">
                 <Image
                   src="/model-legislation.svg"
@@ -118,7 +118,7 @@ function TheoryOfChange() {
               <section className="text-center mb-5">
                 <Link
                   href="#"
-                  className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-main-yellow bg-main-white border-2 border-main-yellow rounded-2xl"
+                  className={`inline-flex items-center px-3 py-2 text-sm font-medium text-center text-main-yellow bg-main-white border-2 border-main-yellow rounded-2xl ${josefinSans.className}`}
                 >
                   Learn More
                   <svg
@@ -140,7 +140,7 @@ function TheoryOfChange() {
               </section>
             </section>
 
-            <section className="max-w-sm rounded overflow-hidden shadow-lg mx-2 mt-5 mb-5 bg-white flex flex-col h-428 w-400">
+            <section className="max-w-sm rounded overflow-hidden shadow-2xl mx-2 mt-5 mb-5 bg-white flex flex-col h-428 w-400">
               <section className="mt-5 h-113 w-140">
                 <Image
                   src="/stakeholder-engagement.svg"
@@ -174,7 +174,7 @@ function TheoryOfChange() {
               <section className="text-center mb-5">
                 <Link
                   href="#"
-                  className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-main-yellow bg-main-white border-2 border-main-yellow rounded-2xl"
+                  className={`inline-flex items-center px-3 py-2 text-sm font-medium text-center text-main-yellow bg-main-white border-2 border-main-yellow rounded-2xl ${josefinSans.className}`}
                 >
                   Learn More
                   <svg
