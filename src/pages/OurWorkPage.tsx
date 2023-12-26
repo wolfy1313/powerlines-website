@@ -6,6 +6,7 @@ import OurWorkSolution from '@/components/OurWorkSolution'
 import OurWorkSolutionImage from '@/components/OurWorkSolutionImage'
 import OurWorkProblemHeader from '@/components/OurWorkProblemHeader'
 import OurWorkLatestWork from '@/components/OurWorkLatestWork'
+import OurWorkSolutionHeader from '@/components/OurWorkSolutionHeader'
 import TheoryOfChange from '@/components/TheoryOfChange'
 
 function OurWorkPage() {
@@ -31,6 +32,9 @@ function OurWorkPage() {
 
       {/* {Our Solution Section} */}
       <section className='md:flex max-w-screen px-3 py-3 md:px-10 md:py-10 bg-light-yellow'>
+        <section className='ml-1 md:hidden'>
+          <OurWorkSolutionHeader />
+        </section>
         <section className='px-8 mx-10 pt-8'>
           <OurWorkSolutionImage />
         </section>
