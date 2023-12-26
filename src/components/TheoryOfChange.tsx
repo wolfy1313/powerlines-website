@@ -34,12 +34,12 @@ function TheoryOfChange() {
           {/* Cards */}
           <section className="flex flex-wrap justify-center">
             <section className="max-w-sm rounded overflow-hidden shadow-lg mx-2 mt-5 mb-5 bg-white flex flex-col h-428 w-400">
-              <section className="bg-local-image bg-cover bg-center mt-5 h-113 w-140">
+              <section className="mt-5 h-113 w-140">
                 <Image
-                  src="/politicalStrategyIcon (2).svg"
+                  src="/political-strategy.svg"
                   alt="political strategy icon"
-                  width={113}
-                  height={140}
+                  width={161}
+                  height={170}
                   className="color-yellow md:mt-3 mx-auto"
                 />
               </section>
@@ -79,12 +79,12 @@ function TheoryOfChange() {
             </section>
 
             <section className="max-w-sm rounded overflow-hidden shadow-lg mx-2 mt-5 mb-5 bg-white flex flex-col h-428 w-400">
-              <section className="bg-local-image bg-cover bg-center mt-5 h-113 w-140">
+              <section className="mt-5 h-113 w-140">
                 <Image
-                  src="/modelLegislationIcon.svg"
+                  src="/model-legislation.svg"
                   alt="model legislation icon"
-                  width={140}
-                  height={113}
+                  width={161}
+                  height={170}
                   className="color-yellow md:mt-3 mx-auto"
                 />
               </section>
@@ -123,12 +123,12 @@ function TheoryOfChange() {
             </section>
 
             <section className="max-w-sm rounded overflow-hidden shadow-lg mx-2 mt-5 mb-5 bg-white flex flex-col h-428 w-400">
-              <section className="bg-local-image bg-cover bg-center mt-5 h-113 w-140">
+              <section className="mt-5 h-113 w-140">
                 <Image
-                  src="/stakeholderEngagementIcon.svg"
+                  src="/stakeholder-engagement.svg"
                   alt="stakeholder engagement icon"
-                  width={140}
-                  height={113}
+                  width={161}
+                  height={170}
                   className="color-yellow md:mt-3 mx-auto"
                 />
               </section>
