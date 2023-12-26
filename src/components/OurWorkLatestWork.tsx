@@ -38,7 +38,7 @@ const Section: React.FC<SectionProps> = ({ title, content, download, link }) => 
   };
 
   return (
-    <section className={`${josefinSans.className} grid grid-cols-3 md:place-content-between mx-10 border-t-2 border-b-2 font-medium`}>
+    <section className={`${josefinSans.className} cursor-pointer grid grid-cols-3 md:place-content-between mx-10 border-t-2 border-b-2 font-medium`} onClick={toggleDropdown}>
       <div className=' py-5 text-lg sm:text-xl md:text-3xl col-span-2'>{title}</div>
       <button className='grid place-content-end pr-8 pb-5 col-start-3' onClick={toggleDropdown}>
         {isDropdownVisible ? <UpArrow /> : <DownArrow />}
