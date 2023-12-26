@@ -52,8 +52,14 @@ function TheoryOfChange() {
                   Political Strategy
                 </section>
                 <ul className="list-inside text-black-400 text-base p-5 pl-10">
-                  <li>&#10003; Appoints Champions</li>
-                  <li className="text-left">&#10003; Elects Champions</li>
+                  <li className="flex flex-row">
+                    <Image src="/checkmark.svg" height={20} width={20} alt="" />
+                    Appoints Champions
+                  </li>
+                  <li className="flex flex-row text-left">
+                    <Image src="/checkmark.svg" height={20} width={20} alt="" />{' '}
+                    Elects Champions
+                  </li>
                 </ul>
               </section>
 
@@ -99,8 +105,14 @@ function TheoryOfChange() {
                   Model Legislation
                 </section>
                 <ul className="list-inside text-black-400 text-base p-5">
-                  <li>&#10003; Passes Legislation</li>
-                  <li>&#10003; Lorem Ipsum</li>
+                  <li className="flex flex-row">
+                    <Image src="/checkmark.svg" height={20} width={20} alt="" />{' '}
+                    Passes Legislation
+                  </li>
+                  <li className="flex flex-row">
+                    <Image src="/checkmark.svg" height={20} width={20} alt="" />{' '}
+                    Lorem Ipsum
+                  </li>
                 </ul>
               </section>
               <section className="text-center mb-5">
@@ -145,9 +157,18 @@ function TheoryOfChange() {
                   Stakeholder Engagement
                 </section>
                 <ul className="list-inside text-black-400 text-base p-5">
-                  <li>&#10003; Youth Groups</li>
-                  <li>&#10003; The Public</li>
-                  <li>&#10003; Environmental Justice</li>
+                  <li className="flex flex-row">
+                    <Image src="/checkmark.svg" height={20} width={20} alt="" />{' '}
+                    Youth Groups
+                  </li>
+                  <li className="flex flex-row">
+                    <Image src="/checkmark.svg" height={20} width={20} alt="" />{' '}
+                    The Public
+                  </li>
+                  <li className="flex flex-row">
+                    <Image src="/checkmark.svg" height={20} width={20} alt="" />{' '}
+                    Environmental Justice
+                  </li>
                 </ul>
               </section>
               <section className="text-center mb-5">
