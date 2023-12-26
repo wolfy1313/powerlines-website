@@ -19,10 +19,10 @@ function OurWorkPage() {
 
       {/* {Our Problem Section} */}
       <section className=' flex flex-col-reverse px-3 py-3 md:flex md:flex-row max-w-screen md:px-10 md:py-10'>
-        <section className='flex md:px-7 px-3 items-center md:order-2' >
+        <section className='flex md:px-7 px-3 items-center ' >
           <OurWorkProblem />
         </section>
-        <section className='px-8 mx-10 md:order-3'>
+        <section className='px-8 mx-10 '>
           <OurWorkImage />
         </section>
         <section className='ml-1 md:hidden'>
