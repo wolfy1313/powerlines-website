@@ -37,8 +37,8 @@ function HomeHeader({ scrollToWhoWeAre }: HomeHeaderProps) {
           </h3>
 
           {/* Scroll Button */}
-          <section className="flex flex-row flex-1 justify-center mt-5">
-            <button>
+          <section className="flex-1 justify-center mt-5 hidden md:flex md:flex-row ">
+            <button onClick={scrollToWhoWeAre}>
               <Image
                 height={60}
                 width={60}
