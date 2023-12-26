@@ -5,9 +5,12 @@ import { Josefin_Sans, Playfair_Display } from 'next/font/google'
 const josefinSans = Josefin_Sans({ subsets: ['latin'] })
 const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
 
-function HomeHeader() {
+interface HomeHeaderProps {
+  scrollToWhoWeAre: () => void
+}
+function HomeHeader({ scrollToWhoWeAre }: HomeHeaderProps) {
   return (
-    <section className="min-w-screen max-w-screen pb-2 bg-[url('/landing-hero.svg')] bg-cover bg-no-repeat bg-[center_3rem] md:bg-[center_6rem] md:h-[750px]">
+    <section className="min-w-screen max-w-screen pb-[500px] bg-cover  bg-no-repeat bg-[right_9rem] bg-[url('/home-hero-bg-mobile.svg')]  md:bg-[url('/landing-hero.svg')]   md:bg-[center_7rem] md:h-[900px] md:pb-32 lg:pb-0 xl:bg-[center_7rem] 2xl:bg-[center_6.5rem] ">
       {/* Text Container */}
       <section className="flex flex-row justify-center">
         {/* Title Text */}
