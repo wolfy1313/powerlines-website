@@ -27,14 +27,19 @@ const WhoWeAre = React.forwardRef<HTMLDivElement>((_props, ref) => {
 
       <section className="flex flex-row flex-1 my-auto justify-center">
         <section
-          className={`${playfairDisplay.className} text-sm my-auto ml-5 mt-10 md:text-xl md:tracking-wider md:min-w-fit md:ml-0 min-w-screen`}
+          className={`${playfairDisplay.className} text-sm my-auto px-2  mt-10 md:text-xl md:tracking-wider md:min-w-fit  min-w-screen leading-10`}
         >
           <h3 className={`max-w-screen md:min-w-screen text-center`}>
-            PowerLines is a non-governmental organization that is passionate
-            about restructuring the <br />
-            energy system. We seek to create a world in which clean, affordable,
-            and reliable energy <br />
-            systems contribute to safe, healthy, and vibrant communities.
+            PowerLines is a non-governmental <br className="block md:hidden" />{' '}
+            organization that is passionate about{' '}
+            <br className="block md:hidden" /> restructuring the{' '}
+            <br className="hidden md:block" />
+            energy system. We seek to <br className="block md:hidden" /> create
+            a world in which clean, affordable, and{' '}
+            <br className="block md:hidden" /> reliable energy{' '}
+            <br className="hidden md:block" />
+            systems contribute to safe, <br className="block md:hidden" />{' '}
+            healthy, and vibrant communities.
           </h3>
         </section>
       </section>
