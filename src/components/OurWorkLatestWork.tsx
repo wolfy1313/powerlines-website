@@ -38,14 +38,14 @@ const Section: React.FC<SectionProps> = ({ title, content, download, link }) => 
   };
 
   return (
-    <section className={`${josefinSans.className} grid grid-cols-2 md:place-content-between  mx-10 border-t-2 border-b-2 font-semibold`}>
-      <div className=' py-5 text-lg sm:text-xl md:text-3xl '>{title}</div>
-      <button className='grid place-content-end pr-8 pb-5' onClick={toggleDropdown}>
+    <section className={`${josefinSans.className} grid grid-cols-3 md:place-content-between  mx-10 border-t-2 border-b-2 font-semibold`}>
+      <div className=' py-5 text-lg sm:text-xl md:text-3xl col-start-1'>{title}</div>
+      <button className='grid place-content-end pr-8 pb-5 col-start-3' onClick={toggleDropdown}>
         {isDropdownVisible ? <UpArrow /> : <DownArrow />}
       </button>
       {isDropdownVisible && (
-        <div className=''>
-          <div className={`${playfairDisplay.className} text-sm md:text-lg col-span-full pr-2 pl-2 md:pr-20 md:pl-20 pb-10`}>{content}</div>
+        <div className='col-span-3'>
+          <div className={`${playfairDisplay.className} text-sm md:text-lg pr-2 pl-2 md:pr-20 md:pl-20 pb-10`}>{content}</div>
           <div className={`${josefinSans.className} font-bold pl-20`}>{download}</div>
           <div className={`${josefinSans.className} flex underline font-semibold pl-20 text-main-yellow`}>{link}</div>
         </div>
