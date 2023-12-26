@@ -14,7 +14,7 @@ const DidYouKnow = () => {
 
   return (
     <section
-      className={`flex flex-col items-center justify-around min-w-full min-h-[726px] max-w-screen border-[16px] md:justify-center ${borderColor} bg-white ${josefinSans.className}`}
+      className={`flex flex-col items-center justify-around min-w-full min-h-[526px] max-w-screen border-[16px] md:pb-5 md:justify-center ${borderColor} bg-white ${josefinSans.className}`}
       style={customGradientStyle}
     >
       {/* Yellow faded line at the back */}
@@ -39,7 +39,7 @@ const DidYouKnow = () => {
 
       {/* Card Section */}
       <section
-        className={`z-10 flex flex-row justify-around w-full px-10 md:px-20 md:justify-center md:space-x-8 ${playfairDisplay.className}`}
+        className={`z-10 flex flex-col justify-around w-full px-10 md:px-20 md:justify-center md:space-x-32 ${playfairDisplay.className} md:flex-row`}
       >
         <section className="flex flex-col items-center">
           <Image
