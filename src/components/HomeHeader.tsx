@@ -25,14 +25,14 @@ function HomeHeader({ scrollToWhoWeAre }: HomeHeaderProps) {
       {/* Subtitle Container */}
       <section className="flex flex-row flex-1 justify-center min-w-screen my-auto text-center">
         <section
-          className={`flex flex-col ${playfairDisplay.className} text-sm my-auto ml-5 mt-10 md:text-xl md:tracking-wider md:min-w-screens md:ml-0 min-w-screen`}
+          className={`flex flex-col ${playfairDisplay.className} text-sm text-center my-auto  mt-10 md:text-xl md:tracking-wider md:min-w-screens min-w-screen`}
         >
           <h3 className="max-w-screen  md:min-w-screen ">
             Powerlines is an independent NGO advancing policy innovation and
-            <br />
+            <br className="hidden md:block" />
             thought leadership within the energy community
           </h3>
-          <h3 className="mt-8 md:whitespace-nowrap">
+          <h3 className="mt-8 md:whitespace-nowrap flex flex-row justify-center">
             Together, we can create a movement to change the energy landscape.
           </h3>
 
