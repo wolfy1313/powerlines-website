@@ -33,7 +33,7 @@ function TheoryOfChange() {
 
           {/* Cards */}
           <section className="flex flex-wrap justify-center">
-            <section className="max-w-sm rounded overflow-hidden shadow-lg mx-2 mt-5 mb-5 bg-white flex flex-col h-428 w-400">
+            <section className="max-w-sm rounded overflow-hidden shadow-lg mx-2 mt-5 mb-5 bg-white flex flex-col h-428 w-400 text-center">
               <section className="mt-5 h-113 w-140">
                 <Image
                   src="/political-strategy.svg"
