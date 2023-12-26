@@ -18,7 +18,7 @@ const WhoWeAre = React.forwardRef<HTMLDivElement>((_props, ref) => {
 
       <section className="flex flex-row justify-center">
         <h1
-          className={`text-center font-bold text-5xl ml-auto mr-auto md:text-6xl mt-8 md:mt-16 ${josefinSans.className}`}
+          className={`text-center font-bold text-4xl leading-relaxed ml-auto mr-auto md:text-6xl mt-8 md:mt-16 ${josefinSans.className}`}
         >
           OUR FOCUS IS BRINGING <br />
           <span className="text-main-yellow">POWER</span> TO THE PUBLIC
