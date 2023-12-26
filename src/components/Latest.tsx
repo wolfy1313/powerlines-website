@@ -18,7 +18,7 @@ const Latest = () => {
         {/* Cards */}
 
         {/* Take Action */}
-        <section className="flex-col justify-start text-start rounded-xl bg-white h-96 mx-5 md:mx-0">
+        <section className="flex-col justify-start text-start rounded-xl bg-white h-96 mx-5 border border-gray-200 md:mx-0">
           <div className="relative h-1/2 md:w-full">
             <Image
               src="/latest-image1.svg"
@@ -47,7 +47,7 @@ const Latest = () => {
         </section>
 
         {/* Campaigns */}
-        <section className="flex-col justify-start text-start rounded-xl bg-white h-96 mx-5 md:mx-0">
+        <section className="flex-col justify-start text-start rounded-xl bg-white h-96 mx-5 border border-gray-200 md:mx-0">
           <div className="relative  h-1/2 md:w-full">
             <Image
               src="/latest-image2.svg"
@@ -77,7 +77,7 @@ const Latest = () => {
         </section>
 
         {/* Reports */}
-        <section className="flex-col justify-start text-start rounded-xl bg-white h-96 mx-5 md:mx-0">
+        <section className="flex-col justify-start text-start rounded-xl bg-white h-96 mx-5 border border-gray-200 md:mx-0">
           <div className="relative  h-1/2 md:w-full">
             <Image
               src="/latest-image3.svg"
