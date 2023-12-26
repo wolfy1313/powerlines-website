@@ -39,7 +39,7 @@ const DidYouKnow = () => {
 
       {/* Card Section */}
       <section
-        className={`z-10 flex flex-row justify-around w-full px-10 md:px-20 md:justify-center md:space-x-32 ${playfairDisplay.className}`}
+        className={`z-10 flex flex-col justify-around w-full px-10 md:px-20 md:justify-center md:space-x-32 ${playfairDisplay.className} md:flex-row`}
       >
         <section className="flex flex-col items-center">
           <Image
