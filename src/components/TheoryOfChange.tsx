@@ -32,7 +32,9 @@ function TheoryOfChange() {
           </h2>
 
           {/* Cards */}
-          <section className="flex flex-wrap justify-center">
+          <section
+            className={`flex flex-col justify-center ${playfairDisplay.className} md:flex-row`}
+          >
             <section className="max-w-sm rounded overflow-hidden shadow-lg mx-2 mt-5 mb-5 bg-white flex flex-col h-428 w-400 text-center">
               <section className="mt-5 h-113 w-140">
                 <Image
@@ -44,12 +46,14 @@ function TheoryOfChange() {
                 />
               </section>
               <section className="px-6 py-4 flex-grow">
-                <section className="font-bold text-xl mb-2">
+                <section
+                  className={`font-bold text-xl mb-2 ${josefinSans.className}`}
+                >
                   Political Strategy
                 </section>
-                <ul className="list-inside text-black-400 text-base p-5">
+                <ul className="list-inside text-black-400 text-base p-5 pl-10">
                   <li>&#10003; Appoints Champions</li>
-                  <li>&#10003; Elects Champions</li>
+                  <li className="text-left">&#10003; Elects Champions</li>
                 </ul>
               </section>
 
@@ -89,7 +93,9 @@ function TheoryOfChange() {
                 />
               </section>
               <section className="px-6 py-4 flex-grow">
-                <section className="font-bold text-xl mb-2">
+                <section
+                  className={`font-bold text-xl text-center mb-2 ${josefinSans.className}`}
+                >
                   Model Legislation
                 </section>
                 <ul className="list-inside text-black-400 text-base p-5">
@@ -133,7 +139,9 @@ function TheoryOfChange() {
                 />
               </section>
               <section className="px-6 py-4 flex-grow">
-                <section className="font-bold text-xl mb-2">
+                <section
+                  className={`font-bold text-xl text-center mb-2 ${josefinSans.className}`}
+                >
                   Stakeholder Engagement
                 </section>
                 <ul className="list-inside text-black-400 text-base p-5">
