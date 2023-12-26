@@ -14,7 +14,7 @@ const DidYouKnow = () => {
 
   return (
     <section
-      className={`flex flex-col items-center justify-around min-w-full min-h-[726px] max-w-screen border-[16px] md:justify-center ${borderColor} bg-white ${josefinSans.className}`}
+      className={`flex flex-col items-center justify-around min-w-full min-h-[526px] max-w-screen border-[16px] md:pb-10 md:justify-center ${borderColor} bg-white ${josefinSans.className}`}
       style={customGradientStyle}
     >
       {/* Yellow faded line at the back */}
