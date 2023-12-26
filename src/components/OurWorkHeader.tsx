@@ -9,7 +9,7 @@ function OurWorkHeader() {
   return (
     <section className='min-w-screen max-w-screen'>
       <section >
-        <h1 className={`bg-no-repeat bg-[url('/PageHeroBG.svg')] bg-cover font-bold text-center p-16 text-xl sm:text-2xl md:text-3xl ${josefinSans.className}`}>OUR WORK</h1>
+        <h1 className={`bg-no-repeat bg-[url('/PageHeroBG.svg')] bg-cover font-bold text-center p-16 text-2xl md:text-3xl ${josefinSans.className}`}>OUR WORK</h1>
       </section>
     </section>
   )
