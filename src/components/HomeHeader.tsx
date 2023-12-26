@@ -23,7 +23,7 @@ function HomeHeader({ scrollToWhoWeAre }: HomeHeaderProps) {
       </section>
 
       {/* Subtitle Container */}
-      <section className="flex flex-row flex-1 justify-center min-w-screen my-auto">
+      <section className="flex flex-row flex-1 justify-center min-w-screen my-auto text-center">
         <section
           className={`flex flex-col ${playfairDisplay.className} text-sm my-auto ml-5 mt-10 md:text-xl md:tracking-wider md:min-w-screens md:ml-0 min-w-screen`}
         >
