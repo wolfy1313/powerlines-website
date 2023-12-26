@@ -44,7 +44,7 @@ const Section: React.FC<SectionProps> = ({ title, content, download, link }) => 
         {isDropdownVisible ? <UpArrow /> : <DownArrow />}
       </button>
       {isDropdownVisible && (
-        <div className='col-span-3 pb-8'>
+        <div className='col-span-3 pr-8 pb-8'>
           <div className={`${playfairDisplay.className} text-sm font-normal md:text-lg pr-2 pl-2 md:pr-20 md:pl-20 pb-10`}>{content}</div>
           <div className={`${josefinSans.className} font-bold pl-20`}>{download}</div>
           <div className={`${josefinSans.className} flex underline font-semibold pl-20 text-main-yellow`}>{link}</div>
