@@ -35,7 +35,7 @@ function TheoryOfChange() {
           <section
             className={`flex flex-col justify-center ${playfairDisplay.className} md:flex-row md:w-3/4`}
           >
-            <section className="bg-white shadow-2xl rounded-3xl overflow-hidden mx-2 my-5 flex flex-col h-428 w-400 text-center md:flex-grow md:flex-shrink md:basis-1/3 md: w-600">
+            <section className="bg-white shadow-custom rounded-3xl overflow-hidden mx-2 my-5 flex flex-col h-428 w-400 text-center md:flex-grow md:flex-shrink md:basis-1/3 md: w-600">
               <section className="mt-5 h-113 w-140">
                 <Image
                   src="/political-strategy.svg"
@@ -88,7 +88,7 @@ function TheoryOfChange() {
               </section>
             </section>
 
-            <section className="bg-white shadow-2xl rounded-3xl overflow-hidden mx-2 my-5 flex flex-col h-428 w-400 text-center md:flex-grow md:flex-shrink md:basis-1/3">
+            <section className="bg-white shadow-custom rounded-3xl overflow-hidden mx-2 my-5 flex flex-col h-428 w-400 text-center md:flex-grow md:flex-shrink md:basis-1/3">
               <section className="mt-5 h-113 w-140">
                 <Image
                   src="/model-legislation.svg"
@@ -140,7 +140,7 @@ function TheoryOfChange() {
               </section>
             </section>
 
-            <section className="bg-white shadow-2xl rounded-3xl overflow-hidden mx-2 my-5 flex flex-col h-428 w-400 text-center md:flex-grow md:flex-shrink md:basis-1/3">
+            <section className="bg-white shadow-custom rounded-3xl overflow-hidden mx-2 my-5 flex flex-col h-428 w-400 text-center md:flex-grow md:flex-shrink md:basis-1/3">
               <section className="mt-5 h-113 w-140">
                 <Image
                   src="/stakeholder-engagement.svg"
