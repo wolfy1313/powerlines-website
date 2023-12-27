@@ -25,7 +25,7 @@ const Latest = () => {
               alt=""
               fill
               style={{ objectFit: 'cover' }}
-              className="rounded-lg"
+              className="rounded-t-xl"
             />
           </div>
           <section className="space-y-4 w-72 mt-8 pl-4">
@@ -54,7 +54,7 @@ const Latest = () => {
               alt=""
               fill
               style={{ objectFit: 'cover' }}
-              className="rounded-lg"
+              className="rounded-t-xl"
             />
           </div>
           <section className="space-y-4 w-72 mt-8 pl-4">
@@ -84,7 +84,7 @@ const Latest = () => {
               alt=""
               fill
               style={{ objectFit: 'cover' }}
-              className="rounded-lg"
+              className="rounded-t-xl"
             />
           </div>
           <section className="space-y-4 w-72 mt-8 pl-4">
