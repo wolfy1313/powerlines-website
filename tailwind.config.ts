@@ -32,7 +32,7 @@ const config: Config = {
         overlay: 'rgba(254, 242, 194, 0.50)'
       },
       boxShadow: {
-        custom: '0 2px 10px 0 rgba(0, 0, 0, 0.1)'
+        custom: '0 2px 10px rgba(0, 0, 0, 0.20)'
       }
     }
   },
