@@ -35,7 +35,7 @@ function TheoryOfChange() {
           <section
             className={`flex flex-col justify-center ${playfairDisplay.className} md:flex-row`}
           >
-            <section className="max-w-sm rounded overflow-hidden shadow-2xl mx-2 mt-5 mb-5 bg-white flex flex-col h-428 w-400 text-center">
+            <section className="bg-white shadow-2xl rounded overflow-hidden mx-2 my-5 flex flex-col h-428 w-400 text-center md:flex-grow md:flex-shrink md:basis-1/3">
               <section className="mt-5 h-113 w-140">
                 <Image
                   src="/political-strategy.svg"
@@ -88,7 +88,7 @@ function TheoryOfChange() {
               </section>
             </section>
 
-            <section className="max-w-sm rounded overflow-hidden shadow-2xl mx-2 mt-5 mb-5 bg-white flex flex-col h-428 w-400">
+            <section className="bg-white shadow-2xl rounded overflow-hidden mx-2 my-5 flex flex-col h-428 w-400 text-center md:flex-grow md:flex-shrink md:basis-1/3">
               <section className="mt-5 h-113 w-140">
                 <Image
                   src="/model-legislation.svg"
@@ -140,7 +140,7 @@ function TheoryOfChange() {
               </section>
             </section>
 
-            <section className="max-w-sm rounded overflow-hidden shadow-2xl mx-2 mt-5 mb-5 bg-white flex flex-col h-428 w-400">
+            <section className="bg-white shadow-2xl rounded overflow-hidden mx-2 my-5 flex flex-col h-428 w-400 text-center md:flex-grow md:flex-shrink md:basis-1/3">
               <section className="mt-5 h-113 w-140">
                 <Image
                   src="/stakeholder-engagement.svg"
