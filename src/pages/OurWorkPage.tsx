@@ -4,7 +4,9 @@ import OurWorkProblem from '@/components/OurWorkProblem'
 import OurWorkImage from '@/components/OurWorkImage'
 import OurWorkSolution from '@/components/OurWorkSolution'
 import OurWorkSolutionImage from '@/components/OurWorkSolutionImage'
+import OurWorkProblemHeader from '@/components/OurWorkProblemHeader'
 import OurWorkLatestWork from '@/components/OurWorkLatestWork'
+import OurWorkSolutionHeader from '@/components/OurWorkSolutionHeader'
 import TheoryOfChange from '@/components/TheoryOfChange'
 
 function OurWorkPage() {
@@ -16,21 +18,27 @@ function OurWorkPage() {
       </section>
 
       {/* {Our Problem Section} */}
-      <section className=' flex flex-col-reverse md:flex md:flex-row max-w-screen px-10 py-10'>
-        <section className='flex  px-7 items-center ' >
+      <section className=' flex flex-col-reverse px-3 py-3 md:flex md:flex-row max-w-screen md:px-10 md:py-10'>
+        <section className='flex md:px-7 px-3 items-center ' >
           <OurWorkProblem />
         </section>
         <section className='px-8 mx-10 '>
           <OurWorkImage />
         </section>
+        <section className='ml-1 md:hidden'>
+          <OurWorkProblemHeader />
+        </section>
       </section>
 
       {/* {Our Solution Section} */}
-      <section className='md:flex max-w-screen py-10 px-10 bg-light-yellow'>
-        <section className='px-8 mx-10 '>
+      <section className='md:flex max-w-screen px-3 py-3 md:px-10 md:py-10 bg-light-yellow'>
+        <section className='ml-1 md:hidden'>
+          <OurWorkSolutionHeader />
+        </section>
+        <section className='px-8 mx-10 pt-2'>
           <OurWorkSolutionImage />
         </section>
-        <section className='px-7 flex items-center' >
+        <section className='flex md:px-7 px-3 items-center' >
           <OurWorkSolution />
         </section>
       </section>
