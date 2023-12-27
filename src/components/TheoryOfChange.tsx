@@ -33,9 +33,9 @@ function TheoryOfChange() {
 
           {/* Cards */}
           <section
-            className={`flex flex-col justify-center ${playfairDisplay.className} md:flex-row`}
+            className={`flex flex-col justify-center ${playfairDisplay.className} md:flex-row md:w-3/4`}
           >
-            <section className="bg-white shadow-2xl rounded overflow-hidden mx-2 my-5 flex flex-col h-428 w-400 text-center md:flex-grow md:flex-shrink md:basis-1/3">
+            <section className="bg-white shadow-2xl rounded-xl overflow-hidden mx-2 my-5 flex flex-col h-428 w-400 text-center md:flex-grow md:flex-shrink md:basis-1/3 md: w-600">
               <section className="mt-5 h-113 w-140">
                 <Image
                   src="/political-strategy.svg"
@@ -51,8 +51,8 @@ function TheoryOfChange() {
                 >
                   Political Strategy
                 </section>
-                <ul className="list-inside text-black-400 text-base p-5 pl-10">
-                  <li className="flex flex-row">
+                <ul className="list-inside text-black-400 space-y-4 text-base p-5 pl-10">
+                  <li className="flex flex-row whitespace-nowrap">
                     <Image src="/checkmark.svg" height={20} width={20} alt="" />
                     Appoints Champions
                   </li>
@@ -88,7 +88,7 @@ function TheoryOfChange() {
               </section>
             </section>
 
-            <section className="bg-white shadow-2xl rounded overflow-hidden mx-2 my-5 flex flex-col h-428 w-400 text-center md:flex-grow md:flex-shrink md:basis-1/3">
+            <section className="bg-white shadow-2xl rounded-xl overflow-hidden mx-2 my-5 flex flex-col h-428 w-400 text-center md:flex-grow md:flex-shrink md:basis-1/3">
               <section className="mt-5 h-113 w-140">
                 <Image
                   src="/model-legislation.svg"
@@ -104,7 +104,7 @@ function TheoryOfChange() {
                 >
                   Model Legislation
                 </section>
-                <ul className="list-inside text-black-400 text-base p-5">
+                <ul className="list-inside text-black-400 text-base p-5 space-y-4 pl-10">
                   <li className="flex flex-row">
                     <Image src="/checkmark.svg" height={20} width={20} alt="" />{' '}
                     Passes Legislation
@@ -140,7 +140,7 @@ function TheoryOfChange() {
               </section>
             </section>
 
-            <section className="bg-white shadow-2xl rounded overflow-hidden mx-2 my-5 flex flex-col h-428 w-400 text-center md:flex-grow md:flex-shrink md:basis-1/3">
+            <section className="bg-white shadow-2xl rounded-xl overflow-hidden mx-2 my-5 flex flex-col h-428 w-400 text-center md:flex-grow md:flex-shrink md:basis-1/3">
               <section className="mt-5 h-113 w-140">
                 <Image
                   src="/stakeholder-engagement.svg"
@@ -150,13 +150,13 @@ function TheoryOfChange() {
                   className="color-yellow md:mt-3 mx-auto"
                 />
               </section>
-              <section className="px-6 py-4 flex-grow">
+              <section className="px-1 py-4 flex-grow">
                 <section
-                  className={`font-bold text-xl text-center mb-2 ${josefinSans.className}`}
+                  className={`font-bold text-xl text-center mb-2 whitespace-nowrap ${josefinSans.className}`}
                 >
                   Stakeholder Engagement
                 </section>
-                <ul className="list-inside text-black-400 text-base p-5">
+                <ul className="list-inside text-black-400 text-base p-5 space-y-4 pl-10">
                   <li className="flex flex-row">
                     <Image src="/checkmark.svg" height={20} width={20} alt="" />{' '}
                     Youth Groups
