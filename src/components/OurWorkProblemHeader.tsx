@@ -7,7 +7,7 @@ const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
 function OurWorkProblemHeader() {
   return (
     <div>
-      <section className='flex flex-row mb-10 '>
+      <section className='flex flex-row mb-2 '>
         <section className=''>
           <h2 className='text-darker-yellow font-bold text-xl md:text-2xl pb-6 pt-8'>THE PROBLEM</h2>
         </section>

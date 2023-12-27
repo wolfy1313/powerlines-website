@@ -35,7 +35,7 @@ function OurWorkPage() {
         <section className='ml-1 md:hidden'>
           <OurWorkSolutionHeader />
         </section>
-        <section className='px-8 mx-10 pt-8'>
+        <section className='px-8 mx-10 pt-2'>
           <OurWorkSolutionImage />
         </section>
         <section className='flex md:px-7 px-3 items-center' >
