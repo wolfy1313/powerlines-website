@@ -10,7 +10,7 @@ interface HomeHeaderProps {
 }
 function HomeHeader({ scrollToWhoWeAre }: HomeHeaderProps) {
   return (
-    <section className="min-w-screen max-w-screen pb-[439px] md:bg-cover bg-contain  bg-no-repeat bg-[right_12rem] bg-[url('/home-hero-bg-mobile.svg')]  md:bg-[url('/landing-hero.svg')] md:bg-[center_11rem] md:h-[1300px] md:pb-32 lg:pb-0 ">
+    <section className="min-w-screen max-w-screen pb-[439px] md:bg-cover bg-contain  bg-no-repeat bg-[right_10rem] bg-[url('/home-hero-bg-mobile.svg')]  md:bg-[url('/landing-hero.svg')] md:bg-[center_11rem] md:h-[1300px] md:pb-32 lg:pb-0 ">
       {/* Text Container */}
       <section className="flex flex-row justify-center">
         {/* Title Text */}
