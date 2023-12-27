@@ -66,7 +66,7 @@ function TheoryOfChange() {
               <section className="text-center mb-5">
                 <Link
                   href="#"
-                  className={`inline-flex items-center px-3 py-2 text-sm font-medium text-center text-main-yellow bg-main-white border-2 border-main-yellow rounded-2xl ${josefinSans.className}`}
+                  className={`inline-flex items-center px-3 py-2 text-sm font-bold text-center text-main-yellow bg-main-white border-2 border-main-yellow rounded-2xl ${josefinSans.className}`}
                 >
                   Learn More
                   <svg
@@ -118,7 +118,7 @@ function TheoryOfChange() {
               <section className="text-center mb-5">
                 <Link
                   href="#"
-                  className={`inline-flex items-center px-3 py-2 text-sm font-medium text-center text-main-yellow bg-main-white border-2 border-main-yellow rounded-2xl ${josefinSans.className}`}
+                  className={`inline-flex items-center px-3 py-2 text-sm font-bold text-center text-main-yellow bg-main-white border-2 border-main-yellow rounded-2xl ${josefinSans.className}`}
                 >
                   Learn More
                   <svg
@@ -174,7 +174,7 @@ function TheoryOfChange() {
               <section className="text-center mb-5">
                 <Link
                   href="#"
-                  className={`inline-flex items-center px-3 py-2 text-sm font-medium text-center text-main-yellow bg-main-white border-2 border-main-yellow rounded-2xl ${josefinSans.className}`}
+                  className={`inline-flex items-center px-3 py-2 text-sm font-bold text-center text-main-yellow bg-main-white border-2 border-main-yellow rounded-2xl ${josefinSans.className}`}
                 >
                   Learn More
                   <svg
