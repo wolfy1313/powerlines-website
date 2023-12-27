@@ -12,7 +12,7 @@ const Latest = () => {
       className={`bg-[url('/latest-powerlines-bg.svg')] bg-center bg-cover bg-no-repeat text-center min-w-screen pb-16 ${josefinSans.className} md:pb-10`}
     >
       {/* Header */}
-      <h1 className="font-bold my-12 text-2xl">Latest On Powerlines</h1>
+      <h1 className="font-bold my-12 text-2xl">LATEST ON POWERLINES</h1>
       {/* Cards Container */}
       <section className="flex flex-col justify-center space-y-3 md:space-x-5 md:space-y-0 md:flex-row">
         {/* Cards */}
