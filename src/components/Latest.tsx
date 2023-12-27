@@ -9,7 +9,7 @@ const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
 const Latest = () => {
   return (
     <section
-      className={`bg-[url('/latest-powerlines-bg.svg')] bg-cover bg-no-repeat text-center min-w-screen pb-16 ${josefinSans.className} md:pb-10`}
+      className={`bg-[url('/latest-powerlines-bg.svg')] bg-center bg-cover bg-no-repeat text-center min-w-screen pb-16 ${josefinSans.className} md:pb-10`}
     >
       {/* Header */}
       <h1 className="font-bold my-12 text-2xl">Latest On Powerlines</h1>
