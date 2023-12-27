@@ -32,7 +32,7 @@ function HomeHeader({ scrollToWhoWeAre }: HomeHeaderProps) {
             <br className="hidden md:block" />
             thought leadership within the energy community
           </h3>
-          <h3 className="mt-8 md:whitespace-nowrap flex flex-row justify-center leading-10">
+          <h3 className="mt-7 md:whitespace-nowrap flex flex-row justify-center leading-10">
             Together, we can create a movement to{' '}
             <br className="block md:hidden" /> change the energy landscape.
           </h3>
