@@ -33,7 +33,7 @@ function TheoryOfChange() {
 
           {/* Cards */}
           <section
-            className={`flex flex-col justify-center ${playfairDisplay.className} md:flex-row md:w-3/4`}
+            className={`flex flex-col justify-center w-11/12 ${playfairDisplay.className} md:flex-row md:w-full`}
           >
             <section className="bg-white shadow-custom rounded-3xl overflow-hidden mx-2 my-5 flex flex-col h-428 w-400 text-center md:flex-grow md:flex-shrink md:basis-1/3 md: w-600">
               <section className="mt-5 h-113 w-140">
@@ -51,7 +51,7 @@ function TheoryOfChange() {
                 >
                   Political Strategy
                 </section>
-                <ul className="list-inside text-black-400 space-y-4 text-base p-5 pl-10">
+                <ul className="list-inside text-black-400 space-y-4 text-base p-5 pl-20 md:pl-24">
                   <li className="flex flex-row whitespace-nowrap">
                     <Image src="/checkmark.svg" height={20} width={20} alt="" />
                     Appoints Champions
@@ -104,7 +104,7 @@ function TheoryOfChange() {
                 >
                   Model Legislation
                 </section>
-                <ul className="list-inside text-black-400 text-base p-5 space-y-4 pl-10">
+                <ul className="list-inside text-black-400 text-base p-5 space-y-4 pl-20 md:pl-24">
                   <li className="flex flex-row">
                     <Image src="/checkmark.svg" height={20} width={20} alt="" />{' '}
                     Passes Legislation
@@ -156,7 +156,7 @@ function TheoryOfChange() {
                 >
                   Stakeholder Engagement
                 </section>
-                <ul className="list-inside text-black-400 text-base p-5 space-y-4 pl-10">
+                <ul className="list-inside text-black-400 text-base p-5 space-y-4 pl-20">
                   <li className="flex flex-row">
                     <Image src="/checkmark.svg" height={20} width={20} alt="" />{' '}
                     Youth Groups
