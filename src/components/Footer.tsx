@@ -44,7 +44,7 @@ function Footer() {
 
       {/* Right hand/Bottom side of Footer */}
       <section
-        className={`flex flex-1 flex-col items-center  justify-center  my-auto text-2xl ${josefinSans.className} border-t pt-4 border-t-black md:flex-row lg:border-t-0 lg:border-l lg:border-l-black lg:pt-0`}
+        className={`flex flex-1 flex-col items-center  justify-center  my-auto text-2xl ${josefinSans.className} border-t pt-4 border-t-black md:flex-row md:justify-start lg:border-t-0 lg:border-l lg:border-l-black lg:pt-0`}
       >
         {/* Nav List */}
         <ul className="flex flex-col space-y-3 pt-2 pl-2 text-center md:text-left md:pr-16 lg:pr-0 lg:pt-0 lg:pl-32">
