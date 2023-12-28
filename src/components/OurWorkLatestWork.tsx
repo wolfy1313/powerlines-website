@@ -39,7 +39,7 @@ const Section: React.FC<SectionProps> = ({ title, content, download, link }) => 
   };
 
   return (
-    <section className={`${josefinSans.className} cursor-pointer grid grid-cols-1 md:place-content-between mx-10 border-t-2 border-b-2 font-medium overflow-hidden transition-[max-height] duration-500 ease-in-out ${isDropdownVisible ? "max-h-96" : "max-h-[4.8rem] md:max-h-20"}`} onClick={toggleDropdown}>
+    <section className={`${josefinSans.className} cursor-pointer grid grid-cols-1 md:place-content-between mx-10 border-t-2 border-b-2 font-medium overflow-hidden transition-[max-height] duration-500 ease-in-out ${isDropdownVisible ? "max-h-96" : "max-h-[5.2rem] md:max-h-20"}`} onClick={toggleDropdown}>
       <div className='flex justify-between items-center'>
         <div className=' py-5 text-lg sm:text-xl md:text-2xl col-span-2 max-w-2xl'>{title}</div>
         <button className='grid place-content-end pr-8 pb-5 col-start-3' onClick={toggleDropdown}>
