@@ -66,7 +66,7 @@ function TheoryOfChange() {
               <section className="text-center mb-5">
                 <Link
                   href="#"
-                  className={`inline-flex items-center px-3 py-2 text-sm font-bold text-center text-[#E2B103] bg-main-white border-2 border-main-yellow rounded-2xl ${josefinSans.className}`}
+                  className={`inline-flex items-center my-auto pl-4 pt-2 px-3 py-2 text-sm font-bold text-center text-[#E2B103] bg-main-white border-2 border-main-yellow rounded-2xl ${josefinSans.className}`}
                 >
                   Learn More
                   <Image
@@ -110,7 +110,7 @@ function TheoryOfChange() {
               <section className="text-center mb-5">
                 <Link
                   href="#"
-                  className={`inline-flex items-center px-3 py-2 text-sm font-bold text-center text-[#E2B103] bg-main-white border-2 border-main-yellow rounded-2xl ${josefinSans.className}`}
+                  className={`inline-flex items-center my-auto pl-4 pt-2 px-3 py-2 text-sm font-bold text-center text-[#E2B103] bg-main-white border-2 border-main-yellow rounded-2xl ${josefinSans.className}`}
                 >
                   Learn More
                   <Image
@@ -158,7 +158,7 @@ function TheoryOfChange() {
               <section className="text-center mb-5">
                 <Link
                   href="#"
-                  className={`inline-flex items-center px-3 py-2 text-sm font-bold text-center text-[#E2B103] bg-main-white border-2 border-main-yellow rounded-2xl ${josefinSans.className}`}
+                  className={`inline-flex items-center my-auto pl-4 pt-2 px-3 py-2 text-sm font-bold text-center text-[#E2B103] bg-main-white border-2 border-main-yellow rounded-2xl ${josefinSans.className}`}
                 >
                   Learn More
                   <Image
