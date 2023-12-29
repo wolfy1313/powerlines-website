@@ -14,7 +14,7 @@ function Header() {
   const toggleDropdown = () => setIsDropdownVisible(!isDropdownVisible)
 
   return (
-    <section className="z-10 flex flex-row justify-around max-w-screen bg-main-gray md:pt-[8px] md:px-[100px] md:pb-[4px] md:justify-between">
+    <section className={`z-10 flex flex-row justify-around max-w-screen bg-main-gray md:pt-[8px] md:px-[100px] md:pb-[4px] md:justify-between`}>
       <Link href="/">
         <Image src="/powerlineslogo.svg" width={100} height={100} alt="logo" />
       </Link>
@@ -22,14 +22,15 @@ function Header() {
         <ul
           className={`flex flex-row gap-2.5 font-bold text-sm ${josefinSans.className} my-auto md:py-[12px]`}
         >
-          <li className="pt-1 relative ">
+          <li className={`pt-1 px-2 relative ${isDropdownVisible ? "bg-light-yellow" : "bg-main-gray"} `}>
             <div className="flex flex-row">
-              <button onClick={toggleDropdown}>Our Work</button>
+              <button onClick={toggleDropdown}>OUR WORK</button>
               <Image
                 src="/dropdownarrow.svg"
                 alt="dropdownarrow"
                 height={10}
                 width={10}
+                className='mx-1'
               />
             </div>
             {isDropdownVisible && (
@@ -50,10 +51,10 @@ function Header() {
             )}
           </li>
           <li className="pt-1">
-            <Link href="/about-us">About Us</Link>
+            <Link href="/about-us">ABOUT US</Link>
           </li>
           <li className="flex flex-col justify-center my-auto   bg-main-yellow rounded-full py-1 px-1 md:px-[32px]">
-            <Link href="/contact-us">Contact Us</Link>
+            <Link href="/contact-us">CONTACT US</Link>
           </li>
         </ul>
       </section>
