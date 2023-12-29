@@ -35,8 +35,8 @@ function Header() {
             </div>
             {isDropdownVisible && (
               <ul className="absolute left-0 mt-1 w-40 pl-4 py-4 bg-light-yellow border-l-2 border-l-main-yellow shadow-md space-y-3">
-                <li className="hover:bg-gray-100">
-                  <Link href="/ourWork">Overview</Link>
+                <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
+                  <Link className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`} href="/ourWork">Overview</Link>
                 </li>
                 <li className="">
                   Political Strategy
