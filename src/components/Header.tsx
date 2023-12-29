@@ -35,13 +35,16 @@ function Header() {
             {isDropdownVisible && (
               <ul className="absolute left-0 mt-1 w-40 pl-4 py-4 bg-light-yellow border-l-2 border-l-main-yellow shadow-md space-y-3">
                 <li className="hover:bg-gray-100">
-                  <Link href="/ourWork">Political Strategy</Link>
+                  <Link href="/ourWork">Overview</Link>
                 </li>
-                <li className="hover:bg-gray-100">
-                  <Link href="/ourWork">Model Legislation</Link>
+                <li className="">
+                  Political Strategy
                 </li>
-                <li className="hover:bg-gray-100">
-                  <Link href="/ourWork">Stakeholder Engagement</Link>
+                <li className="">
+                  Model Legislation
+                </li>
+                <li className="">
+                  Stakeholder Engagement
                 </li>
               </ul>
             )}
