@@ -53,14 +53,7 @@ function ContactUs() {
   return (
     <section className="flex flex-col items-center justify-start min-w-screenbg-gray-100 pb-14">
       {/* Header */}
-      <section
-        className="flex items-center justify-center w-full"
-        style={{
-          backgroundImage: "url('/contactushero.svg')",
-          backgroundSize: 'fill',
-          minHeight: '368px'
-        }}
-      >
+      <section className="flex items-center justify-center w-full bg-[url('/contactushero.svg')] min-h-[368px] bg-cover bg-no-repeat">
         <h1
           className={`text-4xl font-bold text-center text-black ${josefinSans.className}`}
         >
