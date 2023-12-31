@@ -15,7 +15,7 @@ function OurTeam() {
         <p className={`text-[20px] text-center font-normal leading-9 mt-14 mb-24 mr-16 ml-16 ${playfairDisplay.className}`}>Our passionate and enthusiastic team ready to change the energy system.</p>
       </section>
     </section>
-    <section className="grid grid-cols-1 md:grid-cols-3 gap-2 justify-items-center mx-auto pt-2 md:pt-3 mb-10 max-w-6xl">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-2 justify-items-center mx-auto pt-2 md:pt-3 mb-10 max-w-6xl">
 
     
     <section className="mb-4 flex-1 ml-2">
