@@ -77,7 +77,7 @@ function OurPrinciples() {
 {/* Card Content */}
 <section className="flex flex-col md:flex-row items-center gap-4 md:gap-4">
     
-    <section className="w-90px h-90px bg-ellipse-yellow rounded-full">
+    <section className="w-90px h-90px bg-ellipse-yellow rounded-full ">
          {/* Column 1 - Yellow Circle with Image */}
          <section className="flex-shrink-0">
     <section className="mt-[18px] mr-[19.1px] mb-[19.1px] ml-[18px]">
@@ -99,9 +99,9 @@ function OurPrinciples() {
 <section  className="flex flex-col md:flex-row items-center gap-4 md:gap-4" >
         {/* Column 1 - Yellow Circle with Image */}
 <section className="flex-shrink-0">
-    <section className="w-90px h-90px bg-ellipse-yellow rounded-full">
-        <section className="mr-[15.8px] mb-[15.8px] ml=[15.8px] mt-[15.8px] ">
-<Image aria-hidden="true" width={58.5} height={58.5}layout="responsive" src="/globePlant.png" alt="plant wrapped around the world" />
+    <section className="w-90px h-90px bg-ellipse-yellow rounded-full flex justify-center items-center overflow-hidden">
+        <section>
+<Image aria-hidden="true" width={58.5} height={58.5} src="/globePlant.png" alt="plant wrapped around the world" />
 </section>
 </section>
 </section>
