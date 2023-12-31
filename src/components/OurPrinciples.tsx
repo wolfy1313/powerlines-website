@@ -29,7 +29,7 @@ function OurPrinciples() {
   <p className={`text-3xl font-semibold leading-9 my-2 ml-4 md:ml-16 text-darker-yellow mb-10 ${josefinSans.className}`}>OUR PRINCIPLES</p>
   
   <section className="flex flex-wrap justify-center">
-  <section className="w-full max-h-*[680px] md:w-[611px] md:h-[379px] p-6 bg-white border border-main-yellow rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
+  <section className="w-full max-h-*[680px] md:w-[611px] md:h-[379px] p-6 bg-white border-2 border-main-yellow rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
 
 {/* Card Content */}
 <section className="flex flex-col md:flex-row items-center gap-4 md:gap-4" >
@@ -51,7 +51,7 @@ function OurPrinciples() {
 
 
 {/* card2 */}
-<section className="w-full max-h-*[680px] md:w-[611px] md:h-[379px] p-6 bg-white border border-main-yellow rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
+<section className="w-full max-h-*[680px] md:w-[611px] md:h-[379px] p-6 bg-white border-2 border-main-yellow rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
 
 {/* Card Content */}
 <section className="flex flex-col md:flex-row items-center gap-4 md:gap-4" >
@@ -72,7 +72,7 @@ function OurPrinciples() {
 <p className={`text-sm font-normal leading-6 mt-[2rem] ${playfairDisplay.className}`}> We appreciate different experiences and viewpoints, approaching things with empathy by listening and engaging in diverse contexts. We support communities by offering resources, amplifying voices, and encouraging inclusive language, especially in technical discussions. We honor the expertise of community leaders and strive for respectful collaboration.</p>
 </section>
 {/* card3 */}
-<section className="w-full max-h-*[680px] md:w-[611px] md:h-[379px] p-6 bg-white border border-main-yellow rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
+<section className="w-full max-h-*[680px] md:w-[611px] md:h-[379px] p-6 bg-white border-2 border-main-yellow rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
 
 {/* Card Content */}
 <section className="flex flex-col md:flex-row items-center gap-4 md:gap-4">
@@ -93,7 +93,7 @@ function OurPrinciples() {
 <p className={`text-sm font-normal leading-6 mt-[2rem] ${playfairDisplay.className}`}>We&apos;re committed to urgent solutions for the climate crisis. Positive change is not just a goal but a reachable reality. Rejecting the status quo, we actively seek alternatives with a nuanced approach, exploring innovative top-down and bottom-uup methods.</p>
 </section>
 {/* card4 */}
-<section className="w-full max-h-*[700px] md:w-[611px] md:h-[379px] p-6 bg-white border border-main-yellow rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
+<section className="w-full max-h-*[700px] md:w-[611px] md:h-[379px] p-6 bg-white border-2 border-main-yellow rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
 
 {/* Card Content */}
 <section  className="flex flex-col md:flex-row items-center gap-4 md:gap-4" >
