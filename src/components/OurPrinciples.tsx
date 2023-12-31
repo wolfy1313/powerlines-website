@@ -23,7 +23,7 @@ function OurPrinciples() {
   </section>
 </section>
 
-  <p className={` text-2xl md:text-3xl font-semibold leading-9 my-9 md:my-24 ml-4 md:ml-16 ${josefinSans.className}`}> Were an Organization that champions people and<br/> communities to address climate & environmental issues.</p>
+  <p className={` text-2xl md:text-3xl font-semibold leading-9 my-9 md:my-24 ml-4 md:ml-16 ${josefinSans.className}`}> We&apos;re an organization that champion people and<br/> communities to address climate & environmental issues.</p>
   </section>
   <section className="w-full 3/3 mt-10">
   <p className={`text-3xl font-semibold leading-9 my-2 ml-4 md:ml-16 text-darker-yellow mb-10 ${josefinSans.className}`}>OUR PRINCIPLES</p>
