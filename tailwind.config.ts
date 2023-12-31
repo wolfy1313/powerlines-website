@@ -29,10 +29,14 @@ const config: Config = {
         'main-gray': '#F7F7F7',
         'darker-yellow': '#E2B100',
         'light-yellow': '#FFF7E0',
+        'border-yellow':'#FFF4CA',
         overlay: 'rgba(254, 242, 194, 0.50)'
       },
       boxShadow: {
         custom: '0 2px 10px rgba(0, 0, 0, 0.20)'
+      },
+      borderWidth:{
+        '20':'20px',
       }
     }
   },

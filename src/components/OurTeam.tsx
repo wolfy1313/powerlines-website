@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 function OurTeam() {
   return (
-    <section className="min-w-screen max-w-screen bg-white">
+    <section className="min-w-screen max-w-screen bg-white border-20 border-border-yellow">
     <section className="flex flex-row justify-center">
       <section className="flex flex-col items-center justify-center">
         <h2 className={`font-bold tracking-wider text-2xl  text-center md:text-3xl mt-8 md:mt-28 text-darker-yellow ${josefinSans.className}`}>
