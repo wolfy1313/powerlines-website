@@ -47,6 +47,7 @@ function OurPrinciples() {
 </section>
 </section>
 <p className={`text-sm font-normal leading-6 mt-[2rem] ${playfairDisplay.className}`}> We appreciate different experiences and viewpoints, approaching things with empathy by listening and engaging in diverse contexts. We support communities by offering resources, amplifying voices, and encouraging inclusive language, especially in technical discussions. We honor the expertise of community leaders and strive for respectful collaboration.</p>
+
 </section>
 
 
