@@ -51,7 +51,7 @@ function TheoryOfChange() {
                 >
                   Political Strategy
                 </section>
-                <ul className="list-inside text-black-400 space-y-4 text-base p-5 pl-20 md:pl-24">
+                <ul className="list-inside text-black-400 space-y-4 text-base p-5 pl-20 md:pl-10 lg:pl-24">
                   <li className="flex flex-row whitespace-nowrap">
                     <Image src="/checkmark.svg" height={20} width={20} alt="" />
                     Appoints Champions
@@ -96,7 +96,7 @@ function TheoryOfChange() {
                 >
                   Model Legislation
                 </section>
-                <ul className="list-inside text-black-400 text-base p-5 space-y-4 pl-20 md:pl-24">
+                <ul className="list-inside text-black-400 text-base p-5 space-y-4 pl-20 md:pl-10 lg:pl-24">
                   <li className="flex flex-row">
                     <Image src="/checkmark.svg" height={20} width={20} alt="" />{' '}
                     Passes Legislation
@@ -140,7 +140,7 @@ function TheoryOfChange() {
                 >
                   Stakeholder Engagement
                 </section>
-                <ul className="list-inside text-black-400 text-base p-5 space-y-4 pl-20">
+                <ul className="list-inside text-black-400 text-base p-5 space-y-4 pl-20 md:pl-10 lg:pl-24">
                   <li className="flex flex-row">
                     <Image src="/checkmark.svg" height={20} width={20} alt="" />{' '}
                     Youth Groups
