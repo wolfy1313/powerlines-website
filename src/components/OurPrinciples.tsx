@@ -6,7 +6,7 @@ const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
 
 function OurPrinciples() {
   return (
-    <section className="min-w-screen max-w-screen">
+    <section className="min-w-screen max-w-screen ">
           <section className="flex flex-wrap"> 
           <section className="flex flex-wrap justify-center md:justify-start gap-4 mt-[-50px] md:mt-[-70px]">
   {/* Container for both images */}

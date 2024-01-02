@@ -8,7 +8,7 @@ import OurTeam from '@/components/OurTeam'
 
 function AboutUs() {
   return (
-    <section className="min-w-screen max-w-screen">
+    <section className="min-w-screen max-w-screen ">
     <section className="flex flex-row justify-center bg-[url('/PageHeroBG.svg')] bg-cover  w-1440 h-320">
       <section className='font-bold text-2xl md:text-3xl  w-517px height-36px lineheight-48px my-40'>
         <h2 className={`${josefinSans.className}` }>ABOUT POWERLINES</h2>
@@ -31,7 +31,7 @@ Text Column  */}
     </section>
   </section>
  </section>
-<section className="bg-[url('/PageHeroBG.svg')] bg-cover">
+<section className="bg-no-repeat bg-[url('/PrinciplesBG.svg')] bg-cover">
     <section className="overlay">
     
     <OurPrinciples/>
