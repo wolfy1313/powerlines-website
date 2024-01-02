@@ -12,26 +12,32 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-          'local-image': 'url("/EllipseIconBG.svg")',
-          'ellipse-yellow': 'url("/EllipseYellow.svg")',
-          'custom-black-opacity': 'rgba(0,0,0,0.40)',
+        'local-image': 'url("/EllipseIconBG.svg")',
+        'ellipse-yellow': 'url("/EllipseYellow.svg")',
+        'custom-black-opacity': 'rgba(0,0,0,0.40)'
       },
-      width:{
-        '90px':'90px',
-        '563px':'563px',
-
+      width: {
+        '90px': '90px',
+        '563px': '563px'
       },
-      height:{
-        '90px':'90px',
-        '125px':'125px',
+      height: {
+        '90px': '90px',
+        '125px': '125px'
       },
       colors: {
         'main-yellow': '#FFC700',
         'main-gray': '#F7F7F7',
         'darker-yellow': '#E2B100',
         'light-yellow': '#FFF7E0',
-        'overlay':'rgba(254, 242, 194, 0.50)',
+        'border-yellow':'#FFF4CA',
+        overlay: 'rgba(254, 242, 194, 0.50)'
       },
+      boxShadow: {
+        custom: '0 2px 10px rgba(0, 0, 0, 0.20)'
+      },
+      borderWidth:{
+        '20':'20px',
+      }
     }
   },
   plugins: []

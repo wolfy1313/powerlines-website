@@ -19,8 +19,8 @@ function AboutUs() {
 Text Column  */}
  <section className="w-full md:w-1/2 flex items-center justify-center h-auto ">
  <section>
-  <h2 className={`text-xl md:text-3xl font-bold mb-4 text-main-yellow ${josefinSans.className}`}>Our Mission</h2>
-<p className={`text-4xl font-semibold leading-9 mb-24 ${josefinSans.className}`}>PowerLines aims to reshape our energy system by accelerating clean energy and equity through utility regulation.</p> <p className={`text-2xl font-normal`}>We seek to create a world in which clean, affordable, and reliable energy systems contribute to safe, healthy, and vibrant communities.</p>
+  <h2 className={`text-xl md:text-3xl font-bold mb-4 text-darker-yellow ${josefinSans.className}`}>Our Mission</h2>
+<p className={`text-4xl font-semibold leading-9 mb-24 ${josefinSans.className}`}>PowerLines aims to reshape our energy system by accelerating clean energy and equity through utility regulation.</p> <p className={`text-2xl font-normal ${playfairDisplay.className}`}>We seek to create a world in which clean, affordable, and reliable energy systems contribute to safe, healthy, and vibrant communities.</p>
 
    </section>
   </section>

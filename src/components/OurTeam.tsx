@@ -6,16 +6,16 @@ import Image from 'next/image'
 
 function OurTeam() {
   return (
-    <section className="min-w-screen max-w-screen bg-white">
+    <section className="min-w-screen max-w-screen bg-white border-20 border-border-yellow">
     <section className="flex flex-row justify-center">
       <section className="flex flex-col items-center justify-center">
-        <h2 className={`font-bold tracking-wider text-2xl  text-center md:text-3xl mt-8 md:mt-28 text-main-yellow ${josefinSans.className}`}>
+        <h2 className={`font-bold tracking-wider text-2xl  text-center md:text-3xl mt-8 md:mt-28 text-darker-yellow ${josefinSans.className}`}>
         OUR TEAM
         </h2>
-        <p className={`text-[20px] text-center font-normal leading-9 mt-14 mb-24 mr-16 ml-16 ${josefinSans.className}`}>Our passionate and enthusiastic team ready to change the energy system.</p>
+        <p className={`text-[20px] text-center font-normal leading-9 mt-14 mb-24 mr-16 ml-16 ${playfairDisplay.className}`}>Our passionate and enthusiastic team ready to change the energy system.</p>
       </section>
     </section>
-    <section className="grid grid-cols-1 md:grid-cols-3 gap-2 justify-items-center mx-auto pt-2 md:pt-3 mb-10 max-w-6xl">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-2 justify-items-center mx-auto pt-2 md:pt-3 mb-10 max-w-6xl">
 
     
     <section className="mb-4 flex-1 ml-2">

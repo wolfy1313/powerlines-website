@@ -23,13 +23,13 @@ function OurPrinciples() {
   </section>
 </section>
 
-  <p className={` text-2xl md:text-3xl font-semibold leading-9 my-9 md:my-24 ml-4 md:ml-16 ${josefinSans.className}`}> Were an Organization that champions people and<br/> communities to address climate & environmental issues.</p>
+  <p className={` text-2xl md:text-3xl font-semibold leading-9 my-9 md:my-24 ml-4 md:ml-16 ${josefinSans.className}`}> We&apos;re an organization that champion people and<br/> communities to address climate & environmental issues.</p>
   </section>
   <section className="w-full 3/3 mt-10">
-  <p className={`text-3xl font-semibold leading-9 my-2 ml-4 md:ml-16 text-main-yellow mb-10 ${josefinSans.className}`}>Our Principles</p>
+  <p className={`text-3xl font-semibold leading-9 my-2 ml-4 md:ml-16 text-darker-yellow mb-10 ${josefinSans.className}`}>OUR PRINCIPLES</p>
   
   <section className="flex flex-wrap justify-center">
-  <section className="w-full max-h-*[680px] md:w-[611px] md:h-[379px] p-6 bg-white border border-main-yellow rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
+  <section className="w-full max-h-*[680px] md:w-[611px] md:h-[379px] p-6 bg-white border-2 border-main-yellow rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
 
 {/* Card Content */}
 <section className="flex flex-col md:flex-row items-center gap-4 md:gap-4" >
@@ -52,7 +52,7 @@ function OurPrinciples() {
 
 
 {/* card2 */}
-<section className="w-full max-h-*[680px] md:w-[611px] md:h-[379px] p-6 bg-white border border-main-yellow rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
+<section className="w-full max-h-*[680px] md:w-[611px] md:h-[379px] p-6 bg-white border-2 border-main-yellow rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
 
 {/* Card Content */}
 <section className="flex flex-col md:flex-row items-center gap-4 md:gap-4" >
@@ -73,12 +73,12 @@ function OurPrinciples() {
 <p className={`text-sm font-normal leading-6 mt-[2rem] ${playfairDisplay.className}`}> We appreciate different experiences and viewpoints, approaching things with empathy by listening and engaging in diverse contexts. We support communities by offering resources, amplifying voices, and encouraging inclusive language, especially in technical discussions. We honor the expertise of community leaders and strive for respectful collaboration.</p>
 </section>
 {/* card3 */}
-<section className="w-full max-h-*[680px] md:w-[611px] md:h-[379px] p-6 bg-white border border-main-yellow rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
+<section className="w-full max-h-*[680px] md:w-[611px] md:h-[379px] p-6 bg-white border-2 border-main-yellow rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
 
 {/* Card Content */}
 <section className="flex flex-col md:flex-row items-center gap-4 md:gap-4">
     
-    <section className="w-90px h-90px bg-ellipse-yellow rounded-full">
+    <section className="w-90px h-90px bg-ellipse-yellow rounded-full ">
          {/* Column 1 - Yellow Circle with Image */}
          <section className="flex-shrink-0">
     <section className="mt-[18px] mr-[19.1px] mb-[19.1px] ml-[18px]">
@@ -94,15 +94,15 @@ function OurPrinciples() {
 <p className={`text-sm font-normal leading-6 mt-[2rem] ${playfairDisplay.className}`}>We&apos;re committed to urgent solutions for the climate crisis. Positive change is not just a goal but a reachable reality. Rejecting the status quo, we actively seek alternatives with a nuanced approach, exploring innovative top-down and bottom-uup methods.</p>
 </section>
 {/* card4 */}
-<section className="w-full max-h-*[700px] md:w-[611px] md:h-[379px] p-6 bg-white border border-main-yellow rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
+<section className="w-full max-h-*[700px] md:w-[611px] md:h-[379px] p-6 bg-white border-2 border-main-yellow rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
 
 {/* Card Content */}
 <section  className="flex flex-col md:flex-row items-center gap-4 md:gap-4" >
         {/* Column 1 - Yellow Circle with Image */}
 <section className="flex-shrink-0">
-    <section className="w-90px h-90px bg-ellipse-yellow rounded-full">
-        <section className="mr-[15.8px] mb-[15.8px] ml=[15.8px] mt-[15.8px] ">
-<Image aria-hidden="true" width={58.5} height={58.5}layout="responsive" src="/globePlant.png" alt="plant wrapped around the world" />
+    <section className="w-90px h-90px bg-ellipse-yellow rounded-full flex justify-center items-center overflow-hidden">
+        <section>
+<Image aria-hidden="true" width={58.5} height={58.5} src="/globePlant.png" alt="plant wrapped around the world" />
 </section>
 </section>
 </section>

@@ -14,7 +14,7 @@ const DidYouKnow = () => {
 
   return (
     <section
-      className={`flex flex-col items-center justify-around min-w-full min-h-[726px] max-w-screen border-[16px] md:justify-center ${borderColor} bg-white ${josefinSans.className}`}
+      className={`flex flex-col items-center justify-around min-w-full min-h-[526px] max-w-screen border-[16px] md:pb-5 md:justify-center ${borderColor} bg-white ${josefinSans.className}`}
       style={customGradientStyle}
     >
       {/* Yellow faded line at the back */}
@@ -25,7 +25,7 @@ const DidYouKnow = () => {
         <h1 className="pb-2 text-2xl font-bold md:text-3xl md:pb-5">
           DID YOU KNOW?
         </h1>
-        <h2 className="text-xl font-bold md:text-2xl">
+        <h2 className="text-xl font-bold leading-loose md:text-2xl">
           Public utilities commissions (PUCs), who regulate utilities in every
           state, are a <br /> critical yet often overlooked piece of the clean
           energy transition.
@@ -39,7 +39,7 @@ const DidYouKnow = () => {
 
       {/* Card Section */}
       <section
-        className={`z-10 flex flex-row justify-around w-full px-10 md:px-20 md:justify-center md:space-x-8 ${playfairDisplay.className}`}
+        className={`z-10 flex flex-col justify-around w-full px-10 space-y-10 pb-20 md:px-20 md:justify-center md:space-x-32 ${playfairDisplay.className} md:flex-row md:space-y-0`}
       >
         <section className="flex flex-col items-center">
           <Image

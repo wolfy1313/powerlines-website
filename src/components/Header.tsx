@@ -14,7 +14,7 @@ function Header() {
   const toggleDropdown = () => setIsDropdownVisible(!isDropdownVisible)
 
   return (
-    <section className="z-10 flex flex-row justify-around max-w-screen bg-main-gray md:pt-[8px] md:px-[100px] md:pb-[4px] md:justify-between">
+    <section className={`z-10 flex flex-row justify-around max-w-screen bg-main-gray md:pt-[8px] md:px-[100px] md:pb-[4px] md:justify-between`}>
       <Link href="/">
         <Image src="/powerlineslogo.svg" width={100} height={100} alt="logo" />
       </Link>
@@ -22,35 +22,39 @@ function Header() {
         <ul
           className={`flex flex-row gap-2.5 font-bold text-sm ${josefinSans.className} my-auto md:py-[12px]`}
         >
-          <li className="pt-1 relative ">
+          <li className={`pt-1 px-2 relative ${isDropdownVisible ? "bg-light-yellow" : "bg-main-gray"} `}>
             <div className="flex flex-row">
-              <button onClick={toggleDropdown}>Our Work</button>
+              <button onClick={toggleDropdown}>OUR WORK</button>
               <Image
                 src="/dropdownarrow.svg"
                 alt="dropdownarrow"
                 height={10}
                 width={10}
+                className='mx-1'
               />
             </div>
             {isDropdownVisible && (
-              <ul className="absolute left-0 mt-1 w-40 bg-light-yellow border-l-2 border-l-main-yellow shadow-md space-y-3">
-                <li className="hover:bg-gray-100">
-                  <Link href="/ourWork">Political Strategy</Link>
+              <ul className="absolute left-0 mt-1 w-40 pl-4 py-4 bg-light-yellow border-l-2 border-l-main-yellow shadow-md space-y-3">
+                <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
+                  <Link className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`} href="/ourWork">Overview</Link>
                 </li>
-                <li className="hover:bg-gray-100">
-                  <Link href="/ourWork">Model Legislation</Link>
+                <li className="">
+                  Political Strategy
                 </li>
-                <li className="hover:bg-gray-100">
-                  <Link href="/ourWork">Stakeholder Engagement</Link>
+                <li className="">
+                  Model Legislation
+                </li>
+                <li className="">
+                  Stakeholder Engagement
                 </li>
               </ul>
             )}
           </li>
           <li className="pt-1">
-            <Link href="/about-us">About Us</Link>
+            <Link href="/about-us">ABOUT US</Link>
           </li>
           <li className="flex flex-col justify-center my-auto   bg-main-yellow rounded-full py-1 px-1 md:px-[32px]">
-            <Link href="/contact-us">Contact Us</Link>
+            <Link href="/contact-us">CONTACT US</Link>
           </li>
         </ul>
       </section>
