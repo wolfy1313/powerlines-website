@@ -38,8 +38,8 @@ function Header() {
                 <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
                   <Link className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`} href="/ourWork">Overview</Link>
                 </li>
-                <li className="">
-                  Political Strategy
+                <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
+                  <Link className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`} href="/political-strategy">Political Strategy</Link>
                 </li>
                 <li className="">
                   Model Legislation
