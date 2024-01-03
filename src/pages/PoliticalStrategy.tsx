@@ -1,8 +1,11 @@
 import React from 'react'
+import TOCHeaderComponent from '@/components/TOCHeaderComponent'
 
 function PoliticalStrategy() {
   return (
-    <div>PoliticalStrategy</div>
+    <div>
+      <TOCHeaderComponent header="THEORY OF CHANGE" pageTitle='POLITICAL STRATEGY' />
+    </div>
   )
 }
 
