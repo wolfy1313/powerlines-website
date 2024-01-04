@@ -38,7 +38,6 @@ Text Column  */}
  </section>
 <section className="bg-no-repeat bg-[url('/PrinciplesBG.svg')] bg-cover">
     <section className="overlay">
-    
     <OurPrinciples/>
  
     <OurTeam/>

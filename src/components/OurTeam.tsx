@@ -88,7 +88,7 @@ function OurTeam() {
     </section>
     </section>
      {/* name2 */}
-      
+  
    <section className=" flex-1 mb-4 w-full sm:min-w-[165px]  md:max-w-[295px] xl:max-w-sm  min-h-[197px] sm:h-auto md:h-[352px] overflow-hidden bg-yellow-100 bg-opacity-50 sm:mx-2">
     <section className="relative h-full bg-no-repeat bg-contain bg-center bg-[url('/femaleTransparent.png')]">
     <section className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 p-1 md:p-2">
