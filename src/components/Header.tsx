@@ -45,7 +45,8 @@ function Header() {
                   Model Legislation
                 </li>
                 <li className="">
-                  Stakeholder Engagement
+                <Link className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`} href="/community-engagement">
+                  Stakeholder Engagement</Link>
                 </li>
               </ul>
             )}
