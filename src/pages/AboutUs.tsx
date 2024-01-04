@@ -8,7 +8,7 @@ import OurTeam from '@/components/OurTeam'
 
 function AboutUs() {
   return (
-    <section className="min-w-screen max-w-screen ">
+    <section className="min-w-full max-w-full mx-auto ">
     <section className="flex justify-center items-center bg-[url('/PageHeroBG.svg')] bg-cover bg-no-repeat bg-center w-full min-w-full h-80">
   <h2 className={`font-bold text-2xl md:text-3xl ${josefinSans.className} my-10`}>
     ABOUT POWERLINES
