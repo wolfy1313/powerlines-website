@@ -7,11 +7,17 @@ export interface ContactUsData {
 
 export interface OutcomeCardProps {
   image: string;
-  text?: string
+  text?: string;
+  alt: string;
+  height: string;
+  width: string
 }
 
 export interface TOCOutcomesComponentProps {
   header: string;
   content: string;
   OutcomesCards: OutcomeCardProps[]
+}
+
+export interface OurPrinciplesComponentProps extends OutcomeCardProps {
 }

@@ -7,15 +7,24 @@ import { OutcomeCardProps, TOCOutcomesComponentProps } from "@/types/global";
 
 const OutcomeCardsData: OutcomeCardProps[] = [{
   image: "/OutcomeMailImage.svg",
-  text: "Outcome 1"
+  text: "Outcome 1",
+  alt: "mailbox icon",
+  height: "h-20",
+  width: "w-20"
 },
 {
   image: "/OutcomeMailImage.svg",
-  text: "Outcome 2"
+  text: "Outcome 2",
+  alt: "mailbox icon",
+  height: "h-20",
+  width: "w-20"
 },
 {
   image: "/OutcomeMailImage.svg",
-  text: "Outcome 3"
+  text: "Outcome 3",
+  alt: "mailbox icon",
+  height: "h-20",
+  width: "w-20"
 },
 ]
 
