@@ -4,3 +4,14 @@ export interface ContactUsData {
   email: string
   message: string
 }
+
+export interface OutcomeCardProps {
+  image: string;
+  text?: string
+}
+
+export interface TOCOutcomesComponentProps {
+  header: string;
+  content: string;
+  OutcomesCards: OutcomeCardProps[]
+}
