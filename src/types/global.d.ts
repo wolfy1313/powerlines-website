@@ -21,3 +21,8 @@ export interface TOCOutcomesComponentProps {
 
 export interface OurPrinciplesComponentProps extends OutcomeCardProps {
 }
+
+export interface TrunctableTextProps {
+  text: string;
+  maxLength: number; // Maximum number of characters to display when truncated
+}
