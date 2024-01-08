@@ -12,7 +12,7 @@ const TrunctableText: React.FC<TrunctableTextProps> = ({ text, maxLength }) => {
     return (
         <div className="overflow-hidden">
             <p className={` text-black text-xl font-normal leading-9 custom-truncate`}>{body}</p>
-            <button onClick={() => setIsTruncated(!isTruncated)} className={`text-darker-yellow text-base font-normal leading-8`}>
+            <button onClick={() => setIsTruncated(!isTruncated)} className={`mb-4 text-darker-yellow text-base font-normal leading-8`}>
                 {isTruncated ? 'Show More' : 'Show Less'}
             </button>
         </div>
