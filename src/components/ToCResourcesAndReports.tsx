@@ -36,13 +36,13 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({ Resourc
                                 {isClient && (
                                     <TrunctableText text={ResourcesAndReportsCard.body} maxLength={150} />
                                 )}
-                                <h6 className={`mb-6 text-black text-sm md:text-base tracking-tighter font-normal leading-8 ${josefinSans.className}`}>{ResourcesAndReportsCard.cta}</h6>
+                                <h6 className={`mb-2 text-black text-sm md:text-base tracking-tighter font-normal leading-8 ${josefinSans.className}`}>{ResourcesAndReportsCard.cta}</h6>
                                 <div className="flex">
                                     <section className="relative h-100 w-100 flex flex-row items-center mr-4">
                                         <Image width={20} height={20} src={ResourcesAndReportsCard.downloadIcon} alt="Download Icon" />
                                     </section>
                                     <section className="flex flex-row items-center relative">
-                                        <a href={ResourcesAndReportsCard.downloadFile} download={ResourcesAndReportsCard.downloadFileTitle} className="text-darker-yellow font-semibold leading-normal">
+                                        <a href={ResourcesAndReportsCard.downloadFile} download={ResourcesAndReportsCard.downloadFileTitle} className="text-darker-yellow underline font-semibold leading-normal">
                                             {ResourcesAndReportsCard.downloadFileTitle}
                                         </a>
                                     </section>
