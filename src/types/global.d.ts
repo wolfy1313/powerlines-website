@@ -42,9 +42,10 @@ export interface TOCResourcesAndReportsProps {
   ResourcesAndReportsCards: ResourcesAndReportsCardsProps[]
 }
 
+export type bulletPoint = [string, string]
 export interface ToCBodyListProps {
   header: string
   subheader: string
-  bulletPoints: string[]
+  bulletPoints: bulletPoint[]
   footer: string
 }
