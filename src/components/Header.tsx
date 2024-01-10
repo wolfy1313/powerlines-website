@@ -41,7 +41,7 @@ function Header() {
       </Link>
       {isMobile ? (
         // Render hamburger menu for mobile screens
-        <div className="flex items-center cursor-pointer" onClick={toggleDropdown}>
+        <div className="flex items-center cursor-pointer" onClick={toggleBurger}>
           <button onClick={toggleBurger}></button>
           <Image
             src="/hamburger_menu.svg"
@@ -49,7 +49,13 @@ function Header() {
             width={30}
             height={30} />
           {isMobile && isHamburgerVisible && (
-            <section className="flex flex-col justify-center ">
+            <section className="flex flex-col justify-center h-screen w-screen ">
+              <button onClick={() => { toggleBurger; toggleDropdown }}></button>
+              <Image
+                src="/arrowup.svg"
+                alt="menu-icon"
+                width={30}
+                height={30} />
               <ul
                 className={`flex flex-row gap-2.5 font-bold text-sm ${josefinSans.className} my-auto md:py-[12px]`}
               >
@@ -64,7 +70,7 @@ function Header() {
                       className='mx-1'
                     />
                   </div>
-                  {isDropdownVisible && (
+                  {isDropdownVisible && isMobile && !isHamburgerVisible && (
                     <ul className="absolute left-0 mt-1 w-40 pl-4 py-4 bg-light-yellow border-l-2 border-l-main-yellow shadow-md space-y-3">
                       <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
                         <Link className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`} href="/ourWork">Overview</Link>
@@ -141,23 +147,25 @@ function Header() {
         </section>
       )}
       {isMobile && isDropdownVisible && (
-        <ul className="absolute top-[60px] left-0 mt-1 w-full bg-white border-l-2 border-l-main-yellow shadow-md">
-          <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
-            <Link className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`} href="/ourWork">Overview</Link>
-          </li>
-          <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
-            <Link className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`} href="/political-strategy">Political Strategy</Link>
-          </li>
-          <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
-            Model Legislation
-          </li>
-          <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
-            <section className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`}>
-              <Link className="" href="/community-engagement">
-                Stakeholder Engagement</Link>
-            </section>
-          </li>
-        </ul>
+        <div className=' '>
+          <ul className="absolute top-[60px] left-0 mt-1 w-full bg-white border-l-2 border-l-main-yellow shadow-md">
+            <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
+              <Link className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`} href="/ourWork">Overview</Link>
+            </li>
+            <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
+              <Link className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`} href="/political-strategy">Political Strategy</Link>
+            </li>
+            <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
+              Model Legislation
+            </li>
+            <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
+              <section className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`}>
+                <Link className="" href="/community-engagement">
+                  Stakeholder Engagement</Link>
+              </section>
+            </li>
+          </ul>
+        </div>
       )}
     </section>
 
