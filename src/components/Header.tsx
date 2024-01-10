@@ -142,7 +142,14 @@ function Header() {
                         </Link>
                       </li>
                       <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
-                        Model Legislation
+                        <Link
+                          className={`${
+                            isDropdownVisible ? 'hover:pl-1' : 'pl-0'
+                          }`}
+                          href="/model-legislation"
+                        >
+                          Model Legislation
+                        </Link>
                       </li>
                       <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
                         <section
@@ -208,7 +215,12 @@ function Header() {
                     </Link>
                   </li>
                   <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
-                    Model Legislation
+                    <Link
+                      className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
+                      href="/model-legislation"
+                    >
+                      Model Legislation
+                    </Link>
                   </li>
                   <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
                     <section
