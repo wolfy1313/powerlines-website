@@ -41,23 +41,27 @@ function Header() {
       </Link>
       {isMobile ? (
         // Render hamburger menu for mobile screens
-        <div className="flex items-center cursor-pointer" onClick={toggleBurger}>
-          <button onClick={toggleBurger}></button>
-          <Image
-            src="/hamburger_menu.svg"
-            alt="menu-icon"
-            width={30}
-            height={30} />
+        <div className="flex items-center cursor-pointer">
+          <button onClick={toggleBurger}>
+            <Image
+              src="/hamburger_menu.svg"
+              alt="menu-icon"
+              width={30}
+              height={30} /></button>
           {isMobile && isHamburgerVisible && (
-            <section className="flex flex-col justify-center h-screen w-screen ">
-              <button onClick={() => { toggleBurger; toggleDropdown }}></button>
-              <Image
-                src="/arrowup.svg"
-                alt="menu-icon"
-                width={30}
-                height={30} />
+            <section className="flex flex-col h-screen w-screen ">
+              <div className='flex align-top justify-end p-4 cursor-pointer'>
+                <button onClick={toggleBurger}>
+                  <Image
+                    src="/MobileXButton.svg"
+                    alt="menu-icon"
+                    width={30}
+                    height={30}
+                  // className='flex '
+                  /></button>
+              </div>
               <ul
-                className={`flex flex-row gap-2.5 font-bold text-sm ${josefinSans.className} my-auto md:py-[12px]`}
+                className={`flex flex-col gap-2.5 items-center font-bold text-sm ${josefinSans.className} my-auto md:py-[12px]`}
               >
                 <li className={`pt-1 px-2 relative ${isDropdownVisible ? "bg-light-yellow" : "bg-main-gray"} `}>
                   <div className="flex flex-row">
