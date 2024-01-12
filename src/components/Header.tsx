@@ -7,36 +7,7 @@ import { useState } from 'react'
 const josefinSans = Josefin_Sans({ subsets: ['latin'] })
 
 function Header() {
-  //create hamburger button and "X" button
-  const HamburgerButton = () => {
-    return <>
-      <div className="flex items-center cursor-pointer">
-        <button onClick={toggleBurger}>
-          <Image
-            src="/hamburger_menu.svg"
-            alt="menu-icon"
-            width={30}
-            height={30}
-          />
-        </button>
-      </div>
-    </>
-  }
 
-  const XButton = () => {
-    return <>
-      <div className='flex align-top justify-end p-4 cursor-pointer'>
-        <button onClick={toggleBurger}>
-          <Image
-            src="/MobileXButton.svg"
-            alt="menu-icon"
-            width={30}
-            height={30}
-          />
-        </button>
-      </div>
-    </>
-  }
   // State to handle dropdown visibility
   const [isDropdownVisible, setIsDropdownVisible] = useState<boolean>(false)
   // State to handle mobile hamburger menu
@@ -98,6 +69,11 @@ function Header() {
               <ul
                 className={`flex flex-col gap-2.5 items-center font-bold text-sm ${josefinSans.className} my-auto md:py-[12px]`}
               >
+                <li className="pt-1">
+                  <button onClick={toggleBurger}>
+                    <Link href="/">HOME</Link>
+                  </button>
+                </li>
                 <li className={`pt-1 px-2 relative ${isDropdownVisible ? "bg-light-yellow" : "bg-main-gray"} `}>
                   <div className="flex flex-row">
                     <button onClick={toggleDropdown}>OUR WORK</button>
@@ -130,10 +106,14 @@ function Header() {
                   )}
                 </li>
                 <li className="pt-1">
-                  <Link href="/about-us">ABOUT US</Link>
+                  <button onClick={toggleBurger}>
+                    <Link href="/about-us">ABOUT US</Link>
+                  </button>
                 </li>
                 <li className="flex flex-col justify-center my-auto   bg-main-yellow rounded-full py-1 px-1 md:px-[32px]">
-                  <Link href="/contact-us">CONTACT US</Link>
+                  <button onClick={toggleBurger}>
+                    <Link href="/contact-us">CONTACT US</Link>
+                  </button>
                 </li>
               </ul>
             </section>
