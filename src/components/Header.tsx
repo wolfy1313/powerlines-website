@@ -7,6 +7,36 @@ import { useState } from 'react'
 const josefinSans = Josefin_Sans({ subsets: ['latin'] })
 
 function Header() {
+  //create hamburger button and "X" button
+  const HamburgerButton = () => {
+    return <>
+      <div className="flex items-center cursor-pointer">
+        <button onClick={toggleBurger}>
+          <Image
+            src="/hamburger_menu.svg"
+            alt="menu-icon"
+            width={30}
+            height={30}
+          />
+        </button>
+      </div>
+    </>
+  }
+
+  const XButton = () => {
+    return <>
+      <div className='flex align-top justify-end p-4 cursor-pointer'>
+        <button onClick={toggleBurger}>
+          <Image
+            src="/MobileXButton.svg"
+            alt="menu-icon"
+            width={30}
+            height={30}
+          />
+        </button>
+      </div>
+    </>
+  }
   // State to handle dropdown visibility
   const [isDropdownVisible, setIsDropdownVisible] = useState<boolean>(false)
   // State to handle mobile hamburger menu
@@ -47,7 +77,9 @@ function Header() {
               src="/hamburger_menu.svg"
               alt="menu-icon"
               width={30}
-              height={30} /></button>
+              height={30}
+            />
+          </button>
           {isMobile && isHamburgerVisible && (
             <section className="flex flex-col h-screen w-screen ">
               <div className='flex align-top justify-end p-4 cursor-pointer'>
