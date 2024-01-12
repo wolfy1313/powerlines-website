@@ -72,15 +72,18 @@ function Header() {
       {isMobile ? (
         // Render hamburger menu for mobile screens
         <div className="flex items-center cursor-pointer">
-          <button onClick={toggleBurger}>
-            <Image
-              src="/hamburger_menu.svg"
-              alt="menu-icon"
-              width={30}
-              height={30}
-            />
-          </button>
-          {isMobile && isHamburgerVisible && (
+          {isMobile && !isHamburgerVisible ? (
+            <>
+              <button onClick={toggleBurger}>
+                <Image
+                  src="/hamburger_menu.svg"
+                  alt="menu-icon"
+                  width={30}
+                  height={30}
+                />
+              </button>
+            </>
+          ) : (
             <section className="flex flex-col h-screen w-screen ">
               <div className='flex align-top justify-end p-4 cursor-pointer'>
                 <button onClick={toggleBurger}>
