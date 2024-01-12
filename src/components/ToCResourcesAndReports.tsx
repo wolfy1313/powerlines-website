@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react'
 
 import { Josefin_Sans, Playfair_Display } from 'next/font/google'
+
 import Image from 'next/image'
 import TrunctableText from './TrunctableText'
 import Link from 'next/link'
+
 
 import {
   TOCResourcesAndReportsProps,
   ResourcesAndReportsCardsProps
 } from '@/types/global'
+
 const josefinSans = Josefin_Sans({ subsets: ['latin'] })
 const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
 
@@ -16,6 +19,7 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
   ResourcesAndReportsCards
 }) => {
   const [isClient, setIsClient] = useState(false)
+
 
   useEffect(() => {
     // Once the component mounts, update the state to indicate it's on the client
