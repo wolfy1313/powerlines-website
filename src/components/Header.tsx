@@ -67,7 +67,7 @@ function Header() {
                   /></button>
               </div>
               <ul
-                className={`flex flex-col gap-2.5 items-center font-bold text-sm ${josefinSans.className} my-auto md:py-[12px]`}
+                className={`flex flex-col gap-20 items-center font-bold text-2xl ${josefinSans.className} my-auto md:py-[12px] pb-48`}
               >
                 <li className="pt-1">
                   <button onClick={toggleBurger}>
@@ -80,9 +80,9 @@ function Header() {
                     <Image
                       src="/dropdownarrow.svg"
                       alt="dropdownarrow"
-                      height={10}
-                      width={10}
-                      className='mx-1'
+                      height={20}
+                      width={20}
+                      className='mx-3'
                     />
                   </div>
                   {isDropdownVisible && isMobile && !isHamburgerVisible && (
@@ -110,7 +110,7 @@ function Header() {
                     <Link href="/about-us">ABOUT US</Link>
                   </button>
                 </li>
-                <li className="flex flex-col justify-center my-auto   bg-main-yellow rounded-full py-1 px-1 md:px-[32px]">
+                <li className="flex flex-col justify-center my-auto py-1 px-1 md:px-[32px]">
                   <button onClick={toggleBurger}>
                     <Link href="/contact-us">CONTACT US</Link>
                   </button>
