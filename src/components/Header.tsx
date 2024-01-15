@@ -86,24 +86,32 @@ function Header() {
                       onClick={toggleDropdown}
                     />
                   </div>
-                  {isDropdownVisible && isMobile && !isHamburgerVisible && (
-                    <ul className=" left-0 mt-1 w-40 pl-4 py-4 bg-light-yellow border-l-2 border-l-main-yellow shadow-md space-y-3">
-                      <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
-                        <Link className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"} `} href="/ourWork">Overview</Link>
-                      </li>
-                      <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
-                        <Link className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`} href="/political-strategy">Political Strategy</Link>
-                      </li>
-                      <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
-                        Model Legislation
-                      </li>
-                      <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
-                        <section className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`}>
-                          <Link className="" href="/community-engagement">
-                            Stakeholder Engagement</Link>
-                        </section>
-                      </li>
-                    </ul>
+                  {isMobile && isDropdownVisible && (
+                    <div className=' '>
+                      <ul className="absolute top-[60px] left-0 mt-1 w-full bg-white border-l-2 border-l-main-yellow shadow-md">
+                        <button onClick={() => { toggleDropdown(); toggleBurger() }}>
+                          <Link className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"} `} href="/ourWork">Overview</Link>
+                        </button>
+                        <button onClick={() => { toggleDropdown(); toggleBurger() }}>
+                          <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
+                            <Link className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`} href="/political-strategy">Political Strategy</Link>
+                          </li>
+                        </button>
+                        <button onClick={() => { toggleDropdown(); toggleBurger() }}>
+                          <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
+                            Model Legislation
+                          </li>
+                        </button>
+                        <button onClick={() => { toggleDropdown(); toggleBurger() }}>
+                          <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
+                            <section className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`}>
+                              <Link className="" href="/community-engagement">
+                                Stakeholder Engagement</Link>
+                            </section>
+                          </li>
+                        </button>
+                      </ul>
+                    </div>
                   )}
                 </li>
                 <li className="pt-1">
@@ -165,33 +173,6 @@ function Header() {
             </li>
           </ul>
         </section>
-      )}
-      {isMobile && isDropdownVisible && (
-        <div className=' '>
-          <ul className="absolute top-[60px] left-0 mt-1 w-full bg-white border-l-2 border-l-main-yellow shadow-md">
-            <button onClick={() => { toggleDropdown(); toggleBurger() }}>
-              <Link className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"} `} href="/ourWork">Overview</Link>
-            </button>
-            <button onClick={() => { toggleDropdown(); toggleBurger() }}>
-              <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
-                <Link className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`} href="/political-strategy">Political Strategy</Link>
-              </li>
-            </button>
-            <button onClick={() => { toggleDropdown(); toggleBurger() }}>
-              <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
-                Model Legislation
-              </li>
-            </button>
-            <button onClick={() => { toggleDropdown(); toggleBurger() }}>
-              <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
-                <section className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`}>
-                  <Link className="" href="/community-engagement">
-                    Stakeholder Engagement</Link>
-                </section>
-              </li>
-            </button>
-          </ul>
-        </div>
       )}
     </section>
 
