@@ -43,7 +43,7 @@ function Header() {
       {isMobile ? (
         // Render hamburger menu for mobile screens
         <div className="flex items-center cursor-pointer">
-          {isMobile && !isHamburgerVisible ? (
+          {!isHamburgerVisible ? (
             <>
               <button onClick={toggleBurger}>
                 <Image
@@ -88,22 +88,19 @@ function Header() {
                   </div>
                   {isMobile && isDropdownVisible && (
                     <div className=' '>
-                      <ul className="absolute top-[60px] left-0 mt-1 w-full bg-white border-l-2 border-l-main-yellow shadow-md">
+                      <ul className="absolute left-0 mt-1 w-full bg-main-gray">
                         <button onClick={() => { toggleDropdown(); toggleBurger() }}>
-                          <Link className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"} `} href="/ourWork">Overview</Link>
-                        </button>
-                        <button onClick={() => { toggleDropdown(); toggleBurger() }}>
-                          <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
+                          <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-lg">
                             <Link className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`} href="/political-strategy">Political Strategy</Link>
                           </li>
                         </button>
                         <button onClick={() => { toggleDropdown(); toggleBurger() }}>
-                          <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
+                          <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-lg">
                             Model Legislation
                           </li>
                         </button>
                         <button onClick={() => { toggleDropdown(); toggleBurger() }}>
-                          <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
+                          <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-lg">
                             <section className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`}>
                               <Link className="" href="/community-engagement">
                                 Stakeholder Engagement</Link>
