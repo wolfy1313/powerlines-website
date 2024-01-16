@@ -36,7 +36,7 @@ function Header() {
 
   return (
     <section
-      className={`z-10 flex flex-row justify-around max-w-screen bg-main-gray md:pt-[8px] md:px-[100px] md:pb-[4px] md:justify-between`}
+      className={`z-10 flex flex-row justify-between p-4 max-w-screen bg-main-gray md:pt-[8px] md:px-[100px] md:pb-[4px] md:justify-between`}
     >
       <Link href="/">
         <Image src="/powerlineslogo.svg" width={100} height={100} alt="logo" />
@@ -57,7 +57,10 @@ function Header() {
             </>
           ) : (
             <section className="flex flex-col h-screen w-screen ">
-              <div className="flex align-top justify-end p-4 cursor-pointer">
+              <div className="flex align-top justify-between px-8 cursor-pointer">
+                <Link href="/">
+                  <Image src="/powerlineslogo.svg" width={100} height={100} alt="logo" />
+                </Link>
                 <button onClick={toggleBurger}>
                   <Image
                     src="/MobileXButton.svg"
@@ -135,9 +138,8 @@ function Header() {
             className={`flex flex-row gap-2.5 font-bold text-sm ${josefinSans.className} my-auto md:py-[12px]`}
           >
             <li
-              className={`pt-1 px-2 relative ${
-                isDropdownVisible ? 'bg-light-yellow' : 'bg-main-gray'
-              } `}
+              className={`pt-1 px-2 relative ${isDropdownVisible ? 'bg-light-yellow' : 'bg-main-gray'
+                } `}
             >
               <div className="flex flex-row">
                 <button onClick={toggleDropdown}>OUR WORK</button>
