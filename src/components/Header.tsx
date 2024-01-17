@@ -57,11 +57,11 @@ function Header() {
             </>
           ) : (
             <section className="flex flex-col h-screen w-screen ">
-              <div className="flex align-top justify-between px-8 cursor-pointer">
+              <div className="flex align-top justify-between cursor-pointer">
                 <Link href="/">
                   <Image src="/powerlineslogo.svg" width={100} height={100} alt="logo" />
                 </Link>
-                <button onClick={toggleBurger}>
+                <button className='pr-12' onClick={toggleBurger}>
                   <Image
                     src="/MobileXButton.svg"
                     alt="menu-icon"
