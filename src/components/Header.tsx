@@ -113,6 +113,16 @@ function Header() {
                           </li>
                         </button>
                       </ul>
+                      <li className="pt-1">
+                        <button onClick={toggleBurger}>
+                          <Link href="/about-us">ABOUT US</Link>
+                        </button>
+                      </li>
+                      <li className="flex flex-col justify-center my-auto py-1 px-1 md:px-[32px]">
+                        <button onClick={toggleBurger}>
+                          <Link href="/contact-us">CONTACT US</Link>
+                        </button>
+                      </li>
                     </div>
 
                   )}
