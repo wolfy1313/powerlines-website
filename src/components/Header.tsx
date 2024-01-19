@@ -71,7 +71,7 @@ function Header() {
                 </button>
               </div>
               <ul
-                className={`flex flex-col gap-20 items-center font-bold text-2xl ${josefinSans.className} my-auto md:py-[12px] pb-48`}
+                className={`flex flex-col gap-20 items-center font-bold text-2xl ${josefinSans.className} my-auto mx-0 md:py-[12px] pb-48`}
               >
                 <li className="pt-1">
                   <button onClick={toggleBurger}>
@@ -92,22 +92,22 @@ function Header() {
                     />
                   </div>
                   {isMobile && isDropdownVisible && (
-                    <div className=' '>
-                      <ul className="absolute left-0 mt-1 w-full bg-main-gray">
+                    <div className=' m-0 '>
+                      <ul className="absolute text-center left-0 mt-1 w-full bg-main-gray">
                         <button onClick={() => { toggleDropdown(); toggleBurger() }}>
-                          <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-lg">
-                            <Link className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`} href="/political-strategy">Political Strategy</Link>
+                          <li className="hover:bg-gray-400 font-normal pt-4 leading-relaxed text-base">
+                            <Link className={` ${isDropdownVisible ? "hover:pl-1" : "pl-0"}`} href="/political-strategy">Political Strategy</Link>
                           </li>
                         </button>
                         <button onClick={() => { toggleDropdown(); toggleBurger() }}>
-                          <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-lg">
+                          <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-base">
                             Model Legislation
                           </li>
                         </button>
                         <button onClick={() => { toggleDropdown(); toggleBurger() }}>
-                          <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-lg">
-                            <section className={`${isDropdownVisible ? "hover:pl-1" : "pl-0"}`}>
-                              <Link className="" href="/community-engagement">
+                          <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-base px-0 text-nowrap">
+                            <section className={`${isDropdownVisible ? "hover:pl-1 " : "pl-0"}`}>
+                              <Link className="px-0" href="/community-engagement">
                                 Stakeholder Engagement</Link>
                             </section>
                           </li>
