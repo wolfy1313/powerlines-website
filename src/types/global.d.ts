@@ -49,3 +49,10 @@ export interface ToCBodyListProps {
   bulletPoints: bulletPoint[]
   footer: string
 }
+
+export interface ToCCardProps {
+  header: string
+  imageSrc: string
+  checklist: string[]
+  href: string
+}
