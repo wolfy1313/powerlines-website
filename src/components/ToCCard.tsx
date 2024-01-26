@@ -28,7 +28,7 @@ const ToCCard = ({ header, imageSrc, checklist, href }: ToCCardProps) => {
           {checklist.map((listItem) => (
             <li className="flex flex-row" key={checklist.indexOf(listItem)}>
               <Image src="/checkmark.svg" height={20} width={20} alt="" />
-              <p>{listItem}</p>
+              <p className="pl-1 md:pl-3">{listItem}</p>
             </li>
           ))}
         </ul>
