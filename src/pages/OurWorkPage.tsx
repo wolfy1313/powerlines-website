@@ -49,7 +49,7 @@ function OurWorkPage() {
       </section>
 
       {/* {Latest Work Section} */}
-      <section className='md:mx-12'>
+      <section className='mx-12 md:mx-12 border-b-4'>
         <OurWorkLatestWork />
       </section>
 
