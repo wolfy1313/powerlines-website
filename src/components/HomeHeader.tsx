@@ -10,11 +10,11 @@ interface HomeHeaderProps {
 }
 function HomeHeader({ scrollToWhoWeAre }: HomeHeaderProps) {
   return (
-    <section className="min-w-screen max-w-screen pb-[439px] md:bg-cover bg-contain  bg-no-repeat bg-[right_8rem] bg-[url('/home-hero-bg-mobile.svg')]  md:bg-[url('/landing-hero.svg')] md:bg-[center_11rem] md:h-[1300px] md:pb-32 lg:pb-0 ">
+    <section className="min-w-screen max-w-screen pb-[460px] md:bg-cover bg-contain  bg-no-repeat bg-[right_15rem] bg-[url('/home-hero-bg-mobile.svg')]  md:bg-[url('/landing-hero.svg')] md:bg-[center] md:h-[1300px] md:pb-32 lg:pb-0 ">
       {/* Text Container */}
       <section className="flex flex-row justify-center">
         {/* Title Text */}
-        <section className="flex-col font-bold tracking-wider text-2xl md:text-5xl mt-8 md:mt-28">
+        <section className="flex-col font-bold tracking-wider text-2xl md:text-5xl mt-8 md:mt-64">
           <h2 className={`flex flex-row ${josefinSans.className}`}>
             Bringing <span className="text-main-yellow px-3">Power</span>
             to the Public
