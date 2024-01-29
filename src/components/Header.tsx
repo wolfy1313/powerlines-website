@@ -59,9 +59,14 @@ function Header() {
             <section className="flex flex-col h-screen w-screen ">
               <div className="flex align-top justify-between cursor-pointer">
                 <Link href="/">
-                  <Image src="/powerlineslogo.svg" width={100} height={100} alt="logo" />
+                  <Image
+                    src="/powerlineslogo.svg"
+                    width={100}
+                    height={100}
+                    alt="logo"
+                  />
                 </Link>
-                <button className='pr-12' onClick={toggleBurger}>
+                <button className="pr-12" onClick={toggleBurger}>
                   <Image
                     src="/MobileXButton.svg"
                     alt="menu-icon"
@@ -78,8 +83,11 @@ function Header() {
                     <Link href="/">HOME</Link>
                   </button>
                 </li>
-                <li className={`pt-1 px-2 relative ${isDropdownVisible ? "bg-light-yellow" : "bg-main-gray"} `}>
-
+                <li
+                  className={`pt-1 px-2 relative ${
+                    isDropdownVisible ? 'bg-light-yellow' : 'bg-main-gray'
+                  } `}
+                >
                   <div className="flex flex-row">
                     <button onClick={toggleDropdown}>OUR WORK</button>
                     <Image
@@ -87,28 +95,58 @@ function Header() {
                       alt="dropdownarrow"
                       height={20}
                       width={20}
-                      className='mx-3'
+                      className="mx-3"
                       onClick={toggleDropdown}
                     />
                   </div>
                   {isMobile && isDropdownVisible && (
-                    <div className=' m-0 '>
+                    <div className=" m-0 ">
                       <ul className="absolute text-center left-0 mt-1 w-full bg-main-gray">
-                        <button onClick={() => { toggleDropdown(); toggleBurger() }}>
+                        <button
+                          onClick={() => {
+                            toggleDropdown()
+                            toggleBurger()
+                          }}
+                        >
                           <li className="hover:bg-gray-400 font-normal pt-4 leading-relaxed text-base">
-                            <Link className={` ${isDropdownVisible ? "hover:pl-1" : "pl-0"}`} href="/political-strategy">Political Strategy</Link>
+                            <Link
+                              className={` ${
+                                isDropdownVisible ? 'hover:pl-1' : 'pl-0'
+                              }`}
+                              href="/political-strategy"
+                            >
+                              Political Strategy
+                            </Link>
                           </li>
                         </button>
-                        <button onClick={() => { toggleDropdown(); toggleBurger() }}>
+                        <button
+                          onClick={() => {
+                            toggleDropdown()
+                            toggleBurger()
+                          }}
+                        >
                           <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-base">
                             Model Legislation
                           </li>
                         </button>
-                        <button onClick={() => { toggleDropdown(); toggleBurger() }}>
+                        <button
+                          onClick={() => {
+                            toggleDropdown()
+                            toggleBurger()
+                          }}
+                        >
                           <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-base px-0 text-nowrap">
-                            <section className={`${isDropdownVisible ? "hover:pl-1 " : "pl-0"}`}>
-                              <Link className="px-0" href="/community-engagement">
-                                Stakeholder Engagement</Link>
+                            <section
+                              className={`${
+                                isDropdownVisible ? 'hover:pl-1 ' : 'pl-0'
+                              }`}
+                            >
+                              <Link
+                                className="px-0"
+                                href="/community-engagement"
+                              >
+                                Stakeholder Engagement
+                              </Link>
                             </section>
                           </li>
                         </button>
@@ -124,7 +162,6 @@ function Header() {
                         </button>
                       </li>
                     </div>
-
                   )}
                 </li>
                 <li className="pt-1">
@@ -148,8 +185,9 @@ function Header() {
             className={`flex flex-row gap-2.5 font-bold text-sm ${josefinSans.className} my-auto md:py-[12px]`}
           >
             <li
-              className={`pt-1 px-2 relative ${isDropdownVisible ? 'bg-light-yellow' : 'bg-main-gray'
-                } `}
+              className={`pt-1 px-2 relative ${
+                isDropdownVisible ? 'bg-light-yellow' : 'bg-main-gray'
+              } `}
             >
               <div className="flex flex-row">
                 <button onClick={toggleDropdown}>OUR WORK</button>
@@ -166,7 +204,7 @@ function Header() {
                   <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
                     <Link
                       className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
-                      href="/ourWork"
+                      href="/our-work"
                     >
                       Overview
                     </Link>

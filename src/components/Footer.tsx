@@ -49,7 +49,7 @@ function Footer() {
         {/* Nav List */}
         <ul className="flex flex-col space-y-3 pt-2 pl-2 text-center md:text-left md:pr-16 lg:pr-0 lg:pt-0 lg:pl-32">
           <li>
-            <Link href="/ourWork">
+            <Link href="/our-work">
               <p>Our Work</p>
             </Link>
           </li>
