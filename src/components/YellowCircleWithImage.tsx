@@ -1,12 +1,12 @@
 import React from 'react'
-import { Josefin_Sans, Playfair_Display } from "next/font/google";
+import { Cairo, Roboto_Slab } from "next/font/google";
 import Image from 'next/image'
 
 import { TOCOutcomesComponentProps, OutcomeCardProps } from "@/types/global";
 
 
-const josefinSans = Josefin_Sans({ subsets: ['latin'] })
-const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
+const cairo = Cairo({ subsets: ['latin'] })
+const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 
 const YellowCircleWithImage: React.FC<OutcomeCardProps> = ({ text, image, alt, height, width }) => {
   return (
@@ -15,7 +15,7 @@ const YellowCircleWithImage: React.FC<OutcomeCardProps> = ({ text, image, alt, h
       <div className={` bg-main-one rounded-full p-4 pb-5 relative  ${height} ${width}`} >
         <Image fill src={image} alt={alt} className="p-5" />
       </div>
-      <h2 className={`${josefinSans.className} mt-2 font-semibold`}>{text}</h2>
+      <h2 className={`${cairo.className} mt-2 font-semibold`}>{text}</h2>
     </div>
 
   )

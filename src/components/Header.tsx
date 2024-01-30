@@ -2,9 +2,9 @@
 import Image from 'next/image'
 import React, { useEffect } from 'react'
 import Link from 'next/link'
-import { Josefin_Sans } from 'next/font/google'
+import { Cairo } from 'next/font/google'
 import { useState } from 'react'
-const josefinSans = Josefin_Sans({ subsets: ['latin'] })
+const cairo = Cairo({ subsets: ['latin'] })
 
 function Header() {
   // State to handle dropdown visibility
@@ -76,7 +76,7 @@ function Header() {
                 </button>
               </div>
               <ul
-                className={`flex flex-col gap-20 items-center font-bold text-2xl ${josefinSans.className} my-auto mx-0 md:py-[12px] pb-48`}
+                className={`flex flex-col gap-20 items-center font-bold text-2xl ${cairo.className} my-auto mx-0 md:py-[12px] pb-48`}
               >
                 <li className="pt-1">
                   <button onClick={toggleBurger}>
@@ -179,7 +179,7 @@ function Header() {
         // Render regular navigation for larger screens
         <section className="flex flex-col justify-center ">
           <ul
-            className={`flex flex-row gap-2.5 font-bold text-sm ${josefinSans.className} my-auto md:py-[12px]`}
+            className={`flex flex-row gap-2.5 font-bold text-sm ${cairo.className} my-auto md:py-[12px]`}
           >
             <li
               className={`pt-1 px-2 relative ${isDropdownVisible ? 'bg-light-yellow' : 'bg-main-two'
