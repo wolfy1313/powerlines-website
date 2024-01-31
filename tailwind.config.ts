@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import { Josefin_Sans, Roboto_Slab, Cairo } from 'next/font/google'
 
 const config: Config = {
   content: [
@@ -38,6 +39,12 @@ const config: Config = {
       },
       borderWidth: {
         '20': '20px',
+      },
+      fontFamily: {
+        main: ['Cairo', 'sans-serif'],
+        body: ['Roboto_Slab', 'serif'],
+        h1: ['Cairo', 'sans-serif'],
+        h2: ['Cairo', 'sans-serif']
       }
     }
   },
