@@ -44,8 +44,10 @@ const WhoWeAre = React.forwardRef<HTMLDivElement>((_props, ref) => {
         </section>
       </section>
 
-      <section className={`text-center ${cairo.className} mt-10 mb-20 `}>
-        <button className="bg-main-one rounded-full my-auto mx-auto px-14 py-2 font-bold">
+      <section
+        className={`flex flex-row justify-start ${cairo.className} mt-10 mx-20 mb-20 `}
+      >
+        <button className="bg-main-one rounded-full px-20 py-2 font-bold">
           ABOUT US
         </button>
       </section>
