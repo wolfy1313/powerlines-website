@@ -151,7 +151,7 @@ function ContactUs() {
             <div className="text-center">
               <button
                 type="submit"
-                className={`inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-lg font-medium rounded-full text-black bg-main-one hover:bg-main-gray focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${raleway.className}`}
+                className={`inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-lg font-medium rounded-full text-black bg-main-one hover:bg-main-two focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${raleway.className}`}
               >
                 Send Message
               </button>

@@ -36,7 +36,7 @@ function Header() {
 
   return (
     <section
-      className={`z-10 flex flex-row justify-between p-4 max-w-screen bg-main-gray md:pt-[8px] md:px-[100px] md:pb-[4px] md:justify-between`}
+      className={`z-10 flex flex-row justify-between p-4 max-w-screen bg-main-two md:pt-[8px] md:px-[100px] md:pb-[4px] md:justify-between`}
     >
       <Link href="/">
         <Image src="/powerlineslogo.svg" width={100} height={100} alt="logo" />
@@ -84,7 +84,7 @@ function Header() {
                   </button>
                 </li>
                 <li
-                  className={`pt-1 px-2 relative ${isDropdownVisible ? 'bg-light-yellow' : 'bg-main-gray'
+                  className={`pt-1 px-2 relative ${isDropdownVisible ? 'bg-light-yellow' : 'bg-main-two'
                     } `}
                 >
                   <div className="flex flex-row">
@@ -100,7 +100,7 @@ function Header() {
                   </div>
                   {isMobile && isDropdownVisible && (
                     <div className=" m-0 ">
-                      <ul className="absolute text-center left-0 mt-1 w-full bg-main-gray">
+                      <ul className="absolute text-center left-0 mt-1 w-full bg-main-two">
                         <button
                           onClick={() => {
                             toggleDropdown()
@@ -182,7 +182,7 @@ function Header() {
             className={`flex flex-row gap-2.5 font-bold text-sm ${josefinSans.className} my-auto md:py-[12px]`}
           >
             <li
-              className={`pt-1 px-2 relative ${isDropdownVisible ? 'bg-light-yellow' : 'bg-main-gray'
+              className={`pt-1 px-2 relative ${isDropdownVisible ? 'bg-light-yellow' : 'bg-main-two'
                 } `}
             >
               <div className="flex flex-row">

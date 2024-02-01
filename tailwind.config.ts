@@ -26,7 +26,7 @@ const config: Config = {
       },
       colors: {
         'main-one': '#FFC700',
-        'main-gray': '#F7F7F7',
+        'main-two': '#F7F7F7',
         'darker-yellow': '#E2B100',
         'light-yellow': '#FFF7E0',
         'border-yellow': '#FFF4CA',
