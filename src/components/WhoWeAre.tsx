@@ -21,7 +21,7 @@ const WhoWeAre = React.forwardRef<HTMLDivElement>((_props, ref) => {
           className={`font-bold text-4xl leading-relaxed md:text-6xl mt-8 md:mt-16 ${cairo.className}`}
         >
           OUR FOCUS IS BRINGING <br />
-          <span className="text-main-one">POWER</span> TO THE PUBLIC
+          POWER TO THE PUBLIC
         </h1>
       </section>
 
