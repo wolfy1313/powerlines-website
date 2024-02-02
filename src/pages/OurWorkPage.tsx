@@ -45,7 +45,8 @@ function OurWorkPage() {
         </section>
 
         {/* {Theory of Change Section} */}
-        <section className="bg-no-repeat bg-[url('/OurWorkToCBG.svg')] bg-cover">
+        {/* bg-no-repeat bg-[url('/OurWorkToCBG.svg')] bg-cover */}
+        <section className="">
           <TheoryOfChange />
         </section>
 
