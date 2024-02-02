@@ -32,7 +32,7 @@ function OurWorkPage() {
         </section>
 
         {/* {Our Solution Section} */}
-        <section className='md:flex max-w-screen px-3 py-3 md:px-10 md:py-10 bg-light-yellow'>
+        <section className='md:flex max-w-screen px-3 py-3 md:px-10 md:py-10 '>
           <section className='ml-1 md:hidden'>
             <OurWorkSolutionHeader />
           </section>
