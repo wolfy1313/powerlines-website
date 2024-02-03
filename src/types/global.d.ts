@@ -13,6 +13,13 @@ export interface OutcomeCardProps {
   width: string
 }
 
+export interface OurPrinciplesProps {
+  image: string
+  alt: string
+  heading?: string
+  text?: string
+}
+
 export interface TOCOutcomesComponentProps {
   header: string
   content: string
