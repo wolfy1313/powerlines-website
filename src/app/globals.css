@@ -9,3 +9,18 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+.our-principles-shadow {
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.our-principles-container{
+    width: Hug (1,242px);
+    height: Hug (841px);    
+    top: 1829px;
+    left: 100px;
+    gap: 12px;
+   
+
+}
+

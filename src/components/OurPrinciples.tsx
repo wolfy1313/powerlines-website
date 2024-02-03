@@ -3,7 +3,7 @@ import { Josefin_Sans, Playfair_Display } from 'next/font/google'
 import Image from 'next/image'
 const josefinSans = Josefin_Sans({ subsets: ['latin'] })
 const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
-import YellowCircleWithImage from './YellowCircleWithImage'
+import OurPrinciplesCard from './OurPrinciplesCard'
 
 function OurPrinciples() {
   return (
@@ -26,97 +26,48 @@ function OurPrinciples() {
 
         <p className={` text-xl md:text-3xl font-semibold leading-9 my-9 md:my-24 ml-4 md:ml-16 ${josefinSans.className}`}> We&apos;re an organization that champion people and<br /> communities to address climate & environmental issues.</p>
       </section>
-      <section className="w-full 3/3 mt-10">
-        <p className={`text-xl md:text-3xl font-semibold leading-9 my-2 ml-4 md:ml-16 text-darker-yellow mb-10 ${josefinSans.className}`}>OUR PRINCIPLES</p>
 
-        <section className="flex flex-wrap justify-center">
-          <section className="w-full max-h-*[680px] md:w-[611px] md:h-[379px] p-6 bg-white border-2 border-main-yellow rounded-lg shadow  m-3">
+      {/* Our Principle Section 
+      Set of 4 cards that describe the Principles the company is focusing on
+      */}
+      <section className="flex flex-col items-center justify-center my-8 mx-auto max-w-[1242px]">
+        
+        {/* Heading, aligned to the left */}
+        <h1 className="w-full text-xl md:text-4xl font-semibold leading-9 text-about-us-heading my-4 ${josefinSans.className} text-left">OUR PRINCIPLES</h1>
+        
+        {/* Cards Container */}
+        <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-5">
 
-            {/* Card Content */}
-            <section className="flex flex-col md:flex-row items-center gap-4 md:gap-4" >
-              {/* Column 1 - Yellow Circle with Image */}
-              {/* <section className="flex-shrink-0">
-                <section className="w-90px h-90px bg-ellipse-yellow rounded-full overflow-hidden">
-                  <section className="mt-[12.1px] mr-[13.8px] mb-[15.6px] ml-[13.8px]">
-                    <Image src="/fistRaised.png" alt="raised" width={62.308} height={62.308} />
-                  </section>
-                </section>
-              </section> */}
-              <YellowCircleWithImage image="/fistRaised.png" alt="raised fist" height="h-24" width="w-24" />
-              {/* Column 2 - Heading Text */}
-              <section className="md:ml-4">
-                <p className={`text-3xl font-semibold leading-9 ${josefinSans.className}`}> Center and empower people and communities in our work</p>
-              </section>
-            </section>
-            <p className={`text-sm font-normal leading-6 mt-[2rem] ${playfairDisplay.className}`}> We appreciate different experiences and viewpoints, approaching things with empathy by listening and engaging in diverse contexts. We support communities by offering resources, amplifying voices, and encouraging inclusive language, especially in technical discussions. We honor the expertise of community leaders and strive for respectful collaboration.</p>
+            {/*Card Content*/}
+              <OurPrinciplesCard 
+                image="/our-principles-image1.svg" 
+                alt="raised fist"
+                heading="Center and empower people and communities in our work"
+                text="We tailor solutions to each community's unique needs, avoiding a one-size-fits-all approach. Valuing diverse expertise, we embrace varied approaches in both external (culturally sensitive community engagement) and internal efforts (prioritizing staff mental health)."
+              /> 
+              
+              <OurPrinciplesCard 
+                image="/our-principles-image2.svg" 
+                alt="group of people"
+                heading="Meet people where they are"
+                text="We appreciate different experiences and viewpoints, approaching things with empathy by listening and engaging in diverse contexts. We support communities by offering resources, amplifying voices, and encouraging inclusive language, especially in technical discussions. We honor the expertise of community leaders and strive for respectful collaboration."
+              /> 
+
+              <OurPrinciplesCard 
+                image="/our-principles-image3.svg" 
+                alt="helping hand"
+                heading="Embrace a culture of radical hope"
+                text="We're committed to urgent solutions for the climate crisis. Positive change is not just a goal but a reachable reality. Rejecting the status quo, we actively seek alternatives with a nuanced approach, exploring innovative top-down and bottom-up methods."
+              /> 
+
+              <OurPrinciplesCard 
+                image="/our-principles-image4.svg" 
+                alt="green environmental world"
+                heading="Advance climate action and environmental justice"
+                text="We focus on solutions that address how climate issues affect communities differently, especially those of color, low-income, and frontline communities. We prioritize equity alongside urgent climate action, seeing them as complementary, not conflicting. Recognizing the moral and practical importance of equity and justice, we believe a fair transition is essential for full decarbonization."
+              /> 
 
           </section>
-
-
-          {/* card2 */}
-          <section className="w-full max-h-*[680px] md:w-[611px] md:h-[379px] p-6 bg-white border-2 border-main-yellow rounded-lg shadow  m-3">
-
-            {/* Card Content */}
-            <section className="flex flex-col md:flex-row items-center gap-4 md:gap-4" >
-              {/* Column 1 - Yellow Circle with Image */}
-              <section className="w-90px h-90px bg-ellipse-yellow rounded-full">
-                <section className="flex-shrink-0">
-
-                  <section className="mt-[19.1px] mr-[20.3px] mb-[20.3px] ml-[19.1px]">
-                    <Image aria-hidden="true" width={50.625} height={50.625} layout="responsive" src="/collaborationMeeting.png" alt="people sitting down for a meeting" />
-                  </section>
-                </section>
-              </section>
-              {/* Column 2 - Heading Text */}
-              <section className="md:ml-4">
-                <p className={`text-3xl font-semibold leading-9 ${josefinSans.className}`}> Meet people where they are at</p>
-              </section>
-            </section>
-            <p className={`text-sm font-normal leading-6 mt-[2rem] ${playfairDisplay.className}`}> We appreciate different experiences and viewpoints, approaching things with empathy by listening and engaging in diverse contexts. We support communities by offering resources, amplifying voices, and encouraging inclusive language, especially in technical discussions. We honor the expertise of community leaders and strive for respectful collaboration.</p>
-          </section>
-          {/* card3 */}
-          <section className="w-full max-h-*[680px] md:w-[611px] md:h-[379px] p-6 bg-white border-2 border-main-yellow rounded-lg shadow  m-3">
-
-            {/* Card Content */}
-            <section className="flex flex-col md:flex-row items-center gap-4 md:gap-4">
-
-              <section className="w-90px h-90px bg-ellipse-yellow rounded-full ">
-                {/* Column 1 - Yellow Circle with Image */}
-                <section className="flex-shrink-0">
-                  <section className="mt-[18px] mr-[19.1px] mb-[19.1px] ml-[18px]">
-                    <Image aria-hidden="true" width={52.875} height={52.875} layout="responsive" src="/peopleGear.png" alt="gear in center with profile of people on each corner with an arrow going from one person to the next" />
-                  </section>
-                </section>
-              </section>
-              {/* Column 2 - Heading Text */}
-              <section className="md:ml-4">
-                <p className={`text-3xl font-semibold leading-9  ${josefinSans.className}`}> Embrace a culture of radical hope</p>
-              </section>
-            </section>
-            <p className={`text-sm font-normal leading-6 mt-[2rem] ${playfairDisplay.className}`}>We&apos;re committed to urgent solutions for the climate crisis. Positive change is not just a goal but a reachable reality. Rejecting the status quo, we actively seek alternatives with a nuanced approach, exploring innovative top-down and bottom-uup methods.</p>
-          </section>
-          {/* card4 */}
-          <section className="w-full max-h-*[700px] md:w-[611px] md:h-[379px] p-6 bg-white border-2 border-main-yellow rounded-lg   m-3">
-
-            {/* Card Content */}
-            <section className="flex flex-col md:flex-row items-center gap-4 md:gap-4" >
-              {/* Column 1 - Yellow Circle with Image */}
-              <section className="flex-shrink-0">
-                <section className="w-90px h-90px bg-ellipse-yellow rounded-full flex justify-center items-center overflow-hidden">
-                  <section>
-                    <Image aria-hidden="true" width={58.5} height={58.5} src="/globePlant.png" alt="plant wrapped around the world" />
-                  </section>
-                </section>
-              </section>
-              {/* Column 2 - Heading Text */}
-              <section className="md:ml-4">
-                <p className={`text-3xl font-semibold leading-9 ${josefinSans.className}`}> Advance climate action and environmental justice</p>
-              </section>
-            </section>
-            <p className={`text-sm font-normal leading-6 mt-[2rem] ${playfairDisplay.className}`}>We focus on solutions that address how climate issues affect communities differently, especially those of color, low-income, and frontline communities. We prioritize equity alongside urgent climate action, seeing them as complementary, not conficting. Recognizing the moral and practical importance of equity and justice, we believe a fair transtion is essential for full decarbonization.</p>
-          </section>
-        </section>
-
       </section>
       <section>
         <section>
