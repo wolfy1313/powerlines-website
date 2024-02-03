@@ -8,7 +8,7 @@ const WhoWeAre = React.forwardRef<HTMLDivElement>((_props, ref) => {
   return (
     <section
       ref={ref}
-      className="min-w-screen max-w-screen bg-no-repeat bg-[url('/WhoWeAreBG.svg')] bg-cover"
+      className="min-w-screen max-w-screen bg-no-repeat bg-white bg-cover"
     >
       <section className="flex flex-row justify-start mx-20">
         <section className="font-bold text-2xl md:text-3xl mt-8 md:mt-16">
