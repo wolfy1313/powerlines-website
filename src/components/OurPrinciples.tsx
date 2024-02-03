@@ -30,13 +30,13 @@ function OurPrinciples() {
       {/* Our Principle Section 
       Set of 4 cards that describe the Principles the company is focusing on
       */}
-      <section className="flex flex-col items-center justify-center my-8 mx-auto max-w-[1242px]">
+      <section className="flex flex-col items-center justify-center my-8 mx-auto px-6  max-w-[1242px]">
         
         {/* Heading, aligned to the left */}
-        <h1 className="w-full text-xl md:text-4xl font-semibold leading-9 text-about-us-heading my-4 ${josefinSans.className} text-left">OUR PRINCIPLES</h1>
+        <h1 className={`w-full text-xl md:text-4xl font-semibold leading-9 text-about-us-heading my-4 ${josefinSans.className}`}>OUR PRINCIPLES</h1>
         
         {/* Cards Container */}
-        <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-5">
+        <section className=" grid grid-cols-1 md:grid-cols-2 gap-5">
 
             {/*Card Content*/}
               <OurPrinciplesCard 
