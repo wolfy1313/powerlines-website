@@ -8,7 +8,7 @@ const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
 
 function Footer() {
   return (
-    <section className="flex flex-col justify-center h-auto min-w-screen max-w-screen items-center bg-main-gray pb-5 md:pb-0 md:py-10 lg:h-72 lg:flex-row">
+    <section className="flex flex-col justify-center h-auto min-w-screen max-w-screen items-center bg-main-two pb-5 md:pb-0 md:py-10 lg:h-72 lg:flex-row">
       {/* Left hand side of Footer */}
       <section
         className={`flex flex-col flex-1 items-center min-w-screen justify-center pb-3 align-middle md:flex-row md:pb-0 ${josefinSans.className}`}
