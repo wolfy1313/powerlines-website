@@ -34,7 +34,7 @@ const Latest = () => {
               Join us in our cause or learn more about what you can do.
             </p>
             <Link href="/about-us" className="flex flex-row justify-start">
-              <p className="font-bold text-main-yellow">Learn More</p>
+              <p className="font-bold text-main-one">Learn More</p>
               <Image
                 src="/arrow-right.svg"
                 alt="arrow-button"
@@ -64,7 +64,7 @@ const Latest = () => {
               communities.
             </p>
             <Link href="/about-us" className="flex flex-row justify-start">
-              <p className="font-bold text-main-yellow">Learn More</p>
+              <p className="font-bold text-main-one">Learn More</p>
               <Image
                 src="/arrow-right.svg"
                 alt="arrow-button"
@@ -93,7 +93,7 @@ const Latest = () => {
               Our meetings with Public Utilities Commissioners to bring change.
             </p>
             <Link href="/about-us" className="flex flex-row justify-start">
-              <p className="font-bold text-main-yellow">Learn More</p>
+              <p className="font-bold text-main-one">Learn More</p>
               <Image
                 src="/arrow-right.svg"
                 alt="arrow-button"

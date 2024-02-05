@@ -25,7 +25,7 @@ const config: Config = {
         '125px': '125px'
       },
       colors: {
-        'main-yellow': '#FFC700',
+        'main-one': '#FFC700',
         'main-gray': '#F7F7F7',
         'darker-yellow': '#E2B100',
         'light-yellow': '#FFF7E0',

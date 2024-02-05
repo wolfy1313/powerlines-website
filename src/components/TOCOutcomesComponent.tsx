@@ -13,7 +13,7 @@ const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
 const TOCOutcomesComponent: React.FC<TOCOutcomesComponentProps> = ({ header, content, OutcomesCards }) => {
   return (
     <div className={`min-w-screen max-w-screen md:p-20 md:pt-0`}>
-      <h1 className={`mb-4 text-main-yellow text-xl ${josefinSans.className}`}>{header}</h1>
+      <h1 className={`mb-4 text-main-one text-xl ${josefinSans.className}`}>{header}</h1>
       <h3 className={`mb-8 ${playfairDisplay.className} text-sm`}>{content}</h3>
       <section className="flex flex-row justify-around mx-20">
         {OutcomesCards.map((OutcomeCard: OutcomeCardProps) => (
