@@ -26,7 +26,7 @@ function Footer() {
           {/* Title text */}
           <section className="flex flex-row font-bold mb-3 text-xl space-x-2 md:space-x-0 md:text-2xl md:flex-col">
             <h2 className="flex flex-row justify-center md:justify-start">
-              Bringing <span className="text-main-yellow pl-3">Power</span>
+              Bringing <span className="text-main-one pl-3">Power</span>
             </h2>
             <h2 className="flex flex-row justify-center md:justify-start">
               to the Public

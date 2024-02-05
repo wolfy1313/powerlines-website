@@ -21,7 +21,7 @@ const WhoWeAre = React.forwardRef<HTMLDivElement>((_props, ref) => {
           className={`text-center font-bold text-4xl leading-relaxed ml-auto mr-auto md:text-6xl mt-8 md:mt-16 ${josefinSans.className}`}
         >
           OUR FOCUS IS BRINGING <br />
-          <span className="text-main-yellow">POWER</span> TO THE PUBLIC
+          <span className="text-main-one">POWER</span> TO THE PUBLIC
         </h1>
       </section>
 
@@ -45,7 +45,7 @@ const WhoWeAre = React.forwardRef<HTMLDivElement>((_props, ref) => {
       </section>
 
       <section className={`text-center ${josefinSans.className} mt-10 mb-20 `}>
-        <button className="bg-main-yellow rounded-full my-auto mx-auto px-14 py-2 font-bold">
+        <button className="bg-main-one rounded-full my-auto mx-auto px-14 py-2 font-bold">
           ABOUT US
         </button>
       </section>

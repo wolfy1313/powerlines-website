@@ -14,7 +14,7 @@ const TOCBodyList = ({
     <section
       className={`flex flex-col w-full px-20 ${playfairDisplay.className} mb-4 ml-0`}
     >
-      <h1 className={`text-main-yellow text-xl mb-4 ${josefinSans.className}`}>
+      <h1 className={`text-main-one text-xl mb-4 ${josefinSans.className}`}>
         {header}
       </h1>
       <p className="mb-4">{subheader}</p>

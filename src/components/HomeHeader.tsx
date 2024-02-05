@@ -16,7 +16,7 @@ function HomeHeader({ scrollToWhoWeAre }: HomeHeaderProps) {
         {/* Title Text */}
         <section className="flex-col font-bold tracking-wider text-2xl md:text-5xl mt-8 md:mt-64">
           <h2 className={`flex flex-row ${josefinSans.className}`}>
-            Bringing <span className="text-main-yellow px-3">Power</span>
+            Bringing <span className="text-main-one px-3">Power</span>
             to the Public
           </h2>
         </section>

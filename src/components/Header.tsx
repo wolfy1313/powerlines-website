@@ -84,9 +84,8 @@ function Header() {
                   </button>
                 </li>
                 <li
-                  className={`pt-1 px-2 relative ${
-                    isDropdownVisible ? 'bg-light-yellow' : 'bg-main-gray'
-                  } `}
+                  className={`pt-1 px-2 relative ${isDropdownVisible ? 'bg-light-yellow' : 'bg-main-gray'
+                    } `}
                 >
                   <div className="flex flex-row">
                     <button onClick={toggleDropdown}>OUR WORK</button>
@@ -110,9 +109,8 @@ function Header() {
                         >
                           <li className="hover:bg-gray-400 font-normal pt-4 leading-relaxed text-base">
                             <Link
-                              className={` ${
-                                isDropdownVisible ? 'hover:pl-1' : 'pl-0'
-                              }`}
+                              className={` ${isDropdownVisible ? 'hover:pl-1' : 'pl-0'
+                                }`}
                               href="/political-strategy"
                             >
                               Political Strategy
@@ -137,9 +135,8 @@ function Header() {
                         >
                           <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-base px-0 text-nowrap">
                             <section
-                              className={`${
-                                isDropdownVisible ? 'hover:pl-1 ' : 'pl-0'
-                              }`}
+                              className={`${isDropdownVisible ? 'hover:pl-1 ' : 'pl-0'
+                                }`}
                             >
                               <Link
                                 className="px-0"
@@ -185,9 +182,8 @@ function Header() {
             className={`flex flex-row gap-2.5 font-bold text-sm ${josefinSans.className} my-auto md:py-[12px]`}
           >
             <li
-              className={`pt-1 px-2 relative ${
-                isDropdownVisible ? 'bg-light-yellow' : 'bg-main-gray'
-              } `}
+              className={`pt-1 px-2 relative ${isDropdownVisible ? 'bg-light-yellow' : 'bg-main-gray'
+                } `}
             >
               <div className="flex flex-row">
                 <button onClick={toggleDropdown}>OUR WORK</button>
@@ -200,8 +196,8 @@ function Header() {
                 />
               </div>
               {isDropdownVisible && (
-                <ul className="absolute left-0 mt-1 w-40 pl-4 py-4 bg-light-yellow border-l-2 border-l-main-yellow shadow-md space-y-3">
-                  <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
+                <ul className="absolute left-0 mt-1 w-40 pl-4 py-4 bg-light-yellow border-l-2 border-l-main-one shadow-md space-y-3">
+                  <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
                     <Link
                       className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
                       href="/our-work"
@@ -209,7 +205,7 @@ function Header() {
                       Overview
                     </Link>
                   </li>
-                  <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
+                  <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
                     <Link
                       className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
                       href="/political-strategy"
@@ -217,7 +213,7 @@ function Header() {
                       Political Strategy
                     </Link>
                   </li>
-                  <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
+                  <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
                     <Link
                       className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
                       href="/model-legislation"
@@ -225,7 +221,7 @@ function Header() {
                       Model Legislation
                     </Link>
                   </li>
-                  <li className="hover:bg-gray-100 hover:border-main-yellow hover:border-2 hover:border-r-0">
+                  <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
                     <section
                       className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
                     >
@@ -240,7 +236,7 @@ function Header() {
             <li className="pt-1">
               <Link href="/about-us">ABOUT US</Link>
             </li>
-            <li className="flex flex-col justify-center my-auto   bg-main-yellow rounded-full py-1 px-1 md:px-[32px]">
+            <li className="flex flex-col justify-center my-auto   bg-main-one rounded-full py-1 px-1 md:px-[32px]">
               <Link href="/contact-us">CONTACT US</Link>
             </li>
           </ul>

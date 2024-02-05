@@ -76,7 +76,7 @@ function ContactUs() {
             className={`text-center mb-10 ${playfairDisplay.className} `}
           >
             <h1
-              className={`text-2xl font-bold mb-4 text-main-yellow ${josefinSans.className}`}
+              className={`text-2xl font-bold mb-4 text-main-one ${josefinSans.className}`}
             >
               We&apos;d love to hear from you.
             </h1>
@@ -151,7 +151,7 @@ function ContactUs() {
             <div className="text-center">
               <button
                 type="submit"
-                className={`inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-lg font-medium rounded-full text-black bg-main-yellow hover:bg-main-gray focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${raleway.className}`}
+                className={`inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-lg font-medium rounded-full text-black bg-main-one hover:bg-main-gray focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${raleway.className}`}
               >
                 Send Message
               </button>
@@ -160,12 +160,12 @@ function ContactUs() {
         ) : (
           // If submitted is true, render confirmation
           <section className="text-center md:min-h-[620px]">
-            <h1 className="text-2xl font-bold text-main-yellow">Thank you!</h1>
+            <h1 className="text-2xl font-bold text-main-one">Thank you!</h1>
             <p className="text-md mb-10 text-center flex flex-row justify-center">
               Your message has been sent. Someone from our team will connect
               with you soon.
             </p>
-            <Link href={'/'} className="bg-main-yellow rounded-full py-1 px-6 ">
+            <Link href={'/'} className="bg-main-one rounded-full py-1 px-6 ">
               RETURN TO HOMEPAGE
             </Link>
           </section>
