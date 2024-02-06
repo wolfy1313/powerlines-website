@@ -2,11 +2,11 @@
 
 import React, { useState } from 'react'
 import { ContactUsData } from '@/types/global'
-import { Josefin_Sans, Playfair_Display, Raleway } from 'next/font/google'
+import { Cairo, Roboto_Slab, Raleway } from 'next/font/google'
 import Link from 'next/link'
 
-const josefinSans = Josefin_Sans({ subsets: ['latin'] })
-const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
+const cairo = Cairo({ subsets: ['latin'] })
+const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 const raleway = Raleway({ subsets: ['latin'] })
 
 function ContactUs() {
@@ -55,7 +55,7 @@ function ContactUs() {
       {/* Header */}
       <section className="flex items-center justify-center w-full bg-[url('/contactushero.svg')] min-h-[368px] bg-cover bg-no-repeat">
         <h1
-          className={`text-4xl font-bold text-center text-black ${josefinSans.className}`}
+          className={`text-4xl font-bold text-center text-black ${cairo.className}`}
         >
           CONTACT US
         </h1>
@@ -73,10 +73,10 @@ function ContactUs() {
         {/* Form Header */}
         {!submitted && (
           <section
-            className={`text-center mb-10 ${playfairDisplay.className} `}
+            className={`text-center mb-10 ${robotoSlab.className} `}
           >
             <h1
-              className={`text-2xl font-bold mb-4 text-main-one ${josefinSans.className}`}
+              className={`text-2xl font-bold mb-4 text-main-one ${cairo.className}`}
             >
               We&apos;d love to hear from you.
             </h1>

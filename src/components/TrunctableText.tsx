@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
-import { Josefin_Sans, Playfair_Display } from "next/font/google";
-const josefinSans = Josefin_Sans({ subsets: ['latin'] })
-const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
+import { Cairo, Roboto_Slab } from "next/font/google";
+const cairo = Cairo({ subsets: ['latin'] })
+const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 
 interface TrunctableTextProps {
     text: string;
@@ -15,7 +15,7 @@ const TrunctableText: React.FC<TrunctableTextProps> = ({ text, maxLength }) => {
 
     return (
         <div className="overflow-hidden">
-            <p className={` ${playfairDisplay.className} text-lg md:text-xl font-normal tracking-tighter leading-9 custom-truncate`}>{body}</p>
+            <p className={` ${robotoSlab.className} text-lg md:text-xl font-normal tracking-tighter leading-9 custom-truncate`}>{body}</p>
             <button onClick={() => setIsTruncated(!isTruncated)} className={`mb-4 text-darker-yellow text-base font-normal leading-8`}>
                 {isTruncated ? 'Show More' : 'Show Less'}
             </button>

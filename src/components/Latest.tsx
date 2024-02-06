@@ -1,15 +1,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { Josefin_Sans, Playfair_Display } from 'next/font/google'
+import { Cairo, Roboto_Slab } from 'next/font/google'
 
-const josefinSans = Josefin_Sans({ subsets: ['latin'] })
-const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
+const cairo = Cairo({ subsets: ['latin'] })
+const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 
 const Latest = () => {
   return (
     <section
-      className={`bg-[url('/latest-powerlines-bg.svg')] bg-center bg-cover bg-no-repeat text-center min-w-screen pb-16 ${josefinSans.className} md:pb-10`}
+      className={`bg-[url('/latest-powerlines-bg.svg')] bg-center bg-cover bg-no-repeat text-center min-w-screen pb-16 ${cairo.className} md:pb-10`}
     >
       {/* Header */}
       <h1 className="font-bold my-12 text-2xl">LATEST ON POWERLINES</h1>
@@ -30,7 +30,7 @@ const Latest = () => {
           </div>
           <section className="space-y-4 w-72 mt-8 pl-4">
             <h2>TAKE ACTION</h2>
-            <p className={`${playfairDisplay.className} py-2`}>
+            <p className={`${robotoSlab.className} py-2`}>
               Join us in our cause or learn more about what you can do.
             </p>
             <Link href="/about-us" className="flex flex-row justify-start">
@@ -59,7 +59,7 @@ const Latest = () => {
           </div>
           <section className="space-y-4 w-72 mt-8 pl-4">
             <h2>CAMPAIGNS</h2>
-            <p className={`${playfairDisplay.className} py-2`}>
+            <p className={`${robotoSlab.className} py-2`}>
               To bring our vision to life, we can do so by transforming our
               communities.
             </p>
@@ -89,7 +89,7 @@ const Latest = () => {
           </div>
           <section className="space-y-4 w-72 mt-8 pl-4">
             <h2>REPORTS</h2>
-            <p className={`${playfairDisplay.className} py-2`}>
+            <p className={`${robotoSlab.className} py-2`}>
               Our meetings with Public Utilities Commissioners to bring change.
             </p>
             <Link href="/about-us" className="flex flex-row justify-start">
