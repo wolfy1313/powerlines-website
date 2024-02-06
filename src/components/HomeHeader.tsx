@@ -10,13 +10,13 @@ interface HomeHeaderProps {
 }
 function HomeHeader({ scrollToWhoWeAre }: HomeHeaderProps) {
   return (
-    <section className="min-w-screen max-w-screen pb-[460px] md:bg-cover bg-contain  bg-no-repeat bg-[right_15rem] bg-[url('/home-hero-bg-mobile.svg')]  md:bg-[url('/home-header.svg')] md:bg-[center] md:h-[1300px] md:pb-32 lg:pb-0 ">
+    <section className="min-w-screen max-w-screen pb-[460px] md:bg-cover bg-contain  bg-no-repeat bg-[url('/home-hero-bg-mobile.svg')] text-white  md:bg-[url('/home-header.svg')] md:bg-[center] md:h-[1300px] md:pb-32 lg:pb-0 ">
       {/* Text Container */}
       <section className="flex flex-row justify-center">
         {/* Title Text */}
         <section className="flex-col font-bold tracking-wider text-2xl md:text-5xl mt-8 md:mt-64">
           <h2 className={`flex flex-row ${cairo.className}`}>
-            Bringing <span className="text-main-one px-3">Power</span>
+            Bringing <span className="px-3">Power</span>
             to the Public
           </h2>
         </section>
