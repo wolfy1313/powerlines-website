@@ -20,6 +20,13 @@ export interface OurPrinciplesProps {
   text?: string
 }
 
+export interface OurTeamProps {
+  image: string
+  alt: string
+  name: string
+  role: string
+}
+
 export interface TOCOutcomesComponentProps {
   header: string
   content: string
