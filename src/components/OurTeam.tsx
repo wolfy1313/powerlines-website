@@ -24,7 +24,7 @@ function OurTeam() {
     
 
       {/* Team reusable component. If you need to edit the format, go OurTeamCard component */}
-      <section className="grid grid-cols-2  md:grid-cols-3 gap-6 justify-items-center mx-auto max-w-6xl lg:max-w-none ">
+      <section className="grid grid-cols-2  md:grid-cols-3 gap-6 justify-items-center mx-auto max-w-6xl lg:max-w-none pb-24">
 
         <OurTeamCard
           image="/maleTransparent.png"
