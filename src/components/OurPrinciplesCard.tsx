@@ -28,12 +28,12 @@ const OurPrinciplesCard: React.FC<OurPrinciplesProps> = ({ heading, text, image,
                         />
                     </div>
                     {/* Heading*/}
-                    <h1 className={`text-md  sm:text-3xl font-semibold sm:leading-9 ${cairo.className}`}> {heading}</h1>
+                    <h1 className={`text-md  sm:text-3xl font-bold sm:leading-9 ${cairo.className}`}> {heading}</h1>
                 </section>
 
                 {/* Text Section */}
                 <section>
-                    <p className={`text-sm sm:text-xl font-normal leading-7 mt-[2rem] pr-4 ${robotoSlab.className}`}>{text}</p>
+                    <p className={`text-sm sm:text-xl font-light leading-7 mt-[2rem] pr-4 ${robotoSlab.className}`}>{text}</p>
                 </section>
             </section>
         </div>
