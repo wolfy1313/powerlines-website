@@ -33,7 +33,7 @@ function OurPrinciples() {
       <section className="flex flex-col items-center justify-center my-8 mx-auto px-6  max-w-[1242px]">
 
         {/* Heading, aligned to the left */}
-        <h1 className={`w-full text-xl md:text-4xl font-semibold leading-9 text-about-us-heading my-4 ${cairo.className}`}>OUR PRINCIPLES</h1>
+        <h1 className={`w-full text-xl md:text-4xl font-bold leading-9 text-about-us-heading my-4 ${cairo.className}`}>OUR PRINCIPLES</h1>
 
         {/* Cards Container */}
         <section className=" grid grid-cols-1 md:grid-cols-2 gap-5">

@@ -12,10 +12,10 @@ function OurTeam() {
       {/* Start of Our Team Section */}
       <section className="flex flex-col 
       items-center justify-center gap-3.5">
-        <h2 className={`font-bold text-about-us-heading tracking-wider text-2xl  text-center md:text-5xl mt-8 md:mt-32 leading-10 ${josefinSans.className}`}>
+        <h2 className={`font-bold text-about-us-heading tracking-wider text-2xl  text-center md:text-5xl mt-8 md:mt-32 leading-10 ${cairo.className}`}>
         OUR TEAM
         </h2>
-        <p className={`text-[20px] text-center font-normal leading-9 mb-24 mr-16 ml-16 ${playfairDisplay.className}`}>Our passionate and enthusiastic team ready to change the energy system.</p>
+        <p className={`text-[20px] text-center font-light leading-9 mb-24 mr-16 ml-16 ${robotoSlab.className}`}>Our passionate and enthusiastic team ready to change the energy system.</p>
       </section>
    
 
