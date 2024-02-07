@@ -1,15 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
-import { Cairo, Roboto_Slab } from 'next/font/google'
-
-const cairo = Cairo({ subsets: ['latin'] })
-const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 
 function OurWorkHeader() {
   return (
     <section className='min-w-screen max-w-screen'>
-      <section >
-        <h1 className={`bg-no-repeat bg-[url('/PageHeroBG.svg')] bg-cover font-bold text-center p-16 text-2xl md:text-3xl font-h1 `}>OUR WORK</h1>
+      <section className=" flex bg-no-repeat bg-[url('/HeaderPowerLinesCircle.svg')] h-64 bg-right">
+        <h1 className={`flex items-center font-bold align-middle p-16 text-2xl md:text-5xl font-main`}>OUR WORK</h1>
       </section>
     </section>
   )
