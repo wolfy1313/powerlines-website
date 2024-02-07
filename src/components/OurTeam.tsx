@@ -1,11 +1,12 @@
 import React from 'react'
-import { Josefin_Sans,Playfair_Display } from 'next/font/google'
-const josefinSans = Josefin_Sans({ subsets: ['latin'] })
-const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
+import { Cairo, Roboto_Slab } from 'next/font/google'
+const cairo = Cairo({ subsets: ['latin'] })
+const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 import Image from 'next/image'
 
 function OurTeam() {
   return (
+
     <section className="w-3/4 m-auto">
    
       {/* Start of Our Team Section */}

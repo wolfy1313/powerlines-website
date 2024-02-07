@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import { Josefin_Sans, Playfair_Display } from 'next/font/google'
+import { Cairo, Roboto_Slab } from 'next/font/google'
 
 import Image from 'next/image'
 import TrunctableText from './TrunctableText'
@@ -12,8 +12,8 @@ import {
   ResourcesAndReportsCardsProps
 } from '@/types/global'
 
-const josefinSans = Josefin_Sans({ subsets: ['latin'] })
-const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
+const cairo = Cairo({ subsets: ['latin'] })
+const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 
 const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
   ResourcesAndReportsCards
@@ -30,7 +30,7 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
     <div className="min-w-full max-w-full mx-auto">
       <section className="p-10 md:p-20 md:pt-0">
         <h1
-          className={`mb-4 text-darker-yellow text-2xl md:text-3xl font-semibold leading-normal ${josefinSans.className}`}
+          className={`mb-4 text-darker-yellow text-2xl md:text-3xl font-semibold leading-normal ${cairo.className}`}
         >
           Resource and Reports
         </h1>
@@ -53,12 +53,12 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
                 </section>
                 <section className="flex-grow">
                   <h2
-                    className={`mb-4 text-darker-yellow text-sm md:text-base font-normal leading-8 ${josefinSans.className}`}
+                    className={`mb-4 text-darker-yellow text-sm md:text-base font-normal leading-8 ${cairo.className}`}
                   >
                     {ResourcesAndReportsCard.caption}
                   </h2>
                   <h1
-                    className={`mb-4 text-black text-2xl font-semibold leading-8 ${josefinSans.className}`}
+                    className={`mb-4 text-black text-2xl font-semibold leading-8 ${cairo.className}`}
                   >
                     {ResourcesAndReportsCard.subHeading}
                   </h1>
@@ -69,7 +69,7 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
                     />
                   )}
                   <h6
-                    className={`mb-6 text-black text-sm md:text-base font-normal leading-8 ${josefinSans.className}`}
+                    className={`mb-6 text-black text-sm md:text-base font-normal leading-8 ${cairo.className}`}
                   >
                     {ResourcesAndReportsCard.cta}
                   </h6>

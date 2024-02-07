@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import { Josefin_Sans, Playfair_Display } from 'next/font/google'
+import { Cairo, Roboto_Slab } from 'next/font/google'
 
-const josefinSans = Josefin_Sans({ subsets: ['latin'] })
-const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
+const cairo = Cairo({ subsets: ['latin'] })
+const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 
 interface HomeHeaderProps {
   scrollToWhoWeAre: () => void
@@ -15,7 +15,7 @@ function HomeHeader({ scrollToWhoWeAre }: HomeHeaderProps) {
       <section className="flex flex-row justify-center">
         {/* Title Text */}
         <section className="flex-col font-bold tracking-wider text-2xl md:text-5xl mt-8 md:mt-64">
-          <h2 className={`flex flex-row ${josefinSans.className}`}>
+          <h2 className={`flex flex-row ${cairo.className}`}>
             Bringing <span className="text-main-one px-3">Power</span>
             to the Public
           </h2>
@@ -25,7 +25,7 @@ function HomeHeader({ scrollToWhoWeAre }: HomeHeaderProps) {
       {/* Subtitle Container */}
       <section className="flex flex-row flex-1 justify-center min-w-screen my-auto text-center">
         <section
-          className={`flex flex-col ${playfairDisplay.className} text-sm text-center my-auto  mt-10 md:text-xl md:tracking-wider md:min-w-screens min-w-screen`}
+          className={`flex flex-col ${robotoSlab.className} text-sm text-center my-auto  mt-10 md:text-xl md:tracking-wider md:min-w-screens min-w-screen`}
         >
           <h3 className="max-w-screen  md:min-w-screen leading-10">
             Powerlines is an independent NGO advancing policy innovation and

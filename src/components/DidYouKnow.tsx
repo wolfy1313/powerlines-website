@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-import { Josefin_Sans, Playfair_Display } from 'next/font/google'
+import { Cairo, Roboto_Slab } from 'next/font/google'
 
-const josefinSans = Josefin_Sans({ subsets: ['latin'] })
-const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
+const cairo = Cairo({ subsets: ['latin'] })
+const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 const DidYouKnow = () => {
   // Define the yellow border color
   const borderColor = 'border-[#FFF4CA]'
@@ -14,7 +14,7 @@ const DidYouKnow = () => {
 
   return (
     <section
-      className={`flex flex-col items-center justify-around min-w-full min-h-[526px] max-w-screen border-[16px] md:pb-5 md:justify-center ${borderColor} bg-white ${josefinSans.className}`}
+      className={`flex flex-col items-center justify-around min-w-full min-h-[526px] max-w-screen border-[16px] md:pb-5 md:justify-center ${borderColor} bg-white ${cairo.className}`}
       style={customGradientStyle}
     >
       {/* Yellow faded line at the back */}
@@ -31,7 +31,7 @@ const DidYouKnow = () => {
           energy transition.
         </h2>
         <h3
-          className={`pt-4 text-xl md:pt-10 ${playfairDisplay.className} md:text-xl`}
+          className={`pt-4 text-xl md:pt-10 ${robotoSlab.className} md:text-xl`}
         >
           They have the power to determine:
         </h3>
@@ -39,7 +39,7 @@ const DidYouKnow = () => {
 
       {/* Card Section */}
       <section
-        className={`z-10 flex flex-col justify-around w-full px-10 space-y-10 pb-20 md:px-20 md:justify-center md:space-x-32 ${playfairDisplay.className} md:flex-row md:space-y-0`}
+        className={`z-10 flex flex-col justify-around w-full px-10 space-y-10 pb-20 md:px-20 md:justify-center md:space-x-32 ${robotoSlab.className} md:flex-row md:space-y-0`}
       >
         <section className="flex flex-col items-center">
           <Image

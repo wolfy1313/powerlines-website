@@ -1,9 +1,9 @@
 import React from 'react'
-import { Josefin_Sans, Playfair_Display } from 'next/font/google'
+import { Cairo, Roboto_Slab } from 'next/font/google'
 import { ToCBodyListProps } from '@/types/global'
 import Image from 'next/image'
-const josefinSans = Josefin_Sans({ subsets: ['latin'] })
-const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
+const cairo = Cairo({ subsets: ['latin'] })
+const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 const TOCBodyList = ({
   header,
   subheader,
@@ -12,9 +12,9 @@ const TOCBodyList = ({
 }: ToCBodyListProps) => {
   return (
     <section
-      className={`flex flex-col w-full px-20 ${playfairDisplay.className} mb-4 ml-0`}
+      className={`flex flex-col w-full px-20 ${robotoSlab.className} mb-4 ml-0`}
     >
-      <h1 className={`text-main-one text-xl mb-4 ${josefinSans.className}`}>
+      <h1 className={`text-main-one text-xl mb-4 ${cairo.className}`}>
         {header}
       </h1>
       <p className="mb-4">{subheader}</p>

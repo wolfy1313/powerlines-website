@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Josefin_Sans, Playfair_Display } from 'next/font/google'
+import { Cairo, Roboto_Slab } from 'next/font/google'
 import { ToCCardProps } from '@/types/global'
 
-const josefinSans = Josefin_Sans({ subsets: ['latin'] })
-const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
+const cairo = Cairo({ subsets: ['latin'] })
+const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 const ToCCard = ({ header, imageSrc, checklist, href }: ToCCardProps) => {
   return (
     <section className="bg-white shadow-custom rounded-3xl overflow-hidden mx-2 my-5 flex flex-col h-428 w-400 text-center md:flex-grow md:flex-shrink md:basis-1/3">
@@ -20,7 +20,7 @@ const ToCCard = ({ header, imageSrc, checklist, href }: ToCCardProps) => {
       </section>
       <section className="px-6 py-4 flex-grow">
         <section
-          className={`font-bold text-xl text-center mb-2 ${josefinSans.className}`}
+          className={`font-bold text-xl text-center mb-2 ${cairo.className}`}
         >
           {header}
         </section>
@@ -36,7 +36,7 @@ const ToCCard = ({ header, imageSrc, checklist, href }: ToCCardProps) => {
       <section className="text-center mb-5">
         <Link
           href={`${href}`}
-          className={`inline-flex items-center my-0 mx-0 px-6 py-3 text-sm font-bold text-center text-[#E2B103] bg-main-white border-2 border-main-one rounded-2xl ${josefinSans.className}`}
+          className={`inline-flex items-center my-0 mx-0 px-6 py-3 text-sm font-bold text-center text-[#E2B103] bg-main-white border-2 border-main-one rounded-2xl ${cairo.className}`}
         >
           Learn More
           <Image
