@@ -22,9 +22,9 @@ export interface OurPrinciplesProps {
 
 export interface OurTeamProps {
   image: string
-  alt: string
   name: string
   role: string
+  genre: string
 }
 
 export interface TOCOutcomesComponentProps {
