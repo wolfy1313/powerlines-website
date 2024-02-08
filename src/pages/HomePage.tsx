@@ -23,7 +23,7 @@ function HomePage() {
       <WhoWeAre ref={whoWeAreRef} />
       {/* Theory of Change */}
       {/* Workaround div inserted to add background without potentially having merge conflict for adding to TheoryOfChange.tsx -JH*/}
-      <div className="bg-no-repeat bg-light-yellow bg-cover">
+      <div className="bg-no-repeat bg-[url('/ToCGradientBG.png')] bg-cover">
         <TheoryOfChange />
       </div>
       {/* Did you know */}
