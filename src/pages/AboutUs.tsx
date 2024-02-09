@@ -28,10 +28,10 @@ function AboutUs() {
         </section>
 
     {/* Hero Image wrap*/}
-    <section className="flex flex-wrap  p-5 md:p-12  mb-[90px] md:mb-[150px]  bg-[url('/AboutUsHeroBackground.svg')] z-50 ">
+    <section className="flex flex-wrap  py-5 md:py-12  mb-[90px] md:mb-[150px]  bg-[url('/AboutUsHeroBackground.svg')] z-50 ">
         
         {/* Our Mission Container */}
-        <section className="flex justify-center items-center align-middle mb-[50px] md:mb-52 gap-6"> 
+        <section className="flex px-5 md:px-12 justify-center items-center align-middle mb-[50px] md:mb-32 gap-6"> 
         
           {/* Our Mission Text Container  */}
           <div className="w-full md:w-1/2 pl-10 h-auto order-3 md:order-2 ">
