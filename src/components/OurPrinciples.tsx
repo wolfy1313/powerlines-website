@@ -21,7 +21,7 @@ function OurPrinciples() {
 
   {/* Text Column */}
   <div className='w-1/3 bg-white flex items-center justify-center'> 
-    <p className={`text-xl text-center font-semibold leading-9 ${cairo.className} px-4`}>
+    <p className={`text-3xl leading-8 text-center font-medium px-10 ${cairo.className} `}>
       We&apos;re an organization that champions people and<br />communities to address climate & environmental issues.
     </p>
   </div>
@@ -41,7 +41,7 @@ function OurPrinciples() {
       {/* Our Principle Section 
       Set of 4 cards that describe the Principles the company is focusing on
       */}
-      <section className="flex flex-col items-center justify-center my-8 mx-auto px-6  max-w-[1242px]">
+      <section className="flex flex-col items-center justify-center my-8 mx-auto px-6 pt-14  max-w-[1242px]">
 
         {/* Heading, aligned to the left */}
         <h1 className={`w-full text-xl md:text-4xl font-bold leading-9 text-about-us-heading my-4 ${cairo.className}`}>OUR PRINCIPLES</h1>
