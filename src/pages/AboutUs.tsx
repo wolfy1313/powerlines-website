@@ -8,24 +8,27 @@ import OurTeam from '@/components/OurTeam'
 
 function AboutUs() {
   return (
-    <section className="min-w-full max-w-full mx-auto  ">
-        
-        {/* main Heading */}
-        <section className="flex  items-center w-full min-w-full h-52 mt-14">
-          <h2 className={`flex relative left-20 mr-48 font-bold text-3xl md:text-6xl ${cairo.className}`}>
+    
+<section className="min-w-full max-w-full mx-auto  ">
+    {/* main Heading */}
+        <section className="flex items-center h-72 overflow-hidden">
+          <h2 className={`flex relative left-28 mr-64 font-bold text-xl md:text-6xl ${cairo.className}`}>
             ABOUT POWERLINES
           </h2>
-          <Image 
-          src="/AboutPowerlinesCircle.svg"
-          alt="circle"
-          width={500}
-          height={500}
-          className='overflow-hidden'
-          />
+          <div className="w-[500px]">
+            <Image 
+              src="/AboutPowerlinesCircle.svg"
+              alt="circle"
+              width={400}
+              height={400}
+              layout="responsive"
+              className=''
+            />
+          </div>
         </section>
 
     {/* Hero Image wrap*/}
-    <section className="flex flex-wrap  p-5 md:p-12  mb-[90px] md:mb-[150px] mt-10 bg-[url('/AboutUsHeroBackground.svg')] ">
+    <section className="flex flex-wrap  p-5 md:p-12  mb-[90px] md:mb-[150px]  bg-[url('/AboutUsHeroBackground.svg')] z-50 ">
         
         {/* Our Mission Container */}
         <section className="flex justify-center items-center align-middle mb-[50px] md:mb-52 gap-6"> 

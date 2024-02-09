@@ -24,16 +24,16 @@ const OurPrinciplesCard: React.FC<OurPrinciplesProps> = ({ heading, text, image,
                             alt={`${alt} icon`}
                             width={45}
                             height={45}
-                            className='sm:w-24 sm:w-20 max-w-[94px] max-h-[80px]'
+                            className='sm:w-20 sm:w-18 max-w-[94px] max-h-[80px]'
                         />
                     </div>
                     {/* Heading*/}
-                    <h1 className={`text-md  sm:text-3xl font-bold sm:leading-9 ${cairo.className}`}> {heading}</h1>
+                    <h1 className={`text-md  sm:text-2xl lg:text-3xl font-bold sm:leading-9 ${cairo.className}`}> {heading}</h1>
                 </section>
 
                 {/* Text Section */}
                 <section>
-                    <p className={`text-sm sm:text-xl font-light leading-7 mt-[2rem] pr-4 ${robotoSlab.className}`}>{text}</p>
+                    <p className={`text-sm sm:text-md lg:text-xl font-light leading-7 mt-[2rem] pr-4 ${robotoSlab.className}`}>{text}</p>
                 </section>
             </section>
         </div>
