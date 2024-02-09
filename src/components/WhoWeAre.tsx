@@ -9,7 +9,7 @@ const WhoWeAre = React.forwardRef<HTMLDivElement>((_props, ref) => {
   return (
     <section
       ref={ref}
-      className="flex flex-row  min-w-screen max-w-screen bg-no-repeat bg-white bg-cover text-center mx-0 md:text-start md:justify-between"
+      className="flex flex-row  min-w-screen max-w-screen bg-no-repeat bg-white bg-cover text-center mx-0 my-2 md:text-start md:justify-between"
     >
       <section className="flex flex-col min-w-screen w-full md:w-1/2">
         <section className="flex flex-row justify-center mx-20 md:justify-start">
@@ -54,7 +54,7 @@ const WhoWeAre = React.forwardRef<HTMLDivElement>((_props, ref) => {
           </button>
         </section>
       </section>
-      <section className="w-2/5 relative mr-5 hidden md:block">
+      <section className="w-4/5 relative hidden md:block ">
         <Image
           src="/who-we-are-img.svg"
           alt="who we are image"
