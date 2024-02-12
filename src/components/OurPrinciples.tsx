@@ -7,36 +7,47 @@ import OurPrinciplesCard from './OurPrinciplesCard'
 
 function OurPrinciples() {
   return (
-    <section className="min-w-screen max-w-screen ">
-      <section className="flex flex-wrap">
-        <section className="flex flex-wrap justify-center md:justify-start gap-4 mt-[-50px] md:mt-[-70px]">
-          {/* Container for both images */}
-          <section className="flex w-full md:w-auto">
-            {/* Image Column 1 */}
-            <section className="w-1/2 max-h-*[424px] overflow-hidden">
-              <Image width={686} height={424} layout="responsive" objectFit="cover" src="/powerlines.png" alt="solar panels and windmill" />
-            </section>
+    <div className="min-w-screen max-w-screen ">
+      
+      <div className="flex max-h-[502px] h-[502px] overflow-hidden">
 
-            {/* Image Column 2 */}
-            <section className="w-1/2 max-h-*[424px] overflow-hidden ml-4">
-              <Image width={425} height={424} layout="responsive" objectFit="cover" src="/plantPowerlineTower.png" alt="plant powerline tower" />
-            </section>
-          </section>
-        </section>
+  {/* Image Column 1 */}
+  <Image 
+    height="502"
+    width="516" 
+    src="/AboutUsBanner1.svg" 
+    alt="people on a peaceful protest" 
+    className='w-1/3 object-cover'/>
 
-        <p className={` text-xl md:text-3xl font-semibold leading-9 my-9 md:my-24 ml-4 md:ml-16 ${cairo.className}`}> We&apos;re an organization that champion people and<br /> communities to address climate & environmental issues.</p>
-      </section>
+  {/* Text Column */}
+  <div className='w-1/3 bg-white flex items-center justify-center'> 
+    <p className={`text-3xl leading-8 text-center font-medium px-10 ${cairo.className} `}>
+      We&apos;re an organization that champions people and<br />communities to address climate & environmental issues.
+    </p>
+  </div>
+
+  {/* Image Column 2 */}
+  <Image 
+    height="502"
+    width="496" 
+    src="/AboutUsBanner2.svg" 
+    alt="People consulting documents"
+    className='w-1/3 object-cover'/>
+</div>
+
+
+
 
       {/* Our Principle Section 
       Set of 4 cards that describe the Principles the company is focusing on
       */}
-      <section className="flex flex-col items-center justify-center my-8 mx-auto px-6  max-w-[1242px]">
+      <section className="flex flex-col items-center justify-center my-8 mx-auto px-6 pt-14  max-w-[1242px]">
 
         {/* Heading, aligned to the left */}
-        <h1 className={`w-full text-xl md:text-4xl font-semibold leading-9 text-about-us-heading my-4 ${cairo.className}`}>OUR PRINCIPLES</h1>
+        <h1 className={`w-full text-xl md:text-4xl font-bold leading-9 text-about-us-heading my-4 ${cairo.className}`}>OUR PRINCIPLES</h1>
 
         {/* Cards Container */}
-        <section className=" grid grid-cols-1 md:grid-cols-2 gap-5">
+        <section className=" grid grid-cols-1 lg:grid-cols-2 gap-5">
 
           {/*Card Content*/}
           <OurPrinciplesCard
@@ -74,7 +85,7 @@ function OurPrinciples() {
 
         </section>
       </section>
-    </section>
+    </div>
   )
 }
 

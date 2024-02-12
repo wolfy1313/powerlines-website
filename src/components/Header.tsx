@@ -36,10 +36,10 @@ function Header() {
 
   return (
     <section
-      className={`z-10 flex flex-row justify-between p-4 max-w-screen bg-main-two md:pt-[8px] md:px-[100px] md:pb-[4px] md:justify-between`}
+      className={`z-10 flex flex-row justify-between p-4 max-w-screen bg-[/home] md:pt-[8px] md:px-[100px] md:pb-[4px] md:justify-between bg-[url('/home-header.svg')] bg-cover bg-top bg-no-repeat`}
     >
       <Link href="/">
-        <Image src="/powerlineslogo.svg" width={100} height={100} alt="logo" />
+        <Image src="/new_logo.svg" width={100} height={100} alt="logo" />
       </Link>
       {isMobile ? (
         // Render hamburger menu for mobile screens
@@ -76,7 +76,7 @@ function Header() {
                 </button>
               </div>
               <ul
-                className={`flex flex-col gap-20 items-center font-bold text-2xl ${cairo.className} my-auto mx-0 md:py-[12px] pb-48`}
+                className={`flex flex-col gap-20 items-center font-bold text-2xl ${cairo.className} my-auto mx-0 md:py-[12px] pb-48 text-white`}
               >
                 <li className="pt-1">
                   <button onClick={toggleBurger}>
@@ -236,7 +236,7 @@ function Header() {
             <li className="pt-1">
               <Link href="/about-us">ABOUT US</Link>
             </li>
-            <li className="flex flex-col justify-center my-auto   bg-main-one rounded-full py-1 px-1 md:px-[32px]">
+            <li className="flex flex-col justify-center my-auto bg-[#67AAD3] py-1 px-1 md:px-[32px]">
               <Link href="/contact-us">CONTACT US</Link>
             </li>
           </ul>

@@ -15,3 +15,46 @@
 }
 
 
+/* map css */
+.state {
+    fill: #5c89d7;
+    stroke: #ffffff;
+    stroke-width: 1.4;
+    stroke-linejoin: round;
+  }
+
+
+  #labels {
+    fill: #ffffff;
+  }
+
+
+
+  /* text color of the states that don't fit on the state area */
+  .state-text-color{
+    fill: #5C89D7
+  }
+  
+  .state:hover {
+    fill: rgb(255, 199, 0);
+  }
+  
+  
+  
+  .label {
+    fill: #ffffff; /* Default text color */
+  }
+  
+  .state-group:hover .label {
+    fill: #000000; /* Text hover color */
+  }
+
+
+
+
+
+
+
+
+
+

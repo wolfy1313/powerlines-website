@@ -3,114 +3,94 @@ import { Cairo, Roboto_Slab } from 'next/font/google'
 const cairo = Cairo({ subsets: ['latin'] })
 const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 import Image from 'next/image'
+import OurTeamCard from './OurTeamCard'
 
 function OurTeam() {
   return (
-    <section className="min-w-full max-w-full  bg-white border-20 border-border-yellow">
-      <section className="flex flex-row 
-    justify-center">
-        <section className="flex flex-col 
-      items-center justify-center">
-          <h2 className={`font-bold tracking-wider text-2xl  text-center md:text-3xl mt-8 md:mt-28 text-darker-yellow ${cairo.className}`}>
-            OUR TEAM
+    <section className="w-3/4 m-auto">
+   
+        {/* Start of Our Team Section */}
+        <div className="flex flex-col 
+        items-center justify-center gap-3.5">
+          
+          {/* heading */}
+          <h2 className={`font-bold text-about-us-heading tracking-wider text-2xl  text-center md:text-5xl mt-8 md:mt-32 leading-10 ${cairo.className}`}>
+          OUR TEAM
           </h2>
-          <p className={`text-[20px] text-center font-normal leading-9 mt-14 mb-24 mr-16 ml-16 ${robotoSlab.className}`}>Our passionate and enthusiastic team ready to change the energy system.</p>
-        </section>
+          
+          {/* heading sub-text */}
+          <p className={`text-[20px] text-center font-light leading-9 mb-24 mr-16 ml-16 ${robotoSlab.className}`}>Our passionate and enthusiastic team ready to change the energy system.</p>
+        </div>
+    
+
+      {/* Team reusable component. If you need to edit the format, go OurTeamCard component */}
+      <section className="grid grid-cols-2  md:grid-cols-3 gap-6 justify-items-center mx-auto max-w-6xl lg:max-w-none pb-24">
+
+        <OurTeamCard
+          image="/maleTransparent.png"
+          name="name"
+          role="role"
+          genre="male"
+        />
+
+        <OurTeamCard
+          image="/femaleTransparent.png"
+          name="name"
+          role="role"
+          genre="female"
+        />
+
+        <OurTeamCard
+          image="/maleTransparent.png"
+          name="name"
+          role="role"
+          genre="male"
+        />
+
+        <OurTeamCard
+          image="/femaleTransparent.png"
+          name="name"
+          role="role"
+          genre="female"
+        />
+
+        <OurTeamCard
+          image="/maleTransparent.png"
+          name="name"
+          role="role"
+          genre="male"
+        />
+
+        <OurTeamCard
+          image="/maleTransparent.png"
+          name="name"
+          role="role"
+          genre="male"
+        />
+
+        <OurTeamCard
+          image="/femaleTransparent.png"
+          name="name"
+          role="role"
+          genre="female"
+        />
+
+        <OurTeamCard
+          image="/maleTransparent.png"
+          name="name"
+          role="role"
+          genre="male"
+        />
+
+        <OurTeamCard
+          image="/femaleTransparent.png"
+          name="name"
+          role="role"
+          genre="female"
+        />
       </section>
-
-
-
-      <section className="grid grid-cols-2  md:grid-cols-3 gap-2 justify-items-center mx-auto pt-2 md:pt-3 mb-10 max-w-6xl lg:max-w-none ml-4 mr-4 xl:ml-15 xl:mr-15">
-        {/* name1 */}
-        <section className=" flex-1 mb-4 w-full sm:min-w-[165px]  md:max-w-[295px] xl:max-w-sm   h-auto sm:min-h-[197px] md:h-[352px] overflow-hidden bg-[#B08B1A26]">
-          <section className="relative h-full bg-no-repeat bg-contain bg-center bg-[url('/maleTransparent.png')]">
-            <section className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 p-1 md:p-2">
-              <p className={`${cairo.className} text-base md:text-[20px]  text-white mx-2 font-bold leading-normal`}>Name</p>
-              <p className={`${robotoSlab.className} text-small  text-white mx-2 font-normal leading-normal`}>Role</p>
-            </section>
-          </section>
-        </section>
-        {/* name2 */}
-
-        <section className=" flex-1 mb-4 w-full sm:min-w-[165px]  md:max-w-[295px] xl:max-w-sm  min-h-[197px] sm:h-auto md:h-[352px] overflow-hidden bg-yellow-100 bg-opacity-50 sm:mx-2">
-          <section className="relative h-full bg-no-repeat bg-contain bg-center bg-[url('/femaleTransparent.png')]">
-            <section className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 p-1 md:p-2">
-              <p className={`${cairo.className} text-base md:text-[20px]  text-white mx-2 font-bold leading-normal`}>Name</p>
-              <p className={`${robotoSlab.className} text-small  text-white mx-2 font-normal leading-normal`}>Role</p>
-            </section>
-          </section>
-        </section>
-        {/* name1 */}
-        <section className=" flex-1 mb-4 w-full sm:min-w-[165px]  md:max-w-[295px] xl:max-w-sm   h-auto sm:min-h-[197px] md:h-[352px] overflow-hidden bg-[#B08B1A26]">
-          <section className="relative h-full bg-no-repeat bg-contain bg-center bg-[url('/maleTransparent.png')]">
-            <section className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 p-1 md:p-2">
-              <p className={`${cairo.className} text-base md:text-[20px]  text-white mx-2 font-bold leading-normal`}>Name</p>
-              <p className={`${robotoSlab.className} text-small  text-white mx-2 font-normal leading-normal`}>Role</p>
-            </section>
-          </section>
-        </section>
-        {/* name2 */}
-
-        <section className=" flex-1 mb-4 w-full sm:min-w-[165px]  md:max-w-[295px] xl:max-w-sm  min-h-[197px] sm:h-auto md:h-[352px] overflow-hidden bg-yellow-100 bg-opacity-50 sm:mx-2">
-          <section className="relative h-full bg-no-repeat bg-contain bg-center bg-[url('/femaleTransparent.png')]">
-            <section className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 p-1 md:p-2">
-              <p className={`${cairo.className} text-base md:text-[20px]  text-white mx-2 font-bold leading-normal`}>Name</p>
-              <p className={`${robotoSlab.className} text-small  text-white mx-2 font-normal leading-normal`}>Role</p>
-            </section>
-          </section>
-        </section>
-        {/* name1 */}
-        <section className=" flex-1 mb-4 w-full sm:min-w-[165px]  md:max-w-[295px] xl:max-w-sm   h-auto sm:min-h-[197px] md:h-[352px] overflow-hidden bg-[#B08B1A26]">
-          <section className="relative h-full bg-no-repeat bg-contain bg-center bg-[url('/maleTransparent.png')]">
-            <section className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 p-1 md:p-2">
-              <p className={`${cairo.className} text-base md:text-[20px]  text-white mx-2 font-bold leading-normal`}>Name</p>
-              <p className={`${robotoSlab.className} text-small  text-white mx-2 font-normal leading-normal`}>Role</p>
-            </section>
-          </section>
-        </section>
-        {/* name2 */}
-
-        <section className=" flex-1 mb-4 w-full sm:min-w-[165px]  md:max-w-[295px] xl:max-w-sm  min-h-[197px] sm:h-auto md:h-[352px] overflow-hidden bg-yellow-100 bg-opacity-50 sm:mx-2">
-          <section className="relative h-full bg-no-repeat bg-contain bg-center bg-[url('/femaleTransparent.png')]">
-            <section className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 p-1 md:p-2">
-              <p className={`${cairo.className} text-base md:text-[20px]  text-white mx-2 font-bold leading-normal`}>Name</p>
-              <p className={`${robotoSlab.className} text-small  text-white mx-2 font-normal leading-normal`}>Role</p>
-            </section>
-          </section>
-        </section>
-        {/* name1 */}
-        <section className=" flex-1 mb-4 w-full sm:min-w-[165px]  md:max-w-[295px] xl:max-w-sm   h-auto sm:min-h-[197px] md:h-[352px] overflow-hidden bg-[#B08B1A26]">
-          <section className="relative h-full bg-no-repeat bg-contain bg-center bg-[url('/maleTransparent.png')]">
-            <section className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 p-1 md:p-2">
-              <p className={`${cairo.className} text-base md:text-[20px]  text-white mx-2 font-bold leading-normal`}>Name</p>
-              <p className={`${robotoSlab.className} text-small  text-white mx-2 font-normal leading-normal`}>Role</p>
-            </section>
-          </section>
-        </section>
-        {/* name2 */}
-
-        <section className=" flex-1 mb-4 w-full sm:min-w-[165px]  md:max-w-[295px] xl:max-w-sm  min-h-[197px] sm:h-auto md:h-[352px] overflow-hidden bg-yellow-100 bg-opacity-50 sm:mx-2">
-          <section className="relative h-full bg-no-repeat bg-contain bg-center bg-[url('/femaleTransparent.png')]">
-            <section className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 p-1 md:p-2">
-              <p className={`${cairo.className} text-base md:text-[20px]  text-white mx-2 font-bold leading-normal`}>Name</p>
-              <p className={`${robotoSlab.className} text-small  text-white mx-2 font-normal leading-normal`}>Role</p>
-            </section>
-          </section>
-        </section>
-        {/* name1 */}
-        <section className=" flex-1 mb-4 w-full sm:min-w-[165px]  md:max-w-[295px] xl:max-w-sm   h-auto sm:min-h-[197px] md:h-[352px] overflow-hidden bg-[#B08B1A26]">
-          <section className="relative h-full bg-no-repeat bg-contain bg-center bg-[url('/maleTransparent.png')]">
-            <section className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 p-1 md:p-2">
-              <p className={`${cairo.className} text-base md:text-[20px]  text-white mx-2 font-bold leading-normal`}>Name</p>
-              <p className={`${robotoSlab.className} text-small  text-white mx-2 font-normal leading-normal`}>Role</p>
-            </section>
-          </section>
-        </section>
-
-      </section>
-
     </section>
-
+ 
   )
 }
 
