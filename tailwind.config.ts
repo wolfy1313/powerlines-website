@@ -28,6 +28,7 @@ const config: Config = {
       colors: {
         'main-one': '#FFC700',
         'main-two': '#F7F7F7',
+        'header-blue': '#264D70',
         'darker-yellow': '#E2B100',
         'light-yellow': '#FFF7E0',
         'border-yellow': '#FFF4CA',
