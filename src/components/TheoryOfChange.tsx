@@ -37,14 +37,14 @@ function TheoryOfChange() {
           >
             <ToCCard
               header="Political strategy"
-              imageSrc="/political-strategy.svg"
+              imageSrc="/TOCCardGroup1.png"
               href="/political-strategy"
               checklist={['Appoints Champions', 'Elects Champions']}
             />
 
             <ToCCard
               header="Model Legislation"
-              imageSrc="/model-legislation.svg"
+              imageSrc="/TOCCardGroup2.png"
               href="/model-legislation"
               checklist={['Passes Legislation', 'Lorem Ipsum']}
             />
@@ -52,7 +52,7 @@ function TheoryOfChange() {
             <ToCCard
               header="Stakeholder Engagement
 "
-              imageSrc="/stakeholder-engagement.svg"
+              imageSrc="/TOCCardGroup3.png"
               href="/community-engagement"
               checklist={[
                 'Youth Groups',
