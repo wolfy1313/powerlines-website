@@ -13,9 +13,9 @@ function Footer() {
       <section
         className={`flex flex-col flex-1 items-center min-w-screen justify-center pb-3 align-middle md:flex-row md:pb-0 ${cairo.className}`}
       >
-        <section className="relative flex flex-col justify-center h-[100px] w-[100px] md:mr-6 md:h-[230px] md:w-[240px]">
+        <section className="relative flex flex-col justify-center h-[65px] w-[180px] md:mr-6 md:h-[117px] md:w-[313px]">
           <Image
-            src="/powerlineslogo.svg"
+            src="/PowerlinesLogoFooterTagline.png"
             fill
             alt="logo"
             className="md:mt-3"
