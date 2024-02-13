@@ -50,8 +50,7 @@ function TheoryOfChange() {
             />
 
             <ToCCard
-              header="Stakeholder Engagement
-"
+              header="Stakeholder Engagement"
               imageSrc="/TOCCardGroup3.png"
               href="/community-engagement"
               checklist={[

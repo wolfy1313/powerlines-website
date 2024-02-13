@@ -60,7 +60,7 @@ function OurWorkLatestWork() {
   return (
     <div className='flex flex-col'>
       <div className='pt-16 pb-10 '>
-        <h1 className={`${cairo.className} text-darker-yellow text-center text-3xl md:text-5xl font-bold`} >
+        <h1 className={`${cairo.className} text-black text-center text-3xl md:text-5xl font-bold`} >
           OUR LATEST WORK
         </h1>
       </div>
