@@ -27,8 +27,7 @@ function TheoryOfChange() {
             equity through utility regulation by targeting{' '}
             <br className="block md:hidden" /> state{' '}
             <br className="hidden md:block" /> public utilities commissions. To
-            <br className="block md:hidden" />
-            tackle this challenge, PowerLines pursues{' '}
+            <br className="block md:hidden" /> tackle this challenge, PowerLines pursues{' '}
             <br className="block md:hidden" /> a three-part theory of change.
           </h2>
 
