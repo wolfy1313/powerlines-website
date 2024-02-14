@@ -22,29 +22,29 @@ function Footer() {
           />
         </section>
         {/* Text Container */}
-        <section className="flex flex-col justify-center md:ml-32">
-          {/* Title text */}
-          <section className="flex flex-row font-bold mb-3 text-xl space-x-2 md:space-x-0 md:text-2xl md:flex-col">
+        {/* <section className="flex flex-col justify-center md:ml-32"> */}
+        {/* Title text */}
+        {/* <section className="flex flex-row font-bold mb-3 text-xl space-x-2 md:space-x-0 md:text-2xl md:flex-col">
             <h2 className="flex flex-row justify-center md:justify-start">
               Bringing <span className="text-main-one pl-3">Power</span>
             </h2>
             <h2 className="flex flex-row justify-center md:justify-start">
               to the Public
             </h2>
-          </section>
+          </section> */}
 
-          {/* Subtitle text */}
-          <h3
+        {/* Subtitle text */}
+        {/* <h3
             className={`${robotoSlab.className} text-center md:text-left`}
           >
             NGO passionate about reshaping the <br /> energy system
           </h3>
-        </section>
+        </section> */}
       </section>
 
       {/* Right hand/Bottom side of Footer */}
       <section
-        className={`flex flex-1 flex-col items-center  justify-center  my-auto text-2xl ${cairo.className} border-t pt-4 border-t-black md:flex-row md:justify-start lg:border-t-0 lg:border-l lg:border-l-black lg:pt-0`}
+        className={`flex flex-1 flex-col items-center  justify-center  my-auto text-2xl ${cairo.className} border-t pt-4 border-t-black md:flex-row md:justify-start lg:border-t-0 lg:border-l-2 lg:border-l-yellow-300 lg:pt-0`}
       >
         {/* Nav List */}
         <ul className="flex flex-col space-y-3 pt-2 pl-2 text-center md:text-left md:pr-16 lg:pr-0 lg:pt-0 lg:pl-32">
