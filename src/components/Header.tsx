@@ -179,10 +179,10 @@ function Header() {
         // Render regular navigation for larger screens
         <section className="flex flex-col justify-center ">
           <ul
-            className={`flex flex-row gap-2.5 font-bold text-sm ${cairo.className} my-auto md:py-[12px]`}
+            className={` text-white flex flex-row gap-2.5 font-bold text-sm ${cairo.className} my-auto md:py-[12px]`}
           >
             <li
-              className={`pt-1 px-2 relative ${isDropdownVisible ? 'bg-light-yellow' : 'bg-main-two'
+              className={`py-2 px-2 relative ${isDropdownVisible ? 'bg-light-yellow' : 'bg-none'
                 } `}
             >
               <div className="flex flex-row">
@@ -233,11 +233,11 @@ function Header() {
                 </ul>
               )}
             </li>
-            <li className="pt-1">
+            <li className="py-2">
               <Link href="/about-us">ABOUT US</Link>
             </li>
             <li className="flex flex-col justify-center my-auto bg-[#67AAD3] py-1 px-1 md:px-[32px]">
-              <Link href="/contact-us">CONTACT US</Link>
+              <Link className='py-1' href="/contact-us">CONTACT US</Link>
             </li>
           </ul>
         </section>
