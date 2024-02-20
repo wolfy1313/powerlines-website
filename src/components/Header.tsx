@@ -242,7 +242,7 @@ function Header() {
             <li className="py-2">
               <Link href="/about-us">ABOUT US</Link>
             </li>
-            <li className="flex flex-col justify-center my-auto bg-gradient-to-r from-[#F89735] to-[#FFD00F] py-1 px-1 md:px-[32px]"
+            <li className="flex flex-col justify-center my-auto rounded-lg bg-gradient-to-l from-[#F89735] to-[#FFD00F] py-1 px-1 md:px-[32px]"
             /* Frame 2 */
 
             /* Auto layout */
