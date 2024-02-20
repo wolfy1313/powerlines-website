@@ -4,9 +4,15 @@ import React, { useEffect } from 'react'
 import Link from 'next/link'
 import { Cairo } from 'next/font/google'
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 const cairo = Cairo({ subsets: ['latin'] })
 
+
 function Header() {
+  //get route
+  // const router = useRouter()
+  // const isHomeRoute = router.pathname === '/';
+
   // State to handle dropdown visibility
   const [isDropdownVisible, setIsDropdownVisible] = useState<boolean>(false)
   // State to handle mobile hamburger menu
@@ -36,10 +42,10 @@ function Header() {
 
   return (
     <section
-      className={`z-10 flex flex-row justify-between p-4 max-w-screen bg-[/home] md:pt-[8px] md:px-[100px] md:pb-[4px] md:justify-between bg-[url('/home-header.svg')] bg-cover bg-top bg-no-repeat`}
+      className={`z-10 flex flex-row justify-between p-4 max-w-screen md:pt-[8px] md:px-[100px] md:pb-[4px] md:justify-between bg-white bg-cover bg-top bg-no-repeat`}
     >
       <Link href="/">
-        <Image src="/new_logo.svg" width={100} height={100} alt="logo" />
+        <Image src="/LogoBlackText.png" width={141} height={60} alt="logo" />
       </Link>
       {isMobile ? (
         // Render hamburger menu for mobile screens
@@ -84,7 +90,7 @@ function Header() {
                   </button>
                 </li>
                 <li
-                  className={`pt-1 px-2 relative ${isDropdownVisible ? 'bg-light-yellow' : 'bg-main-two'
+                  className={`pt-1 px-2 relative ${isDropdownVisible ? 'bg-light-yellow text-black' : 'bg-main-two'
                     } `}
                 >
                   <div className="flex flex-row">
@@ -179,10 +185,10 @@ function Header() {
         // Render regular navigation for larger screens
         <section className="flex flex-col justify-center ">
           <ul
-            className={` text-white flex flex-row gap-2.5 font-bold text-sm ${cairo.className} my-auto md:py-[12px]`}
+            className={` text-black flex flex-row gap-2.5 font-bold text-sm ${cairo.className} my-auto md:py-[12px]`}
           >
             <li
-              className={`py-2 px-2 relative ${isDropdownVisible ? 'bg-light-yellow' : 'bg-none'
+              className={`py-2 px-2 relative ${isDropdownVisible ? 'bg-light-yellow text-black' : 'bg-none'
                 } `}
             >
               <div className="flex flex-row">
@@ -236,13 +242,18 @@ function Header() {
             <li className="py-2">
               <Link href="/about-us">ABOUT US</Link>
             </li>
-            <li className="flex flex-col justify-center my-auto bg-[#67AAD3] py-1 px-1 md:px-[32px]">
+            <li className="flex flex-col justify-center my-auto bg-gradient-to-r from-[#F89735] to-[#FFD00F] py-1 px-1 md:px-[32px]"
+            /* Frame 2 */
+
+            /* Auto layout */
+            >
               <Link className='py-1' href="/contact-us">CONTACT US</Link>
             </li>
           </ul>
         </section>
-      )}
-    </section>
+      )
+      }
+    </section >
   )
 }
 
