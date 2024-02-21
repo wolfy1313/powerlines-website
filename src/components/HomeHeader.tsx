@@ -38,12 +38,12 @@ function HomeHeader({ scrollToWhoWeAre }: HomeHeaderProps) {
           </h3>
 
           {/* Scroll Button */}
-          <section className="flex-1 justify-center mt-5 hidden md:flex md:flex-row ">
+          <section className="flex-1 justify-center mt-14 hidden md:flex md:flex-row ">
             <button onClick={scrollToWhoWeAre}>
               <Image
-                height={60}
-                width={60}
-                src="./scrollbutton.svg"
+                height={72}
+                width={72}
+                src="./ScrollButton2.svg"
                 alt="scroll"
               />
             </button>
