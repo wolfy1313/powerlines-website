@@ -16,7 +16,7 @@ function HomeHeader({ scrollToWhoWeAre }: HomeHeaderProps) {
         {/* Title Text */}
         <section className="flex-col font-bold tracking-wider text-2xl md:text-5xl mt-8 md:mt-64">
           <h2 className={`flex flex-row ${cairo.className}`}>
-            Bringing <span className="px-3">Power</span>
+            <span className="px-3">Power</span>
             to the Public
           </h2>
         </section>
