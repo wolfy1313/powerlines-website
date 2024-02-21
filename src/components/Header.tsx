@@ -42,7 +42,7 @@ function Header() {
 
   return (
     <section
-      className={`z-10 flex flex-row justify-between p-4 max-w-screen md:pt-[8px] md:px-[100px] md:pb-[4px] md:justify-between bg-white bg-cover bg-top bg-no-repeat`}
+      className={`z-10 flex flex-row justify-between p-4 max-w-screen md:pt-[8px] md:px-[100px] md:pb-[4px] md:justify-between bg-white bg-cover bg-top bg-no-repeat border-b-2 border-[#F7F7F7]`}
     >
       <Link href="/">
         <Image src="/LogoBlackText.png" width={141} height={60} alt="logo" />
@@ -239,15 +239,15 @@ function Header() {
                 </ul>
               )}
             </li>
-            <li className="py-2">
+            <li className="py-2 pr-2">
               <Link href="/about-us">ABOUT US</Link>
             </li>
-            <li className="flex flex-col justify-center my-auto rounded-lg bg-gradient-to-l from-[#F89735] to-[#FFD00F] py-1 px-1 md:px-[32px]"
+            <li className="flex flex-col justify-center my-auto rounded-lg bg-gradient-to-l from-[#F89735] to-[#FFD00F] py-1 px-1 md:px-6"
             /* Frame 2 */
 
             /* Auto layout */
             >
-              <Link className='py-1' href="/contact-us">CONTACT US</Link>
+              <Link className='' href="/contact-us">CONTACT US</Link>
             </li>
           </ul>
         </section>

@@ -16,7 +16,7 @@ function HomeHeader({ scrollToWhoWeAre }: HomeHeaderProps) {
         {/* Title Text */}
         <section className="flex-col font-bold tracking-wider text-2xl md:text-5xl mt-8 md:mt-64">
           <h2 className={`flex flex-row ${cairo.className}`}>
-            Bringing <span className="px-3">Power</span>
+            <span className="px-3">Power</span>
             to the Public
           </h2>
         </section>
@@ -38,12 +38,12 @@ function HomeHeader({ scrollToWhoWeAre }: HomeHeaderProps) {
           </h3>
 
           {/* Scroll Button */}
-          <section className="flex-1 justify-center mt-5 hidden md:flex md:flex-row ">
+          <section className="flex-1 justify-center mt-14 hidden md:flex md:flex-row ">
             <button onClick={scrollToWhoWeAre}>
               <Image
-                height={60}
-                width={60}
-                src="./scrollbutton.svg"
+                height={72}
+                width={72}
+                src="./ScrollButton2.svg"
                 alt="scroll"
               />
             </button>
