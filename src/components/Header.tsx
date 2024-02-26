@@ -4,15 +4,13 @@ import React, { useEffect } from 'react'
 import Link from 'next/link'
 import { Cairo } from 'next/font/google'
 import { useState } from 'react'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 const cairo = Cairo({ subsets: ['latin'] })
 
 
 function Header() {
   //get route
-  // const router = useRouter()
-  // const isHomeRoute = router.pathname === '/';
-
+  const pathname = usePathname()
   // State to handle dropdown visibility
   const [isDropdownVisible, setIsDropdownVisible] = useState<boolean>(false)
   // State to handle mobile hamburger menu
@@ -42,7 +40,7 @@ function Header() {
 
   return (
     <section
-      className={`z-10 flex flex-row justify-between p-4 max-w-screen md:pt-[8px] md:px-[100px] md:pb-[4px] md:justify-between bg-white bg-cover bg-top bg-no-repeat border-b-2 border-[#F7F7F7]`}
+      className={`z-10 flex flex-row justify-between p-4 max-w-screen md:pt-[8px] md:px-[100px] md:pb-[4px] md:justify-between bg-[#F7F7F7] bg-cover bg-top bg-no-repeat border-b-2 border-[#F7F7F7]`}
     >
       <Link href="/">
         <Image src="/LogoBlackText.png" width={141} height={60} alt="logo" />
