@@ -18,7 +18,7 @@ function OurWorkPage() {
       </section>
 
       {/* {Our Problem Section} */}
-      <section className={`bg-no-repeat bg-[url('/OurWorkBG_NEW.png')] bg-cover`}>
+      <section className={`bg-white`}>
         <section className=' flex flex-col-reverse px-3 py-3 md:flex md:flex-row max-w-screen md:px-10 md:py-10'>
           <section className='flex md:px-7 px-3 items-center ' >
             <OurWorkProblem />
@@ -46,7 +46,7 @@ function OurWorkPage() {
 
         {/* {Theory of Change Section} */}
         {/* bg-no-repeat bg-[url('/OurWorkToCBG.svg')] bg-cover */}
-        <section className="">
+        <section className="bg-[#F4F3F3]">
           <TheoryOfChange />
         </section>
 
