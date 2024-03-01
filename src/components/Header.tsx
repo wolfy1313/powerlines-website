@@ -80,7 +80,7 @@ function Header() {
                 </button>
               </div>
               <ul
-                className={`flex flex-col gap-20 items-center font-bold text-2xl ${cairo.className} my-auto mx-0 md:py-[12px] pb-48 text-white`}
+                className={`flex flex-col gap-20 items-center font-bold text-2xl ${cairo.className} my-auto mx-0 md:py-[12px] pb-48 text-black`}
               >
                 <li className="pt-1">
                   <button onClick={toggleBurger}>
