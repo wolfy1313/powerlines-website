@@ -88,7 +88,7 @@ function Header() {
                   </button>
                 </li>
                 <li
-                  className={`pt-1 px-2 relative ${isDropdownVisible ? 'bg-light-yellow text-black' : 'bg-main-two'
+                  className={`pt-1 px-2 relative ${isDropdownVisible ? 'text-black' : 'bg-main-two'
                     } `}
                 >
                   <div className="flex flex-row">
