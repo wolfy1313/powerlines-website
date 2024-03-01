@@ -64,7 +64,7 @@ function Header() {
               <div className="flex align-top justify-between cursor-pointer">
                 <Link href="/">
                   <Image
-                    src="/powerlineslogo.svg"
+                    src="/LogoBlackText.png"
                     width={100}
                     height={100}
                     alt="logo"
