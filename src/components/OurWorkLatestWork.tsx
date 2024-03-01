@@ -48,7 +48,7 @@ const Section: React.FC<SectionProps> = ({ title, content, download, link }) => 
         </button>
       </div>
       <div className={`col-span-3 pr-8 pb-8 overflow-hidden transition-[max-height] duration-500 ease-in-out ${isDropdownVisible ? "max-h-72" : "max-h-0"}`}>
-        <div className={`${robotoSlab.className}  text-sm font-normal md:text-lg pr-2 pl-2 md:pr-20 md:pl-20 pt-4 pb-10`}>{content}</div>
+        <div className={`${robotoSlab.className}  text-sm font-light md:text-xl pr-2 pl-2 md:pr-20 md:pl-20 pt-4 pb-10`}>{content}</div>
         <div className={`${cairo.className} font-bold pl-2 md:pl-20`}>{download}</div>
         <div className={`${cairo.className} flex underline font-semibold pl-2 md:pl-20 text-main-one`}>{link}</div>
       </div>
