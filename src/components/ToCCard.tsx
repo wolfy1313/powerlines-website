@@ -9,7 +9,7 @@ const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 const ToCCard = ({ header, imageSrc, checklist, href }: ToCCardProps) => {
   return (
     <div className='group'>
-      <div className="bg-white shadow-custom rounded-t-lg mt-5 flex flex-col justify-between w-400 h-[434px] text-center md:flex-grow md:flex-shrink md:basis-1/3">
+      <div className="bg-white border-x-2 border-t-2 border-[#E8E7E7] rounded-t-lg mt-5 flex flex-col justify-between w-400 h-[434px] text-center md:flex-grow md:flex-shrink md:basis-1/3">
         {/* card Image and Text container */}
         <div className='flex flex-col mt-7'>
           {/* Card Image Section */}
