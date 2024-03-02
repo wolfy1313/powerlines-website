@@ -33,7 +33,7 @@ function TheoryOfChange() {
 
           {/* Cards */}
           <section
-            className={`mx-2 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 lg:gap-12  ${robotoSlab.className}`}
+            className={`mx-2 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 lg:gap-12 mb-8 ${robotoSlab.className}`}
           >
             <ToCCard
               header="Political strategy"
