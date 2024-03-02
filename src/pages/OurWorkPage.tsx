@@ -7,7 +7,7 @@ import OurWorkSolutionImage from '@/components/OurWorkSolutionImage'
 import OurWorkProblemHeader from '@/components/OurWorkProblemHeader'
 import OurWorkLatestWork from '@/components/OurWorkLatestWork'
 import OurWorkSolutionHeader from '@/components/OurWorkSolutionHeader'
-import TheoryOfChange from '@/components/TheoryOfChange'
+import TheoryOfChangeVersion2 from '@/components/TheoryOfChangeVersion2'
 
 function OurWorkPage() {
   return (
@@ -47,7 +47,7 @@ function OurWorkPage() {
         {/* {Theory of Change Section} */}
         {/* bg-no-repeat bg-[url('/OurWorkToCBG.svg')] bg-cover */}
         <section className="bg-[#F4F3F3]">
-          <TheoryOfChange />
+          <TheoryOfChangeVersion2 />
         </section>
 
         {/* {Latest Work Section} */}

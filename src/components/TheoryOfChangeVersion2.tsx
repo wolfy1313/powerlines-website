@@ -2,11 +2,11 @@ import React from 'react'
 import { Cairo, Roboto_Slab } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
-import ToCCard from './ToCCard'
+import ToCCardVersion2 from './ToCCardVersion2'
 const cairo = Cairo({ subsets: ['latin'] })
 const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 
-function TheoryOfChange() {
+function TheoryOfChangeVersion2() {
   return (
     <section className="min-w-screen max-w-screen bg-section-yellow ">
       <section className="flex flex-row justify-center">
@@ -35,23 +35,23 @@ function TheoryOfChange() {
           <section
             className={`mx-2 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 lg:gap-12 mb-8 lg:mb-24 ${robotoSlab.className}`}
           >
-            <ToCCard
+            <ToCCardVersion2
               header="Political strategy"
-              imageSrc="/TOCCardGroup1.png"
+              imageSrc="/TOCCardGroup1V2.png"
               href="/political-strategy"
               checklist={['Appoints Champions', 'Elects Champions']}
             />
 
-            <ToCCard
+            <ToCCardVersion2
               header="Model Legislation"
-              imageSrc="/TOCCardGroup2.png"
+              imageSrc="/TOCCardGroup2V2.png"
               href="/model-legislation"
               checklist={['Passes Legislation', 'Lorem Ipsum']}
             />
 
-            <ToCCard
+            <ToCCardVersion2
               header="Stakeholder Engagement"
-              imageSrc="/TOCCardGroup3.png"
+              imageSrc="/TOCCardGroup3V2.png"
               href="/community-engagement"
               checklist={[
                 'Youth Groups',
@@ -66,4 +66,4 @@ function TheoryOfChange() {
   )
 }
 
-export default TheoryOfChange
+export default TheoryOfChangeVersion2
