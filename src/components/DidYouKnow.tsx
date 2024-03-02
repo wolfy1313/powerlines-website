@@ -23,7 +23,7 @@ const DidYouKnow = () => {
       {/* Text Container */}
       <section className="z-10 text-center p-10 md:mb-16">
         <h1 className="pb-2 text-2xl font-bold md:text-3xl md:pb-5">
-          DID YOU KNOW?
+        WHY DO PUCS MATTER?
         </h1>
         <h2 className="text-xl font-bold leading-loose md:text-2xl">
           Public utilities commissions (PUCs), who regulate utilities in every
