@@ -20,9 +20,9 @@ function TheoryOfChange() {
       </section>
       <section className="flex flex-row flex-1 justify-center min-w-screen my-auto mb-10">
         <section
-          className={`flex flex-col ${robotoSlab.className} flex flex-col items-center  max-w-screen md:min-w-screen md:tracking-wider md:text-xl mt-10`}
+          className={`flex flex-col ${robotoSlab.className} flex flex-col items-center  max-w-screen md:min-w-screen md:tracking-wider md:text-xl mt-2 lg:mt-10`}
         >
-          <h2 className=" max-w-screen text-center md:min-w-screen mb-10 mx-10 leading-10">
+          <h2 className=" max-w-screen text-center md:min-w-screen mb-10 mx-10 lg:leading-10">
             We aim to reshape the energy system by accelerating clean energy and
             equity through utility regulation by targeting{' '}
             <br className="block md:hidden" /> state{' '}
@@ -33,7 +33,7 @@ function TheoryOfChange() {
 
           {/* Cards */}
           <section
-            className={`flex flex-col justify-center gap-12  ${robotoSlab.className} md:flex-row md:w-full`}
+            className={`mx-2 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 lg:gap-12  ${robotoSlab.className}`}
           >
             <ToCCard
               header="Political strategy"
