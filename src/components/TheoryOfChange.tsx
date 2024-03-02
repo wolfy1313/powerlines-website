@@ -33,7 +33,7 @@ function TheoryOfChange() {
 
           {/* Cards */}
           <section
-            className={`flex flex-col justify-center w-11/12 ${robotoSlab.className} md:flex-row md:w-full`}
+            className={`flex flex-col justify-center gap-12  ${robotoSlab.className} md:flex-row md:w-full`}
           >
             <ToCCard
               header="Political strategy"
