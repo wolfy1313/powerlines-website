@@ -6,13 +6,13 @@ import { ToCCardProps } from '@/types/global'
 
 const cairo = Cairo({ subsets: ['latin'] })
 const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
-const ToCCard = ({ header, imageSrc, checklist, href }: ToCCardProps) => {
+const ToCCardVersion2 = ({ header, imageSrc, checklist, href }: ToCCardProps) => {
   return (
     <div className='group'>
       <div className="bg-white p-4 border-x-1 border-t-1 lg:border-x-2 lg:border-t-2 border-[#E8E7E7] rounded-t-lg lg:mt-5 flex lg:flex-col justify-center items-center lg:justify-between w-400 h-[117px] lg:h-[434px] text-center md:flex-grow md:flex-shrink md:basis-1/3">
           {/* Card Image Section */}
           <section className='flex justify-center items-center relative h-[49px] w-[56px] lg:h-[116px] lg:w-[120px] mx-auto'>
-            <div className="lg:mt-4 w-[50px] w-[40px]  lg:w-[110px] lg:h-[105px] rounded-[30px] bg-[#FFEEA975] group-hover:bg-[#D91D4C21] flex ">
+            <div className="lg:mt-4 w-[50px] w-[40px]  lg:w-[110px] lg:h-[105px] rounded-[30px]  flex ">
               <Image
                 src={imageSrc}
                 alt={`${header} icon`}
@@ -55,11 +55,11 @@ const ToCCard = ({ header, imageSrc, checklist, href }: ToCCardProps) => {
           {/* Full CTA for lg screens and up */}
           <Link
             href={`${href}`}
-            className={`hidden lg:inline-flex items-center px-6 py-3 text-sm font-bold text-center text-[#D76C00] bg-main-white border-2 border-[#D76C00] rounded-md ${cairo.className}`}
+            className={`hidden lg:inline-flex items-center px-6 py-3 text-sm font-bold text-center text-[#D91D4C] bg-main-white border-2 border-[#D91D4C] rounded-md ${cairo.className}`}
           >
             Learn More
             <Image
-              src="/arrow-right2.svg"
+              src="/Arrow-right3.svg"
               alt=""
               height={5}
               width={28}
@@ -89,18 +89,16 @@ const ToCCard = ({ header, imageSrc, checklist, href }: ToCCardProps) => {
         rounded-b-lg 
         h-[3px] 
         lg:h-[6px]  
-        bg-gradient-to-r 
-        from-[#FFD110] 
-        to-[#DA204B]
-        lg:bg-gradient-to-l 
-        lg:from-[#F6A41E] 
-        lg:to-[#FFD010] 
+        bg-gradient-to-l 
+        from-[#996D98] 
+        to-[#67AAD3] 
         group-hover:bg-gradient-to-r 
-        group-hover:from-[#F5A020] 
-        group-hover:to-[#EF8529]'>
+        group-hover:from-[#9C6894]
+        group-hover:via-[#D91D4C] 
+        group-hover:to-[#996D98]'>
       </div>
     </div>
   )
 }
 
-export default ToCCard
+export default ToCCardVersion2
