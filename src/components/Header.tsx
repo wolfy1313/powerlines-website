@@ -9,6 +9,26 @@ const cairo = Cairo({ subsets: ['latin'] })
 
 
 function Header() {
+  const UpArrow = () => (
+    <Image
+      src="/arrowup.svg"
+      alt="up arrow"
+      height={20}
+      width={20}
+      className="mx-3"
+      onClick={toggleDropdown}
+    />
+  );
+  const DownArrow = () => (
+    <Image
+      src="/dropdownarrow.svg"
+      alt="dropdownarrow"
+      height={20}
+      width={20}
+      className="mx-3"
+      onClick={toggleDropdown}
+    />
+  );
   //get route
   const pathname = usePathname()
   // State to handle dropdown visibility
@@ -93,14 +113,7 @@ function Header() {
                 >
                   <div className="flex flex-row">
                     <button onClick={toggleDropdown}>OUR WORK</button>
-                    <Image
-                      src="/dropdownarrow.svg"
-                      alt="dropdownarrow"
-                      height={20}
-                      width={20}
-                      className="mx-3"
-                      onClick={toggleDropdown}
-                    />
+                    {isDropdownVisible ? (<UpArrow />) : (<DownArrow />)}
                   </div>
                   {isMobile && isDropdownVisible && (
                     <div className=" m-0 ">
