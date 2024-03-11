@@ -9,6 +9,26 @@ const cairo = Cairo({ subsets: ['latin'] })
 
 
 function Header() {
+  const UpArrow = () => (
+    <Image
+      src="/arrowup.svg"
+      alt="up arrow"
+      height={20}
+      width={20}
+      className="mx-3"
+      onClick={toggleDropdown}
+    />
+  );
+  const DownArrow = () => (
+    <Image
+      src="/dropdownarrow.svg"
+      alt="dropdownarrow"
+      height={20}
+      width={20}
+      className="mx-3"
+      onClick={toggleDropdown}
+    />
+  );
   //get route
   const pathname = usePathname()
   // State to handle dropdown visibility
@@ -93,25 +113,34 @@ function Header() {
                 >
                   <div className="flex flex-row">
                     <button onClick={toggleDropdown}>OUR WORK</button>
-                    <Image
-                      src="/dropdownarrow.svg"
-                      alt="dropdownarrow"
-                      height={20}
-                      width={20}
-                      className="mx-3"
-                      onClick={toggleDropdown}
-                    />
+                    {isDropdownVisible ? (<UpArrow />) : (<DownArrow />)}
                   </div>
                   {isMobile && isDropdownVisible && (
                     <div className=" m-0 ">
                       <ul className="absolute text-center left-0 mt-1 w-full bg-main-two">
-                        <button
-                          onClick={() => {
-                            toggleDropdown()
-                            toggleBurger()
-                          }}
-                        >
-                          <li className="hover:bg-gray-400 font-normal pt-4 leading-relaxed text-base">
+                        <li className="hover:bg-gray-400 font-normal pt-4 leading-relaxed text-base">
+                          <button
+                            onClick={() => {
+                              toggleDropdown()
+                              toggleBurger()
+                            }}
+                          >
+                            <Link
+                              className={` ${isDropdownVisible ? 'hover:pl-1' : 'pl-0'
+                                }`}
+                              href="/our-work"
+                            >
+                              Overview
+                            </Link>
+                          </button>
+                        </li>
+                        <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-base">
+                          <button
+                            onClick={() => {
+                              toggleDropdown()
+                              toggleBurger()
+                            }}
+                          >
                             <Link
                               className={` ${isDropdownVisible ? 'hover:pl-1' : 'pl-0'
                                 }`}
@@ -119,25 +148,25 @@ function Header() {
                             >
                               Political Strategy
                             </Link>
-                          </li>
-                        </button>
-                        <button
-                          onClick={() => {
-                            toggleDropdown()
-                            toggleBurger()
-                          }}
-                        >
-                          <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-base">
+                          </button>
+                        </li>
+                        <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-base">
+                          <button
+                            onClick={() => {
+                              toggleDropdown()
+                              toggleBurger()
+                            }}
+                          >
                             Model Legislation
-                          </li>
-                        </button>
-                        <button
-                          onClick={() => {
-                            toggleDropdown()
-                            toggleBurger()
-                          }}
-                        >
-                          <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-base px-0 text-nowrap">
+                          </button>
+                        </li>
+                        <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-base px-0 text-nowrap">
+                          <button
+                            onClick={() => {
+                              toggleDropdown()
+                              toggleBurger()
+                            }}
+                          >
                             <section
                               className={`${isDropdownVisible ? 'hover:pl-1 ' : 'pl-0'
                                 }`}
@@ -149,8 +178,8 @@ function Header() {
                                 Stakeholder Engagement
                               </Link>
                             </section>
-                          </li>
-                        </button>
+                          </button>
+                        </li>
                       </ul>
                       <li className="pt-1">
                         <button onClick={toggleBurger}>
