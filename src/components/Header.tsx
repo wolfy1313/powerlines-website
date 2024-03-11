@@ -118,13 +118,29 @@ function Header() {
                   {isMobile && isDropdownVisible && (
                     <div className=" m-0 ">
                       <ul className="absolute text-center left-0 mt-1 w-full bg-main-two">
-                        <button
-                          onClick={() => {
-                            toggleDropdown()
-                            toggleBurger()
-                          }}
-                        >
-                          <li className="hover:bg-gray-400 font-normal pt-4 leading-relaxed text-base">
+                        <li className="hover:bg-gray-400 font-normal pt-4 leading-relaxed text-base">
+                          <button
+                            onClick={() => {
+                              toggleDropdown()
+                              toggleBurger()
+                            }}
+                          >
+                            <Link
+                              className={` ${isDropdownVisible ? 'hover:pl-1' : 'pl-0'
+                                }`}
+                              href="/our-work"
+                            >
+                              Overview
+                            </Link>
+                          </button>
+                        </li>
+                        <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-base">
+                          <button
+                            onClick={() => {
+                              toggleDropdown()
+                              toggleBurger()
+                            }}
+                          >
                             <Link
                               className={` ${isDropdownVisible ? 'hover:pl-1' : 'pl-0'
                                 }`}
@@ -132,25 +148,25 @@ function Header() {
                             >
                               Political Strategy
                             </Link>
-                          </li>
-                        </button>
-                        <button
-                          onClick={() => {
-                            toggleDropdown()
-                            toggleBurger()
-                          }}
-                        >
-                          <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-base">
+                          </button>
+                        </li>
+                        <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-base">
+                          <button
+                            onClick={() => {
+                              toggleDropdown()
+                              toggleBurger()
+                            }}
+                          >
                             Model Legislation
-                          </li>
-                        </button>
-                        <button
-                          onClick={() => {
-                            toggleDropdown()
-                            toggleBurger()
-                          }}
-                        >
-                          <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-base px-0 text-nowrap">
+                          </button>
+                        </li>
+                        <li className="hover:bg-gray-400 font-normal pt-1 leading-relaxed text-base px-0 text-nowrap">
+                          <button
+                            onClick={() => {
+                              toggleDropdown()
+                              toggleBurger()
+                            }}
+                          >
                             <section
                               className={`${isDropdownVisible ? 'hover:pl-1 ' : 'pl-0'
                                 }`}
@@ -162,8 +178,8 @@ function Header() {
                                 Stakeholder Engagement
                               </Link>
                             </section>
-                          </li>
-                        </button>
+                          </button>
+                        </li>
                       </ul>
                       <li className="pt-1">
                         <button onClick={toggleBurger}>
