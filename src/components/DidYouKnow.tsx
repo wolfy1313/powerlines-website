@@ -7,14 +7,12 @@ const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 const DidYouKnow = () => {
   // Define the yellow border color
   const borderColor = 'border-[#FFF4CA]'
-  const customGradientStyle = {
-    background:
-      'linear-gradient(45deg, transparent 25%, #FFF4CA 50%, transparent 75%)'
-  }
+  
 
   return (
     <section
-      className={`flex flex-col items-center justify-around min-w-full min-h-[526px] max-w-screen border-[16px] md:pb-5 md:justify-center ${borderColor} bg-white ${cairo.className}`}
+      className={`flex flex-col items-center justify-around min-w-full min-h-[712px] max-w-screen  md:pb-5 md:justify-center  ${cairo.className} bg-[#F5F5F5D9] bg-blend-overlay bg-[url('/US_capital.png')] bg-cover bg-no-repeat bg-center`}
+      
       
     >
       {/* Yellow faded line at the back */}
@@ -39,7 +37,7 @@ const DidYouKnow = () => {
 
       {/* Card Section */}
       <section
-        className={`z-10 flex flex-col justify-around w-full px-10 space-y-10 pb-20 md:px-20 md:justify-center md:space-x-32 ${robotoSlab.className} md:flex-row md:space-y-0`}
+        className={`z-10 flex flex-col justify-around w-full px-10 space-y-10 pb-20 md:px-20 md:justify-center md:space-x-32 ${cairo.className} md:flex-row md:space-y-0`}
       >
         <section className="flex flex-col items-center">
           <Image
@@ -48,7 +46,7 @@ const DidYouKnow = () => {
             height={60}
             width={60}
           />
-          <p className="text-center mt-2">Our energy bills</p>
+          <p className={`text-center mt-2`}>Our energy bills</p>
         </section>
         <section className="flex flex-col items-center">
           <Image src="/flower.svg" alt="flower" height={60} width={60} />
