@@ -15,23 +15,23 @@ const DidYouKnow = () => {
   return (
     <section
       className={`flex flex-col items-center justify-around min-w-full min-h-[526px] max-w-screen border-[16px] md:pb-5 md:justify-center ${borderColor} bg-white ${cairo.className}`}
-      style={customGradientStyle}
+      
     >
       {/* Yellow faded line at the back */}
       <div className={`absolute top-0 w-full h-1/3 `} />
 
       {/* Text Container */}
       <section className="z-10 text-center p-10 md:mb-16">
-        <h1 className="pb-2 text-2xl font-bold md:text-3xl md:pb-5">
+        <h1 className={`pb-2 text-2xl font-bold md:text-3xl md:pb-5 text-[#264D70] ${cairo.className}`}>
         WHY DO PUCS MATTER?
         </h1>
-        <h2 className="text-xl font-bold leading-loose md:text-2xl">
+        <h2 className={`text-lg md:text-3xl font-semibold ${cairo.className}`}>
           Public utilities commissions (PUCs), who regulate utilities in every
           state, are a <br /> critical yet often overlooked piece of the clean
           energy transition.
         </h2>
         <h3
-          className={`pt-4 text-xl md:pt-10 ${robotoSlab.className} md:text-xl`}
+          className={`font-bold pt-4 text-xl md:text-3xl md:pt-10 ${cairo.className} md:text-3xl`}
         >
           They have the power to determine:
         </h3>
