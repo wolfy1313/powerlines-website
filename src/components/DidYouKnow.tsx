@@ -19,8 +19,8 @@ const DidYouKnow = () => {
       <div className={`absolute top-0 w-full h-1/3 `} />
 
       {/* Text Container */}
-      <section className="z-10 text-center p-10 md:mb-16">
-        <h1 className={`pb-2 text-2xl font-bold md:text-3xl md:pb-5 text-[#264D70] ${cairo.className}`}>
+      <section className="z-10 text-center p-10 md:mb-2">
+        <h1 className={`pb-2 text-2xl font-bold md:text-5xl md:pb-5 text-[#264D70] ${cairo.className}`}>
         WHY DO PUCS MATTER?
         </h1>
         <h2 className={`text-lg md:text-3xl font-semibold ${cairo.className}`}>
@@ -37,32 +37,31 @@ const DidYouKnow = () => {
 
       {/* Card Section */}
       <section
-        className={`z-10 flex flex-col justify-around w-full px-10 space-y-10 pb-20 md:px-20 md:justify-center md:space-x-32 ${cairo.className} md:flex-row md:space-y-0`}
+        className={`z-10 flex flex-col justify-around items-center w-full px-10 space-y-10 pb-20 md:px-20 md:justify-center md:space-x-32 ${cairo.className} md:flex-row md:space-y-0 text-2xl`}
       >
         <section className="flex flex-col items-center">
           <Image
             src="/energybill.svg"
-            alt="energy bill"
-            height={60}
-            width={60}
+            alt="energy bill icon"
+            height={83}
+            width={70}
           />
           <p className={`text-center mt-2`}>Our energy bills</p>
         </section>
         <section className="flex flex-col items-center">
-          <Image src="/flower.svg" alt="flower" height={60} width={60} />
+          <Image src="/energyinvestment.svg" alt="clean energy investment icon" height={84} width={77} />
           <p className="text-center mt-2">
-            How much our utilities invest
-            <br /> in clean energy
+            Clean energy investment
           </p>
         </section>
         <section className="flex flex-col items-center">
           <Image
-            src="/projectfolder.svg"
-            alt="project folder"
-            height={60}
-            width={60}
+            src="/projectlocation.svg"
+            alt="project location icon"
+            height={79}
+            width={56}
           />
-          <p className="text-center mt-2">Where new projects are built</p>
+          <p className="text-center mt-2">New project locations </p>
         </section>
       </section>
     </section>
