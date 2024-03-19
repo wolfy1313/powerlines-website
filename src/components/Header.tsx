@@ -111,7 +111,7 @@ function Header() {
                   className={`pt-1 px-2 relative ${isDropdownVisible ? 'text-black' : 'bg-main-two'
                     } `}
                 >
-                  <div className="flex flex-row">
+                  <div className="flex flex-row pl-3 ">
                     <button onClick={toggleDropdown}>OUR WORK</button>
                     {isDropdownVisible ? (<UpArrow />) : (<DownArrow />)}
                   </div>
@@ -215,21 +215,23 @@ function Header() {
             className={` text-black flex flex-row gap-2.5 font-bold text-sm ${cairo.className} my-auto md:py-[12px]`}
           >
             <li
-              className={`py-2 px-2 relative ${isDropdownVisible ? 'bg-light-yellow text-black' : 'bg-none'
+              className={`py-2 px-2 relative ${isDropdownVisible ? 'bg-[#F7F7F7] text-black' : 'bg-none'
                 } `}
             >
-              <div className="flex flex-row">
-                <button onClick={toggleDropdown}>OUR WORK</button>
-                <Image
-                  src="/dropdownarrow.svg"
-                  alt="dropdownarrow"
-                  height={10}
-                  width={10}
-                  className="mx-1"
-                />
+              <div className={`flex flex-row ${isDropdownVisible ? 'h-5 w-full rounded-md bg-gradient-to-r from-[#FFD00F] to-[#F89735]' : 'bg-none'}`}>
+                <div className={`flex ${isDropdownVisible ? 'h-4 w-full bg-[#f7f7f7]' : 'bg-none'}`}>
+                  <button onClick={toggleDropdown}>OUR WORK</button>
+                  <Image
+                    src="/dropdownarrow.svg"
+                    alt="dropdownarrow"
+                    height={10}
+                    width={10}
+                    className="mx-1"
+                  />
+                </div>
               </div>
               {isDropdownVisible && (
-                <ul className="absolute left-0 mt-1 w-40 pl-4 py-4 bg-light-yellow border-l-2 border-l-main-one shadow-md space-y-3">
+                <ul className="absolute left-0 mt-1 w-40 pl-4 py-4 bg-[#F7F7F7] border-l-2 shadow-md space-y-3">
                   <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
                     <Link
                       className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
