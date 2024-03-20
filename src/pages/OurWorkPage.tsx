@@ -46,12 +46,12 @@ function OurWorkPage() {
 
         {/* {Theory of Change Section} */}
         {/* bg-no-repeat bg-[url('/OurWorkToCBG.svg')] bg-cover */}
-        <section className="bg-[#F4F3F3]">
+        <section className="bg-[#F4F3F3] md:px-10 px-3">
           <TheoryOfChangeVersion2 />
         </section>
 
         {/* {Latest Work Section} */}
-        <section className='mx-12 md:mx-12 border-b-4'>
+        <section className='box-border mx-12 md:mx-12 border-b-4'>
           <OurWorkLatestWork />
         </section>
       </section>
