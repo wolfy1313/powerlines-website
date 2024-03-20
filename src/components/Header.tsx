@@ -9,6 +9,20 @@ const cairo = Cairo({ subsets: ['latin'] })
 
 
 function Header() {
+  //get route
+  const pathname = usePathname()
+  // State to handle dropdown visibility
+  const [isDropdownVisible, setIsDropdownVisible] = useState<boolean>(false)
+  // State to handle mobile hamburger menu
+  const [isMobile, setIsMobile] = useState<boolean>(false)
+
+  const [isHamburgerVisible, setIsHamburgerVisible] = useState<boolean>(false)
+
+  // Function to toggle dropdown visibility
+  const toggleDropdown = () => setIsDropdownVisible(!isDropdownVisible)
+
+  const toggleBurger = () => setIsHamburgerVisible(!isHamburgerVisible)
+
   const UpArrow = () => (
     <Image
       src="/arrowup.svg"
@@ -29,20 +43,6 @@ function Header() {
       onClick={toggleDropdown}
     />
   );
-  //get route
-  const pathname = usePathname()
-  // State to handle dropdown visibility
-  const [isDropdownVisible, setIsDropdownVisible] = useState<boolean>(false)
-  // State to handle mobile hamburger menu
-  const [isMobile, setIsMobile] = useState<boolean>(false)
-
-  const [isHamburgerVisible, setIsHamburgerVisible] = useState<boolean>(false)
-
-  // Function to toggle dropdown visibility
-  const toggleDropdown = () => setIsDropdownVisible(!isDropdownVisible)
-
-  const toggleBurger = () => setIsHamburgerVisible(!isHamburgerVisible)
-
   //Check screen size
   const checkMobileScreen = () => {
     setIsMobile(window.innerWidth <= 768)
@@ -220,9 +220,7 @@ function Header() {
             >
               <div className={`flex flex-row items-start relative ${isDropdownVisible ? 'h-5 w-full rounded-md bg-gradient-to-r from-[#FFD00F] to-[#F89735]' : 'bg-none'}`}>
                 <div className={`flex flex-row ${isDropdownVisible ? ' h-4 w-full bg-[#f7f7f7]' : 'bg-none'}`}>
-                  <div className={`flex flex-row ${isDropdownVisible ? ' ' : 'pb-0'}`}>
-                    <button onClick={toggleDropdown}>OUR WORK</button>
-                  </div>
+                  <button onClick={toggleDropdown}>OUR WORK</button>
                   <Image
                     src="/dropdownarrow.svg"
                     alt="dropdownarrow"
@@ -236,6 +234,7 @@ function Header() {
                 <ul className="absolute left-0 mt-1 w-40 pl-4 py-4 bg-[#F7F7F7] border-l-2 shadow-md space-y-3">
                   <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
                     <Link
+                      onClick={() => toggleDropdown()}
                       className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
                       href="/our-work"
                     >
@@ -244,6 +243,7 @@ function Header() {
                   </li>
                   <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
                     <Link
+                      onClick={() => toggleDropdown()}
                       className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
                       href="/political-strategy"
                     >
@@ -251,21 +251,24 @@ function Header() {
                     </Link>
                   </li>
                   <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
-                    <Link
-                      className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
-                      href="/model-legislation"
-                    >
-                      Model Legislation
-                    </Link>
+                    <button >
+                      <Link
+                        onClick={() => toggleDropdown()}
+                        className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
+                        href="/model-legislation"
+                      >
+                        Model Legislation
+                      </Link>
+                    </button>
                   </li>
                   <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
-                    <section
+                    <Link
+                      onClick={() => toggleDropdown()}
                       className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
+                      href="/community-engagement"
                     >
-                      <Link className="" href="/community-engagement">
-                        Stakeholder Engagement
-                      </Link>
-                    </section>
+                      Stakeholder Engagement
+                    </Link>
                   </li>
                 </ul>
               )}
