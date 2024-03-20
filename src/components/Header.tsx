@@ -218,9 +218,11 @@ function Header() {
               className={`py-2 px-2 relative ${isDropdownVisible ? 'bg-[#F7F7F7] text-black' : 'bg-none'
                 } `}
             >
-              <div className={`flex flex-row ${isDropdownVisible ? 'h-5 w-full rounded-md bg-gradient-to-r from-[#FFD00F] to-[#F89735]' : 'bg-none'}`}>
-                <div className={`flex ${isDropdownVisible ? 'h-4 w-full bg-[#f7f7f7]' : 'bg-none'}`}>
-                  <button onClick={toggleDropdown}>OUR WORK</button>
+              <div className={`flex flex-row items-start relative ${isDropdownVisible ? 'h-5 w-full rounded-md bg-gradient-to-r from-[#FFD00F] to-[#F89735]' : 'bg-none'}`}>
+                <div className={`flex flex-row ${isDropdownVisible ? ' h-4 w-full bg-[#f7f7f7]' : 'bg-none'}`}>
+                  <div className={`flex flex-row ${isDropdownVisible ? ' ' : 'pb-0'}`}>
+                    <button onClick={toggleDropdown}>OUR WORK</button>
+                  </div>
                   <Image
                     src="/dropdownarrow.svg"
                     alt="dropdownarrow"
