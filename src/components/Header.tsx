@@ -9,6 +9,20 @@ const cairo = Cairo({ subsets: ['latin'] })
 
 
 function Header() {
+  //get route
+  const pathname = usePathname()
+  // State to handle dropdown visibility
+  const [isDropdownVisible, setIsDropdownVisible] = useState<boolean>(false)
+  // State to handle mobile hamburger menu
+  const [isMobile, setIsMobile] = useState<boolean>(false)
+
+  const [isHamburgerVisible, setIsHamburgerVisible] = useState<boolean>(false)
+
+  // Function to toggle dropdown visibility
+  const toggleDropdown = () => setIsDropdownVisible(!isDropdownVisible)
+
+  const toggleBurger = () => setIsHamburgerVisible(!isHamburgerVisible)
+
   const UpArrow = () => (
     <Image
       src="/arrowup.svg"
@@ -29,20 +43,6 @@ function Header() {
       onClick={toggleDropdown}
     />
   );
-  //get route
-  const pathname = usePathname()
-  // State to handle dropdown visibility
-  const [isDropdownVisible, setIsDropdownVisible] = useState<boolean>(false)
-  // State to handle mobile hamburger menu
-  const [isMobile, setIsMobile] = useState<boolean>(false)
-
-  const [isHamburgerVisible, setIsHamburgerVisible] = useState<boolean>(false)
-
-  // Function to toggle dropdown visibility
-  const toggleDropdown = () => setIsDropdownVisible(!isDropdownVisible)
-
-  const toggleBurger = () => setIsHamburgerVisible(!isHamburgerVisible)
-
   //Check screen size
   const checkMobileScreen = () => {
     setIsMobile(window.innerWidth <= 768)
@@ -233,37 +233,45 @@ function Header() {
               {isDropdownVisible && (
                 <ul className="absolute left-0 mt-1 w-40 pl-4 py-4 bg-[#F7F7F7] border-l-2 shadow-md space-y-3">
                   <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
-                    <Link
-                      className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
-                      href="/our-work"
-                    >
-                      Overview
-                    </Link>
-                  </li>
-                  <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
-                    <Link
-                      className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
-                      href="/political-strategy"
-                    >
-                      Political Strategy
-                    </Link>
-                  </li>
-                  <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
-                    <Link
-                      className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
-                      href="/model-legislation"
-                    >
-                      Model Legislation
-                    </Link>
-                  </li>
-                  <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
-                    <section
-                      className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
-                    >
-                      <Link className="" href="/community-engagement">
-                        Stakeholder Engagement
+                    <button onClick={() => toggleDropdown()}>
+                      <Link
+                        className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
+                        href="/our-work"
+                      >
+                        Overview
                       </Link>
-                    </section>
+                    </button>
+                  </li>
+                  <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
+                    <button onClick={() => toggleDropdown()}>
+                      <Link
+                        className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
+                        href="/political-strategy"
+                      >
+                        Political Strategy
+                      </Link>
+                    </button>
+                  </li>
+                  <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
+                    <button onClick={() => toggleDropdown()}>
+                      <Link
+                        className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
+                        href="/model-legislation"
+                      >
+                        Model Legislation
+                      </Link>
+                    </button>
+                  </li>
+                  <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
+                    {/* <button onClick={() => toggleDropdown()}> */}
+                    <Link
+                      onClick={() => toggleDropdown()}
+                      className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
+                      href="/community-engagement"
+                    >
+                      Stakeholder Engagement
+                    </Link>
+                    {/* </button> */}
                   </li>
                 </ul>
               )}
