@@ -2,6 +2,7 @@ import React from 'react'
 import TOCHeaderComponent from '@/components/TOCHeaderComponent'
 import TwoColumnLayoutWithImage from '@/components/TwoColumnLayoutWithImage'
 import TOCOutcomesComponent from '@/components/TOCOutcomesComponent'
+import ReviewCurrentPUCs from '@/components/ReviewCurrentPUCs'
 
 import {
   OutcomeCardProps,
@@ -71,6 +72,8 @@ function ModelLegislation() {
       <TOCOpportunitiesComponent
         header="OPPORTUNITIES"
         content="We urgently need more PUC commissioners who champion climate and equity. To achieve this, campaigns can influence governors and state legislatures to appoint such commissioners and encourage like-minded candidates to run and win PUC elections. These elections offer high returns-on-investment for climate and equity, with candidates raising an average of only $[] per election over the last decade. Closing the voter dropoff gap between Democratic and Republican PUC candidates can greatly enhance the competitiveness of climate and equity champions. This strategy has proven successful, as seen in North Carolina and the 2022 Louisiana PSC race where climate justice priorities were advanced."
+      />
+      <ReviewCurrentPUCs
       />
       <TOCBodyList
         header="THEORY OF CHANGE"
