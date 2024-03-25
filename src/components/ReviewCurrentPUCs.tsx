@@ -9,7 +9,7 @@ function ReviewCurrentPUCs() {
     return (
         <div className="">
             {/* Heading and buttons block container */}
-            <section className='my-24 mx-20'>
+            <section className='mb-24 mt-4 mx-20'>
                 <div>
                     <h1 className={`text-4xl font-normal leading-8 mb-4 ${cairo.className} text-[#B6163E]`}>MODEL LEGISLATION</h1>
                     <p className='font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
