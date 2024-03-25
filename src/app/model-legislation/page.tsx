@@ -6,7 +6,8 @@ export default function page() {
   return (
     <section>
       <ModelLegislation />
-      <ReviewCurrentPUCs/>
+      {/* added ReviewCurrentPUCs to ModelLegislation.tsx page  */}
+      {/* <ReviewCurrentPUCs/> */}
     </section>
   )
 }

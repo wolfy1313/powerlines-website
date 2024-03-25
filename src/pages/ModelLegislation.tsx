@@ -2,6 +2,7 @@ import React from 'react'
 import TOCHeaderComponent from '@/components/TOCHeaderComponent'
 import TwoColumnLayoutWithImage from '@/components/TwoColumnLayoutWithImage'
 import TOCOutcomesComponent from '@/components/TOCOutcomesComponent'
+import ReviewCurrentPUCs from '@/components/ReviewCurrentPUCs'
 
 import {
   OutcomeCardProps,
@@ -64,13 +65,15 @@ function ModelLegislation() {
         header="WHY IS MODEL LEGISLATION IMPORTANT AND WHAT CHALLENGES ARE WE FACING?"
         body="Public Utility Commissions (PUCs), responsible for the energy transition, face a shortage of progressive commissioners, either elected or appointed by Governors. About 80% of them are chosen by the state's governor or legislature, and 20% are elected. Utilities' influence on PUCs prioritizes fossil fuel interests, hindering clean energy and fairness. They lobby against climate and equity policies and sway elections in favor of utility-friendly candidates (Stokes 2020). Additionally, PUC commissioners lack diversity, worsening energy inequities for people of color and women. Powerlines seeks to break this cycle by supporting progressive candidates, raising voter awareness, and mitigating private utility influence."
         width="608"
-        height="385"
-        imageSrc="/monumentPlaceholder.png"
+        height="608"
+        imageSrc="/ModelLegislationImage.svg"
         alt="monument place holder"
       />
       <TOCOpportunitiesComponent
         header="OPPORTUNITIES"
-        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium fusce. In mollis nunc sed id semper risus in. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Dignissim suspendisse in est ante in nibh mauris cursus. Urna et pharetra pharetra massa. Tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Est sit amet facilisis magna etiam tempor orci eu lobortis. Scelerisque in dictum non consectetur a erat. Venenatis a condimentum vitae sapien pellentesque habitant. Malesuada proin libero nunc consequat. Erat pellentesque adipiscing commodo elit. Morbi leo urna molestie at elementum eu facilisis. Commodo quis imperdiet massa tincidunt nunc pulvinar. Cum sociis natoque penatibus et magnis dis parturient. Platea dictumst vestibulum rhoncus est pellentesque elit. Et tortor at risus viverra adipiscing at in tellus integer."
+        content="We urgently need more PUC commissioners who champion climate and equity. To achieve this, campaigns can influence governors and state legislatures to appoint such commissioners and encourage like-minded candidates to run and win PUC elections. These elections offer high returns-on-investment for climate and equity, with candidates raising an average of only $[] per election over the last decade. Closing the voter dropoff gap between Democratic and Republican PUC candidates can greatly enhance the competitiveness of climate and equity champions. This strategy has proven successful, as seen in North Carolina and the 2022 Louisiana PSC race where climate justice priorities were advanced."
+      />
+      <ReviewCurrentPUCs
       />
       <TOCBodyList
         header="THEORY OF CHANGE"
