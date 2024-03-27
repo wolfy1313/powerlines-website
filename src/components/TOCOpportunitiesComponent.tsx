@@ -12,9 +12,9 @@ interface TOCOpportunitiesComponentProps {
 
 const TOCOpportunitiesComponent: React.FC<TOCOpportunitiesComponentProps> = ({ header, content }) => {
   return (
-    <section className='min-w-screen max-w-screen md:px-20 md:pb-5 md:pt-0'>
+    <section className='min-w-screen max-w-screen md:px-20 md:pb-4 md:pt-0'>
       <h1 className={`mb-4 text-[#B6163E] text-4xl ${cairo.className}`}>{header}</h1>
-      <h3 className={`mb-8 ${robotoSlab.className} text-xl`}>{content}</h3>
+      <h3 className={`mb-4 ${robotoSlab.className} text-xl`}>{content}</h3>
     </section>
   )
 }

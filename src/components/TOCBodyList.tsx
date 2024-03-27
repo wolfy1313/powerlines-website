@@ -14,7 +14,7 @@ const TOCBodyList = ({
     <section
       className={`flex flex-col w-full px-20 ${robotoSlab.className} mb-4 ml-0`}
     >
-      <h1 className={`text-main-one text-xl mb-4 ${cairo.className}`}>
+      <h1 className={`text-[#B6163E] text-4xl mb-4 ${cairo.className}`}>
         {header}
       </h1>
       <p className="mb-4">{subheader}</p>
