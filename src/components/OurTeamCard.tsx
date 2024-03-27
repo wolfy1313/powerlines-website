@@ -11,7 +11,7 @@ const playfairDisplay = Playfair_Display({ subsets: ['latin'] })
 const OurPrinciplesCard: React.FC<OurTeamProps> = ({name, role, image, genre}) => {
   return genre === 'male' ? (
     // card container
-    <div className=" max-w-[295px] md:max-w-none w-full overflow-hidden bg-[#B08B1A] bg-opacity-50">
+    <div className=" max-w-[295px] md:max-w-none w-full overflow-hidden bg-[#F3EEDD] bg-opacity-50">
       <div className="relative pb-[118.64%]"> {/* Aspect ratio padding-bottom hack */}
           <Image 
             src={image}
