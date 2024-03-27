@@ -13,21 +13,21 @@ import TOCOpportunitiesComponent from '@/components/TOCOpportunitiesComponent'
 import TOCBodyList from '@/components/TOCBodyList'
 const OutcomeCardsData: OutcomeCardProps[] = [
   {
-    image: '/OutcomeMailImage.svg',
+    image: '/OutcomeMailboxWHITE.png',
     text: 'Outcome 1',
     alt: 'mailbox icon',
     height: 'h-20',
     width: 'w-20'
   },
   {
-    image: '/OutcomeMailImage.svg',
+    image: '/OutcomeMailboxWHITE.png',
     text: 'Outcome 2',
     alt: 'mailbox icon',
     height: 'h-20',
     width: 'w-20'
   },
   {
-    image: '/OutcomeMailImage.svg',
+    image: '/OutcomeMailboxWHITE.png',
     text: 'Outcome 3',
     alt: 'mailbox icon',
     height: 'h-20',
