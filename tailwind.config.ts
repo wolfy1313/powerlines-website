@@ -33,6 +33,8 @@ const config: Config = {
         'light-yellow': '#FFF7E0',
         'border-yellow': '#FFF4CA',
         'about-us-heading': '#437859',
+        'semi-dark-orange': '#D06900',
+        'dark-green':'#437859',
         overlay: 'rgba(254, 242, 194, 0.50)'
       },
       boxShadow: {
