@@ -11,12 +11,12 @@ const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 const OurPrinciplesCard: React.FC<OurPrinciplesProps> = ({ heading, text, image, alt }) => {
     return (
         // card container
-        <div className='flex flex-col items-center justify-center bg-white our-principles-shadow px-8 max-h-[379px] xs:w-[611px] md:h-[379px] p-10' >
+        <div className='flex flex-col items-center justify-center bg-white border-2 rounded-lg px-4 max-h-[379px] xs:w-[611px] md:h-[379px] p-10' >
 
             <section>
 
                 {/* Image and header Section */}
-                <section className="flex items-center  gap-4" >
+                <section className="flex items-center gap-4" >
                     {/* Image */}
                     <div>
                         <Image
@@ -28,12 +28,12 @@ const OurPrinciplesCard: React.FC<OurPrinciplesProps> = ({ heading, text, image,
                         />
                     </div>
                     {/* Heading*/}
-                    <h1 className={`text-md  sm:text-2xl lg:text-3xl font-bold sm:leading-9 ${cairo.className}`}> {heading}</h1>
+                    <h1 className={`text-xl  sm:text-2xl lg:text-3xl font-bold leading-5 sm:leading-9 ${cairo.className}`}> {heading}</h1>
                 </section>
 
                 {/* Text Section */}
                 <section>
-                    <p className={`text-sm sm:text-md lg:text-xl font-light leading-7 mt-[2rem] pr-4 ${robotoSlab.className}`}>{text}</p>
+                    <p className={`text-sm sm:text-md lg:text-xl font-light leading-7 mt-[2rem] md:pr-4 ${robotoSlab.className}`}>{text}</p>
                 </section>
             </section>
         </div>
