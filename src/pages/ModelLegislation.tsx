@@ -17,21 +17,24 @@ const OutcomeCardsData: OutcomeCardProps[] = [
     text: 'Outcome 1',
     alt: 'mailbox icon',
     height: 'h-20',
-    width: 'w-20'
+    width: 'w-20',
+    color: 'bg-main-one'
   },
   {
     image: '/OutcomeMailboxWHITE.png',
     text: 'Outcome 2',
     alt: 'mailbox icon',
     height: 'h-20',
-    width: 'w-20'
+    width: 'w-20',
+    color: 'bg-main-one'
   },
   {
     image: '/OutcomeMailboxWHITE.png',
     text: 'Outcome 3',
     alt: 'mailbox icon',
     height: 'h-20',
-    width: 'w-20'
+    width: 'w-20',
+    color: 'bg-main-one'
   }
 ]
 
