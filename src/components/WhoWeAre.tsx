@@ -52,8 +52,16 @@ const WhoWeAre = React.forwardRef<HTMLDivElement>((_props, ref) => {
         <section
           className={`flex flex-row  ${cairo.className} mx-auto mt-4 md:mt-7 md:m-0 md:ml-0`}
         >
-          <button className="bg-gradient-to-l from-[#FFD00F] to-[#F89735] rounded-md w-[10rem] flex items-center pl-3 py-3">
+          <button className="bg-gradient-to-l from-[#FFD00F] to-[#F89735] rounded-md w-[12rem] flex items-center justify-between pl-3  pr-1 py-3">
             <p className="font-bold text-xl">ABOUT US</p>
+
+            <Image
+              height="10"
+              width="10"
+              src="/rightArrow.svg"
+              alt="people on a peaceful protest"
+              className="w-1/6 object-cover "
+            />
           </button>
         </section>
       </section>
