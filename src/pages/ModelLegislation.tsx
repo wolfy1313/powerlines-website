@@ -37,20 +37,20 @@ const OutcomeCardsData: OutcomeCardProps[] = [
 
 const bulletPoints: bulletPoint[] = [
   [
-    'Lorem Ipsum',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    'Increased Funding',
+    'Allocate more financial resources to PUC races and fundraising efforts, which is critical to catalyzing positive change that yields favorable climate outcomes.'
   ],
   [
-    'Lorem Ipsum',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    'Advocacy with Governors:',
+    'Engage with governors, advocating for the appointment of climate and equity champions to PUCs through organized coalitions.'
   ],
   [
-    'Lorem Ipsum',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    'Candidate Recruitment:',
+    'Actively recruit qualified candidates for PUC races, ensuring a strong pool of individuals committed to the cause.'
   ],
   [
-    'Lorem Ipsum',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    'Commissioner Training:',
+    'Facilitate ongoing training for PUC commissioners and staff, equipping them with resources and effective strategies.'
   ]
 ]
 
@@ -77,7 +77,7 @@ function ModelLegislation() {
       />
       <TOCBodyList
         header="THEORY OF CHANGE"
-        subheader="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium fusce. In mollis nunc sed id semper risus in. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa."
+        subheader="Through data-driven research, PowerLines will identify key appointments and elections with the greatest impact. PowerLines will then work with electoral and advocacy partners to push for the appointment and election of climate and equity champions to PUCs."
         bulletPoints={bulletPoints}
         footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium fusce. In mollis nunc sed id semper risus in. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Dignissim suspendisse in est ante in nibh mauris cursus. Urna et pharetra pharetra massa."
       />
