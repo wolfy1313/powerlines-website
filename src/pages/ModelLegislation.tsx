@@ -49,7 +49,7 @@ const bulletPoints: bulletPoint[] = [
     'Actively recruit qualified candidates for PUC races, ensuring a strong pool of individuals committed to the cause.'
   ],
   [
-    'Commissioner Training:',
+    'Commissioner Training',
     'Facilitate ongoing training for PUC commissioners and staff, equipping them with resources and effective strategies.'
   ]
 ]
@@ -79,7 +79,7 @@ function ModelLegislation() {
         header="THEORY OF CHANGE"
         subheader="Through data-driven research, PowerLines will identify key appointments and elections with the greatest impact. PowerLines will then work with electoral and advocacy partners to push for the appointment and election of climate and equity champions to PUCs."
         bulletPoints={bulletPoints}
-        footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium fusce. In mollis nunc sed id semper risus in. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Dignissim suspendisse in est ante in nibh mauris cursus. Urna et pharetra pharetra massa."
+        footer="Our goal through this strategy works because putting more money into PUC campaigns can help improve climate outcomes. PUC races don't cost much compared to the impact they can have, making it a smart investment. Not many people are paying attention to these issues right now, so raising awareness about important things like water quality and linking them to everyday concerns like energy bills can get more people involved. This strategy focuses on races where success is more probable, especially those that can change commissions from red to blue."
       />
       <TOCOutcomesComponent
         header="OUTCOMES"
