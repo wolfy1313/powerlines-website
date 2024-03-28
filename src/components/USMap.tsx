@@ -1,6 +1,69 @@
-import React from 'react';
+// This is a client component
+"use client";
+import React, { useState } from 'react';
+
+interface PopupPosition {
+  x: number;
+  y: number;
+}
+
+interface Politician {
+	name: string;
+}
+  
+interface StatePUCInfo {
+	stateName: string;
+	membersCount: number;
+	stateGovernor: string;
+	politicians: Politician[];
+}
+  
+// this is dummy data, we need to setup axios calls to a backend server to pull current up to date data
+const fetchDataForState = async (stateId: string): Promise<StatePUCInfo> => {
+	// Simulate fetching data. Replace this with actual fetch request.
+	const mockData: Record<string, StatePUCInfo> = {
+	  az: {
+		stateName: 'Arizona',
+		membersCount: 5,
+		stateGovernor: 'Katie Hobbs (D)',
+		politicians: [
+			{ name: 'Anna Tovar' },
+			{ name: 'Jim O\'Connor' },
+			{ name: 'Kevin Thompson' },
+			{ name: 'Nick Myers' },
+			{ name: 'Lea M. Peterson' },
+		  ],
+	  },
+	  // other states ...
+	};
+  
+	return mockData[stateId] || {
+	  stateName: stateId,
+	  membersCount: 0,
+	  stateGovernor: '',
+	  politicians: [],
+	};
+  };
 
 const USMap: React.FC = () => {
+	const [showPopup, setShowPopup] = useState<boolean>(false);
+	// Replace the existing popupContent declaration with this
+	const [popupContent, setPopupContent] = useState<StatePUCInfo | null>(null);
+	const [popupPosition, setPopupPosition] = useState<PopupPosition>({ x: 0, y: 0 });
+
+  const handleMouseOver = async (event: React.MouseEvent<SVGPathElement>, stateId: string) => {
+    const data = await fetchDataForState(stateId);
+    setPopupContent(data);
+    setPopupPosition({
+      x: event.clientX + window.scrollX - 70, // Offset by 10px for visibility
+      y: event.clientY + window.scrollY - 220,
+    });
+    setShowPopup(true);
+  };
+
+  const handleMouseOut = () => {
+    setShowPopup(false);
+  };
 	
     return (
       <div className='mx-auto w-full'>
@@ -40,14 +103,19 @@ const USMap: React.FC = () => {
 	<path stroke-miterlimit="1" d="M139.625,351.751   c-0.821-0.993-0.513-0.616-1.068-1.725c-0.139-0.278-0.75-0.807-0.709-0.93c0.18-0.551-0.334-1.254,0.347-1.179   c0.409,0.046,0.925,0.223,1.312,0.379c0.609,0.246,0.146,0.985,0.244,1.443c0.135,0.629,0.3,1.225,0.483,1.84   C140.335,351.922,139.938,352.063,139.625,351.751z"/>
 </g>
 
-<path id="al" 
+<path 
+	id="al" 
     className="state south" 
     d="M425.926,227.785l-27.826,2.884  l-0.827,44.007l2.865,21.359c0,0,1.292-0.223,3.403,0.175c0,0,0.174-3.361,0.764-4.948c0,0,2.104,0.405,1.216,2.951  c0,0,0.44,0.893,1.719,1.325c0,0,0.924,0.874,1.493,1.8c0,0,2.215-0.594,3.13-3.73c0.021-1.293,0.145-2.576-1.218-3.258  c-1.737-0.867-2.355-2.709-0.693-3.863l11.197-1.129l18.847-2.258c0,0-1.203-2.433-1.566-6.402c0,0-0.326-1.859-1.333-4.973  c0,0-0.341-1.42,1.688-6.391c0,0,0.415-1.105-2.644-5.025c0,0-1.271-2.222-1.704-3.779L425.926,227.785"
 />
 
 <path id="ar" className="state south" d="M372.525,232.822  c0,0,0.545-1.746,1.477-2.678c0,0,0.761-0.773,0.813-2.043c0,0-0.162-1.351,0.627-2.402c0,0,1.603-3.522,2.645-7.549l-6.514,0.692  c-0.377-0.824-0.522-1.106,0.053-1.896c0.554-0.76,1.289-1.023,1.84-1.711c1.163-1.449-0.041-2.977-1.371-3.774l-20.318,1.303  l-17.803,0.782l-11.201,0.261c0,0-0.019,1.649,0.647,4.046c0,0,1.567,6.805,1.784,11.758l0.164,25.072v-0.021  c0.313,0.145,0.576,0.324,0.879,0.563c0.535,0.431,3.074-0.188,4.254,0.261l0.262,7.641l14.5-0.521l19.102-1.039  c0.531-3.121,0.177-5.56,0.177-5.56c-1.509-1.946-0.525-4.86-0.525-4.86s0.862-1.496,1.353-2.195c0,0,0.845-1.932,1.012-3.034  c0,0,0.189-1.461,1.262-2.345c0,0,2.192-2.811,2.924-5.607c0,0,0.148-1.234,0.461-2.048  C371.021,235.917,372.425,232.998,372.525,232.822z"/>
 
-<path id="az" className="state west" d="M162.132,198.699l-15.196-1.997  l-14.674-2.169l-15.023-2.435l-10.158-1.822c-0.62,3.42-0.501,8.78-2.431,11.679c-2.81,4.219-3.006-2.435-6.425-0.826  c-2.25,1.061-1.122,5.029-1.303,7.209c-0.095,1.146,0.092,2.955-0.086,3.994c-0.332,1.914-1.21,2.011-1.303,4.861  c0,3.603,0.756,3.233,1.216,4.948c0.185,0.693,0.448,1.646,0.39,2.345c-0.097,1.176,1.344,1.356,1.693,2.347  c0.818,2.3-1.586,1.942-3.212,3.387c-1.641,1.455-1.243,2.817-1.822,4.772c-0.592,1.996-2.716,3.05-3.388,4.604  c-0.305,0.703-0.785,3.846-0.433,4.604c0.318,0.688,3.934,1.926,1.432,3.517c-1.271,0.808-1.118,1.043-2.823,0.912  c0,0-1.763,1.269-1.65,2.776l2.779,1.651l23.357,13.461l15.284,8.595l17.798,2.517l5.905,0.696l0,0L162.132,198.699"/>
+<path id="az" 
+className="state west" 
+onMouseOver={(e) => handleMouseOver(e, 'az')}
+onMouseOut={handleMouseOut}
+d="M162.132,198.699l-15.196-1.997  l-14.674-2.169l-15.023-2.435l-10.158-1.822c-0.62,3.42-0.501,8.78-2.431,11.679c-2.81,4.219-3.006-2.435-6.425-0.826  c-2.25,1.061-1.122,5.029-1.303,7.209c-0.095,1.146,0.092,2.955-0.086,3.994c-0.332,1.914-1.21,2.011-1.303,4.861  c0,3.603,0.756,3.233,1.216,4.948c0.185,0.693,0.448,1.646,0.39,2.345c-0.097,1.176,1.344,1.356,1.693,2.347  c0.818,2.3-1.586,1.942-3.212,3.387c-1.641,1.455-1.243,2.817-1.822,4.772c-0.592,1.996-2.716,3.05-3.388,4.604  c-0.305,0.703-0.785,3.846-0.433,4.604c0.318,0.688,3.934,1.926,1.432,3.517c-1.271,0.808-1.118,1.043-2.823,0.912  c0,0-1.763,1.269-1.65,2.776l2.779,1.651l23.357,13.461l15.284,8.595l17.798,2.517l5.905,0.696l0,0L162.132,198.699"/>
 
 {/* California  Data*/}
 <g className="state-group">
@@ -135,7 +203,8 @@ const USMap: React.FC = () => {
 
 	
     {/* Washington */}
-    <g className='label'>
+    <g className='label' >
+		
 		<path d="M75.738,31.321l2.301,5.291l2.159-5.002h1.013l-3.168,7.367l-2.307-5.304l-2.303,5.304l-3.168-7.367h1.009l2.171,5.05    L75.738,31.321z"/>
 		<path d="M84.115,31.321l3.379,7.43h-1.018l-0.835-1.836h-3.033l-0.825,1.836h-1.016L84.115,31.321z M84.115,33.558l-1.142,2.544    h2.299L84.115,33.558z"/>
 	</g>
@@ -352,6 +421,33 @@ const USMap: React.FC = () => {
 	<line fill="none" stroke="#000000" x1="540.5" y1="50.875" x2="552.5" y2="79.5"/>
 </g>
 </svg>
+{showPopup && popupContent && (
+  // pop-up container
+  <div
+	className='pop-up'
+    style={{
+      left: `${popupPosition.x}px`,
+      top: `${popupPosition.y}px`,
+    }}
+  >
+    {/* Header (includes the state name and number of politicians) */}
+	<div className='gradient-1'>
+		<h1>{popupContent.stateName} ({popupContent.membersCount})</h1>
+	</div>
+
+	{/* state governor */}
+	<div className='bg-slate-300'>
+		<h2>State Governor: {popupContent.stateGovernor}</h2>
+	</div>
+
+	{/* state PUC politicians */}
+    <ul className='grid grid-cols-3 '>
+      {popupContent.politicians.map((politician, index) => (
+        <li key={index}>{politician.name}</li>
+      ))}
+    </ul>
+  </div>
+)}
 
       </div>
     );

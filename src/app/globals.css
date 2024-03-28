@@ -47,11 +47,17 @@
     fill: #000000; /* Text hover color */
   }
 
-  .PUCButton {
+  .gradient-1 {
     background: linear-gradient(270.06deg, #F89735 -0.08%, #FFD00F 98.66%);
   }
   
-
+  /* map pop-up */
+.pop-up{
+  position: absolute;
+  background: white;
+  border: 1px solid black;
+  
+}
 
 
 
