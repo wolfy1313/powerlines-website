@@ -15,7 +15,7 @@
 
 /* map css */
 .state {
-    fill: #5c89d7;
+    fill: #979797;
     stroke: #ffffff;
     stroke-width: 1.4;
     stroke-linejoin: round;
@@ -30,11 +30,11 @@
 
   /* text color of the states that don't fit on the state area */
   .state-text-color{
-    fill: #5C89D7
+    fill: #979797
   }
   
   .state:hover {
-    fill: rgb(255, 199, 0);
+    fill: #F89735;
   }
   
   
@@ -46,6 +46,12 @@
   .state-group:hover .label {
     fill: #000000; /* Text hover color */
   }
+
+  .PUCButton {
+    background: linear-gradient(270.06deg, #F89735 -0.08%, #FFD00F 98.66%);
+  }
+  
+
 
 
 
