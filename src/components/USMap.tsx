@@ -1,6 +1,7 @@
 // This is a client component
 "use client";
 import React, { useState } from 'react';
+import Image from 'next/image'
 
 interface PopupPosition {
   x: number;
@@ -55,8 +56,8 @@ const USMap: React.FC = () => {
     const data = await fetchDataForState(stateId);
     setPopupContent(data);
     setPopupPosition({
-      x: event.clientX + window.scrollX - 70, // Offset by 10px for visibility
-      y: event.clientY + window.scrollY - 220,
+      x: event.clientX + window.scrollX - 160, // Offset by 10px for visibility
+      y: event.clientY + window.scrollY - 300,
     });
     setShowPopup(true);
   };
@@ -432,18 +433,27 @@ d="M162.132,198.699l-15.196-1.997  l-14.674-2.169l-15.023-2.435l-10.158-1.822c-0
   >
     {/* Header (includes the state name and number of politicians) */}
 	<div className='gradient-1'>
-		<h1>{popupContent.stateName} ({popupContent.membersCount})</h1>
+		<h1 className='px-2'>{popupContent.stateName} ({popupContent.membersCount})</h1>
 	</div>
 
 	{/* state governor */}
 	<div className='bg-slate-300'>
-		<h2>State Governor: {popupContent.stateGovernor}</h2>
+		<h2 className='px-2'>State Governor: {popupContent.stateGovernor}</h2>
 	</div>
 
 	{/* state PUC politicians */}
-    <ul className='grid grid-cols-3 '>
+    <ul className=' grid grid-cols-3 gap-2 px-3 pr-8 py-2 pb-6 mx-auto'>
       {popupContent.politicians.map((politician, index) => (
-        <li key={index}>{politician.name}</li>
+        <li key={index} className='flex flex-col  items-center justify-center '>
+			<Image
+            height={57}
+            width={57}
+            src="/AboutUsBanner1.png"
+            alt={politician.name}
+            className=" object-cover rounded-full"
+            />
+			{politician.name}
+		</li>
       ))}
     </ul>
   </div>
