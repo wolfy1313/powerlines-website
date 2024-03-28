@@ -52,6 +52,15 @@
   }
   
 
+  
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+* {
+  scrollbar-width: none; /* Firefox */
+}
+
 
 
 
