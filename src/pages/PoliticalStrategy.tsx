@@ -95,7 +95,7 @@ function PoliticalStrategy() {
 
           {/* buttons container */}
           <div className='text-center mt-4'>
-            <button className='w-full py-2 PUCButton rounded'>
+            <button className='w-full py-2 gradient-1 rounded'>
               Click on a highlighted state to view contributions
             </button>
           </div>
