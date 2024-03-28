@@ -11,7 +11,7 @@ export interface OutcomeCardProps {
   alt: string
   height: string
   width: string
-  color: string
+  // color: string
 }
 
 export interface OurPrinciplesProps {
