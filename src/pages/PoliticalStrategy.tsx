@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { Suspense } from 'react';
 import TOCHeaderComponent from '@/components/TOCHeaderComponent'
 import TwoColumnLayoutWithImage from '@/components/TwoColumnLayoutWithImage'
 import TOCOutcomesComponent from '@/components/TOCOutcomesComponent'
+import TOCBodyList from '@/components/TOCBodyList'
 
 import {
   OutcomeCardProps,
@@ -9,7 +10,9 @@ import {
   bulletPoint
 } from '@/types/global'
 import TOCOpportunitiesComponent from '@/components/TOCOpportunitiesComponent'
-import TOCBodyList from '@/components/TOCBodyList'
+
+const USMap = React.lazy(() => import('../components/USMap'));
+
 const OutcomeCardsData: OutcomeCardProps[] = [
   {
     image: '/OutcomeMailImage.svg',
@@ -72,12 +75,40 @@ function PoliticalStrategy() {
         header="OPPORTUNITIES"
         content="We urgently need more PUC commissioners who champion climate and equity. To achieve this, campaigns can influence governors and state legislatures to appoint such commissioners and encourage like-minded candidates to run and win PUC elections. These elections offer high returns-on-investment for climate and equity, with candidates raising an average of only $[] per election over the last decade. Closing the voter dropoff gap between Democratic and Republican PUC candidates can greatly enhance the competitiveness of climate and equity champions. This strategy has proven successful, as seen in North Carolina and the 2022 Louisiana PSC race where climate justice priorities were advanced."
       />
+      
+      {/* REVIEW CURRENT PUCs section*/}
+      <section className='mb-24 mt-4 mx-20'>
+          
+        {/* Header and sub-header */}
+        <div>
+          <h1 className={`text-4xl font-normal leading-8 mb-4 text-[#B6163E]`}>REVIEW CURRENT PUCs</h1>
+          <p className='font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        {/* Map Section */}
+        <section className='flex flex-col w-5/6 mx-auto mt-10'>
+          <div className='w-full'> 
+            <Suspense fallback={<div>Loading...</div>}>
+              <USMap />
+            </Suspense>
+          </div>
+
+          {/* buttons container */}
+          <div className='text-center mt-4'>
+            <button className='w-full py-2 gradient-1 rounded'>
+              Click on a highlighted state to view contributions
+            </button>
+          </div>
+        </section>
+      </section>
+
       <TOCBodyList
         header="THEORY OF CHANGE"
         subheader="Through data-driven research, PowerLines will identify key appointments and elections with the greatest impact. PowerLines will then work with electoral and advocacy partners to push for the appointment and election of climate and equity champions to PUCs."
         bulletPoints={bulletPoints}
         footer="Our goal through this strategy works because putting more money into PUC campaigns can help improve climate outcomes. PUC races don't cost much compared to the impact they can have, making it a smart investment. Not many people are paying attention to these issues right now, so raising awareness about important things like water quality and linking them to everyday concerns like energy bills can get more people involved. This strategy focuses on races where success is more probable, especially those that can change commissions from red to blue."
       />
+
       <TOCOutcomesComponent
         header="OUTCOMES"
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."

@@ -3,7 +3,6 @@ import { Cairo, Roboto_Slab } from 'next/font/google'
 import Image from 'next/image'
 const cairo = Cairo({ subsets: ['latin'] })
 const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
-import UsMap from './USMap'
 
 function ReviewCurrentPUCs() {
     return (
@@ -31,7 +30,7 @@ function ReviewCurrentPUCs() {
 
             {/* Map Section */}
             <section>
-                <UsMap />
+                
             </section>
 
         </div>

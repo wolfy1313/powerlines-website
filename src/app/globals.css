@@ -10,14 +10,12 @@
     overflow: hidden;
 }
 
-.our-principles-shadow {
-    box-shadow: 0px 4px 4px 0px #00000040;
-}
+
 
 
 /* map css */
 .state {
-    fill: #5c89d7;
+    fill: #979797;
     stroke: #ffffff;
     stroke-width: 1.4;
     stroke-linejoin: round;
@@ -32,11 +30,11 @@
 
   /* text color of the states that don't fit on the state area */
   .state-text-color{
-    fill: #5C89D7
+    fill: #979797
   }
   
   .state:hover {
-    fill: rgb(255, 199, 0);
+    fill: #F89735;
   }
   
   
@@ -48,6 +46,18 @@
   .state-group:hover .label {
     fill: #000000; /* Text hover color */
   }
+
+  .gradient-1 {
+    background: linear-gradient(270.06deg, #F89735 -0.08%, #FFD00F 98.66%);
+  }
+  
+  /* map pop-up */
+.pop-up{
+  position: absolute;
+  background: white;
+  border: 1px solid black;
+  
+}
 
 
 

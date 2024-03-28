@@ -7,7 +7,7 @@ import OurTeamCard from './OurTeamCard'
 
 function OurTeam() {
   return (
-    <section className="w-3/4 m-auto">
+    <section className="max-w-[1243px] m-auto">
    
         {/* Start of Our Team Section */}
         <div className="flex flex-col 
@@ -19,12 +19,47 @@ function OurTeam() {
           </h2>
           
           {/* heading sub-text */}
-          <p className={`text-[20px] text-center font-light leading-9 mb-24 mr-16 ml-16 ${robotoSlab.className}`}>Our passionate and enthusiastic team ready to change the energy system.</p>
+          <p className={`md:text-[20px] text-center font-light leading-6 md:leading-9 mb-6 md:mb-24 mx-8 md:mx-16 ${robotoSlab.className}`}>Our passionate and enthusiastic team ready to change the energy system.</p>
         </div>
     
 
       {/* Team reusable component. If you need to edit the format, go OurTeamCard component */}
-      <section className="grid grid-cols-2  md:grid-cols-4 gap-6 justify-items-center mx-auto max-w-6xl lg:max-w-none pb-24">
+      <section className="grid grid-cols-2  md:grid-cols-4 gap-6 justify-items-center mx-auto max-w-6xl lg:max-w-none pb-16 px-6 md:px-0">
+
+        <OurTeamCard
+          image="/maleTransparent.png"
+          name="name"
+          role="role"
+          genre="male"
+        />
+
+        <OurTeamCard
+          image="/femaleTransparent.png"
+          name="name"
+          role="role"
+          genre="female"
+        />
+
+        <OurTeamCard
+          image="/femaleTransparent.png"
+          name="name"
+          role="role"
+          genre="female"
+        />
+
+        <OurTeamCard
+          image="/maleTransparent.png"
+          name="name"
+          role="role"
+          genre="male"
+        />
+
+        <OurTeamCard
+          image="/maleTransparent.png"
+          name="name"
+          role="role"
+          genre="male"
+        />
 
         <OurTeamCard
           image="/maleTransparent.png"
@@ -46,6 +81,18 @@ function OurTeam() {
           role="role"
           genre="male"
         />
+      </section>
+
+      {/* adisors section */}
+      <div className="">
+          
+          {/* heading */}
+          <h2 className={`font-bold text-about-us-heading tracking-wider text-2xl  text-center md:text-5xl mb-8 leading-10 ${cairo.className}`}>
+          ADVISORS
+          </h2>
+        </div>
+      {/* advisors reusable component. If you need to edit the format, go OurTeamCard component */}
+      <section className="grid grid-cols-2  md:grid-cols-4 gap-6 justify-items-center mx-auto max-w-6xl lg:max-w-none pb-20 md:pb-10">
 
         <OurTeamCard
           image="/femaleTransparent.png"
@@ -75,19 +122,6 @@ function OurTeam() {
           genre="female"
         />
 
-        <OurTeamCard
-          image="/maleTransparent.png"
-          name="name"
-          role="role"
-          genre="male"
-        />
-
-        <OurTeamCard
-          image="/femaleTransparent.png"
-          name="name"
-          role="role"
-          genre="female"
-        />
       </section>
     </section>
  
