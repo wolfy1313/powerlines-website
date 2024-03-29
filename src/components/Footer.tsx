@@ -78,7 +78,7 @@ function Footer() {
           <section className="flex flex-row space-x-10 pt-3">
             <Link href="google.com">
               <Image
-                src="/linkedinlogo.svg"
+                src="/INiconBlack.png"
                 height={30}
                 width={30}
                 alt="linkedin"
@@ -86,7 +86,7 @@ function Footer() {
             </Link>
             <Link href="google.com">
               <Image
-                src="/twitterlogo.svg"
+                src="/XiconBlack.png"
                 height={30}
                 width={30}
                 alt="linkedin"
@@ -94,7 +94,7 @@ function Footer() {
             </Link>
             <Link href="google.com">
               <Image
-                src="/facebooklogo.svg"
+                src="/FBiconBlack.png"
                 height={30}
                 width={30}
                 alt="linkedin"
