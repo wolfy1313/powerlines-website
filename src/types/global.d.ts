@@ -11,6 +11,7 @@ export interface OutcomeCardProps {
   alt: string
   height: string
   width: string
+  // color: string
 }
 
 export interface OurPrinciplesProps {
@@ -33,7 +34,7 @@ export interface TOCOutcomesComponentProps {
   OutcomesCards: OutcomeCardProps[]
 }
 
-export interface OurPrinciplesComponentProps extends OutcomeCardProps {}
+export interface OurPrinciplesComponentProps extends OutcomeCardProps { }
 
 export interface TrunctableTextProps {
   text: string
