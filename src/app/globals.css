@@ -51,6 +51,14 @@
     background: linear-gradient(270.06deg, #F89735 -0.08%, #FFD00F 98.66%);
   }
   
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+* {
+  scrollbar-width: none; /* Firefox */
+}
+
   /* map pop-up */
 .pop-up{
   position: absolute;
