@@ -1,58 +1,59 @@
-import React from 'react'
-import TOCHeaderComponent from '@/components/TOCHeaderComponent'
-import TwoColumnLayoutWithImage from '@/components/TwoColumnLayoutWithImage'
-import TOCOutcomesComponent from '@/components/TOCOutcomesComponent'
-import ReviewCurrentPUCs from '@/components/ReviewCurrentPUCs'
+import React from "react";
+import TOCHeaderComponent from "@/components/TOCHeaderComponent";
+import TwoColumnLayoutWithImage from "@/components/TwoColumnLayoutWithImage";
+import TOCOutcomesComponent from "@/components/TOCOutcomesComponent";
+import ReviewCurrentPUCs from "@/components/ReviewCurrentPUCs";
 
 import {
   OutcomeCardProps,
   TOCOutcomesComponentProps,
-  bulletPoint
-} from '@/types/global'
-import TOCOpportunitiesComponent from '@/components/TOCOpportunitiesComponent'
-import TOCBodyList from '@/components/TOCBodyList'
+  bulletPoint,
+} from "@/types/global";
+import TOCOpportunitiesComponent from "@/components/TOCOpportunitiesComponent";
+import TOCBodyList from "@/components/TOCBodyList";
+import ResourcesComponent from "@/components/ResourcesComponent";
 const OutcomeCardsData: OutcomeCardProps[] = [
   {
-    image: '/OutcomeMailboxWHITE.png',
-    text: 'Outcome 1',
-    alt: 'mailbox icon',
-    height: 'h-20',
-    width: 'w-20'
+    image: "/OutcomeMailboxWHITE.png",
+    text: "Outcome 1",
+    alt: "mailbox icon",
+    height: "h-20",
+    width: "w-20",
   },
   {
-    image: '/OutcomeMailboxWHITE.png',
-    text: 'Outcome 2',
-    alt: 'mailbox icon',
-    height: 'h-20',
-    width: 'w-20'
+    image: "/OutcomeMailboxWHITE.png",
+    text: "Outcome 2",
+    alt: "mailbox icon",
+    height: "h-20",
+    width: "w-20",
   },
   {
-    image: '/OutcomeMailboxWHITE.png',
-    text: 'Outcome 3',
-    alt: 'mailbox icon',
-    height: 'h-20',
-    width: 'w-20'
-  }
-]
+    image: "/OutcomeMailboxWHITE.png",
+    text: "Outcome 3",
+    alt: "mailbox icon",
+    height: "h-20",
+    width: "w-20",
+  },
+];
 
 const bulletPoints: bulletPoint[] = [
   [
-    'Increased Funding',
-    'Allocate more financial resources to PUC races and fundraising efforts, which is critical to catalyzing positive change that yields favorable climate outcomes.'
+    "Increased Funding",
+    "Allocate more financial resources to PUC races and fundraising efforts, which is critical to catalyzing positive change that yields favorable climate outcomes.",
   ],
   [
-    'Advocacy with Governors:',
-    'Engage with governors, advocating for the appointment of climate and equity champions to PUCs through organized coalitions.'
+    "Advocacy with Governors",
+    "Engage with governors, advocating for the appointment of climate and equity champions to PUCs through organized coalitions.",
   ],
   [
-    'Candidate Recruitment:',
-    'Actively recruit qualified candidates for PUC races, ensuring a strong pool of individuals committed to the cause.'
+    "Candidate Recruitment",
+    "Actively recruit qualified candidates for PUC races, ensuring a strong pool of individuals committed to the cause.",
   ],
   [
-    'Commissioner Training',
-    'Facilitate ongoing training for PUC commissioners and staff, equipping them with resources and effective strategies.'
-  ]
-]
+    "Commissioner Training",
+    "Facilitate ongoing training for PUC commissioners and staff, equipping them with resources and effective strategies.",
+  ],
+];
 
 function ModelLegislation() {
   return (
@@ -73,8 +74,7 @@ function ModelLegislation() {
         header="OPPORTUNITIES"
         content="We urgently need more PUC commissioners who champion climate and equity. To achieve this, campaigns can influence governors and state legislatures to appoint such commissioners and encourage like-minded candidates to run and win PUC elections. These elections offer high returns-on-investment for climate and equity, with candidates raising an average of only $[] per election over the last decade. Closing the voter dropoff gap between Democratic and Republican PUC candidates can greatly enhance the competitiveness of climate and equity champions. This strategy has proven successful, as seen in North Carolina and the 2022 Louisiana PSC race where climate justice priorities were advanced."
       />
-      <ReviewCurrentPUCs
-      />
+      <ReviewCurrentPUCs />
       <TOCBodyList
         header="THEORY OF CHANGE"
         subheader="Through data-driven research, PowerLines will identify key appointments and elections with the greatest impact. PowerLines will then work with electoral and advocacy partners to push for the appointment and election of climate and equity champions to PUCs."
@@ -86,8 +86,10 @@ function ModelLegislation() {
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         OutcomesCards={OutcomeCardsData}
       />
+
+      <ResourcesComponent/>
     </div>
-  )
+  );
 }
 
-export default ModelLegislation
+export default ModelLegislation;
