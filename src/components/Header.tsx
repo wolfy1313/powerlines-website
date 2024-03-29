@@ -232,39 +232,39 @@ function Header() {
               </div>
               {isDropdownVisible && (
                 <ul className="absolute left-0 mt-1 w-40 pl-4 py-4 bg-[#F7F7F7] border-l-2 shadow-md space-y-3">
-                  <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
+                  <li>
                     <Link
                       onClick={() => toggleDropdown()}
-                      className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
+                      className={`${isDropdownVisible ? ' hover:text-semi-dark-orange' : 'pl-0'}`}
                       href="/our-work"
                     >
                       Overview
                     </Link>
                   </li>
-                  <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
+                  <li>
                     <Link
                       onClick={() => toggleDropdown()}
-                      className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
+                      className={`${isDropdownVisible ? ' hover:text-semi-dark-orange' : 'pl-0'}`}
                       href="/political-strategy"
                     >
                       Political Strategy
                     </Link>
                   </li>
-                  <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
+                  <li >
                     <button >
                       <Link
                         onClick={() => toggleDropdown()}
-                        className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
+                        className={`${isDropdownVisible ? ' hover:text-semi-dark-orange' : 'pl-0'}`}
                         href="/model-legislation"
                       >
                         Model Legislation
                       </Link>
                     </button>
                   </li>
-                  <li className="hover:bg-gray-100 hover:border-main-one hover:border-2 hover:border-r-0">
+                  <li >
                     <Link
                       onClick={() => toggleDropdown()}
-                      className={`${isDropdownVisible ? 'hover:pl-1' : 'pl-0'}`}
+                      className={`${isDropdownVisible ? ' hover:text-semi-dark-orange' : 'pl-0'}`}
                       href="/community-engagement"
                     >
                       Stakeholder Engagement
