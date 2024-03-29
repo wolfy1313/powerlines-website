@@ -126,7 +126,7 @@ function Header() {
                             }}
                           >
                             <Link
-                              className={` ${isDropdownVisible ? 'hover:pl-1' : 'pl-0'
+                              className={` ${isDropdownVisible ? 'hover:bg-red' : ' bg-gray-400'
                                 }`}
                               href="/our-work"
                             >
