@@ -8,7 +8,7 @@ const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 
 function Footer() {
   return (
-    <section className="flex flex-col justify-center h-auto min-w-screen max-w-screen items-center bg-main-two pb-5 md:pb-0 md:py-10 lg:h-72 md:flex-row">
+    <section className="flex flex-col justify-center h-auto min-w-screen max-w-screen items-center bg-main-two pb-5 md:pb-10 md:py-10 lg:h-72 md:flex-row">
       {/* Left hand side of Footer */}
       <section
         className={`flex flex-col flex-1 items-center min-w-screen justify-center pb-3 align-middle md:flex-row md:pb-0 md:pl-20 ${cairo.className}`}
@@ -16,16 +16,17 @@ function Footer() {
         <section className="relative flex flex-col justify-center h-[65px] w-[180px] md:mr-6 md:h-32 md:w-72">
           <Image
             src="/LogoBlackText.png"
-            fill
+            height={100}
+            width={240}
             alt="logo"
-            className="md:mt-3"
+            className="md:mt-3 md:pr-4"
           />
         </section>
         <section
-          className={`flex flex-1 flex-col items-center  justify-center  my-auto text-2xl ${cairo.className} border-t pt-4 border-t-black md:flex-row md:justify-start lg:border-t-0 lg:border-l-2 lg:border-l-yellow-300 lg:pt-0`}
+          className={`flex flex-1 flex-col items-center  justify-center  my-auto text-2xl ${cairo.className} border-t pt-4 border-t-black md:flex-row md:justify-start md:border-t-0 md:border-l-4 lg:border-l-yellow-300 lg:pt-0`}
         >
           {/* Nav List */}
-          <ul className="flex flex-col space-y-3 pt-2 pl-2 text-center md:text-left md:pr-16 lg:pr-0 lg:pt-0 lg:pl-32">
+          <ul className="flex flex-col space-y-6 pt-2 pl-2 text-center md:text-left md:pr-4 lg:pr-0 lg:pt-0 lg:pl-32">
             <li>
               <Link href="/our-work">
                 <p>Our Work</p>
