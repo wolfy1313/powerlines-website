@@ -25,7 +25,7 @@ const TwoColumnLayoutWithImage: React.FC<TwoColumnLayoutWithImageProps> = ({
 }) => {
   return (
     <section className="min-w-full max-w-full mx-auto">
-      <section className="flex flex-col lg:flex-row bg-white px-20 md:pr-0 my-10">
+      <section className="flex flex-col lg:flex-row bg-white px-20 lg:pr-0 my-10">
         {/* 
 Text Column  */}
         <section className="w-full sm:w-full flex items-center md:order-1 order-1 justify-center h-auto order-2 ">
