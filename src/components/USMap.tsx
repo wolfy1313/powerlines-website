@@ -1,7 +1,8 @@
 // This is a client component
 "use client";
+
 import React, { useState } from 'react';
-import Image from 'next/image'
+import Image from 'next/image';
 
 interface PopupPosition {
   x: number;
@@ -9,19 +10,41 @@ interface PopupPosition {
 }
 
 interface Politician {
-	name: string;
+  name: string;
 }
-  
+
 interface StatePUCInfo {
-	stateName: string;
-	membersCount: number;
-	stateGovernor: string;
-	politicians: Politician[];
+  stateName: string;
+  membersCount: number;
+  stateGovernor: string;
+  politicians: Politician[];
 }
-  
+
+/////////////// This is an idea to make the code dryer, but will require hours of manual input//////////
+// interface StateData {
+//   id: string;
+//   path: string;
+//   className: string;
+// }
+
+
+// Array of state data
+// const statesData: StateData[] = [
+// 	{
+// 		id: 'az',
+// 		path: 'M162.132,198.699l-15.196-1.997  l-14.674-2.169l-15.023-2.435l-10.158-1.822c-0.62,3.42-0.501,8.78-2.431,11.679c-2.81,4.219-3.006-2.435-6.425-0.826  c-2.25,1.061-1.122,5.029-1.303,7.209c-0.095,1.146,0.092,2.955-0.086,3.994c-0.332,1.914-1.21,2.011-1.303,4.861  c0,3.603,0.756,3.233,1.216,4.948c0.185,0.693,0.448,1.646,0.39,2.345c-0.097,1.176,1.344,1.356,1.693,2.347  c0.818,2.3-1.586,1.942-3.212,3.387c-1.641,1.455-1.243,2.817-1.822,4.772c-0.592,1.996-2.716,3.05-3.388,4.604  c-0.305,0.703-0.785,3.846-0.433,4.604c0.318,0.688,3.934,1.926,1.432,3.517c-1.271,0.808-1.118,1.043-2.823,0.912  c0,0-1.763,1.269-1.65,2.776l2.779,1.651l23.357,13.461l15.284,8.595l17.798,2.517l5.905,0.696l0,0L162.132,198.699', 
+// 		className: 'state west',
+// 	},
+// 	{
+// 		id: 'ca',
+// 		path: 'M96.748,222.144  c0.185,0.693,0.448,1.646,0.39,2.345c-0.097,1.177,1.344,1.356,1.693,2.347c0.818,2.3-1.586,1.942-3.212,3.387  c-1.641,1.455-1.243,2.817-1.822,4.772c-0.592,1.996-2.716,3.05-3.388,4.604c-0.305,0.703-0.785,3.846-0.433,4.604  c0.318,0.688,3.934,1.926,1.432,3.517c-1.271,0.808-1.118,1.043-2.823,0.912l-27.872-2.867c0,0-0.673-1.362-1.478-2.168  c1.409-5.276-0.117-10.894-4.472-14.459c-0.903-0.739-3.982-2.321-4.296-2.737c-1.172-1.727,0.021-3.883-1.737-5.207  c-6.78-5.102-18.361-8.845-21.1-15.543c-0.58-1.414,2.115-3.863,1.041-5.341c-1.726-2.375-1.615-3.082-2.952-5.947  c-1.502-3.219-5.67-9.258-5.904-12.592c-0.088-1.246,1.648-4.891,1.648-5.557c0.057-0.73-1.318-3.917-1.476-4.599  c-0.678-4.443-5.298-8.979-0.609-12.854c-0.171,3.296,0.446,3.681,2.779,5.818c-0.459-1.695-2.857-7.266-1.649-8.42  c1.649-1.576,8.896,1.932,9.812,2.777c-1.028-1.968-1.028-1.968-2.17-2.777c-1.143-0.81-8.885-5.013-9.726,2.169  c-1.668-1.569-3.582-3.166-3.675-3.733c0-0.526,0.29-0.997,0.29-2.864c0-2.068-3.285-5.425-4.604-10.595  c-1.238-4.856,2.664-10.349,1.042-15.542c-2.604-8.336-1.955-7.449,1.476-14.153c2.489-4.861,2.129-11.252,4.254-14.935  l22.577,6.251l19.103,4.862l-7.728,31.868l-2.346,9.376l32.823,47.844l13.893,20.493C95.532,220.797,96.288,220.429,96.748,222.144z  ',
+// 		className: 'state west westcoast',
+// 	},	
+// ];
+
+
 // this is dummy data, we need to setup axios calls to a backend server to pull current up to date data
 const fetchDataForState = async (stateId: string): Promise<StatePUCInfo> => {
-	// Simulate fetching data. Replace this with actual fetch request.
 	const mockData: Record<string, StatePUCInfo> = {
 	  az: {
 		stateName: 'Arizona',
@@ -35,6 +58,17 @@ const fetchDataForState = async (stateId: string): Promise<StatePUCInfo> => {
 			{ name: 'Lea M. Peterson' },
 		  ],
 	  },
+	  ca: {
+		stateName: 'California',
+		membersCount: 4,
+		stateGovernor: 'John Doe (D)',
+		politicians: [
+			{ name: 'Anna Tovar' },
+			{ name: 'Jim O\'Connor' },
+			{ name: 'Kevin Thompson' },
+			{ name: 'Nick Myers' },
+		  ],
+	  },
 	  // other states ...
 	};
   
@@ -46,25 +80,39 @@ const fetchDataForState = async (stateId: string): Promise<StatePUCInfo> => {
 	};
   };
 
+
+
+
 const USMap: React.FC = () => {
-	const [showPopup, setShowPopup] = useState<boolean>(false);
-	// Replace the existing popupContent declaration with this
-	const [popupContent, setPopupContent] = useState<StatePUCInfo | null>(null);
-	const [popupPosition, setPopupPosition] = useState<PopupPosition>({ x: 0, y: 0 });
+	 // State hooks
+	 const [showPopup, setShowPopup] = useState<boolean>(false);
+	 const [popupContent, setPopupContent] = useState<StatePUCInfo | null>(null);
+	 const [popupPosition, setPopupPosition] = useState<PopupPosition>({ x: 0, y: 0 });
+	 const [activeStateId, setActiveStateId] = useState<string | null>(null);
 
-  const handleMouseOver = async (event: React.MouseEvent<SVGPathElement>, stateId: string) => {
-    const data = await fetchDataForState(stateId);
-    setPopupContent(data);
-    setPopupPosition({
-      x: event.clientX + window.scrollX - 160, // Offset by 10px for visibility
-      y: event.clientY + window.scrollY - 300,
-    });
-    setShowPopup(true);
-  };
+	////////////////// functions//////////////////////////////
+  	
+	// hover function
+	const handleMouseOver = async (event: React.MouseEvent<SVGPathElement>, stateId: string) => {
+		const data = await fetchDataForState(stateId);
+		setPopupContent(data);
+		setPopupPosition({
+			x: event.clientX + window.scrollX - 160, // Offset by 10px for visibility
+			y: event.clientY + window.scrollY - 300,
+		});
+		setShowPopup(true);
+  	};
 
-  const handleMouseOut = () => {
-    setShowPopup(false);
-  };
+  	const handleMouseOut = () => {
+    	setShowPopup(false);
+  	};
+
+	//   map click event function 
+	const handleStateClick = (stateId: string) => {
+		setActiveStateId(activeStateId === stateId ? null : stateId);
+	  };
+
+ 
 	
     return (
       <div className='mx-auto w-full'>
@@ -82,6 +130,18 @@ const USMap: React.FC = () => {
         xmlSpace="preserve"
         >
 
+		{/* click events for dry functions */}
+		{/* {statesData.map((state) => (
+          <path
+            key={state.id}
+            id={state.id}
+            className={`${state.className} ${activeStateId === state.id ? 'active' : ''}`}
+            onMouseOver={(e) => handleMouseOver(e, state.id)}
+            onMouseOut={handleMouseOut}
+            onClick={() => handleStateClick(state.id)}
+            d={state.path}
+          />
+        ))} */}
 
 <rect id="background" fill="none" width="600" height="400"/>
 
@@ -112,10 +172,12 @@ const USMap: React.FC = () => {
 
 <path id="ar" className="state south" d="M372.525,232.822  c0,0,0.545-1.746,1.477-2.678c0,0,0.761-0.773,0.813-2.043c0,0-0.162-1.351,0.627-2.402c0,0,1.603-3.522,2.645-7.549l-6.514,0.692  c-0.377-0.824-0.522-1.106,0.053-1.896c0.554-0.76,1.289-1.023,1.84-1.711c1.163-1.449-0.041-2.977-1.371-3.774l-20.318,1.303  l-17.803,0.782l-11.201,0.261c0,0-0.019,1.649,0.647,4.046c0,0,1.567,6.805,1.784,11.758l0.164,25.072v-0.021  c0.313,0.145,0.576,0.324,0.879,0.563c0.535,0.431,3.074-0.188,4.254,0.261l0.262,7.641l14.5-0.521l19.102-1.039  c0.531-3.121,0.177-5.56,0.177-5.56c-1.509-1.946-0.525-4.86-0.525-4.86s0.862-1.496,1.353-2.195c0,0,0.845-1.932,1.012-3.034  c0,0,0.189-1.461,1.262-2.345c0,0,2.192-2.811,2.924-5.607c0,0,0.148-1.234,0.461-2.048  C371.021,235.917,372.425,232.998,372.525,232.822z"/>
 
+
 <path id="az" 
-className="state west" 
+className={`state west ${activeStateId === 'az' ? 'active' : ''}`} 
 onMouseOver={(e) => handleMouseOver(e, 'az')}
 onMouseOut={handleMouseOut}
+onClick={() => handleStateClick('az')}
 d="M162.132,198.699l-15.196-1.997  l-14.674-2.169l-15.023-2.435l-10.158-1.822c-0.62,3.42-0.501,8.78-2.431,11.679c-2.81,4.219-3.006-2.435-6.425-0.826  c-2.25,1.061-1.122,5.029-1.303,7.209c-0.095,1.146,0.092,2.955-0.086,3.994c-0.332,1.914-1.21,2.011-1.303,4.861  c0,3.603,0.756,3.233,1.216,4.948c0.185,0.693,0.448,1.646,0.39,2.345c-0.097,1.176,1.344,1.356,1.693,2.347  c0.818,2.3-1.586,1.942-3.212,3.387c-1.641,1.455-1.243,2.817-1.822,4.772c-0.592,1.996-2.716,3.05-3.388,4.604  c-0.305,0.703-0.785,3.846-0.433,4.604c0.318,0.688,3.934,1.926,1.432,3.517c-1.271,0.808-1.118,1.043-2.823,0.912  c0,0-1.763,1.269-1.65,2.776l2.779,1.651l23.357,13.461l15.284,8.595l17.798,2.517l5.905,0.696l0,0L162.132,198.699"/>
 
 {/* California  Data*/}
@@ -123,7 +185,10 @@ d="M162.132,198.699l-15.196-1.997  l-14.674-2.169l-15.023-2.435l-10.158-1.822c-0
     {/* California State */}
     <path 
         id="ca" 
-        className="state west westcoast" 
+		className={`state west westcoast ${activeStateId === 'ca' ? 'active' : ''}`}
+		onMouseOver={(e) => handleMouseOver(e, 'ca')}
+		onMouseOut={handleMouseOut}
+		onClick={() => handleStateClick('ca')}
         d="M96.748,222.144  c0.185,0.693,0.448,1.646,0.39,2.345c-0.097,1.177,1.344,1.356,1.693,2.347c0.818,2.3-1.586,1.942-3.212,3.387  c-1.641,1.455-1.243,2.817-1.822,4.772c-0.592,1.996-2.716,3.05-3.388,4.604c-0.305,0.703-0.785,3.846-0.433,4.604  c0.318,0.688,3.934,1.926,1.432,3.517c-1.271,0.808-1.118,1.043-2.823,0.912l-27.872-2.867c0,0-0.673-1.362-1.478-2.168  c1.409-5.276-0.117-10.894-4.472-14.459c-0.903-0.739-3.982-2.321-4.296-2.737c-1.172-1.727,0.021-3.883-1.737-5.207  c-6.78-5.102-18.361-8.845-21.1-15.543c-0.58-1.414,2.115-3.863,1.041-5.341c-1.726-2.375-1.615-3.082-2.952-5.947  c-1.502-3.219-5.67-9.258-5.904-12.592c-0.088-1.246,1.648-4.891,1.648-5.557c0.057-0.73-1.318-3.917-1.476-4.599  c-0.678-4.443-5.298-8.979-0.609-12.854c-0.171,3.296,0.446,3.681,2.779,5.818c-0.459-1.695-2.857-7.266-1.649-8.42  c1.649-1.576,8.896,1.932,9.812,2.777c-1.028-1.968-1.028-1.968-2.17-2.777c-1.143-0.81-8.885-5.013-9.726,2.169  c-1.668-1.569-3.582-3.166-3.675-3.733c0-0.526,0.29-0.997,0.29-2.864c0-2.068-3.285-5.425-4.604-10.595  c-1.238-4.856,2.664-10.349,1.042-15.542c-2.604-8.336-1.955-7.449,1.476-14.153c2.489-4.861,2.129-11.252,4.254-14.935  l22.577,6.251l19.103,4.862l-7.728,31.868l-2.346,9.376l32.823,47.844l13.893,20.493C95.532,220.797,96.288,220.429,96.748,222.144z  "
     />
     {/* California text*/}

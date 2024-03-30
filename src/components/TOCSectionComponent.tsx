@@ -4,19 +4,19 @@ import { Cairo, Roboto_Slab } from "next/font/google";
 const cairo = Cairo({ subsets: ["latin"] });
 const robotoSlab = Roboto_Slab({ subsets: ["latin"] });
 
-interface TOCOpportunitiesComponentProps {
+interface TOCSectionComponentProps {
   header: string;
   content: string;
 }
 
-const TOCOpportunitiesComponent: React.FC<TOCOpportunitiesComponentProps> = ({
+const TOCSectionComponent: React.FC<TOCSectionComponentProps> = ({
   header,
   content,
 }) => {
   return (
-    <section className="min-w-screen max-w-screen px-20 my-10">
+    <section className="min-w-screen max-w-screen my-10">
       <h1
-        className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 text-primary ${cairo.className}`}
+        className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 text-blue-dark ${cairo.className}`}
       >
         {header}
       </h1>
@@ -29,4 +29,4 @@ const TOCOpportunitiesComponent: React.FC<TOCOpportunitiesComponentProps> = ({
   );
 };
 
-export default TOCOpportunitiesComponent;
+export default TOCSectionComponent;
