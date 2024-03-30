@@ -16,7 +16,7 @@ const TOCOpportunitiesComponent: React.FC<TOCOpportunitiesComponentProps> = ({
   return (
     <section className="min-w-screen max-w-screen px-20 my-10">
       <h1
-        className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 text-main-one ${cairo.className}`}
+        className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 text-primary ${cairo.className}`}
       >
         {header}
       </h1>

@@ -108,7 +108,7 @@ function Header() {
                   </button>
                 </li>
                 <li
-                  className={`pt-1 px-2 relative ${isDropdownVisible ? 'text-black' : 'bg-main-two'
+                  className={`pt-1 px-2 relative ${isDropdownVisible ? 'text-black' : 'bg-secondary'
                     } `}
                 >
                   <div className="flex flex-row pl-3 ">
@@ -117,7 +117,7 @@ function Header() {
                   </div>
                   {isMobile && isDropdownVisible && (
                     <div className=" m-0 ">
-                      <ul className="absolute text-center left-0 mt-1 w-full bg-main-two">
+                      <ul className="absolute text-center left-0 mt-1 w-full bg-secondary">
                         <li className="hover:bg-gray-400 font-normal pt-4 leading-relaxed text-base">
                           <button
                             onClick={() => {
@@ -235,7 +235,7 @@ function Header() {
                   <li>
                     <Link
                       onClick={() => toggleDropdown()}
-                      className={`${isDropdownVisible ? ' hover:text-semi-dark-orange' : 'pl-0'}`}
+                      className={`${isDropdownVisible ? ' hover:text-orange-dark' : 'pl-0'}`}
                       href="/our-work"
                     >
                       Overview
@@ -244,7 +244,7 @@ function Header() {
                   <li>
                     <Link
                       onClick={() => toggleDropdown()}
-                      className={`${isDropdownVisible ? ' hover:text-semi-dark-orange' : 'pl-0'}`}
+                      className={`${isDropdownVisible ? ' hover:text-orange-dark' : 'pl-0'}`}
                       href="/political-strategy"
                     >
                       Political Strategy
@@ -254,7 +254,7 @@ function Header() {
                     <button >
                       <Link
                         onClick={() => toggleDropdown()}
-                        className={`${isDropdownVisible ? ' hover:text-semi-dark-orange' : 'pl-0'}`}
+                        className={`${isDropdownVisible ? ' hover:text-orange-dark' : 'pl-0'}`}
                         href="/model-legislation"
                       >
                         Model Legislation
@@ -264,7 +264,7 @@ function Header() {
                   <li >
                     <Link
                       onClick={() => toggleDropdown()}
-                      className={`${isDropdownVisible ? ' hover:text-semi-dark-orange' : 'pl-0'}`}
+                      className={`${isDropdownVisible ? ' hover:text-orange-dark' : 'pl-0'}`}
                       href="/community-engagement"
                     >
                       Stakeholder Engagement

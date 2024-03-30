@@ -13,13 +13,14 @@ interface TOCHeaderComponentProps {
 
 const TOCHeaderComponent: React.FC<TOCHeaderComponentProps> = ({ header, pageTitle }) => {
   return (
-    <section className='min-w-screen max-w-screen'>
-      <section className={`bg-no-repeat bg-[url('/TOCHeaderBackgroundGradient.svg')] bg-cover font-bold text-center
-${cairo.className}`}>
-        <h2 className={`pt-16 pb-4 font-normal text-2xl md:text-4xl text-white`}>{header}</h2>
-        <h1 className="pb-32 text-3xl md:text-7xl text-white">{pageTitle}</h1>
-      </section>
-    </section>
+    <div className={`min-w-screen max-w-screen h-[320px] bg-no-repeat bg-[url('/TOCHeaderBackgroundGradient.svg')] bg-cover flex flex-col items-center justify-center text-center ${cairo.className} text-white`}>
+        
+        {/* header */}
+        <h1 className={` pb-4 font-normal text-2xl md:text-4xl`}>{header}
+        </h1>
+        {/* sub-header */}
+        <h2 className="font-bold text-3xl md:text-7xl">{pageTitle}</h2>  
+    </div> 
   )
 }
 

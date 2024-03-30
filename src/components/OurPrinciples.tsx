@@ -22,7 +22,7 @@ function OurPrinciples() {
         
 
         {/* Text Column */}
-        <div className="md:w-1/3 w-1/2 bg-dark-green flex items-center justify-center">
+        <div className="md:w-1/3 w-1/2 bg-green-dark flex items-center justify-center">
           <p
             className={`${cairo.className} md:text-4xl text-xl leading-[21px] text-white text-center font-medium px-6 md:px-3 py-3`}
           >
@@ -49,7 +49,7 @@ function OurPrinciples() {
       <section className="flex flex-col items-center justify-center my-8 mx-auto  pt-4 md:pt-14  max-w-[1242px]">
         {/* Heading, aligned to the left */}
         <h1
-          className={`w-full text-xl md:text-4xl font-bold leading-9 text-about-us-heading my-4 pl-6 md:pl-0 ${cairo.className}`}
+          className={`w-full text-xl md:text-4xl font-bold leading-9 text-green-dark my-4 pl-6 md:pl-0 ${cairo.className}`}
         >
           OUR PRINCIPLES
         </h1>

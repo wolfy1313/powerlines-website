@@ -14,7 +14,7 @@ const TOCBodyList = ({
     <section className="min-w-full max-w-full mx-auto">
       <section className="flex flex-col md:flex-col bg-white px-20 my-10">
         <h1
-          className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 text-main-one ${cairo.className}`}
+          className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 text-primary ${cairo.className}`}
         >
           {header}
         </h1>
@@ -39,7 +39,7 @@ const TOCBodyList = ({
                 />
                 <div>
                   <h2
-                    className={`inline text-[15px] md:text-xl font-bold leading-6 text-main-one ${robotoSlab.className}`}
+                    className={`inline text-[15px] md:text-xl font-bold leading-6 text-primary ${robotoSlab.className}`}
                   >
                     {bulletPoint[0]}:{" "}
                   </h2>

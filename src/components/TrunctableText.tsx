@@ -16,7 +16,7 @@ const TrunctableText: React.FC<TrunctableTextProps> = ({ text, maxLength }) => {
     return (
         <div className="overflow-hidden">
             <p className={` ${robotoSlab.className} text-lg md:text-xl font-normal tracking-tighter leading-9 custom-truncate`}>{body}</p>
-            <button onClick={() => setIsTruncated(!isTruncated)} className={`mb-4 text-darker-yellow text-base font-normal leading-8`}>
+            <button onClick={() => setIsTruncated(!isTruncated)} className={`mb-4 text-yellow-dark text-base font-normal leading-8`}>
                 {isTruncated ? 'Show More' : 'Show Less'}
             </button>
         </div>

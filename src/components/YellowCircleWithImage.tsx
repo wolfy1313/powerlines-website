@@ -18,7 +18,7 @@ const YellowCircleWithImage: React.FC<OutcomeCardProps> = ({
     <>
       <div className=" flex flex-row sm:flex-col items-center mt-6">
         <div
-          className={` bg-semi-dark-orange rounded-full p-7 pb-5 relative  ${height} ${width}`}
+          className={` bg-orange-dark rounded-full p-7 pb-5 relative  ${height} ${width}`}
         >
           <Image fill src={image} alt={alt} className="p-5" />
         </div>

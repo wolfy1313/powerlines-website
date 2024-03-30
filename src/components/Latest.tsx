@@ -83,7 +83,7 @@ const Latest = () => {
                 </p>
                 <Link
                   href="/about-us"
-                  className="flex flex-row justify-start text-semi-dark-orange"
+                  className="flex flex-row justify-start text-orange-dark"
                 >
                   <p className="font-bold ">Learn More</p>
                   <Image
@@ -122,7 +122,7 @@ const Latest = () => {
                 </p>
                 <Link
                   href="/about-us"
-                  className="flex flex-row justify-start text-semi-dark-orange"
+                  className="flex flex-row justify-start text-orange-dark"
                 >
                   <p className="font-bold ">Learn More</p>
                   <Image
@@ -161,7 +161,7 @@ const Latest = () => {
                 </p>
                 <Link
                   href="/about-us"
-                  className="flex flex-row justify-start text-semi-dark-orange"
+                  className="flex flex-row justify-start text-orange-dark"
                 >
                   <p className="font-bold ">Learn More</p>
                   <Image
@@ -182,7 +182,7 @@ const Latest = () => {
           onClick={() => scrollToCard(cardRef1)}
           className={`w-3 h-3 rounded-full border-2 ${
             currentCard === "card1"
-              ? "border-semi-dark-orange bg-semi-dark-orange"
+              ? "border-orange-dark bg-orange-dark"
               : "border-black"
           } mx-2`}
         ></button>
@@ -190,7 +190,7 @@ const Latest = () => {
           onClick={() => scrollToCard(cardRef2)}
           className={`w-3 h-3 rounded-full border-2 ${
             currentCard === "card2"
-              ? "border-semi-dark-orange bg-semi-dark-orange"
+              ? "border-orange-dark bg-orange-dark"
               : "border-black"
           } mx-2`}
         ></button>
@@ -198,7 +198,7 @@ const Latest = () => {
           onClick={() => scrollToCard(cardRef3)}
           className={`w-3 h-3 rounded-full border-2 ${
             currentCard === "card3"
-              ? "border-semi-dark-orange bg-semi-dark-orange"
+              ? "border-orange-dark bg-orange-dark"
               : "border-black"
           } mx-2`}
         ></button>

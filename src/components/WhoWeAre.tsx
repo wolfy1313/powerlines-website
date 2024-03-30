@@ -14,7 +14,7 @@ const WhoWeAre = React.forwardRef<HTMLDivElement>((_props, ref) => {
       <section className="flex flex-col min-w-screen w-full md:w-1/2  ">
         <section className="flex flex-row justify-center md:justify-start">
           <section
-            className={`${cairo.className} text-[20px] md:text-[32px] font-bold text-center md:mt-0 text-semi-dark-orange`}
+            className={`${cairo.className} text-[20px] md:text-[32px] font-bold text-center md:mt-0 text-orange-dark`}
           >
             <h2>WHO WE ARE</h2>
           </section>

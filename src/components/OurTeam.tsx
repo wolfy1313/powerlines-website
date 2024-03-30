@@ -14,7 +14,7 @@ function OurTeam() {
         items-center justify-center gap-2 md:gap-3.5">
           
           {/* heading */}
-          <h2 className={`font-bold text-about-us-heading tracking-wider text-2xl text-center md:text-5xl mt-8 md:mt-32 md:leading-10 ${cairo.className}`}>
+          <h2 className={`font-bold text-green-dark tracking-wider text-2xl text-center md:text-5xl mt-8 md:mt-32 md:leading-10 ${cairo.className}`}>
           OUR TEAM
           </h2>
           
@@ -87,7 +87,7 @@ function OurTeam() {
       <div className="">
           
           {/* heading */}
-          <h2 className={`font-bold text-about-us-heading tracking-wider text-2xl  text-center md:text-5xl mb-6 md:mb-8 leading-10 ${cairo.className}`}>
+          <h2 className={`font-bold text-green-dark tracking-wider text-2xl  text-center md:text-5xl mb-6 md:mb-8 leading-10 ${cairo.className}`}>
           ADVISORS
           </h2>
         </div>
