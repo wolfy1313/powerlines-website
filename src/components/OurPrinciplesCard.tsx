@@ -11,31 +11,38 @@ const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 const OurPrinciplesCard: React.FC<OurPrinciplesProps> = ({ heading, text, image, alt }) => {
     return (
         // card container
-        <div className='flex flex-col items-center justify-center bg-white border-2 rounded-lg px-4 max-h-[379px] xs:w-[611px] md:h-[379px] p-10' >
+        <div className='flex flex-col bg-white border-2 rounded-lg px-6 pt-4 md:pt-16 max-h-[379px] xs:w-[611px] md:h-[380px]' >
+            
+            {/* Image and header Section */}
+            <section className="flex top-[100px] gap-4 h-[83px] max-w-[543px] items-center pb-2 md:pb-10" >
+                {/* Image */}
+                <div className='
+                flex
+                w-[45px] h-[45px]
+                max-w-[45px] max-h-[45px] 
+                min-w-[45px] min-h-[45px]
+                md:w-[80px] md:h-[80px] 
+                max-w-[80px] max-h-[80px] 
+                md:min-w-[80px] md:min-h-[80px]'>
+                    <Image
+                        src={image}
+                        alt={`${alt} icon`}
+                        width={80}
+                        height={80}
+                        className='object-fill w-full h-full'
+                    />
+                </div>
 
-            <section>
-
-                {/* Image and header Section */}
-                <section className="flex items-center gap-4" >
-                    {/* Image */}
-                    <div>
-                        <Image
-                            src={image}
-                            alt={`${alt} icon`}
-                            width={45}
-                            height={45}
-                            className='sm:w-20 sm:w-18 max-w-[94px] max-h-[80px]'
-                        />
-                    </div>
-                    {/* Heading*/}
-                    <h1 className={`text-xl  sm:text-2xl lg:text-3xl font-bold leading-5 sm:leading-9 ${cairo.className}`}> {heading}</h1>
-                </section>
-
-                {/* Text Section */}
-                <section>
-                    <p className={`text-sm sm:text-md lg:text-xl font-light leading-7 mt-[2rem] md:pr-4 ${robotoSlab.className}`}>{text}</p>
-                </section>
+                {/* Header*/}
+                <h1 className={`text-xl  sm:text-2xl lg:text-3xl font-bold leading-5 sm:leading-9 ${cairo.className}`}> {heading}
+                </h1>
             </section>
+
+            {/* Text Section */}
+            <section>
+                <p className={`text-sm sm:text-md lg:text-xl font-light  ${robotoSlab.className}`}>{text}</p>
+            </section>
+            
         </div>
 
     )
