@@ -36,6 +36,12 @@
   .state:hover {
     fill: #F89735;
   }
+
+  .state.active {
+    fill: #FFD00F; 
+  }
+
+  
   
   
   
