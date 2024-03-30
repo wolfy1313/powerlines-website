@@ -11,18 +11,17 @@ function AboutUs() {
     
 <section className="min-w-full max-w-full mx-auto">
     {/* main Heading */}
-        <section className="flex items-center h-[118px] md:h-72 overflow-hidden">
+        <section className="flex items-center h-[118px] md:h-72 overflow-hidden mt-20">
           <h2 className={`flex relative left-8 md:left-28 mr-64 font-bold text-2xl md:text-6xl mb-6  md:mb-0 ${cairo.className}`}>
             ABOUT POWERLINES
           </h2>
-          <div className="absolute">
+          <div className="absolute right-[0px] w-[480px]  md:right-[-100px] md:w-[1800px]">
             <Image 
               src="/AboutPowerlinesCircle.svg"
               alt="circle"
               width={1669}
               height={235}
-              layout="responsive"
-              className=''
+              className='w-full h-full'
             />
           </div>
         </section>
