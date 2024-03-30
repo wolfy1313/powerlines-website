@@ -36,7 +36,7 @@ function AboutUs() {
           <div className="w-full md:w-1/2 md:pl-10 h-auto order-3 md:order-2 ">
               <div className='px-6 md:px-8'>
                   {/* Our Mission Header */}
-                  <h2 className={`text-xl md:text-3xl font-bold md:mb-4 text-about-us-heading  md:block ${cairo.className}`}>OUR MISSION</h2>
+                  <h2 className={`text-xl md:text-3xl font-bold md:mb-4 text-green-dark  md:block ${cairo.className}`}>OUR MISSION</h2>
                   
                   {/* Our Mission sub-heading text */}
                   <p className={`text-xl md:text-4xl font-semibold md:leading-8 md:mb-8  ${cairo.className}`}>PowerLines aims to reshape our energy system by accelerating clean energy and equity through utility regulation.</p> 

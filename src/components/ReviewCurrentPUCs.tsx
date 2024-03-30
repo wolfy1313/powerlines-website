@@ -11,7 +11,7 @@ function ReviewCurrentPUCs() {
       <section className="flex flex-col bg-white px-20 my-10">
         <div>
           <h1
-            className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 text-main-one ${cairo.className}`}
+            className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 text-primary ${cairo.className}`}
           >
             REVIEW CURRENT PUCs
           </h1>

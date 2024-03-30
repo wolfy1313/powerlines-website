@@ -8,7 +8,7 @@ const ResourcesComponent = () => {
   return (
     <section className="min-w-screen max-w-screen md:px-20 px-10 my-10">
       <h1
-        className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 text-main-one ${cairo.className}`}
+        className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 text-primary ${cairo.className}`}
       >
         RESOURCES & REPORTS
       </h1>
@@ -27,7 +27,7 @@ const ResourcesComponent = () => {
           <div className="flex flex-col flex-grow justify-between">
             <div>
               <h3
-                className={`md:text-base md:font-semi-bold md:leading-[30px] md:font-normal text-sm font-bold text-main-one mt-2 ${cairo.className}`}
+                className={`md:text-base md:font-semi-bold md:leading-[30px] md:font-normal text-sm font-bold text-primary mt-2 ${cairo.className}`}
               >
                 White Paper
               </h3>
@@ -48,14 +48,14 @@ const ResourcesComponent = () => {
 
             <section className="mt-3">
               <h4 className="md:text-base text-sm font-bold">Download</h4>
-              <p className="text-main-one md:text-xl text-base font-bold underline flex items-center">
+              <p className="text-primary md:text-xl text-base font-bold underline flex items-center">
                 <span className="inline mr-2">
                   <Image
                     width={20}
                     height={20}
                     src="/FileDownload.svg"
                     alt="report"
-                    className="text-main-one"
+                    className="text-primary"
                   />
                 </span>
                 Full White Paper
@@ -78,7 +78,7 @@ const ResourcesComponent = () => {
           <div className="flex flex-col flex-grow justify-between">
             <div>
               <h3
-                className={`md:text-base md:font-semi-bold md:leading-[30px] md:font-normal text-sm font-bold text-main-one mt-2 ${cairo.className}`}
+                className={`md:text-base md:font-semi-bold md:leading-[30px] md:font-normal text-sm font-bold text-primary mt-2 ${cairo.className}`}
               >
                 White Paper
               </h3>
@@ -99,14 +99,14 @@ const ResourcesComponent = () => {
 
             <section className="mt-3">
               <h4 className="md:text-base text-sm font-bold">Download</h4>
-              <p className="text-main-one md:text-xl text-base font-bold underline flex items-center">
+              <p className="text-primary md:text-xl text-base font-bold underline flex items-center">
                 <span className="inline mr-2">
                   <Image
                     width={20}
                     height={20}
                     src="/FileDownload.svg"
                     alt="report"
-                    className="text-main-one"
+                    className="text-primary"
                   />
                 </span>
                 Full White Paper
@@ -129,7 +129,7 @@ const ResourcesComponent = () => {
           <div className="flex flex-col flex-grow justify-between">
             <div>
               <h3
-                className={`md:text-base md:font-semi-bold md:leading-[30px] md:font-normal text-sm font-bold text-main-one mt-2 ${cairo.className}`}
+                className={`md:text-base md:font-semi-bold md:leading-[30px] md:font-normal text-sm font-bold text-primary mt-2 ${cairo.className}`}
               >
                 White Paper
               </h3>
@@ -150,14 +150,14 @@ const ResourcesComponent = () => {
 
             <section className="mt-3">
               <h4 className="md:text-base text-sm font-bold">Download</h4>
-              <p className="text-main-one md:text-xl text-base font-bold underline flex items-center">
+              <p className="text-primary md:text-xl text-base font-bold underline flex items-center">
                 <span className="inline mr-2">
                   <Image
                     width={20}
                     height={20}
                     src="/FileDownload.svg"
                     alt="report"
-                    className="text-main-one"
+                    className="text-primary"
                   />
                 </span>
                 Full White Paper

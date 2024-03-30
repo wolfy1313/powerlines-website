@@ -32,7 +32,7 @@ Text Column  */}
           <section className=" mt-0 md:mt-12">
             {/* Header hidden on small screens, shown on medium and larger screens */}
             <h2
-              className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 text-main-one ${cairo.className}`}
+              className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] mb-2 ${cairo.className} text-blue-dark`}
             >
               {header}
             </h2>

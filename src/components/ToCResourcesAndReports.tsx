@@ -30,7 +30,7 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
     <div className="min-w-full max-w-full mx-auto">
       <section className="p-10 md:p-20 md:pt-0">
         <h1
-          className={`mb-4 text-darker-yellow text-2xl md:text-3xl font-semibold leading-normal ${cairo.className}`}
+          className={`mb-4 text-yellow-dark text-2xl md:text-3xl font-semibold leading-normal ${cairo.className}`}
         >
           Resource and Reports
         </h1>
@@ -53,7 +53,7 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
                 </section>
                 <section className="flex-grow">
                   <h2
-                    className={`mb-4 text-darker-yellow text-sm md:text-base font-normal leading-8 ${cairo.className}`}
+                    className={`mb-4 text-yellow-dark text-sm md:text-base font-normal leading-8 ${cairo.className}`}
                   >
                     {ResourcesAndReportsCard.caption}
                   </h2>
@@ -86,7 +86,7 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
                       <a
                         href={ResourcesAndReportsCard.downloadFile}
                         download={ResourcesAndReportsCard.downloadFileTitle}
-                        className="text-darker-yellow font-semibold leading-normal"
+                        className="text-yellow-dark font-semibold leading-normal"
                       >
                         {ResourcesAndReportsCard.downloadFileTitle}
                       </a>

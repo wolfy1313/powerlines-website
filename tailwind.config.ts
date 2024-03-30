@@ -26,15 +26,13 @@ const config: Config = {
         '125px': '125px'
       },
       colors: {
-        'main-one': '#B6163E',
-        'main-two': '#F7F7F7',
-        'header-blue': '#264D70',
-        'darker-yellow': '#E2B100',
-        'light-yellow': '#FFF7E0',
-        'border-yellow': '#FFF4CA',
-        'about-us-heading': '#437859',
-        'semi-dark-orange': '#D06900',
-        'dark-green':'#437859',
+        'primary': '#B6163E', // primary color used on the website
+        'secondary': '#F7F7F7', // secondary color used on the website
+        'blue-dark': '#264D70', // Header color used on our work (overview) & political strategypage
+        'yellow-dark': '#E2B100', //
+        'orange-dark': '#D06900', // color used on some headers and action buttons
+        'green-dark': '#437859', // Header color used on about us page
+        
         overlay: 'rgba(254, 242, 194, 0.50)'
       },
       boxShadow: {

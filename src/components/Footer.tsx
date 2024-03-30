@@ -8,7 +8,7 @@ const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 
 function Footer() {
   return (
-    <section className="flex flex-col justify-center h-auto min-w-screen max-w-screen items-center bg-main-two pb-5 md:pb-10 md:py-10 lg:h-72 md:flex-row">
+    <section className="flex flex-col justify-center h-auto min-w-screen max-w-screen items-center bg-secondary pb-5 md:pb-10 md:py-10 lg:h-72 md:flex-row">
       {/* Left hand side of Footer */}
       <section
         className={`flex flex-col flex-1 items-center min-w-screen justify-center pb-3 align-middle md:flex-row md:pb-0 md:pl-20 ${cairo.className}`}

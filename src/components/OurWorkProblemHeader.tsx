@@ -9,7 +9,7 @@ function OurWorkProblemHeader() {
     <div>
       <section className='flex flex-row mb-2 '>
         <section className=''>
-          <h2 className='text-darker-yellow font-bold text-xl md:text-2xl pb-6 pt-8'>THE PROBLEM</h2>
+          <h2 className='text-yellow-dark font-bold text-xl md:text-2xl pb-6 pt-8'>THE PROBLEM</h2>
         </section>
       </section>
     </div>
