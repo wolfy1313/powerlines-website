@@ -1,18 +1,18 @@
-import React from "react";
-import { Cairo, Roboto_Slab } from "next/font/google";
-import { ToCBodyListProps } from "@/types/global";
-import Image from "next/image";
-const cairo = Cairo({ subsets: ["latin"] });
-const robotoSlab = Roboto_Slab({ subsets: ["latin"] });
+import React from 'react'
+import { Cairo, Roboto_Slab } from 'next/font/google'
+import { ToCBodyListProps } from '@/types/global'
+import Image from 'next/image'
+const cairo = Cairo({ subsets: ['latin'] })
+const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 const TOCBodyList = ({
   header,
   subheader,
   bulletPoints,
-  footer,
+  footer
 }: ToCBodyListProps) => {
   return (
     <section className="min-w-full max-w-full mx-auto">
-      <section className="flex flex-col md:flex-col bg-white px-20 my-10">
+      <section className="flex flex-col md:flex-col bg-white mx-3 md:px-16 my-10">
         <h1
           className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 text-primary ${cairo.className}`}
         >
@@ -41,7 +41,7 @@ const TOCBodyList = ({
                   <h2
                     className={`inline text-[15px] md:text-xl font-bold leading-6 text-primary ${robotoSlab.className}`}
                   >
-                    {bulletPoint[0]}:{" "}
+                    {bulletPoint[0]}:{' '}
                   </h2>
                   <p
                     className={`text-base md:text-xl font-light leading-6 inline ml-1 ${robotoSlab.className}`}
@@ -62,7 +62,7 @@ const TOCBodyList = ({
         </section>
       </section>
     </section>
-  );
-};
+  )
+}
 
-export default TOCBodyList;
+export default TOCBodyList
