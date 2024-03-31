@@ -37,23 +37,23 @@ function ContactUs() {
     if (isFormValid) {
       setSubmitted(true)
       // Create a mailto link with the form data and recipient email
-      const recipientEmail = 'test@powerlines.org'
-      const mailtoLink = `mailto:${recipientEmail}?subject=Contact Form Submission&body=Name: ${encodeURIComponent(
-        contactFormState.name
-      )}%0AEmail: ${encodeURIComponent(
-        contactFormState.email
-      )}%0AMessage: ${encodeURIComponent(contactFormState.message)}`
-      // Open the default mail client
-      window.location.href = mailtoLink
-    } else {
-      //TODO Handle the error case, you can set error messages or highlight the fields
+      //   const recipientEmail = 'test@powerlines.org'
+      //   const mailtoLink = `mailto:${recipientEmail}?subject=Contact Form Submission&body=Name: ${encodeURIComponent(
+      //     contactFormState.name
+      //   )}%0AEmail: ${encodeURIComponent(
+      //     contactFormState.email
+      //   )}%0AMessage: ${encodeURIComponent(contactFormState.message)}`
+      //   // Open the default mail client
+      //   window.location.href = mailtoLink
+      // } else {
+      //   //TODO Handle the error case, you can set error messages or highlight the fields
     }
   }
 
   return (
     <section className="flex flex-col items-center justify-start min-w-screenbg-gray-100 pb-14">
       {/* Header */}
-      <section className="flex items-center justify-center w-full bg-[url('/contactushero.svg')] min-h-[368px] bg-cover bg-no-repeat">
+      <section className="flex items-center justify-center w-full  min-h-[368px] bg-cover bg-no-repeat">
         <h1
           className={`text-4xl font-bold text-center text-black ${cairo.className}`}
         >
@@ -62,21 +62,12 @@ function ContactUs() {
       </section>
 
       {/* Form Container */}
-      <section
-        className="w-full max-w-2xl mx-auto p-8 -mt-24 bg-white shadow-lg rounded-md md:min-w-[760px] md:min-h-[760px]"
-        style={{
-          backgroundImage: "url('/contactusbg.svg')",
-          backgroundSize: 'cover',
-          minHeight: '368px'
-        }}
-      >
+      <section className="w-full max-w-2xl mx-auto p-8 -mt-24 bg-white  rounded-md md:min-w-[760px] md:min-h-[760px]">
         {/* Form Header */}
         {!submitted && (
-          <section
-            className={`text-center mb-10 ${robotoSlab.className} `}
-          >
+          <section className={`text-center mb-10  ${robotoSlab.className}`}>
             <h1
-              className={`text-2xl font-bold mb-4 text-primary ${cairo.className}`}
+              className={`text-2xl font-bold mb-4 text-[#E88017] ${cairo.className}`}
             >
               We&apos;d love to hear from you.
             </h1>
@@ -84,20 +75,20 @@ function ContactUs() {
               If you&apos;re interested in joining our efforts, please get in
               touch!
             </p>
-            <p className="text-md">
-              Send us a message and someone from our team will connect with you
-              soon.
+            <p className="text-md ">
+              Send us a message and someone from our team will
+              <br className="hidden  md:block" /> connect with you soon.
             </p>
           </section>
         )}
 
         {!submitted ? (
           // Ternary to conditionally render form if submitted is false
-          <form onSubmit={handleSubmit} className="space-y-6 md:px-24 ">
+          <form onSubmit={handleSubmit} className="space-y-10 md:px-24 ">
             <div>
               <label
                 htmlFor="name"
-                className={`block text-lg font-medium text-gray-700 ${raleway.className}`}
+                className={`block font-bold text-lg text-gray-700 py-2 ${raleway.className}`}
               >
                 Name
               </label>
@@ -115,9 +106,9 @@ function ContactUs() {
             <div>
               <label
                 htmlFor="email"
-                className={`block text-lg font-medium text-gray-700 ${raleway.className}`}
+                className={`flex flex-row text-lg font-bold text-gray-700 py-2 ${raleway.className}`}
               >
-                Email Address*
+                Email Address<p className="text-red-600">*</p>
               </label>
               <input
                 type="email"
@@ -133,16 +124,16 @@ function ContactUs() {
             <div>
               <label
                 htmlFor="message"
-                className={`block text-lg font-medium text-gray-700 ${raleway.className}`}
+                className={`flex flex-row text-lg font-bold text-gray-700 py-2 ${raleway.className}`}
               >
-                Message*
+                Message<p className="text-red-600">*</p>
               </label>
               <textarea
                 name="message"
                 id="message"
                 value={contactFormState.message}
                 onChange={handleChange}
-                rows={4}
+                rows={8}
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                 placeholder="Your Message"
                 required
@@ -151,21 +142,26 @@ function ContactUs() {
             <div className="text-center">
               <button
                 type="submit"
-                className={`inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-lg font-medium rounded-full text-black bg-primary hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${raleway.className}`}
+                className={`inline-flex justify-center px-8 py-0.5 text-md  rounded-md text-black bg-gradient-to-l from-[#FFD00F] to-[#F89735] font-bold ${raleway.className}`}
               >
-                Send Message
+                SEND MESSAGE
               </button>
             </div>
           </form>
         ) : (
           // If submitted is true, render confirmation
           <section className="text-center md:min-h-[620px]">
-            <h1 className="text-2xl font-bold text-primary">Thank you!</h1>
-            <p className="text-md mb-10 text-center flex flex-row justify-center">
-              Your message has been sent. Someone from our team will connect
-              with you soon.
+            <h1 className="text-2xl font-bold text-[#E88017] mb-5">
+              Thank you!
+            </h1>
+            <p className="text-lg mb-10 text-center flex flex-row justify-center font-thin">
+              Your message has been sent. Someone from our team will{' '}
+              <br className="hidden md:block px-2" /> connect with you soon.
             </p>
-            <Link href={'/'} className="bg-primary rounded-full py-1 px-6 ">
+            <Link
+              href={'/'}
+              className="inline-flex justify-center px-8 py-0.5 text-md  rounded-md text-black bg-gradient-to-l from-[#FFD00F] to-[#F89735] font-bold ${raleway.className}"
+            >
               RETURN TO HOMEPAGE
             </Link>
           </section>
