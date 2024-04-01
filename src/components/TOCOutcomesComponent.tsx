@@ -1,23 +1,27 @@
-import React from "react";
-import { Cairo, Roboto_Slab } from "next/font/google";
-import Image from "next/image";
-import YellowCircleWithImage from "./YellowCircleWithImage";
+import React from 'react'
+import { Cairo, Roboto_Slab } from 'next/font/google'
+import Image from 'next/image'
+import YellowCircleWithImage from './YellowCircleWithImage'
 
-import { TOCOutcomesComponentProps, OutcomeCardProps } from "@/types/global";
+import { TOCOutcomesComponentProps, OutcomeCardProps } from '@/types/global'
 
-const cairo = Cairo({ subsets: ["latin"] });
-const robotoSlab = Roboto_Slab({ subsets: ["latin"] });
+const cairo = Cairo({ subsets: ['latin'] })
+const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 
 const TOCOutcomesComponent: React.FC<TOCOutcomesComponentProps> = ({
   header,
   content,
   OutcomesCards,
+  headerColor,
+  iconColor
 }) => {
   return (
     <section className={`min-w-screen max-w-screen`}>
-      <section className="flex flex-col bg-white px-20 my-10">
+      <section className="flex flex-col bg-white mx-3 md:px-16 my-10">
         <h1
-          className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 text-primary ${cairo.className}`}
+          className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 ${
+            cairo.className
+          } ${headerColor ? `text-${headerColor}` : 'text-primary'}`}
         >
           {header}
         </h1>
@@ -35,13 +39,14 @@ const TOCOutcomesComponent: React.FC<TOCOutcomesComponentProps> = ({
                 alt={OutcomeCard.alt}
                 height={OutcomeCard.height}
                 width={OutcomeCard.width}
+                iconColor={iconColor}
               />
             </div>
           ))}
         </section>
       </section>
     </section>
-  );
-};
+  )
+}
 
-export default TOCOutcomesComponent;
+export default TOCOutcomesComponent

@@ -6,7 +6,6 @@ import Image from 'next/image'
 import TrunctableText from './TrunctableText'
 import Link from 'next/link'
 
-
 import {
   TOCResourcesAndReportsProps,
   ResourcesAndReportsCardsProps
@@ -16,10 +15,10 @@ const cairo = Cairo({ subsets: ['latin'] })
 const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 
 const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
-  ResourcesAndReportsCards
+  ResourcesAndReportsCards,
+  color
 }) => {
   const [isClient, setIsClient] = useState(false)
-
 
   useEffect(() => {
     // Once the component mounts, update the state to indicate it's on the client
@@ -30,7 +29,9 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
     <div className="min-w-full max-w-full mx-auto">
       <section className="p-10 md:p-20 md:pt-0">
         <h1
-          className={`mb-4 text-yellow-dark text-2xl md:text-3xl font-semibold leading-normal ${cairo.className}`}
+          className={`mb-4  text-2xl md:text-3xl font-semibold leading-normal ${
+            cairo.className
+          } ${color ? `text-${color}` : 'text-yellow-dark'}`}
         >
           Resource and Reports
         </h1>
@@ -53,7 +54,9 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
                 </section>
                 <section className="flex-grow">
                   <h2
-                    className={`mb-4 text-yellow-dark text-sm md:text-base font-normal leading-8 ${cairo.className}`}
+                    className={`mb-4 text-sm md:text-base font-normal leading-8 ${
+                      cairo.className
+                    } ${color ? `text-${color}` : 'text-yellow-dark'}`}
                   >
                     {ResourcesAndReportsCard.caption}
                   </h2>
