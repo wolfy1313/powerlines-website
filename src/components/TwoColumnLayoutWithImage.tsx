@@ -13,6 +13,7 @@ interface TwoColumnLayoutWithImageProps {
   alt: string
   width: number | `${number}`
   height: number | `${number}`
+  subHeaderColor?: string
 }
 
 const TwoColumnLayoutWithImage: React.FC<TwoColumnLayoutWithImageProps> = ({
@@ -22,14 +23,19 @@ const TwoColumnLayoutWithImage: React.FC<TwoColumnLayoutWithImageProps> = ({
   body2,
   width,
   height,
-  alt
+  alt,
+  subHeaderColor
 }) => {
   return (
     <div className="flex flex-col md:flex-row md:justify-around md:mt-20">
       {/* Text column  */}
       <section className="md:w-1/2">
         <h2
-          className={`md:text-[37px] px-2 md:font-semi-bold md:leading-[45px] text-[21px] mb-6 ${cairo.className} text-blue-dark md:pr-28 text-start`}
+          className={`md:text-[37px] px-2 md:font-semi-bold md:leading-[45px] text-[21px] mb-6 ${
+            cairo.className
+          } md:pr-28 text-start ${
+            subHeaderColor ? `text-${subHeaderColor}` : 'text-blue-dark'
+          }`}
         >
           {header}
         </h2>

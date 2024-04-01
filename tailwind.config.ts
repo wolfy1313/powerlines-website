@@ -26,20 +26,21 @@ const config: Config = {
         '125px': '125px'
       },
       colors: {
-        'primary': '#B6163E', // primary color used on the website
-        'secondary': '#F7F7F7', // secondary color used on the website
+        primary: '#B6163E', // primary color used on the website
+        secondary: '#F7F7F7', // secondary color used on the website
         'blue-dark': '#264D70', // Header color used on our work (overview) & political strategypage
         'yellow-dark': '#E2B100', //
         'orange-dark': '#D06900', // color used on some headers and action buttons
         'green-dark': '#437859', // Header color used on about us page
-        
+        'green-light': '#A0C67F', // ToC Community Outreach bullet point color
+
         overlay: 'rgba(254, 242, 194, 0.50)'
       },
       boxShadow: {
         custom: '0 2px 10px rgba(0, 0, 0, 0.20)'
       },
       borderWidth: {
-        '20': '20px',
+        '20': '20px'
       },
       fontFamily: {
         main: ['Cairo', 'sans-serif'],

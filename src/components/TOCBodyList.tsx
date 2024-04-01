@@ -8,13 +8,17 @@ const TOCBodyList = ({
   header,
   subheader,
   bulletPoints,
-  footer
+  footer,
+  subheaderColor,
+  bulletColor
 }: ToCBodyListProps) => {
   return (
     <section className="min-w-full max-w-full mx-auto">
       <section className="flex flex-col md:flex-col bg-white mx-3 md:px-16 my-10">
         <h1
-          className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 text-primary ${cairo.className}`}
+          className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2  ${
+            cairo.className
+          } ${subheaderColor ? `text-${subheaderColor}` : 'text-primary'}`}
         >
           {header}
         </h1>
@@ -39,7 +43,11 @@ const TOCBodyList = ({
                 />
                 <div>
                   <h2
-                    className={`inline text-[15px] md:text-xl font-bold leading-6 text-primary ${robotoSlab.className}`}
+                    className={`inline text-[15px] md:text-xl font-bold leading-6 ${
+                      robotoSlab.className
+                    } ${
+                      bulletColor ? `text-[${bulletColor}]` : 'text-primary'
+                    }`}
                   >
                     {bulletPoint[0]}:{' '}
                   </h2>

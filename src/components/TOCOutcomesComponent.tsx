@@ -11,13 +11,17 @@ const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 const TOCOutcomesComponent: React.FC<TOCOutcomesComponentProps> = ({
   header,
   content,
-  OutcomesCards
+  OutcomesCards,
+  headerColor,
+  iconColor
 }) => {
   return (
     <section className={`min-w-screen max-w-screen`}>
       <section className="flex flex-col bg-white mx-3 md:px-16 my-10">
         <h1
-          className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 text-primary ${cairo.className}`}
+          className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 ${
+            cairo.className
+          } ${headerColor ? `text-${headerColor}` : 'text-primary'}`}
         >
           {header}
         </h1>
@@ -35,6 +39,7 @@ const TOCOutcomesComponent: React.FC<TOCOutcomesComponentProps> = ({
                 alt={OutcomeCard.alt}
                 height={OutcomeCard.height}
                 width={OutcomeCard.width}
+                iconColor={iconColor}
               />
             </div>
           ))}

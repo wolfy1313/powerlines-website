@@ -11,7 +11,7 @@ export interface OutcomeCardProps {
   alt: string
   height: string
   width: string
-  // color: string
+  iconColor?: string
 }
 
 export interface OurPrinciplesProps {
@@ -32,9 +32,11 @@ export interface TOCOutcomesComponentProps {
   header: string
   content: string
   OutcomesCards: OutcomeCardProps[]
+  headerColor?: string
+  iconColor?: string
 }
 
-export interface OurPrinciplesComponentProps extends OutcomeCardProps { }
+export interface OurPrinciplesComponentProps extends OutcomeCardProps {}
 
 export interface TrunctableTextProps {
   text: string
@@ -55,6 +57,7 @@ export interface ResourcesAndReportsCardsProps {
 
 export interface TOCResourcesAndReportsProps {
   ResourcesAndReportsCards: ResourcesAndReportsCardsProps[]
+  color?: string
 }
 
 export type bulletPoint = [string, string]
@@ -63,6 +66,8 @@ export interface ToCBodyListProps {
   subheader: string
   bulletPoints: bulletPoint[]
   footer: string
+  subheaderColor?: string
+  bulletColor?: string
 }
 
 export interface ToCCardProps {
