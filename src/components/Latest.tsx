@@ -54,21 +54,22 @@ const Latest = () => {
     >
       {/* Header */}
       <h1 className="font-bold my-12 text-2xl">LATEST ON POWERLINES</h1>
-      <section className="w-96 md:w-screen ">
+      <section className=" w-80 sm:w-96 md:w-screen ">
         {/* Cards Container */}
         <div className="flex justify-around  overflow-x-auto space-x-6 md:px-3 md:space-x-4 md:space-y-0 md:flex-row scroll">
           {/* Cards */}
 
           {/* Take Action */}
-          <div className="md:w-96" ref={cardRef1}>
-            <section className="flex-col  shrink-0  justify-start text-start w-96 md:w-full rounded-lg bg-white h-96 border border-gray-200 md:mx-0">
+          <div className=" w-80 sm:w-96" ref={cardRef1}>
+            <section className="flex-col  shrink-0  justify-start text-start  w-80 sm:w-96 md:w-full rounded-lg bg-white h-96 border-2 border-gray-200 md:mx-0">
+              
               <div className="relative h-1/2">
                 <Image
                   src="/latest-image1.svg"
                   alt=""
                   fill
                   style={{ objectFit: "cover" }}
-                  className="rounded-t-lg object-left"
+                  className="rounded-t-lg"
                 />
               </div>
               <section className="space-y-4 mt-6 pl-4 pr-5">
@@ -99,8 +100,8 @@ const Latest = () => {
           </div>
 
           {/* Campaigns */}
-          <div className="md:w-96" ref={cardRef2}>
-            <section className="flex-col shrink-0  justify-start text-start w-96 md:w-full rounded-lg bg-white h-96 border border-gray-200 md:mx-0">
+          <div className=" w-80 sm:w-96" ref={cardRef2}>
+            <section className="flex-col shrink-0  justify-start text-start  w-80 sm:w-96 md:w-full rounded-lg bg-white h-96 border-2 border-gray-200 md:mx-0">
               <div className="relative h-1/2">
                 <Image
                   src="/US_capital.png"
@@ -138,8 +139,8 @@ const Latest = () => {
           </div>
 
           {/* Reports */}
-          <div className="md:w-96" ref={cardRef3}>
-            <section className="flex-col shrink-0  justify-start text-start w-96 md:w-full rounded-lg bg-white h-96 border border-gray-200 md:mx-0">
+          <div className=" w-80 sm:w-96" ref={cardRef3}>
+            <section className="flex-col shrink-0  justify-start text-start w-80 sm:w-96 md:w-full rounded-lg bg-white h-96 border-2 border-gray-200 md:mx-0">
               <div className="relative h-1/2">
                 <Image
                   src="/latest-image3.svg"
