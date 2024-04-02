@@ -27,13 +27,13 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
 
   return (
     <div className="min-w-full max-w-full mx-auto">
-      <section className="p-10 md:p-20 md:pt-0">
+      <section className="mx-6 mt-10 md:mx-20 md:mt-20 md:mb-20">
         <h1
-          className={`mb-4  text-2xl md:text-3xl font-semibold leading-normal ${
+          className={`mb-1  text-2xl md:text-[37px] md:font-semi-bold md:leading-[45px] md:mb-3 ${
             cairo.className
           } ${color ? `text-${color}` : 'text-yellow-dark'}`}
         >
-          Resource and Reports
+          RESOURCES & REPORTS
         </h1>
         <section className="grid grid-cols-1  gap-4 md:gap-20">
           {ResourcesAndReportsCards.map(
@@ -54,14 +54,14 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
                 </section>
                 <section className="flex-grow">
                   <h2
-                    className={`mb-4 text-sm md:text-base font-normal leading-8 ${
+                    className={`mb-0 text-sm md:text-base font-normal leading-8 ${
                       cairo.className
                     } ${color ? `text-${color}` : 'text-yellow-dark'}`}
                   >
                     {ResourcesAndReportsCard.caption}
                   </h2>
                   <h1
-                    className={`mb-4 text-black text-2xl font-semibold leading-8 ${cairo.className}`}
+                    className={`mb-2 text-black text-2xl font-semibold leading-8 ${cairo.className}`}
                   >
                     {ResourcesAndReportsCard.subHeading}
                   </h1>
@@ -72,7 +72,7 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
                     />
                   )}
                   <h6
-                    className={`mb-6 text-black text-sm md:text-base font-normal leading-8 ${cairo.className}`}
+                    className={`mb-3 text-black text-sm md:text-base font-normal leading-8 ${cairo.className}`}
                   >
                     {ResourcesAndReportsCard.cta}
                   </h6>

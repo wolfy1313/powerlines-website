@@ -17,16 +17,16 @@ const TOCOutcomesComponent: React.FC<TOCOutcomesComponentProps> = ({
 }) => {
   return (
     <section className={`min-w-screen max-w-screen`}>
-      <section className="flex flex-col bg-white mx-3 md:px-16 my-10">
+      <section className="flex flex-col bg-white mx-6 mt-10 md:mx-20">
         <h1
-          className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 ${
+          className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-1 ${
             cairo.className
           } ${headerColor ? `text-${headerColor}` : 'text-primary'}`}
         >
           {header}
         </h1>
         <p
-          className={`text-base md:text-xl font-light leading-6  ${robotoSlab.className}`}
+          className={`text-base md:text-xl font-light leading-6 md:leading-[40px]  ${robotoSlab.className}`}
         >
           {content}
         </p>

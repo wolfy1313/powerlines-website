@@ -27,20 +27,20 @@ const TwoColumnLayoutWithImage: React.FC<TwoColumnLayoutWithImageProps> = ({
   subHeaderColor
 }) => {
   return (
-    <div className="flex flex-col md:flex-row md:justify-around md:mt-20">
+    <div className="flex flex-col md:flex-row md:justify-between my-10 mx-6 md:mt-20 md:mx-20">
       {/* Text column  */}
       <section className="md:w-1/2">
         <h2
-          className={`md:text-[37px] px-2 md:font-semi-bold md:leading-[45px] text-[21px] mb-6 ${
+          className={`md:text-[37px] pr-2 md:font-semi-bold md:leading-[45px] text-[21px] mb-1 md:mb-3 ${
             cairo.className
-          } md:pr-28 text-start ${
+          } text-start ${
             subHeaderColor ? `text-${subHeaderColor}` : 'text-blue-dark'
           }`}
         >
           {header}
         </h2>
         <p
-          className={`md:text-xl font-light leading-8 ${robotoSlab.className} px-2 md:px-0 md:pr-24`}
+          className={`md:text-xl font-light md:leading-[40px] leading-8 ${robotoSlab.className} md:px-0 mb-3`}
         >
           {body}
         </p>
@@ -61,7 +61,7 @@ const TwoColumnLayoutWithImage: React.FC<TwoColumnLayoutWithImageProps> = ({
           src={imageSrc}
           alt={alt}
           layout="responsive"
-          className="px-2 md:px-0"
+          className="md:px-0 md:pt-2"
         />
       </section>
     </div>

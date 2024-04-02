@@ -14,20 +14,20 @@ const TOCBodyList = ({
 }: ToCBodyListProps) => {
   return (
     <section className="min-w-full max-w-full mx-auto">
-      <section className="flex flex-col md:flex-col bg-white mx-3 md:px-16 my-10">
+      <section className="flex flex-col md:flex-col bg-white mx-6 mt-10 md:mx-20">
         <h1
-          className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2  ${
+          className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-1 ${
             cairo.className
           } ${subheaderColor ? `text-${subheaderColor}` : 'text-primary'}`}
         >
           {header}
         </h1>
         <p
-          className={`text-base md:text-xl font-light leading-6  ${robotoSlab.className}`}
+          className={`text-base md:text-xl font-light leading-6 md:leading-[40px]  ${robotoSlab.className}`}
         >
           {subheader}
         </p>
-        <section className="space-y-5 mt-4">
+        <section className="space-y-5 mt-3">
           {bulletPoints.map((bulletPoint) => (
             <section
               key={`point-${bulletPoints.indexOf(bulletPoint)}`}
@@ -52,7 +52,7 @@ const TOCBodyList = ({
                     {bulletPoint[0]}:{' '}
                   </h2>
                   <p
-                    className={`text-base md:text-xl font-light leading-6 inline ml-1 ${robotoSlab.className}`}
+                    className={`text-base md:text-xl font-light leading-6 md:leading-[40px] inline ml-1 ${robotoSlab.className}`}
                   >
                     {bulletPoint[1]}
                   </p>
@@ -63,7 +63,7 @@ const TOCBodyList = ({
         </section>
         <section className="mt-4">
           <p
-            className={`text-base md:text-xl font-light leading-6 inline ml-1 ${robotoSlab.className}`}
+            className={`text-base md:text-xl font-light leading-6 md:leading-[40px] ${robotoSlab.className}`}
           >
             {footer}
           </p>
