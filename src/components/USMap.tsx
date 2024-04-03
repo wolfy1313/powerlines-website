@@ -513,7 +513,7 @@ d="M162.132,198.699l-15.196-1.997  l-14.674-2.169l-15.023-2.435l-10.158-1.822c-0
 			<Image
             height={57}
             width={57}
-            src="/AboutUsBanner1.png"
+            src="/maleTransparent.png"
             alt={politician.name}
             className=" object-cover rounded-full"
             />

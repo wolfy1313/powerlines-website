@@ -66,6 +66,7 @@ export interface ToCBodyListProps {
   subheader: string
   bulletPoints: bulletPoint[]
   footer: string
+  headerColor?: string
   subheaderColor?: string
   bulletColor?: string
 }

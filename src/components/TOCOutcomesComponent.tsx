@@ -12,8 +12,7 @@ const TOCOutcomesComponent: React.FC<TOCOutcomesComponentProps> = ({
   header,
   content,
   OutcomesCards,
-  headerColor,
-  iconColor
+  headerColor
 }) => {
   return (
     <section className={`min-w-screen max-w-screen`}>
@@ -39,7 +38,7 @@ const TOCOutcomesComponent: React.FC<TOCOutcomesComponentProps> = ({
                 alt={OutcomeCard.alt}
                 height={OutcomeCard.height}
                 width={OutcomeCard.width}
-                iconColor={iconColor}
+                iconColor={OutcomeCard.iconColor}
               />
             </div>
           ))}
