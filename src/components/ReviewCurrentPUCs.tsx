@@ -8,7 +8,7 @@ function ReviewCurrentPUCs() {
   return (
     <section className="min-w-full max-w-full mx-auto">
       {/* Heading and buttons block container */}
-      <section className="flex flex-col bg-white px-20 my-10">
+      <section className="flex flex-col bg-white mx-6 mt-10 md:mx-20">
         <div>
           <h1
             className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 text-primary ${cairo.className}`}

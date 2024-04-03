@@ -7,16 +7,20 @@ const robotoSlab = Roboto_Slab({ subsets: ["latin"] });
 interface TOCSectionComponentProps {
   header: string;
   content: string;
+  headerColor:string;
 }
 
 const TOCSectionComponent: React.FC<TOCSectionComponentProps> = ({
   header,
   content,
+  headerColor
 }) => {
   return (
-    <section className="min-w-screen max-w-screen my-10">
+    <section className="min-w-screen max-w-screen mx-6 mt-10 md:mx-20">
       <h1
-        className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 text-blue-dark ${cairo.className}`}
+        className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-2 ${
+          headerColor ? `text-${headerColor}` : "text-primary"
+        } ${cairo.className}`}
       >
         {header}
       </h1>
