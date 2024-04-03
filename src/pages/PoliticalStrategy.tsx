@@ -63,50 +63,53 @@ const bulletPoints: bulletPoint[] = [
 function PoliticalStrategy() {
   return (
     <div className='pb-24'>
+
       <TOCHeaderComponent
         header="THEORY OF CHANGE"
         pageTitle="POLITICAL STRATEGY"
+        headerToColor="#264D70"
+        headerFromColor="#4993D6"
       />
-      <div className='mx-24'>
-      <TwoColumnLayoutWithImage
-        header="WHY IS POLITICAL STRATEGY IMPORTANT AND WHAT CHALLENGES ARE WE FACING?"
-        body="Public Utility Commissions (PUCs), responsible for the energy transition, face a shortage of progressive commissioners, either elected or appointed by Governors.  About 80% of them are chosen by the state's governor or legislature, and 20% are elected. Utilities' influence on PUCs prioritizes fossil fuel interests, hindering clean energy and fairness. They lobby against climate and equity policies and sway elections in favor of utility-friendly candidates (Stokes 2020). Additionally, PUC commissioners lack diversity, worsening energy inequities for people of color and women. Powerlines seeks to break this cycle by supporting progressive candidates, raising voter awareness, and mitigating private utility influence."
-        width="566"
-        height="506"
-        imageSrc="/monumentPlaceholder.svg"
-        alt="monument place holder"
-      />
-      <TOCSectionComponent
-        header="OPPORTUNITIES"
-        content="We urgently need more PUC commissioners who champion climate and equity. To achieve this, campaigns can influence governors and state legislatures to appoint such commissioners and encourage like-minded candidates to run and win PUC elections. These elections offer high returns-on-investment for climate and equity, with candidates raising an average of only $[] per election over the last decade. Closing the voter dropoff gap between Democratic and Republican PUC candidates can greatly enhance the competitiveness of climate and equity champions. This strategy has proven successful, as seen in North Carolina and the 2022 Louisiana PSC race where climate justice priorities were advanced."
-      />
-      
-      {/* REVIEW CURRENT PUCs */}
-      <section className='mb-24 mt-4'> 
+      <div className="mx-24">
+        <TwoColumnLayoutWithImage
+          header="WHY IS POLITICAL STRATEGY IMPORTANT AND WHAT CHALLENGES ARE WE FACING?"
+          body="Public Utility Commissions (PUCs), responsible for the energy transition, face a shortage of progressive commissioners, either elected or appointed by Governors.  About 80% of them are chosen by the state's governor or legislature, and 20% are elected. Utilities' influence on PUCs prioritizes fossil fuel interests, hindering clean energy and fairness. They lobby against climate and equity policies and sway elections in favor of utility-friendly candidates (Stokes 2020). Additionally, PUC commissioners lack diversity, worsening energy inequities for people of color and women. Powerlines seeks to break this cycle by supporting progressive candidates, raising voter awareness, and mitigating private utility influence."
+          width="566"
+          height="506"
+          imageSrc="/monumentPlaceholder.svg"
+          alt="monument place holder"
+        />
         <TOCSectionComponent
-        header="REVIEW CURRENT PUCs"
-        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      />
+          header="OPPORTUNITIES"
+          content="We urgently need more PUC commissioners who champion climate and equity. To achieve this, campaigns can influence governors and state legislatures to appoint such commissioners and encourage like-minded candidates to run and win PUC elections. These elections offer high returns-on-investment for climate and equity, with candidates raising an average of only $[] per election over the last decade. Closing the voter dropoff gap between Democratic and Republican PUC candidates can greatly enhance the competitiveness of climate and equity champions. This strategy has proven successful, as seen in North Carolina and the 2022 Louisiana PSC race where climate justice priorities were advanced."
+          headerColor="blue-dark"
+        />
 
-        {/* Map Section */}
-        <div className='flex flex-col w-5/6 mx-auto mt-10'>
-          
-          {/* map */}
-          <div className='w-full'> 
-            <Suspense fallback={<div>Loading...</div>}>
-              <USMap />
-            </Suspense>
-          </div>
+        {/* REVIEW CURRENT PUCs */}
+        <section className="mb-24 mt-4">
+          <TOCSectionComponent
+            header="REVIEW CURRENT PUCs"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            headerColor="blue-dark"
+          />
 
-          {/* buttons container */}
-          <div className='text-center mt-4 mx-4'>
-            <button className='w-full py-2 gradient-1 rounded-md cursor-default'>
-              Click on a highlighted state to view contributions
-            </button>
+          {/* Map Section */}
+          <div className="flex flex-col w-5/6 mx-auto mt-10">
+            {/* map */}
+            <div className="w-full">
+              <Suspense fallback={<div>Loading...</div>}>
+                <USMap />
+              </Suspense>
+            </div>
+
+            {/* buttons container */}
+            <div className="text-center mt-4 mx-4">
+              <button className="w-full py-2 gradient-1 rounded-md cursor-default">
+                Click on a highlighted state to view contributions
+              </button>
+            </div>
           </div>
-        
-        </div>
-      </section>
+        </section>
 
       <TOCBodyList
         header="THEORY OF CHANGE"
@@ -123,9 +126,10 @@ function PoliticalStrategy() {
         OutcomesCards={OutcomeCardsData}
         headerColor="blue-dark"
       />
+
       </div>
     </div>
-  )
+  );
 }
 
 export default PoliticalStrategy

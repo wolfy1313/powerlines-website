@@ -57,7 +57,7 @@ export interface ResourcesAndReportsCardsProps {
 
 export interface TOCResourcesAndReportsProps {
   ResourcesAndReportsCards: ResourcesAndReportsCardsProps[]
-  color?: string
+  color: string
 }
 
 export type bulletPoint = [string, string]

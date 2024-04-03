@@ -61,20 +61,19 @@ const Latest = () => {
 
           {/* Take Action */}
           <div className=" w-80 sm:w-96" ref={cardRef1}>
-            <section className="flex-col  shrink-0  justify-start text-start  w-80 sm:w-96 md:w-full rounded-lg bg-white h-96 border-2 border-gray-200 md:mx-0">
-              
+            <section className="flex-col shrink-0  justify-start text-start  w-80 sm:w-96 md:w-full rounded-lg bg-white h-96 border-2 border-gray-200 md:mx-0">
               <div className="relative h-1/2">
                 <Image
-                  src="/latest-image1.svg"
+                  src="/latest-image2.jpeg"
                   alt=""
                   fill
                   style={{ objectFit: "cover" }}
                   className="rounded-t-lg"
                 />
               </div>
-              <section className="space-y-4 mt-6 pl-4 pr-5">
+              <section className="space-y-4 mt-6 pl-4 pr-2">
                 <h2 className="text-[23px] font-semibold leading-[30px]">
-                  TAKE ACTION
+                  Take Action
                 </h2>
                 <p
                   className={`${robotoSlab.className} flex-grow text-[13px] md:text-base font-light pr-1`}
@@ -104,7 +103,7 @@ const Latest = () => {
             <section className="flex-col shrink-0  justify-start text-start  w-80 sm:w-96 md:w-full rounded-lg bg-white h-96 border-2 border-gray-200 md:mx-0">
               <div className="relative h-1/2">
                 <Image
-                  src="/US_capital.png"
+                  src="/latest-image2.jpeg"
                   alt=""
                   fill
                   style={{ objectFit: "cover" }}

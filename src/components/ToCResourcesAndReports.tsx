@@ -31,7 +31,7 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
         <h1
           className={`mb-1  text-2xl md:text-[37px] md:font-semi-bold md:leading-[45px] md:mb-3 ${
             cairo.className
-          } ${color ? `text-${color}` : 'text-yellow-dark'}`}
+          } ${color ? `text-${color}` : "text-yellow-dark"}`}
         >
           RESOURCES & REPORTS
         </h1>
@@ -56,7 +56,7 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
                   <h2
                     className={`mb-0 text-sm md:text-base font-normal leading-8 ${
                       cairo.className
-                    } ${color ? `text-${color}` : 'text-yellow-dark'}`}
+                    } ${color ? `text-${color}` : "text-yellow-dark"}`}
                   >
                     {ResourcesAndReportsCard.caption}
                   </h2>
@@ -69,6 +69,7 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
                     <TrunctableText
                       text={ResourcesAndReportsCard.body}
                       maxLength={150}
+                      color={color}
                     />
                   )}
                   <h6
@@ -83,13 +84,14 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
                         height={20}
                         src={ResourcesAndReportsCard.downloadIcon}
                         alt="Download Icon"
+                        
                       />
                     </section>
                     <section className="flex flex-row items-center relative">
                       <a
                         href={ResourcesAndReportsCard.downloadFile}
                         download={ResourcesAndReportsCard.downloadFileTitle}
-                        className="text-yellow-dark font-semibold leading-normal"
+                        className={`${color ? `text-${color}` : 'text-yellow-dark'} font-semibold leading-normal`}
                       >
                         {ResourcesAndReportsCard.downloadFileTitle}
                       </a>
@@ -102,7 +104,7 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
         </section>
       </section>
     </div>
-  )
+  );
 }
 
 export default ToCResourcesAndReports
