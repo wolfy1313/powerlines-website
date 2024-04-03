@@ -20,7 +20,7 @@ const YellowCircleWithImage: React.FC<OutcomeCardProps> = ({
       <div className=" flex flex-row sm:flex-col items-center mt-6">
         <div
           className={`rounded-full p-7 pb-5 relative ${height} ${width} ${
-            iconColor ? `bg-[${iconColor}]` : 'bg-orange-dark'
+            iconColor ? `bg-[${iconColor}]` : 'bg-yellow-dark'
           }`}
         >
           <Image fill src={image} alt={alt} className="p-5" />
