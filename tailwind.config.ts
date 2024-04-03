@@ -29,6 +29,8 @@ const config: Config = {
         primary: '#B6163E', // primary color used on the website
         secondary: '#F7F7F7', // secondary color used on the website
         'blue-dark': '#264D70', // Header color used on our work (overview) & political strategypage
+        'blue-light': '#3D91C3', // used on political strategy for bullet point text
+        'blue-grey': '#67AAD3', // used on the YellowCircleWithImage component as a background color
         'yellow-dark': '#E2B100', //
         'orange-dark': '#D06900', // color used on some headers and action buttons
         'green-dark': '#437859', // Header color used on about us page

@@ -9,6 +9,7 @@ const TOCBodyList = ({
   subheader,
   bulletPoints,
   footer,
+  headerColor,
   subheaderColor,
   bulletColor
 }: ToCBodyListProps) => {
@@ -16,9 +17,9 @@ const TOCBodyList = ({
     <section className="min-w-full max-w-full mx-auto">
       <section className="flex flex-col md:flex-col bg-white mx-6 mt-10 md:mx-20">
         <h1
-          className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-1 ${
-            cairo.className
-          } ${subheaderColor ? `text-${subheaderColor}` : 'text-primary'}`}
+          className={`md:text-[37px] md:font-semi-bold md:leading-[45px] md:tracking-wide text-[21px] font-normal mb-1 
+          ${cairo.className} 
+          ${headerColor ? `text-${headerColor}` : 'text-primary'}`}
         >
           {header}
         </h1>
@@ -31,23 +32,22 @@ const TOCBodyList = ({
           {bulletPoints.map((bulletPoint) => (
             <section
               key={`point-${bulletPoints.indexOf(bulletPoint)}`}
-              className="flex flex-col  justify-start  md:ml-10 md:flex-row"
+              className="flex flex-col  justify-start items-start  md:ml-10 md:flex-row"
             >
-              <section className="md:ml-4 flex">
+              <section className="md:ml-4 flex items-start">
                 <Image
                   alt=""
-                  src="/bullet-point.svg"
-                  height={7}
-                  width={7}
-                  className="mr-1 md:mr-10 hidden md:block"
+                  src="/bullet-point-2.svg"
+                  height={8}
+                  width={8}
+                  className={`mr-1 mt-[18px] md:mr-5 hidden md:block`}
                 />
-                <div>
+                <div className='' >
                   <h2
-                    className={`inline text-[15px] md:text-xl font-bold leading-6 ${
-                      robotoSlab.className
-                    } ${
-                      bulletColor ? `text-[${bulletColor}]` : 'text-primary'
-                    }`}
+                    className={`inline text-[15px] md:text-xl font-bold leading-6 
+                    ${robotoSlab.className} 
+                    ${subheaderColor ? `text-${subheaderColor}` : 'text-primary'}
+                    `}
                   >
                     {bulletPoint[0]}:{' '}
                   </h2>
