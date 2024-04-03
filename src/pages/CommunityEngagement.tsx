@@ -100,6 +100,8 @@ function CommunityEngagement() {
       <TOCHeaderComponent
         header="THEORY OF CHANGE"
         pageTitle="COMMUNITY ENGAGEMENT"
+        headerToColor="#437859"
+        headerFromColor="#A0C67F"
       />
       <TwoColumnLayoutWithImage
         header="WHY IS COMMUNITY ENGAGEMENT IMPORTANT AND WHAT CHALLENGES ARE WE FACING?"
@@ -112,10 +114,14 @@ function CommunityEngagement() {
       />
 
       <section className="flex flex-col justify-center text-start mx-6 mt-6 md:mb-0 md:mx-20 md:mt-10">
-        <h2 className={`md:text-[37px] md:font-semi-bold md:leading-[45px] text-[21px] mb-1 md:mb-3 text-[#437859] ${cairo.className}`}>
+        <h2
+          className={`md:text-[37px] md:font-semi-bold md:leading-[45px] text-[21px] mb-1 md:mb-3 text-[#437859] ${cairo.className}`}
+        >
           OPPORTUNITIES
         </h2>
-        <p className={`md:text-xl font-light md:leading-[40px] md:tracking-wide ${robotoSlab.className}`}>
+        <p
+          className={`md:text-xl font-light md:leading-[40px] md:tracking-wide ${robotoSlab.className}`}
+        >
           We urgently need more PUC commissioners who champion climate and
           equity. To achieve this, campaigns can influence governors and state
           legislatures to appoint such commissioners and encourage like-minded
@@ -131,10 +137,14 @@ function CommunityEngagement() {
       </section>
 
       <section className="flex flex-col justify-center text-start mx-6 mt-10 md:mb-0 md:mx-20 md:mt-10">
-        <h2 className={`md:text-[37px] md:font-semi-bold md:leading-[45px] text-[21px] mb-1 md:mb-3 text-[#437859] ${cairo.className}`}>
+        <h2
+          className={`md:text-[37px] md:font-semi-bold md:leading-[45px] text-[21px] mb-1 md:mb-3 text-[#437859] ${cairo.className}`}
+        >
           CASE STUDIES
         </h2>
-        <p className={`md:text-xl font-light md:leading-[40px] md:tracking-wide ${robotoSlab.className}`}>
+        <p
+          className={`md:text-xl font-light md:leading-[40px] md:tracking-wide ${robotoSlab.className}`}
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa
           tempor nec feugiat nisl pretium fusce. In mollis nunc sed id semper
@@ -144,10 +154,14 @@ function CommunityEngagement() {
       </section>
 
       <section className="flex flex-col justify-center text-start mx-6 mt-10 md:mb-0 md:mx-20 md:mt-10">
-        <h2 className={`md:text-[37px] md:font-semi-bold md:leading-[45px] text-[21px] mb-1 md:mb-3 text-[#437859] ${cairo.className}`}>
+        <h2
+          className={`md:text-[37px] md:font-semi-bold md:leading-[45px] text-[21px] mb-1 md:mb-3 text-[#437859] ${cairo.className}`}
+        >
           INTERVENTION PROCESS
         </h2>
-        <p className={`md:text-xl font-light md:leading-[40px] md:tracking-wide ${robotoSlab.className}`}>
+        <p
+          className={`md:text-xl font-light md:leading-[40px] md:tracking-wide ${robotoSlab.className}`}
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa
           tempor nec feugiat nisl pretium fusce. In mollis nunc sed id semper
@@ -177,7 +191,7 @@ function CommunityEngagement() {
         color="green-dark"
       />
     </section>
-  )
+  );
 }
 
 export default CommunityEngagement
