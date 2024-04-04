@@ -64,7 +64,7 @@ const Latest = () => {
             <section className="flex-col shrink-0  justify-start text-start  w-80 sm:w-96 md:w-full rounded-lg bg-white h-96 border-2 border-gray-200 md:mx-0">
               <div className="relative h-1/2">
                 <Image
-                  src="/latest-image2.jpeg"
+                  src="/latest-image1.png"
                   alt=""
                   fill
                   style={{ objectFit: "cover" }}
@@ -103,7 +103,7 @@ const Latest = () => {
             <section className="flex-col shrink-0  justify-start text-start  w-80 sm:w-96 md:w-full rounded-lg bg-white h-96 border-2 border-gray-200 md:mx-0">
               <div className="relative h-1/2">
                 <Image
-                  src="/latest-image2.jpeg"
+                  src="/latest-image2.png"
                   alt=""
                   fill
                   style={{ objectFit: "cover" }}
@@ -142,7 +142,7 @@ const Latest = () => {
             <section className="flex-col shrink-0  justify-start text-start w-80 sm:w-96 md:w-full rounded-lg bg-white h-96 border-2 border-gray-200 md:mx-0">
               <div className="relative h-1/2">
                 <Image
-                  src="/latest-image3.svg"
+                  src="/latest-image3.png"
                   alt=""
                   fill
                   style={{ objectFit: "cover" }}
