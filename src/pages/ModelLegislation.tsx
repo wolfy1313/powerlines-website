@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import TOCHeaderComponent from "@/components/TOCHeaderComponent";
 import TwoColumnLayoutWithImage from "@/components/TwoColumnLayoutWithImage";
@@ -7,12 +6,12 @@ import ReviewCurrentPUCs from "@/components/ReviewCurrentPUCs";
 
 import {
   OutcomeCardProps,
+  ResourcesAndReportsCardsProps,
   TOCOutcomesComponentProps,
   bulletPoint,
 } from "@/types/global";
 import TOCSectionComponent from "@/components/TOCSectionComponent";
 import TOCBodyList from "@/components/TOCBodyList";
-import ResourcesComponent from "@/components/ResourcesComponent";
 import ToCResourcesAndReports from "@/components/ToCResourcesAndReports";
 const OutcomeCardsData: OutcomeCardProps[] = [
   {
