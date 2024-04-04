@@ -1,3 +1,4 @@
+'use client'
 import React, { useState, useEffect } from 'react'
 
 import { Cairo, Roboto_Slab } from 'next/font/google'
