@@ -9,7 +9,7 @@ function OurWorkSolutionHeader() {
     <div>
       <section className='flex flex-row mb-1 '>
         <section className=''>
-          <h2 className='text-yellow-dark tracking-wide leading-8 font-bold text-xl md:text-2xl pb-6 pt-8'>OUR SOLUTION</h2>
+          <h2 className='text-blue-dark tracking-wide leading-8 font-bold text-xl md:text-2xl pb-6 pt-8'>THE SOLUTION</h2>
         </section>
       </section>
     </div>

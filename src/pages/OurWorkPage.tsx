@@ -19,8 +19,8 @@ function OurWorkPage() {
 
       {/* {Our Problem Section} */}
       <section className={`bg-white`}>
-        <section className=' flex flex-col-reverse px-3 py-3 md:flex md:flex-row max-w-screen md:px-10 md:py-10'>
-          <section className='flex md:px-7 px-3 items-center ' >
+        <section className=' flex flex-col px-3 py-3 md:flex md:flex-row max-w-screen md:px-10 md:py-10'>
+          <section className='hidden md:flex md:px-7 px-3 items-center ' >
             <OurWorkProblem />
           </section>
           <section className='px-4'>
@@ -29,15 +29,18 @@ function OurWorkPage() {
           <section className='ml-1 md:hidden'>
             <OurWorkProblemHeader />
           </section>
+          <section className='flex md:hidden md:px-7 px-3 items-center ' >
+            <OurWorkProblem />
+          </section>
         </section>
 
         {/* {Our Solution Section} */}
         <section className='md:flex max-w-screen px-3 py-3 md:px-10 md:py-10 '>
-          <section className='ml-1 md:hidden'>
-            <OurWorkSolutionHeader />
-          </section>
           <section className='px-4 pt-2'>
             <OurWorkSolutionImage />
+          </section>
+          <section className='ml-1 md:hidden'>
+            <OurWorkSolutionHeader />
           </section>
           <section className='flex md:px-7 px-3 items-center' >
             <OurWorkSolution />
