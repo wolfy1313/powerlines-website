@@ -50,18 +50,8 @@ const config: Config = {
         h1: ['Cairo', 'sans-serif'],
         h2: ['Cairo', 'sans-serif']
       },
-      // borderImage: {
-      //   'gradientBorder': 'linear-gradient(to right, #d91d4c, #67aad3)'
-      // }
     }
   },
-  plugins: [],
-  utilities: {
-    '.gradient-border': {
-      border: '4px solid transparent',
-      'border-image': 'linear-gradient(to right, #d91d4c, #67aad3)',
-      'border-image-slice': '1'
-    }
-  }
+  plugins: []
 }
 export default config
