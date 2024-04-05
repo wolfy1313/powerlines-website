@@ -61,7 +61,7 @@ const TwoColumnLayoutWithImage: React.FC<TwoColumnLayoutWithImageProps> = ({
           src={imageSrc}
           alt={alt}
           layout="responsive"
-          className="md:px-0 md:pt-2"
+          className="md:px-0"
         />
       </section>
     </div>
