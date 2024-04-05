@@ -46,7 +46,7 @@ const TOCBodyList = ({
                   <h2
                     className={`inline text-[15px] md:text-xl font-bold leading-6 
                     ${robotoSlab.className} 
-                    ${subheaderColor ? `text-${subheaderColor}` : 'text-primary'}
+                   ${subheaderColor ? `text-${subheaderColor}` : 'text-primary'}
                     `}
                   >
                     {bulletPoint[0]}:{' '}
