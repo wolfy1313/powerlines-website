@@ -10,6 +10,7 @@ import {
   bulletPoint
 } from '@/types/global'
 import TOCSectionComponent from '@/components/TOCSectionComponent'
+import ToCResourcesAndReports from '@/components/ToCResourcesAndReports';
 
 const USMap = React.lazy(() => import('../components/USMap'));
 
@@ -60,17 +61,52 @@ const bulletPoints: bulletPoint[] = [
   ]
 ]
 
+const ResourceandReportsData: ResourcesAndReportsCardsProps[] = [
+  {
+    image: "/meeting.png",
+    alt: "people working at at table",
+    caption: "WHITE PAPER",
+    subHeading: "Lorem Ipsum",
+    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+    cta: "Download",
+    downloadIcon: "sim_card_download.svg",
+    downloadFile: "filename.pdf",
+    downloadFileTitle: "Full White Paper",
+  },
+  {
+    image: "/handOnSolarPanel.png",
+    alt: "hand on solar panel",
+    caption: "WHITE PAPER",
+    subHeading: "Lorem Ipsum",
+    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+    cta: "Download",
+    downloadIcon: "sim_card_download.svg",
+    downloadFile: "filename.pdf",
+    downloadFileTitle: "Full White Paper",
+  },
+  {
+    image: "/climateJusticeProtest.png",
+    alt: "climate protest",
+    caption: "WHITE PAPER",
+    subHeading: "Lorem Ipsum",
+    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+    cta: "Download",
+    downloadIcon: "sim_card_download.svg",
+    downloadFile: "filename.pdf",
+    downloadFileTitle: "Full White Paper",
+  },
+];
+
 function PoliticalStrategy() {
   return (
-    <div className='pb-24'>
-
+    <div>
       <TOCHeaderComponent
         header="THEORY OF CHANGE"
         pageTitle="POLITICAL STRATEGY"
         headerToColor="#264D70"
         headerFromColor="#4993D6"
       />
-      <div className="mx-24">
+      <div>
         <TwoColumnLayoutWithImage
           header="WHY IS POLITICAL STRATEGY IMPORTANT AND WHAT CHALLENGES ARE WE FACING?"
           body="Public Utility Commissions (PUCs), responsible for the energy transition, face a shortage of progressive commissioners, either elected or appointed by Governors.  About 80% of them are chosen by the state's governor or legislature, and 20% are elected. Utilities' influence on PUCs prioritizes fossil fuel interests, hindering clean energy and fairness. They lobby against climate and equity policies and sway elections in favor of utility-friendly candidates (Stokes 2020). Additionally, PUC commissioners lack diversity, worsening energy inequities for people of color and women. Powerlines seeks to break this cycle by supporting progressive candidates, raising voter awareness, and mitigating private utility influence."
@@ -111,22 +147,26 @@ function PoliticalStrategy() {
           </div>
         </section>
 
-      <TOCBodyList
-        header="THEORY OF CHANGE"
-        subheader="Through data-driven research, PowerLines will identify key appointments and elections with the greatest impact. PowerLines will then work with electoral and advocacy partners to push for the appointment and election of climate and equity champions to PUCs."
-        bulletPoints={bulletPoints}
-        footer="Our goal through this strategy works because putting more money into PUC campaigns can help improve climate outcomes. PUC races don't cost much compared to the impact they can have, making it a smart investment. Not many people are paying attention to these issues right now, so raising awareness about important things like water quality and linking them to everyday concerns like energy bills can get more people involved. This strategy focuses on races where success is more probable, especially those that can change commissions from red to blue."
-        headerColor="blue-dark"
-        subheaderColor="blue-light"
-     />
+        <TOCBodyList
+          header="THEORY OF CHANGE"
+          subheader="Through data-driven research, PowerLines will identify key appointments and elections with the greatest impact. PowerLines will then work with electoral and advocacy partners to push for the appointment and election of climate and equity champions to PUCs."
+          bulletPoints={bulletPoints}
+          footer="Our goal through this strategy works because putting more money into PUC campaigns can help improve climate outcomes. PUC races don't cost much compared to the impact they can have, making it a smart investment. Not many people are paying attention to these issues right now, so raising awareness about important things like water quality and linking them to everyday concerns like energy bills can get more people involved. This strategy focuses on races where success is more probable, especially those that can change commissions from red to blue."
+          headerColor="blue-dark"
+          subheaderColor="blue-light"
+        />
 
-      <TOCOutcomesComponent
-        header="OUTCOMES"
-        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        OutcomesCards={OutcomeCardsData}
-        headerColor="blue-dark"
-      />
+        <TOCOutcomesComponent
+          header="OUTCOMES"
+          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          OutcomesCards={OutcomeCardsData}
+          headerColor="blue-dark"
+        />
 
+        <ToCResourcesAndReports
+          ResourcesAndReportsCards={ResourceandReportsData}
+          color="blue-dark"
+        />
       </div>
     </div>
   );

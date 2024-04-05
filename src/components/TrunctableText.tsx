@@ -22,7 +22,7 @@ const TrunctableText: React.FC<TrunctableTextProps> = ({
   return (
     <div className="overflow-hidden">
       <p
-        className={` ${robotoSlab.className} text-lg md:text-xl font-normal tracking-tighter leading-9 custom-truncate`}
+        className={`text-[15px] md:text-xl font-light leading-6 flex-grow ${robotoSlab.className} custom-truncate`}
       >
         {body}
       </p>
