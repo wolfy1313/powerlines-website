@@ -49,7 +49,7 @@ const config: Config = {
         body: ['Roboto_Slab', 'serif'],
         h1: ['Cairo', 'sans-serif'],
         h2: ['Cairo', 'sans-serif']
-      }
+      },
     }
   },
   plugins: []

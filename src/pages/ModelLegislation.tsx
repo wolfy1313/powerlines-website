@@ -8,7 +8,7 @@ import {
   OutcomeCardProps,
   ResourcesAndReportsCardsProps,
   TOCOutcomesComponentProps,
-  bulletPoint,
+  bulletPoint, ResourcesAndReportsCardsProps
 } from "@/types/global";
 import TOCSectionComponent from "@/components/TOCSectionComponent";
 import TOCBodyList from "@/components/TOCBodyList";
