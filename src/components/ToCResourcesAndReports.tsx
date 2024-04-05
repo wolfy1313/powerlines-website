@@ -28,7 +28,7 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
 
   return (
     <div className="min-w-full max-w-full mx-auto">
-      <section className="mx-6 mt-10 md:mx-20 md:mt-20 md:mb-20">
+      <section className=" my-10 mx-6 md:mt-20 md:mx-20">
         <h1
           className={`mb-1  text-2xl md:text-[37px] md:font-semi-bold md:leading-[45px] md:mb-3 ${
             cairo.className
@@ -36,11 +36,11 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
         >
           RESOURCES & REPORTS
         </h1>
-        <section className="grid grid-cols-1  gap-4 md:gap-20">
+        <section className="grid grid-cols-1 md:gap-10">
           {ResourcesAndReportsCards.map(
             (ResourcesAndReportsCard: ResourcesAndReportsCardsProps) => (
               <div
-                className="w-full flex flex-col md:flex-row  gap-10  mb-20 md:mb-0"
+                className="w-full flex flex-col md:flex-row  gap-2 md:gap-10 mb-10 md:mb-0"
                 key={ResourcesAndReportsCard.alt}
               >
                 {/* min-w-0 prevents shrinkage below content size. flex-basis[50%] makes  sure that the text and image always maintain haf the width they are contained in so  no matter how much the screen gets resized */}
@@ -50,53 +50,58 @@ const ToCResourcesAndReports: React.FC<TOCResourcesAndReportsProps> = ({
                     width="520"
                     src={ResourcesAndReportsCard.image}
                     alt={ResourcesAndReportsCard.alt}
-                    className="  md:h-90 md:w-auto lg: h-full w-full fill-current"
+                    className="  md:h-90 rounded-md w-full h-full object-cover object-[25%]"
                   />
                 </section>
-                <section className="flex-grow">
-                  <h2
-                    className={`mb-0 text-sm md:text-base font-normal leading-8 ${
-                      cairo.className
-                    } ${color ? `text-${color}` : "text-yellow-dark"}`}
-                  >
-                    {ResourcesAndReportsCard.caption}
-                  </h2>
-                  <h1
-                    className={`mb-2 text-black text-2xl font-semibold leading-8 ${cairo.className}`}
-                  >
-                    {ResourcesAndReportsCard.subHeading}
-                  </h1>
-                  {isClient && (
-                    <TrunctableText
-                      text={ResourcesAndReportsCard.body}
-                      maxLength={150}
-                      color={color}
-                    />
-                  )}
-                  <h6
-                    className={`mb-3 text-black text-sm md:text-base font-normal leading-8 ${cairo.className}`}
-                  >
-                    {ResourcesAndReportsCard.cta}
-                  </h6>
-                  <div className="flex">
-                    <section className="relative h-100 w-100 flex flex-row items-center mr-4">
-                      <Image
-                        width={20}
-                        height={20}
-                        src={ResourcesAndReportsCard.downloadIcon}
-                        alt="Download Icon"
-                        
+                <section className="flex flex-col flex-grow flex-grow justify-between">
+                  <div>
+                    <h2
+                      className={`md:text-base md:font-semi-bold md:leading-[30px] md:font-normal text-sm font-bold mt-2 ${
+                        cairo.className
+                      } ${color ? `text-${color}` : "text-yellow-dark"}`}
+                    >
+                      {ResourcesAndReportsCard.caption}
+                    </h2>
+                    <h1
+                      className={`md:text-2xl md:font-semi-bold md:leading-[30px] text-base font-semibold mb-2 ${cairo.className}`}
+                    >
+                      {ResourcesAndReportsCard.subHeading}
+                    </h1>
+                    {isClient && (
+                      <TrunctableText
+                        text={ResourcesAndReportsCard.body}
+                        maxLength={150}
+                        color={color}
                       />
-                    </section>
-                    <section className="flex flex-row items-center relative">
-                      <a
-                        href={ResourcesAndReportsCard.downloadFile}
-                        download={ResourcesAndReportsCard.downloadFileTitle}
-                        className={`${color ? `text-${color}` : 'text-yellow-dark'} font-semibold leading-normal`}
-                      >
-                        {ResourcesAndReportsCard.downloadFileTitle}
-                      </a>
-                    </section>
+                    )}
+                  </div>
+                  <div>
+                    <h6
+                      className={`md:text-base text-sm font-medium ${cairo.className}`}
+                    >
+                      {ResourcesAndReportsCard.cta}
+                    </h6>
+                    <div className="flex">
+                      <section className="relative h-100 w-100 flex flex-row items-center mr-4">
+                        <Image
+                          width={20}
+                          height={20}
+                          src={ResourcesAndReportsCard.downloadIcon}
+                          alt="Download Icon"
+                        />
+                      </section>
+                      <section className="flex flex-row items-center relative">
+                        <a
+                          href={ResourcesAndReportsCard.downloadFile}
+                          download={ResourcesAndReportsCard.downloadFileTitle}
+                          className={`${
+                            color ? `text-${color}` : "text-yellow-dark"
+                          } font-semibold leading-normal`}
+                        >
+                          {ResourcesAndReportsCard.downloadFileTitle}
+                        </a>
+                      </section>
+                    </div>
                   </div>
                 </section>
               </div>
