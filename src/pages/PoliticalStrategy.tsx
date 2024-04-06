@@ -6,6 +6,7 @@ import TOCBodyList from '@/components/TOCBodyList'
 
 import {
   OutcomeCardProps,
+  ResourcesAndReportsCardsProps,
   TOCOutcomesComponentProps,
   bulletPoint
 } from '@/types/global'
