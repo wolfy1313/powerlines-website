@@ -1,0 +1,19 @@
+import React from 'react'
+import { Cairo, Roboto_Slab } from 'next/font/google'
+
+const cairo = Cairo({ subsets: ['latin'] })
+const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
+
+function OurWorkProblemHeader() {
+  return (
+    <div>
+      <section className='flex flex-row mb-2 '>
+        <section className=''>
+          <h2 className='text-blue-dark font-bold text-xl md:text-2xl pl-2'>THE PROBLEM</h2>
+        </section>
+      </section>
+    </div>
+  )
+}
+
+export default OurWorkProblemHeader
