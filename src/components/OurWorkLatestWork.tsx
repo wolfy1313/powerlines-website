@@ -115,14 +115,3 @@ function OurWorkLatestWork() {
 }
 
 export default OurWorkLatestWork;
-
-
-{/* <Section
-title='Lorem Ipsum dolor sit amet, consectetur adipiscing elit '
-content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-download='Download'
-link={<Link href={`./about-us`} className='flex gap-3'>
-  <Image src="/newSimCardDownload.png" width={20} height={20} alt="download image" className='' />
-  Full White Paper
-</Link>}
-/> */}
